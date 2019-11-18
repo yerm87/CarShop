@@ -1,0 +1,5 @@
+.items {
+    display: flex;
+    font-family: 'Rubik';
+    color: var(--mainWhite);
+}

@@ -1,0 +1,19 @@
+.button {
+    font-family: 'Rubik';
+    font-size: 16px;
+    border: 1px solid var(--mainWhite);
+    padding: 7px;
+    border-radius: 10px;
+    margin: 15px 25px;
+}
+
+.menuButton {
+    background: transparent;
+    color: var(--mainWhite);
+}
+
+.menuButton:hover {
+    background: var(--mainWhite);
+    color: var(--mainBlue);
+    cursor: pointer;
+}
