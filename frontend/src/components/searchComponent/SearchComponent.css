@@ -1,0 +1,38 @@
+.searchContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: linear-gradient(var(--lightBlue), var(--mainBlue));
+    width: 70%;
+    margin: 0 auto;
+    padding: 27px;
+    margin-top: 230px;
+}
+
+.searchContainer select {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.searchContainer input {
+    border: none;
+    border-bottom: 1px solid gray;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.zip {
+    display: flex;
+}
+
+.searchContainer button {
+    background-color: rgb(26, 100, 26);
+    font-family: 'Montserrat';
+    color: var(--mainWhite);
+}
