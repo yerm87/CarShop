@@ -1,15 +1,10 @@
-import React from 'react';
-import classes from './HeroImage.css';
-import SearchComponent from '../searchComponent/SearchComponent';
+import styled from 'styled-components';
 
-const HeroImage = props => {
-    return (
-        <div className={classes.heroImage}>
-            <h1>Find your car</h1>
-            <p>Search cars from thousands of individual sellers</p>
-            <SearchComponent />
-        </div>
-    )
-}
+const HeroImage = styled.div`
+    background: url(${props => props.img}) no-repeat center center;
+    background-size: cover;
+    height: 700px;
+    margin: 0; 
+`
 
 export default HeroImage;

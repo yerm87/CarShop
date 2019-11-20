@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import HeroImage from '../../components/heroImage/HeroImage';
 import { connect } from 'react-redux';
 import * as actions from '../../reduxStore/Actions';
+import Title from '../../components/title/Title';
+import SearchComponent from '../../components/searchComponent/SearchComponent';
 
 class MainPage extends Component {
 
@@ -22,7 +24,11 @@ class MainPage extends Component {
     render() {
         return (
             <React.Fragment>
-                <HeroImage />
+                <HeroImage img="../../assets/wallpaper_image.jpg">
+                    <Title title="Find your car"
+                           subtitle="Search cars from thousands of individual sellers" />
+                    <SearchComponent />
+                </HeroImage>
             </React.Fragment>
         )
     }
