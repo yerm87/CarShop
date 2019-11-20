@@ -17,7 +17,7 @@ const SearchComponent = props => {
                 <option>No Max Price</option>
             </select>
             <div className={classes.zip}>
-                <select>
+                <select style={{width: '70%'}}>
                     <option>10 miles from</option>
                 </select>
                 <input type="text" value="33130" />
