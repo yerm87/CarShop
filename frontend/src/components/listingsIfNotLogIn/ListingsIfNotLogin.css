@@ -1,0 +1,9 @@
+.listings {
+    text-align: center;
+    padding-top: 160px;
+    font-family: 'Rubik';
+}
+
+.listings h1, .listings p {
+    color: var(--mainWhite);
+}

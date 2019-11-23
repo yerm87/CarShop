@@ -3,11 +3,16 @@
     margin: 10px 20px 0 0;
 }
 
-.wrapping{
-    padding: 24px 0 0 20px
+.wrapping {
+    padding: 26px 9px 24px 20px;
 }
 
 .wrapping:hover {
     background: rgba(0, 0, 0, 0.5);
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: var(--mainWhite);
 }

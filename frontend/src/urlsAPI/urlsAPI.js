@@ -1,0 +1,1 @@
+export const checkAuthentication = 'http://localhost/shopping/backend/public/testRequest';

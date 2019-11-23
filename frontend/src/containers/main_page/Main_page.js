@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import HeroImage from '../../components/heroImage/HeroImage';
 import { connect } from 'react-redux';
-import * as actions from '../../reduxStore/Actions';
+//import * as actions from '../../reduxStore/Actions';
 import Title from '../../components/title/Title';
 import SearchComponent from '../../components/searchComponent/SearchComponent';
 
 class MainPage extends Component {
+    /*
 
     test = () => {
         
@@ -20,6 +21,7 @@ class MainPage extends Component {
     componentDidMount(){
         this.test();
     }
+    */
 
     render() {
         return (
@@ -33,11 +35,12 @@ class MainPage extends Component {
         )
     }
 }
-
+/*
 const mapDispatchToProps = (dispatch) => {
     return {
         auth: (param) => dispatch(actions.userIsAuth(param))
     }
 }
+*/
 
-export default connect(null, mapDispatchToProps)(MainPage);
+export default MainPage;
