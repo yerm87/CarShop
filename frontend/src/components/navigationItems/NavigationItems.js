@@ -12,7 +12,9 @@ const NavigationItems = () => {
                             path='sell_car' />
             <NavigationItem name='Reviews' />
             <NavigationItem name='About Us' />
-            <Button menuButton>Sign Up</Button>
+            <Link to='/signup'>
+                <Button menuButton>Sign Up</Button>
+            </Link>
             <Button menuButton>Log In</Button>
         </div>
     )

@@ -5,6 +5,7 @@ import NavigationItems from './components/navigationItems/NavigationItems';
 import Logo from './components/UIElements/logo/Logo';
 import MainPage from './containers/main_page/Main_page';
 import SellCarPage from './containers/sellCarPage/SellCarPage';
+import SignUpPage from './containers/signUpPage/Signup_page';
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
             </Toolbar>
             <Switch>
                 <Route path="/sell_car" component={SellCarPage} />
+                <Route path="/signup" component={SignUpPage} />
                 <Route path="/" component={MainPage} />
             </Switch>
         </React.Fragment>

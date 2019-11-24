@@ -7,6 +7,8 @@ const Button = props => {
         classList.push(classes.menuButton);
     } else if(props.loginInListings){
         classList.push(classes.loginInListings);
+    } else if(props.signupOrLoginButton){
+        classList.push(classes.signupOrLoginButton)
     }
 
     return (

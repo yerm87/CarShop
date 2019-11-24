@@ -23,3 +23,10 @@ export const checkAuth = () => {
         })
     }
 }
+
+export const setSignupOrLoginMode = (param) => {
+    return {
+        type: actionTypes.setSignupOrLoginMode,
+        mode: param
+    }
+}

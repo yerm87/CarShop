@@ -17,10 +17,6 @@ class MainPage extends Component {
             })
         });
     }
-
-    componentDidMount(){
-        this.test();
-    }
     */
 
     render() {
