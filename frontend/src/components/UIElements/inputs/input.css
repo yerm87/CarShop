@@ -1,0 +1,17 @@
+.input {
+    border: 1px solid rgb(163, 156, 156);
+}
+
+.invalid {
+    border: 1px solid var(--mainRed);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper p {
+    color: var(--mainRed);
+    font-size: 0.8em;
+}
