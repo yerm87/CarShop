@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import classes from './SignupComponent.css';
 import Button from '../UIElements/button/Button';
 import Input from '../UIElements/inputs/Inputs';
+import axios from 'axios';
+import $ from 'jquery';
+import { withRouter } from 'react-router-dom';
 
 class SignupComponent extends Component {
     state={
@@ -84,6 +87,24 @@ class SignupComponent extends Component {
         })
     }
 
+    onSubmitHandler = (event) => {
+        event.preventDefault();
+/*
+        var instance = axios.create({
+            baseURL: 'http://localhost/shopping/backend/public',
+            headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}
+          });
+*/
+        axios.post('/create_user', 
+        {
+            email: this.state.elements.email.value,
+            password: this.state.elements.password.value
+        }).then(response => {
+            console.log(response);
+        });
+        
+    }
+
     render() {
         let inputs = [];
         for(let prop in this.state.elements){
@@ -97,11 +118,14 @@ class SignupComponent extends Component {
                           error={current.errorMessage}
                           onChangeHandler={(event) => this.onChangeHandler(event, current.type)}
                           onBlurHandler={() => this.onBlurHandler(current)} />
-        })
+        });
+        //
         return (
-            <form className={classes.form}>
+            <form className={classes.form}
+                  onSubmit={(event) => this.onSubmitHandler(event)}>
+                <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
                   {renderedInputs}
-                <Button signupOrLoginButton>Sign Up</Button>
+                <Input element="submit" />
             </form>
         )
     }

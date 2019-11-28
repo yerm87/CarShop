@@ -18,7 +18,7 @@ const userIsAuth = (param) => {
 export const checkAuth = () => {
     return dispatch => {
         dispatch(init());
-        axios.get(urlsAPI.checkAuthentication).then(result => {
+        axios.get('/checkAuth').then(result => {
             dispatch(userIsAuth(result.data.auth));
         })
     }

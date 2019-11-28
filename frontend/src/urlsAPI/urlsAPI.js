@@ -1,1 +1,1 @@
-export const checkAuthentication = 'http://localhost/shopping/backend/public/testRequest';
+export const checkAuthentication = 'http://localhost/shopping/backend/public/checkAuth';

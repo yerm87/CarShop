@@ -49,11 +49,17 @@ const Input = props => {
                     </div>
                     <input type="password"
                            className={arrayOfStyles.join(' ')} 
-                           name="password" 
+                           name="confirmPassword" 
                            value={props.value}
                            onChange={props.onChangeHandler}
                            onBlur={props.onBlurHandler} />
                 </React.Fragment>
+            )
+        case('submit'):
+            return (
+                <input className={classes.submit} 
+                       type="submit" 
+                       value="Sign Up" />
             )
     }
 }

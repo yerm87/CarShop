@@ -14,7 +14,19 @@ module.exports = {
     },
     mode: 'production',
     devServer: {
-        contentBase: path.join(__dirname, 'dist')
+        contentBase: path.join(__dirname, 'dist'),
+        proxy: {
+            '/api': {
+                target: 'http://jsonplaceholder.typicode.com',
+                changeOrigin: true
+            }
+        },
+        headers: {
+            'X-Custom-Foo': 'bar',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'GET, POST, PUT, OPTIONS',
+            'Access-Control-Allow-Headers': 'Origin, Content-Type, X-CSRF-Token, authorization'
+        }
     },
     devtool: 'cheap-module-source-map',
     optimization: {
