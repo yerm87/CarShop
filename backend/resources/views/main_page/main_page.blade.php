@@ -1,5 +1,5 @@
 @extends('index')
 
 @section('content')
-    <h1>Content</h1>
+    <script src="{{asset('js/bundle.js')}}"></script>
 @endsection

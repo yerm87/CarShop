@@ -3,10 +3,25 @@
    <head>
        <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta name="csrf-token" content="{{ csrf_token() }}">
+       <style>
+           :root {
+               --mainBlue: #508bbb;
+               --lightBlue: #9FB3C3;
+               --mainWhite: rgba(255, 255, 255, 0.945);
+               --mainRed: rgb(214, 52, 52);
+           }
+           body {
+               margin: 0;
+               padding: 0;
+           }
+       </style>
+       <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
    </head>
    <body>
-       <div>
-           @yield('content')
-       </div>
+       <div class="root"></div>
+       @yield('content')
    </body>
 </html>

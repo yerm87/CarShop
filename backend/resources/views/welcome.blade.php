@@ -64,6 +64,13 @@
         </style>
     </head>
     <body>
+        <form action="/create_user" method="post">
+            <input type="hidden" name="_method" value="POST" />
+            <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
+            <input type="text" name="name" value="name" />
+            <input type="text" name="email" value="email" />
+            <input type="submit" value="submit" />
+        </form>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
