@@ -22,3 +22,7 @@
     padding-left: 10px;
     box-sizing: border-box;
 }
+
+.form p {
+    color: var(--mainRed);
+}

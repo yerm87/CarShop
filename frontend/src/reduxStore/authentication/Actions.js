@@ -30,3 +30,21 @@ export const setSignupOrLoginMode = (param) => {
         mode: param
     }
 }
+
+const userWasSignedUp = () => {
+    return {
+        type: actionTypes.userWasSignedUp
+    }
+}
+
+export const signupRequest = (email, password) => {
+    return (dispatch) => {
+        dispatch(init());
+        axios.post('/create_user', {
+            email: email,
+            password, password
+        }).then(() => {
+            dispatch(userWasSignedUp());
+        });
+    }
+}

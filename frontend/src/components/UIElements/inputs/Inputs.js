@@ -8,13 +8,17 @@ const Input = props => {
         arrayOfStyles.push(classes.invalid);
     }
 
+    if(props.notMatched){
+        arrayOfStyles.push(classes.invalid);
+    }
+
     switch(props.element){
     
         case('email'):  
             return (
                 <React.Fragment>
                     <div className={classes.wrapper}>
-                        <label for="email">Email</label>
+                        <label htmlFor="email">Email</label>
                         <p>{props.error}</p>
                     </div>
                     <input type="email"
@@ -29,7 +33,7 @@ const Input = props => {
             return (
                 <React.Fragment>
                     <div className={classes.wrapper}>
-                        <label for="password">Password</label>
+                        <label htmlFor="password">Password</label>
                         <p>{props.error}</p>
                     </div>
                     <input type="password"
@@ -44,7 +48,7 @@ const Input = props => {
             return (
                 <React.Fragment>
                     <div className={classes.wrapper}>
-                        <label for="confirmPassword">Confirm Password</label>
+                        <label htmlFor="confirmPassword">Confirm Password</label>
                         <p>{props.error}</p>
                     </div>
                     <input type="password"

@@ -36,9 +36,15 @@ Route::get('/checkAuth', ['middleware'=>'isAuth', function(){
 }]);
 
 //route for sell_car page
-Route::get('sell_car', function(){
+Route::get('/sell_car', function(){
    return view('sell_page.sell_car');
 });
 
 //route for sign-up page
 Route::post('/create_user', 'AuthController@store');
+
+Route::post('/checkEmails', function(Request $request){
+    $email = $request->emailAddress;
+    $users = User::where('email', $email)->get();
+    return count($users);
+});
