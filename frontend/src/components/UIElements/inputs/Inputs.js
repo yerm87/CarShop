@@ -65,6 +65,12 @@ const Input = props => {
                        type="submit" 
                        value="Sign Up" />
             )
+        case('login'):
+            return (
+                <input className={classes.submit}
+                       type="submit"
+                       value="Log In" />
+            )
     }
 }
 

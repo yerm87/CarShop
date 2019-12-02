@@ -24,17 +24,13 @@ class SellCarPage extends Component {
                 ) : this.props.auth === true ? (
                     <HeroImage img="../../assets/sell_your_car.jpg" loggedIn>
                         <div className={classes.wrapper}>
+                            <h1>Sell Your Car</h1>
                             <Button createListingButton>Create Listing</Button>
                         </div>
                     </HeroImage>
                 ) : null}
             </React.Fragment>
         )
-
-        /*let component = (
-                {this.props.auth === false ? : null}
-            </HeroImage>
-        );*/
 
         if(this.props.loading){
             component = (
@@ -43,7 +39,7 @@ class SellCarPage extends Component {
                 </div>
             )
         }
-
+        
         return (
             <div>
                 {component}
@@ -54,7 +50,7 @@ class SellCarPage extends Component {
 
 const mapStateToProps = state => {
     return {
-        auth: state.authReducer.auth,
+        auth: state.authReducer.userIsLoggedIn,
         loading: state.authReducer.loading
     }
 }

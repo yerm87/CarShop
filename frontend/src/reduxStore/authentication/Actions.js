@@ -31,9 +31,9 @@ export const setSignupOrLoginMode = (param) => {
     }
 }
 
-const userWasSignedUp = () => {
+const userWasLoggedIn = () => {
     return {
-        type: actionTypes.userWasSignedUp
+        type: actionTypes.userWasLoggedIn
     }
 }
 
@@ -44,7 +44,31 @@ export const signupRequest = (email, password) => {
             email: email,
             password, password
         }).then(() => {
-            dispatch(userWasSignedUp());
+            dispatch(userWasLoggedIn());
+        });
+    }
+}
+
+const failedToLogin = () => {
+    return {
+        type: actionTypes.failedToLogin
+    }
+}
+
+export const loginUser = (email, password) => {
+    return (dispatch) => {
+        dispatch(init());
+        axios.post('/auth_user', {
+            email: email,
+            password: password
+        }).then(response => {
+            /*
+            if(response.data !== 0){
+                dispatch(failedToLogin());
+            } else if(response.data === 0){
+                dispatch(userWasLoggedIn());
+            }*/
+            console.log('action')
         });
     }
 }

@@ -1,10 +1,10 @@
 import * as actionTypes from '../actionTypes';
 
 const initialState = {
-    auth: '',
     loading: false,
     signupOrLoginMode: 'signup',
-    userIsLoggedIn: false
+    userIsLoggedIn: false,
+    failedToLogIn: false
 }
 
 const reducer = (state=initialState, action) => {
@@ -12,8 +12,9 @@ const reducer = (state=initialState, action) => {
         case(actionTypes.changeAuth):
             return {
                 ...state,
-                auth: action.isAuth,
-                loading: false 
+                userIsLoggedIn: action.isAuth,
+                loading: false,
+                failedToLogIn: false 
             }
         case(actionTypes.init):
             return {
@@ -25,11 +26,18 @@ const reducer = (state=initialState, action) => {
                 ...state,
                 signupOrLoginMode: action.mode
             }
-        case(actionTypes.userWasSignedUp):
+        case(actionTypes.userWasLoggedIn):
             return {
                 ...state,
                 loading: false,
-                userIsLoggedIn: true
+                userIsLoggedIn: true,
+                failedToLogIn: false
+            }
+        case(actionTypes.failedToLogin):
+            return {
+                ...state,
+                loading: false,
+                failedToLogIn: true
             }
         default: 
             return state;
