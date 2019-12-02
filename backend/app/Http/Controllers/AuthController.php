@@ -38,13 +38,13 @@ class AuthController extends Controller
     {
         //User::create($request->all());
         $data = $request->all();
-        $name = $request->name;
+        //$email = $request->email;
         $user=User::create($data);
         session(['key' => $user->_id]);
        // return Session::get('key');
-        $users = User::all()->where('name', $name);
-        $count = count($users);
-        return $count;
+        //$users = User::all()->where('name', $name);
+        //$count = count($users);
+        return $user->_id;
     }
 
     /**

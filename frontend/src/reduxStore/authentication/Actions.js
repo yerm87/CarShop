@@ -1,5 +1,4 @@
 import axios from 'axios';
-import * as urlsAPI from '../../urlsAPI/urlsAPI';
 import * as actionTypes from '../actionTypes';
 
 const init = () => {
@@ -31,7 +30,7 @@ export const setSignupOrLoginMode = (param) => {
     }
 }
 
-const userWasLoggedIn = () => {
+export const userWasLoggedIn = () => {
     return {
         type: actionTypes.userWasLoggedIn
     }
@@ -45,30 +44,6 @@ export const signupRequest = (email, password) => {
             password, password
         }).then(() => {
             dispatch(userWasLoggedIn());
-        });
-    }
-}
-
-const failedToLogin = () => {
-    return {
-        type: actionTypes.failedToLogin
-    }
-}
-
-export const loginUser = (email, password) => {
-    return (dispatch) => {
-        dispatch(init());
-        axios.post('/auth_user', {
-            email: email,
-            password: password
-        }).then(response => {
-            /*
-            if(response.data !== 0){
-                dispatch(failedToLogin());
-            } else if(response.data === 0){
-                dispatch(userWasLoggedIn());
-            }*/
-            console.log('action')
         });
     }
 }

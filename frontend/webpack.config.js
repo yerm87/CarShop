@@ -12,7 +12,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         chunkFilename: '[id].js'
     },
-    mode: 'production',
+    mode: 'development',
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         proxy: {

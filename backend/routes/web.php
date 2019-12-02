@@ -48,3 +48,14 @@ Route::post('/checkEmails', function(Request $request){
     $users = User::where('email', $email)->get();
     return count($users);
 });
+
+Route::post('/auth_user', function(Request $request){
+    $email = $request->email;
+    $password = $request->password;
+
+    $user = User::where([
+        'email' => $email,
+        'password' => $password
+    ])->get();
+    return count($user);
+});

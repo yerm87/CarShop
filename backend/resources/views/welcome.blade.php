@@ -64,11 +64,11 @@
         </style>
     </head>
     <body>
-        <form action="/create_user" method="post">
+        <form action="/auth_user" method="post">
             <input type="hidden" name="_method" value="POST" />
             <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
-            <input type="text" name="name" value="name" />
-            <input type="text" name="email" value="email" />
+            <input type="email" name="email" value="romanermeev@gmail.com" />
+            <input type="password" name="password" value="1234567891" />
             <input type="submit" value="submit" />
         </form>
         <div class="flex-center position-ref full-height">
