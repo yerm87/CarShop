@@ -201,7 +201,7 @@ class SignupComponent extends Component {
         }
 
         if(this.props.isLoggedIn){
-            element = <Redirect />;
+            element = <Redirect to="/sell_car" />;
         }
         
         return element;

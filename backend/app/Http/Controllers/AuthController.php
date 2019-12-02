@@ -36,14 +36,12 @@ class AuthController extends Controller
      */
     public function store(Request $request)
     {
-        //User::create($request->all());
+        
         $data = $request->all();
-        //$email = $request->email;
+        
         $user=User::create($data);
         session(['key' => $user->_id]);
-       // return Session::get('key');
-        //$users = User::all()->where('name', $name);
-        //$count = count($users);
+    
         return $user->_id;
     }
 
@@ -90,5 +88,30 @@ class AuthController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function login(Request $request){
+        $email = $request->email;
+        $password = $request->password;
+
+        $user = User::where([
+            'email' => $email,
+            'password' => $password
+        ])->get();
+
+        $firstUserInList = $user->first();
+
+        if(count($user) !== 0){
+            session(['key' => $firstUserInList->_id]);
+        }
+
+        return count($user);
+    }
+
+    public function checkEmails(Request $request){
+        $email = $request->emailAddress;
+        $users = User::where('email', $email)->get();
+        
+        return count($users);
     }
 }

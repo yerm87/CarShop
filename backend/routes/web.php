@@ -30,7 +30,7 @@ Route::get('/', 'AuthController@index');
 
 //route to check whether user is authenticated or not
 Route::get('/checkAuth', ['middleware'=>'isAuth', function(){
-    return response()->json([
+	return response()->json([
         'auth' => true
     ]);
 }]);
@@ -43,19 +43,8 @@ Route::get('/sell_car', function(){
 //route for sign-up page
 Route::post('/create_user', 'AuthController@store');
 
-Route::post('/checkEmails', function(Request $request){
-    $email = $request->emailAddress;
-    $users = User::where('email', $email)->get();
-    return count($users);
-});
+//route to check that email does not exist yet
+Route::post('/checkEmails', 'AuthController@checkEmails');
 
-Route::post('/auth_user', function(Request $request){
-    $email = $request->email;
-    $password = $request->password;
-
-    $user = User::where([
-        'email' => $email,
-        'password' => $password
-    ])->get();
-    return count($user);
-});
+//route to login
+Route::post('/auth_user', 'AuthController@login');

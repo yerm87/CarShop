@@ -3,3 +3,4 @@ export const changeAuth = 'changeAuth';
 export const setSignupOrLoginMode = 'setSignupOrLoginMode';
 export const userWasLoggedIn = 'userWasLoggedIn';
 export const failedToLogin = 'failedToLogin';
+export const removeSpinner = 'removeSpinner';

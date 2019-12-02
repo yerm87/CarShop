@@ -68,7 +68,7 @@
             <input type="hidden" name="_method" value="POST" />
             <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
             <input type="email" name="email" value="romanermeev@gmail.com" />
-            <input type="password" name="password" value="1234567891" />
+            <input type="password" name="password" value="1234567890" />
             <input type="submit" value="submit" />
         </form>
         <div class="flex-center position-ref full-height">

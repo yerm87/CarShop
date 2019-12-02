@@ -1,7 +1,7 @@
 import axios from 'axios';
 import * as actionTypes from '../actionTypes';
 
-const init = () => {
+export const init = () => {
     return {
         type: actionTypes.init
     }
@@ -45,5 +45,11 @@ export const signupRequest = (email, password) => {
         }).then(() => {
             dispatch(userWasLoggedIn());
         });
+    }
+}
+
+export const removeSpinner = () => {
+    return {
+        type: actionTypes.removeSpinner
     }
 }

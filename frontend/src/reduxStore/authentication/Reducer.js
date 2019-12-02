@@ -30,6 +30,11 @@ const reducer = (state=initialState, action) => {
                 loading: false,
                 userIsLoggedIn: true
             }
+        case(actionTypes.removeSpinner):
+            return {
+                ...state,
+                loading: false
+            }
         default: 
             return state;
     }
