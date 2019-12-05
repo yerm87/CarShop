@@ -71,6 +71,30 @@ const Input = props => {
                        type="submit"
                        value="Log In" />
             )
+        case('year'):
+            return (
+                <React.Fragment>
+                    <label htmlFor="year">Year</label>
+                    <select disabled={props.invalid}
+                            name="year"
+                            onChange={props.onChangeHandler}>
+                            <option value="select">Select year</option>
+                            {props.children}
+                    </select>
+                </React.Fragment>
+            )
+        case('make'):
+            return (
+                <React.Fragment>
+                    <label htmlFor="make">Make</label>
+                    <select disabled={props.invalid}
+                            name="make"
+                            onChange={props.onChangeHandler}>
+                            <option value="select">Select make</option>
+                            {props.children}
+                    </select>
+                </React.Fragment>
+            )
     }
 }
 

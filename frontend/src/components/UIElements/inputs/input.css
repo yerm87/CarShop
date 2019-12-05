@@ -30,3 +30,18 @@
     cursor: pointer;
     height: 40px;
 }
+
+select {
+    display: block;
+    width: 40%;
+    font-family: 'Montserrat';
+    border-radius: 11px;
+    font-size: 1.1em;
+    padding: 8px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 6px 0;
+    font-weight: bold;
+}
