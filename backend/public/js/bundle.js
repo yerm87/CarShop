@@ -292,6 +292,17 @@ var unitlessKeys = {
 
 /***/ }),
 
+/***/ "./node_modules/attr-accept/dist/index.js":
+/*!************************************************!*\
+  !*** ./node_modules/attr-accept/dist/index.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports=function(e){function r(n){if(t[n])return t[n].exports;var o=t[n]={i:n,l:!1,exports:{}};return e[n].call(o.exports,o,o.exports,r),o.l=!0,o.exports}var t={};return r.m=e,r.c=t,r.d=function(e,t,n){r.o(e,t)||Object.defineProperty(e,t,{configurable:!1,enumerable:!0,get:n})},r.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return r.d(t,"a",t),t},r.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},r.p="",r(r.s=0)}([function(e,r,t){"use strict";r.__esModule=!0,r.default=function(e,r){if(e&&r){var t=Array.isArray(r)?r:r.split(","),n=e.name||"",o=e.type||"",u=o.replace(/\/.*$/,"");return t.some(function(e){var r=e.trim();return"."===r.charAt(0)?n.toLowerCase().endsWith(r.toLowerCase()):r.endsWith("/*")?u===r.replace(/\/.*$/,""):o===r})}return!0}}]);
+
+/***/ }),
+
 /***/ "./node_modules/axios/index.js":
 /*!*************************************!*\
   !*** ./node_modules/axios/index.js ***!
@@ -13135,13 +13146,16 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".input__input__184-b {\r\n    border: 1px solid rgb(163, 156, 156);\r\n    height: 32px;\r\n}\r\n\r\n.input__invalid__3-QHW {\r\n    border: 1px solid var(--mainRed);\r\n}\r\n\r\n.input__wrapper__2JVeI {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n}\r\n\r\n.input__wrapper__2JVeI p {\r\n    color: var(--mainRed);\r\n    font-size: 0.8em;\r\n}\r\n\r\n.input__submit__hTeYa {\r\n    font-family: 'Rubik';\r\n    font-size: 16px;\r\n    border-radius: 10px;\r\n    width: 100%;\r\n    border: none;\r\n    padding: 10px 0;\r\n    background: var(--mainBlue);\r\n    color: var(--mainWhite);\r\n    margin-top: 20px;\r\n    cursor: pointer;\r\n    height: 40px;\r\n}", ""]);
+exports.push([module.i, ".input__input__184-b {\r\n    border: 1px solid rgb(163, 156, 156);\r\n    height: 32px;\r\n}\r\n\r\n.input__invalid__3-QHW {\r\n    border: 1px solid var(--mainRed);\r\n}\r\n\r\n.input__wrapper__2JVeI {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n}\r\n\r\n.input__wrapper__2JVeI p {\r\n    color: var(--mainRed);\r\n    font-size: 0.8em;\r\n}\r\n\r\n.input__submit__hTeYa {\r\n    font-family: 'Rubik';\r\n    font-size: 16px;\r\n    border-radius: 10px;\r\n    width: 100%;\r\n    border: none;\r\n    padding: 10px 0;\r\n    background: var(--mainBlue);\r\n    color: var(--mainWhite);\r\n    margin-top: 20px;\r\n    cursor: pointer;\r\n    height: 40px;\r\n}\r\n\r\n.input__select__7Mdt4 {\r\n    display: block;\r\n    width: 40%;\r\n    font-family: 'Montserrat';\r\n    border-radius: 11px;\r\n    font-size: 1.1em;\r\n    padding: 8px;\r\n}\r\n\r\n.input__selectWrapper__2Tpan select {\r\n    display: block;\r\n    width: 100%;\r\n    font-family: 'Montserrat';\r\n    border-radius: 11px;\r\n    font-size: 1.1em;\r\n    padding: 8px;\r\n}\r\n\r\n.input__selectWrapper__2Tpan label {\r\n    display: block;\r\n    margin: 15px 0 6px 0;\r\n    font-weight: bold;\r\n}\r\n\r\n.input__textarea__1qwNb label {\r\n    display: block;\r\n    margin: 15px 0 6px 0;\r\n    font-weight: bold;\r\n}\r\n\r\n.input__textarea__1qwNb textarea {\r\n    resize: none;\r\n}", ""]);
 // Exports
 exports.locals = {
 	"input": "input__input__184-b",
 	"invalid": "input__invalid__3-QHW",
 	"wrapper": "input__wrapper__2JVeI",
-	"submit": "input__submit__hTeYa"
+	"submit": "input__submit__hTeYa",
+	"select": "input__select__7Mdt4",
+	"selectWrapper": "input__selectWrapper__2Tpan",
+	"textarea": "input__textarea__1qwNb"
 };
 
 /***/ }),
@@ -13321,6 +13335,31 @@ exports.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/create_listing/CreateListing.css":
+/*!****************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/containers/create_listing/CreateListing.css ***!
+  \****************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".CreateListing__wrapperListing__2BA2C {\r\n    background-color: var(--mainWhite);\r\n    padding: 100px 0 40px 70px;\r\n    font-family: 'Montserrat';\r\n    width: 40%;\r\n}\r\n\r\n.CreateListing__wrapperListing__2BA2C p {\r\n    color: var(--mainRed);\r\n}\r\n\r\n.CreateListing__wrapperListing__2BA2C h1 {\r\n    margin: 0;\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.CreateListing__drop__1uTlS {\r\n    padding: 90px;\r\n    border: 3px dashed rgb(175, 155, 155);\r\n    width: 60%;\r\n    margin: 20px 0;\r\n    text-align: center;\r\n}\r\n\r\n.CreateListing__image__PXnjY {\r\n    border-radius: 8px;\r\n    border: 1px solid gray;\r\n    padding: 6px;\r\n    text-align: center;\r\n}\r\n\r\n.CreateListing__image__PXnjY img {\r\n    max-width: 110px;\r\n    max-height: 70px;\r\n}\r\n\r\n.CreateListing__images__2lYnj {\r\n    display: grid;\r\n    width: 60%;\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n    grid-template-columns: 1fr 1fr 1fr 1fr;\r\n    grid-column-gap: 14px;\r\n    grid-row-gap: 14px;\r\n}\r\n\r\n.CreateListing__inputs__2u_G8 {\r\n    font-family: 'Rubik';\r\n    padding-top: 20px;\r\n}\r\n\r\n.CreateListing__inputs__2u_G8 label, .CreateListing__inputs__2u_G8 input {\r\n    display: block;\r\n}\r\n\r\n.CreateListing__inputs__2u_G8 label {\r\n    padding: 8px 0 5px 0;\r\n    font-weight: 600;\r\n}\r\n\r\n.CreateListing__inputs__2u_G8 input {\r\n    width: 100%;\r\n    border-radius: 8px;\r\n    \r\n    font-size: 1.1em;\r\n    padding-left: 10px;\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n}\r\n\r\n.CreateListing__inputs__2u_G8 p {\r\n    color: var(--mainRed);\r\n}\r\n\r\n.CreateListing__vehicleInfo__9FJ1V {\r\n    padding-bottom: 40px;\r\n    border-bottom: 1px solid gray;\r\n}\r\n\r\n.CreateListing__contactData__3qzfc h2 {\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.CreateListing__image__PXnjY img {\r\n    max-width: 110px;\r\n    max-height: 70px;\r\n}\r\n\r\n.CreateListing__imageWrapper__3vYJQ {\r\n    position: relative;\r\n}\r\n\r\n.CreateListing__deleteButton__33l3c {\r\n    display: none;\r\n    position: absolute;\r\n    width: 19px;\r\n    height: 19px;\r\n    top: 5px;\r\n    right: 5px;\r\n    background-color: var(--mainRed);\r\n    color: var(--mainWhite);\r\n    font-weight: bold;\r\n    border-radius: 14px;\r\n    cursor: pointer;\r\n}\r\n\r\n.CreateListing__image__PXnjY:hover .CreateListing__deleteButton__33l3c {\r\n    display: block;\r\n}\r\n", ""]);
+// Exports
+exports.locals = {
+	"wrapperListing": "CreateListing__wrapperListing__2BA2C",
+	"drop": "CreateListing__drop__1uTlS",
+	"image": "CreateListing__image__PXnjY",
+	"images": "CreateListing__images__2lYnj",
+	"inputs": "CreateListing__inputs__2u_G8",
+	"vehicleInfo": "CreateListing__vehicleInfo__9FJ1V",
+	"contactData": "CreateListing__contactData__3qzfc",
+	"imageWrapper": "CreateListing__imageWrapper__3vYJQ",
+	"deleteButton": "CreateListing__deleteButton__33l3c"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/sellCarPage/SellCarPage.css":
 /*!***********************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/containers/sellCarPage/SellCarPage.css ***!
@@ -13454,6 +13493,275 @@ function toComment(sourceMap) {
   var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
   return "/*# ".concat(data, " */");
 }
+
+/***/ }),
+
+/***/ "./node_modules/file-selector/dist/es5/file-selector.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/file-selector/dist/es5/file-selector.js ***!
+  \**************************************************************/
+/*! exports provided: fromEvent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fromEvent", function() { return fromEvent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _file__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./file */ "./node_modules/file-selector/dist/es5/file.js");
+
+
+var FILES_TO_IGNORE = [
+    // Thumbnail cache files for macOS and Windows
+    '.DS_Store',
+    'Thumbs.db' // Windows
+];
+/**
+ * Convert a DragEvent's DataTrasfer object to a list of File objects
+ * NOTE: If some of the items are folders,
+ * everything will be flattened and placed in the same list but the paths will be kept as a {path} property.
+ * @param evt
+ */
+function fromEvent(evt) {
+    return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+            return [2 /*return*/, isDragEvt(evt) && evt.dataTransfer
+                    ? getDataTransferFiles(evt.dataTransfer, evt.type)
+                    : getInputFiles(evt)];
+        });
+    });
+}
+function isDragEvt(value) {
+    return !!value.dataTransfer;
+}
+function getInputFiles(evt) {
+    var files = isInput(evt.target)
+        ? evt.target.files
+            ? fromList(evt.target.files)
+            : []
+        : [];
+    return files.map(function (file) { return Object(_file__WEBPACK_IMPORTED_MODULE_1__["toFileWithPath"])(file); });
+}
+function isInput(value) {
+    return value !== null;
+}
+function getDataTransferFiles(dt, type) {
+    return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+        var items, files;
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!dt.items) return [3 /*break*/, 2];
+                    items = fromList(dt.items)
+                        .filter(function (item) { return item.kind === 'file'; });
+                    // According to https://html.spec.whatwg.org/multipage/dnd.html#dndevents,
+                    // only 'dragstart' and 'drop' has access to the data (source node)
+                    if (type !== 'drop') {
+                        return [2 /*return*/, items];
+                    }
+                    return [4 /*yield*/, Promise.all(items.map(toFilePromises))];
+                case 1:
+                    files = _a.sent();
+                    return [2 /*return*/, noIgnoredFiles(flatten(files))];
+                case 2: return [2 /*return*/, noIgnoredFiles(fromList(dt.files)
+                        .map(function (file) { return Object(_file__WEBPACK_IMPORTED_MODULE_1__["toFileWithPath"])(file); }))];
+            }
+        });
+    });
+}
+function noIgnoredFiles(files) {
+    return files.filter(function (file) { return FILES_TO_IGNORE.indexOf(file.name) === -1; });
+}
+// IE11 does not support Array.from()
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from#Browser_compatibility
+// https://developer.mozilla.org/en-US/docs/Web/API/FileList
+// https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItemList
+function fromList(items) {
+    var files = [];
+    // tslint:disable: prefer-for-of
+    for (var i = 0; i < items.length; i++) {
+        var file = items[i];
+        files.push(file);
+    }
+    return files;
+}
+// https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItem
+function toFilePromises(item) {
+    if (typeof item.webkitGetAsEntry !== 'function') {
+        return fromDataTransferItem(item);
+    }
+    var entry = item.webkitGetAsEntry();
+    // Safari supports dropping an image node from a different window and can be retrieved using
+    // the DataTransferItem.getAsFile() API
+    // NOTE: FileSystemEntry.file() throws if trying to get the file
+    if (entry && entry.isDirectory) {
+        return fromDirEntry(entry);
+    }
+    return fromDataTransferItem(item);
+}
+function flatten(items) {
+    return items.reduce(function (acc, files) { return tslib__WEBPACK_IMPORTED_MODULE_0__["__spread"](acc, (Array.isArray(files) ? flatten(files) : [files])); }, []);
+}
+function fromDataTransferItem(item) {
+    var file = item.getAsFile();
+    if (!file) {
+        return Promise.reject(item + " is not a File");
+    }
+    var fwp = Object(_file__WEBPACK_IMPORTED_MODULE_1__["toFileWithPath"])(file);
+    return Promise.resolve(fwp);
+}
+// https://developer.mozilla.org/en-US/docs/Web/API/FileSystemEntry
+function fromEntry(entry) {
+    return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+            return [2 /*return*/, entry.isDirectory ? fromDirEntry(entry) : fromFileEntry(entry)];
+        });
+    });
+}
+// https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryEntry
+function fromDirEntry(entry) {
+    var reader = entry.createReader();
+    return new Promise(function (resolve, reject) {
+        var entries = [];
+        function readEntries() {
+            var _this = this;
+            // https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryEntry/createReader
+            // https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryReader/readEntries
+            reader.readEntries(function (batch) { return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](_this, void 0, void 0, function () {
+                var files, err_1, items;
+                return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                    switch (_a.label) {
+                        case 0:
+                            if (!!batch.length) return [3 /*break*/, 5];
+                            _a.label = 1;
+                        case 1:
+                            _a.trys.push([1, 3, , 4]);
+                            return [4 /*yield*/, Promise.all(entries)];
+                        case 2:
+                            files = _a.sent();
+                            resolve(files);
+                            return [3 /*break*/, 4];
+                        case 3:
+                            err_1 = _a.sent();
+                            reject(err_1);
+                            return [3 /*break*/, 4];
+                        case 4: return [3 /*break*/, 6];
+                        case 5:
+                            items = Promise.all(batch.map(fromEntry));
+                            entries.push(items);
+                            // Continue reading
+                            readEntries();
+                            _a.label = 6;
+                        case 6: return [2 /*return*/];
+                    }
+                });
+            }); }, function (err) {
+                reject(err);
+            });
+        }
+        readEntries();
+    });
+}
+// https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFileEntry
+function fromFileEntry(entry) {
+    return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+            return [2 /*return*/, new Promise(function (resolve, reject) {
+                    entry.file(function (file) {
+                        var fwp = Object(_file__WEBPACK_IMPORTED_MODULE_1__["toFileWithPath"])(file, entry.fullPath);
+                        resolve(fwp);
+                    }, function (err) {
+                        reject(err);
+                    });
+                })];
+        });
+    });
+}
+//# sourceMappingURL=file-selector.js.map
+
+/***/ }),
+
+/***/ "./node_modules/file-selector/dist/es5/file.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/file-selector/dist/es5/file.js ***!
+  \*****************************************************/
+/*! exports provided: COMMON_MIME_TYPES, toFileWithPath */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "COMMON_MIME_TYPES", function() { return COMMON_MIME_TYPES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toFileWithPath", function() { return toFileWithPath; });
+var COMMON_MIME_TYPES = new Map([
+    ['avi', 'video/avi'],
+    ['gif', 'image/gif'],
+    ['ico', 'image/x-icon'],
+    ['jpeg', 'image/jpeg'],
+    ['jpg', 'image/jpeg'],
+    ['mkv', 'video/x-matroska'],
+    ['mov', 'video/quicktime'],
+    ['mp4', 'video/mp4'],
+    ['pdf', 'application/pdf'],
+    ['png', 'image/png'],
+    ['zip', 'application/zip'],
+    ['doc', 'application/msword'],
+    ['docx', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document']
+]);
+function toFileWithPath(file, path) {
+    var f = withMimeType(file);
+    if (typeof f.path !== 'string') { // on electron, path is already set to the absolute path
+        var webkitRelativePath = file.webkitRelativePath;
+        Object.defineProperty(f, 'path', {
+            value: typeof path === 'string'
+                ? path
+                // If <input webkitdirectory> is set,
+                // the File will have a {webkitRelativePath} property
+                // https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/webkitdirectory
+                : typeof webkitRelativePath === 'string' && webkitRelativePath.length > 0
+                    ? webkitRelativePath
+                    : file.name,
+            writable: false,
+            configurable: false,
+            enumerable: true
+        });
+    }
+    return f;
+}
+function withMimeType(file) {
+    var name = file.name;
+    var hasExtension = name && name.lastIndexOf('.') !== -1;
+    if (hasExtension && !file.type) {
+        var ext = name.split('.')
+            .pop().toLowerCase();
+        var type = COMMON_MIME_TYPES.get(ext);
+        if (type) {
+            Object.defineProperty(file, 'type', {
+                value: type,
+                writable: false,
+                configurable: false,
+                enumerable: true
+            });
+        }
+    }
+    return file;
+}
+//# sourceMappingURL=file.js.map
+
+/***/ }),
+
+/***/ "./node_modules/file-selector/dist/es5/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/file-selector/dist/es5/index.js ***!
+  \******************************************************/
+/*! exports provided: fromEvent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _file_selector__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./file-selector */ "./node_modules/file-selector/dist/es5/file-selector.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "fromEvent", function() { return _file_selector__WEBPACK_IMPORTED_MODULE_0__["fromEvent"]; });
+
+
+//# sourceMappingURL=index.js.map
 
 /***/ }),
 
@@ -44148,6 +44456,922 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-dropzone/dist/es/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/react-dropzone/dist/es/index.js ***!
+  \******************************************************/
+/*! exports provided: default, useDropzone */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useDropzone", function() { return useDropzone; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var file_selector__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! file-selector */ "./node_modules/file-selector/dist/es5/index.js");
+/* harmony import */ var _utils_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/index */ "./node_modules/react-dropzone/dist/es/utils/index.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+/* eslint prefer-template: 0 */
+
+
+
+
+/**
+ * Convenience wrapper component for the `useDropzone` hook
+ *
+ * ```jsx
+ * <Dropzone>
+ *   {({getRootProps, getInputProps}) => (
+ *     <div {...getRootProps()}>
+ *       <input {...getInputProps()} />
+ *       <p>Drag 'n' drop some files here, or click to select files</p>
+ *     </div>
+ *   )}
+ * </Dropzone>
+ * ```
+ */
+
+var Dropzone = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function (_ref, ref) {
+  var children = _ref.children,
+      params = _objectWithoutProperties(_ref, ["children"]);
+
+  var _useDropzone = useDropzone(params),
+      open = _useDropzone.open,
+      props = _objectWithoutProperties(_useDropzone, ["open"]);
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useImperativeHandle"])(ref, function () {
+    return {
+      open: open
+    };
+  }, [open]); // TODO: Figure out why react-styleguidist cannot create docs if we don't return a jsx element
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, children(_objectSpread({}, props, {
+    open: open
+  })));
+});
+Dropzone.displayName = 'Dropzone';
+Dropzone.propTypes = {
+  /**
+   * Render function that exposes the dropzone state and prop getter fns
+   *
+   * @param {object} params
+   * @param {Function} params.getRootProps Returns the props you should apply to the root drop container you render
+   * @param {Function} params.getInputProps Returns the props you should apply to hidden file input you render
+   * @param {Function} params.open Open the native file selection dialog
+   * @param {boolean} params.isFocused Dropzone area is in focus
+   * @param {boolean} params.isFileDialogActive File dialog is opened
+   * @param {boolean} params.isDragActive Active drag is in progress
+   * @param {boolean} params.isDragAccept Dragged files are accepted
+   * @param {boolean} params.isDragReject Some dragged files are rejected
+   * @param {File[]} params.draggedFiles Files in active drag
+   * @param {File[]} params.acceptedFiles Accepted files
+   * @param {File[]} params.rejectedFiles Rejected files
+   */
+  children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+
+  /**
+   * Set accepted file types.
+   * See https://github.com/okonet/attr-accept for more information.
+   * Keep in mind that mime type determination is not reliable across platforms. CSV files,
+   * for example, are reported as text/plain under macOS but as application/vnd.ms-excel under
+   * Windows. In some cases there might not be a mime type set at all.
+   * See: https://github.com/react-dropzone/react-dropzone/issues/276
+   */
+  accept: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string)]),
+
+  /**
+   * Allow drag 'n' drop (or selection from the file dialog) of multiple files
+   */
+  multiple: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+
+  /**
+   * If false, allow dropped items to take over the current browser window
+   */
+  preventDropOnDocument: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+
+  /**
+   * If true, disables click to open the native file selection dialog
+   */
+  noClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+
+  /**
+   * If true, disables SPACE/ENTER to open the native file selection dialog.
+   * Note that it also stops tracking the focus state.
+   */
+  noKeyboard: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+
+  /**
+   * If true, disables drag 'n' drop
+   */
+  noDrag: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+
+  /**
+   * If true, stops drag event propagation to parents
+   */
+  noDragEventsBubbling: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+
+  /**
+   * Minimum file size (in bytes)
+   */
+  minSize: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+
+  /**
+   * Maximum file size (in bytes)
+   */
+  maxSize: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+
+  /**
+   * Enable/disable the dropzone
+   */
+  disabled: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+
+  /**
+   * Use this to provide a custom file aggregator
+   *
+   * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
+   */
+  getFilesFromEvent: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+
+  /**
+   * Cb for when closing the file dialog with no selection
+   */
+  onFileDialogCancel: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+
+  /**
+   * Cb for when the `dragenter` event occurs.
+   *
+   * @param {DragEvent} event
+   */
+  onDragEnter: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+
+  /**
+   * Cb for when the `dragleave` event occurs
+   *
+   * @param {DragEvent} event
+   */
+  onDragLeave: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+
+  /**
+   * Cb for when the `dragover` event occurs
+   *
+   * @param {DragEvent} event
+   */
+  onDragOver: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+
+  /**
+   * Cb for when the `drop` event occurs.
+   * Note that this callback is invoked after the `getFilesFromEvent` callback is done.
+   *
+   * Files are accepted or rejected based on the `accept`, `multiple`, `minSize` and `maxSize` props.
+   * `accept` must be a valid [MIME type](http://www.iana.org/assignments/media-types/media-types.xhtml) according to [input element specification](https://www.w3.org/wiki/HTML/Elements/input/file) or a valid file extension.
+   * If `multiple` is set to false and additional files are droppped,
+   * all files besides the first will be rejected.
+   * Any file which does not have a size in the [`minSize`, `maxSize`] range, will be rejected as well.
+   *
+   * Note that the `onDrop` callback will always be invoked regardless if the dropped files were accepted or rejected.
+   * If you'd like to react to a specific scenario, use the `onDropAccepted`/`onDropRejected` props.
+   *
+   * `onDrop` will provide you with an array of [File](https://developer.mozilla.org/en-US/docs/Web/API/File) objects which you can then process and send to a server.
+   * For example, with [SuperAgent](https://github.com/visionmedia/superagent) as a http/ajax library:
+   *
+   * ```js
+   * function onDrop(acceptedFiles) {
+   *   const req = request.post('/upload')
+   *   acceptedFiles.forEach(file => {
+   *     req.attach(file.name, file)
+   *   })
+   *   req.end(callback)
+   * }
+   * ```
+   *
+   * @param {File[]} acceptedFiles
+   * @param {File[]} rejectedFiles
+   * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
+   */
+  onDrop: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+
+  /**
+   * Cb for when the `drop` event occurs.
+   * Note that if no files are accepted, this callback is not invoked.
+   *
+   * @param {File[]} files
+   * @param {(DragEvent|Event)} event
+   */
+  onDropAccepted: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+
+  /**
+   * Cb for when the `drop` event occurs.
+   * Note that if no files are rejected, this callback is not invoked.
+   *
+   * @param {object[]} files
+   * @param {(DragEvent|Event)} event
+   */
+  onDropRejected: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
+};
+/* harmony default export */ __webpack_exports__["default"] = (Dropzone);
+/**
+ * A function that is invoked for the `dragenter`,
+ * `dragover` and `dragleave` events.
+ * It is not invoked if the items are not files (such as link, text, etc.).
+ *
+ * @callback dragCb
+ * @param {DragEvent} event
+ */
+
+/**
+ * A function that is invoked for the `drop` or input change event.
+ * It is not invoked if the items are not files (such as link, text, etc.).
+ *
+ * @callback dropCb
+ * @param {File[]} acceptedFiles List of accepted files
+ * @param {File[]} rejectedFiles List of rejected files
+ * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
+ */
+
+/**
+ * A function that is invoked for the `drop` or input change event.
+ * It is not invoked if the items are files (such as link, text, etc.).
+ *
+ * @callback dropAcceptedCb
+ * @param {File[]} files List of accepted files that meet the given criteria
+ * (`accept`, `multiple`, `minSize`, `maxSize`)
+ * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
+ */
+
+/**
+ * A function that is invoked for the `drop` or input change event.
+ *
+ * @callback dropRejectedCb
+ * @param {File[]} files List of rejected files that do not meet the given criteria
+ * (`accept`, `multiple`, `minSize`, `maxSize`)
+ * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
+ */
+
+/**
+ * A function that is used aggregate files,
+ * in a asynchronous fashion, from drag or input change events.
+ *
+ * @callback getFilesFromEvent
+ * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
+ * @returns {(File[]|Promise<File[]>)}
+ */
+
+/**
+ * An object with the current dropzone state and some helper functions.
+ *
+ * @typedef {object} DropzoneState
+ * @property {Function} getRootProps Returns the props you should apply to the root drop container you render
+ * @property {Function} getInputProps Returns the props you should apply to hidden file input you render
+ * @property {Function} open Open the native file selection dialog
+ * @property {boolean} isFocused Dropzone area is in focus
+ * @property {boolean} isFileDialogActive File dialog is opened
+ * @property {boolean} isDragActive Active drag is in progress
+ * @property {boolean} isDragAccept Dragged files are accepted
+ * @property {boolean} isDragReject Some dragged files are rejected
+ * @property {File[]} draggedFiles Files in active drag
+ * @property {File[]} acceptedFiles Accepted files
+ * @property {File[]} rejectedFiles Rejected files
+ */
+
+var initialState = {
+  isFocused: false,
+  isFileDialogActive: false,
+  isDragActive: false,
+  isDragAccept: false,
+  isDragReject: false,
+  draggedFiles: [],
+  acceptedFiles: [],
+  rejectedFiles: []
+};
+/**
+ * A React hook that creates a drag 'n' drop area.
+ *
+ * ```jsx
+ * function MyDropzone(props) {
+ *   const {getRootProps, getInputProps} = useDropzone({
+ *     onDrop: acceptedFiles => {
+ *       // do something with the File objects, e.g. upload to some server
+ *     }
+ *   });
+ *   return (
+ *     <div {...getRootProps()}>
+ *       <input {...getInputProps()} />
+ *       <p>Drag and drop some files here, or click to select files</p>
+ *     </div>
+ *   )
+ * }
+ * ```
+ *
+ * @function useDropzone
+ *
+ * @param {object} props
+ * @param {string|string[]} [props.accept] Set accepted file types.
+ * See https://github.com/okonet/attr-accept for more information.
+ * Keep in mind that mime type determination is not reliable across platforms. CSV files,
+ * for example, are reported as text/plain under macOS but as application/vnd.ms-excel under
+ * Windows. In some cases there might not be a mime type set at all.
+ * See: https://github.com/react-dropzone/react-dropzone/issues/276
+ * @param {boolean} [props.multiple=true] Allow drag 'n' drop (or selection from the file dialog) of multiple files
+ * @param {boolean} [props.preventDropOnDocument=true] If false, allow dropped items to take over the current browser window
+ * @param {boolean} [props.noClick=false] If true, disables click to open the native file selection dialog
+ * @param {boolean} [props.noKeyboard=false] If true, disables SPACE/ENTER to open the native file selection dialog.
+ * Note that it also stops tracking the focus state.
+ * @param {boolean} [props.noDrag=false] If true, disables drag 'n' drop
+ * @param {boolean} [props.noDragEventsBubbling=false] If true, stops drag event propagation to parents
+ * @param {number} [props.minSize=0] Minimum file size (in bytes)
+ * @param {number} [props.maxSize=Infinity] Maximum file size (in bytes)
+ * @param {boolean} [props.disabled=false] Enable/disable the dropzone
+ * @param {getFilesFromEvent} [props.getFilesFromEvent] Use this to provide a custom file aggregator
+ * @param {Function} [props.onFileDialogCancel] Cb for when closing the file dialog with no selection
+ * @param {dragCb} [props.onDragEnter] Cb for when the `dragenter` event occurs.
+ * @param {dragCb} [props.onDragLeave] Cb for when the `dragleave` event occurs
+ * @param {dragCb} [props.onDragOver] Cb for when the `dragover` event occurs
+ * @param {dropCb} [props.onDrop] Cb for when the `drop` event occurs.
+ * Note that this callback is invoked after the `getFilesFromEvent` callback is done.
+ *
+ * Files are accepted or rejected based on the `accept`, `multiple`, `minSize` and `maxSize` props.
+ * `accept` must be a valid [MIME type](http://www.iana.org/assignments/media-types/media-types.xhtml) according to [input element specification](https://www.w3.org/wiki/HTML/Elements/input/file) or a valid file extension.
+ * If `multiple` is set to false and additional files are droppped,
+ * all files besides the first will be rejected.
+ * Any file which does not have a size in the [`minSize`, `maxSize`] range, will be rejected as well.
+ *
+ * Note that the `onDrop` callback will always be invoked regardless if the dropped files were accepted or rejected.
+ * If you'd like to react to a specific scenario, use the `onDropAccepted`/`onDropRejected` props.
+ *
+ * `onDrop` will provide you with an array of [File](https://developer.mozilla.org/en-US/docs/Web/API/File) objects which you can then process and send to a server.
+ * For example, with [SuperAgent](https://github.com/visionmedia/superagent) as a http/ajax library:
+ *
+ * ```js
+ * function onDrop(acceptedFiles) {
+ *   const req = request.post('/upload')
+ *   acceptedFiles.forEach(file => {
+ *     req.attach(file.name, file)
+ *   })
+ *   req.end(callback)
+ * }
+ * ```
+ * @param {dropAcceptedCb} [props.onDropAccepted]
+ * @param {dropRejectedCb} [props.onDropRejected]
+ *
+ * @returns {DropzoneState}
+ */
+
+function useDropzone() {
+  var _ref2 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      accept = _ref2.accept,
+      _ref2$disabled = _ref2.disabled,
+      disabled = _ref2$disabled === void 0 ? false : _ref2$disabled,
+      _ref2$getFilesFromEve = _ref2.getFilesFromEvent,
+      getFilesFromEvent = _ref2$getFilesFromEve === void 0 ? file_selector__WEBPACK_IMPORTED_MODULE_2__["fromEvent"] : _ref2$getFilesFromEve,
+      _ref2$maxSize = _ref2.maxSize,
+      maxSize = _ref2$maxSize === void 0 ? Infinity : _ref2$maxSize,
+      _ref2$minSize = _ref2.minSize,
+      minSize = _ref2$minSize === void 0 ? 0 : _ref2$minSize,
+      _ref2$multiple = _ref2.multiple,
+      multiple = _ref2$multiple === void 0 ? true : _ref2$multiple,
+      onDragEnter = _ref2.onDragEnter,
+      onDragLeave = _ref2.onDragLeave,
+      onDragOver = _ref2.onDragOver,
+      onDrop = _ref2.onDrop,
+      onDropAccepted = _ref2.onDropAccepted,
+      onDropRejected = _ref2.onDropRejected,
+      onFileDialogCancel = _ref2.onFileDialogCancel,
+      _ref2$preventDropOnDo = _ref2.preventDropOnDocument,
+      preventDropOnDocument = _ref2$preventDropOnDo === void 0 ? true : _ref2$preventDropOnDo,
+      _ref2$noClick = _ref2.noClick,
+      noClick = _ref2$noClick === void 0 ? false : _ref2$noClick,
+      _ref2$noKeyboard = _ref2.noKeyboard,
+      noKeyboard = _ref2$noKeyboard === void 0 ? false : _ref2$noKeyboard,
+      _ref2$noDrag = _ref2.noDrag,
+      noDrag = _ref2$noDrag === void 0 ? false : _ref2$noDrag,
+      _ref2$noDragEventsBub = _ref2.noDragEventsBubbling,
+      noDragEventsBubbling = _ref2$noDragEventsBub === void 0 ? false : _ref2$noDragEventsBub;
+
+  var rootRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+  var inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+
+  var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_0__["useReducer"])(reducer, initialState),
+      _useReducer2 = _slicedToArray(_useReducer, 2),
+      state = _useReducer2[0],
+      dispatch = _useReducer2[1];
+
+  var isFocused = state.isFocused,
+      isFileDialogActive = state.isFileDialogActive,
+      draggedFiles = state.draggedFiles; // Fn for opening the file dialog programmatically
+
+  var openFileDialog = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function () {
+    if (inputRef.current) {
+      dispatch({
+        type: 'openDialog'
+      });
+      inputRef.current.value = null;
+      inputRef.current.click();
+    }
+  }, [dispatch]); // Update file dialog active state when the window is focused on
+
+  var onWindowFocus = function onWindowFocus() {
+    // Execute the timeout only if the file dialog is opened in the browser
+    if (isFileDialogActive) {
+      setTimeout(function () {
+        if (inputRef.current) {
+          var files = inputRef.current.files;
+
+          if (!files.length) {
+            dispatch({
+              type: 'closeDialog'
+            });
+
+            if (typeof onFileDialogCancel === 'function') {
+              onFileDialogCancel();
+            }
+          }
+        }
+      }, 300);
+    }
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    window.addEventListener('focus', onWindowFocus, false);
+    return function () {
+      window.removeEventListener('focus', onWindowFocus, false);
+    };
+  }, [inputRef, isFileDialogActive, onFileDialogCancel]); // Cb to open the file dialog when SPACE/ENTER occurs on the dropzone
+
+  var onKeyDownCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (event) {
+    // Ignore keyboard events bubbling up the DOM tree
+    if (!rootRef.current || !rootRef.current.isEqualNode(event.target)) {
+      return;
+    }
+
+    if (event.keyCode === 32 || event.keyCode === 13) {
+      event.preventDefault();
+      openFileDialog();
+    }
+  }, [rootRef, inputRef]); // Update focus state for the dropzone
+
+  var onFocusCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function () {
+    dispatch({
+      type: 'focus'
+    });
+  }, []);
+  var onBlurCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function () {
+    dispatch({
+      type: 'blur'
+    });
+  }, []); // Cb to open the file dialog when click occurs on the dropzone
+
+  var onClickCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function () {
+    if (noClick) {
+      return;
+    } // In IE11/Edge the file-browser dialog is blocking, therefore, use setTimeout()
+    // to ensure React can handle state changes
+    // See: https://github.com/react-dropzone/react-dropzone/issues/450
+
+
+    if (Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["isIeOrEdge"])()) {
+      setTimeout(openFileDialog, 0);
+    } else {
+      openFileDialog();
+    }
+  }, [inputRef, noClick]);
+  var dragTargetsRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])([]);
+
+  var onDocumentDrop = function onDocumentDrop(event) {
+    if (rootRef.current && rootRef.current.contains(event.target)) {
+      // If we intercepted an event for our instance, let it propagate down to the instance's onDrop handler
+      return;
+    }
+
+    event.preventDefault();
+    dragTargetsRef.current = [];
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    if (preventDropOnDocument) {
+      document.addEventListener('dragover', _utils_index__WEBPACK_IMPORTED_MODULE_3__["onDocumentDragOver"], false);
+      document.addEventListener('drop', onDocumentDrop, false);
+    }
+
+    return function () {
+      if (preventDropOnDocument) {
+        document.removeEventListener('dragover', _utils_index__WEBPACK_IMPORTED_MODULE_3__["onDocumentDragOver"]);
+        document.removeEventListener('drop', onDocumentDrop);
+      }
+    };
+  }, [rootRef, preventDropOnDocument]);
+  var onDragEnterCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (event) {
+    event.preventDefault(); // Persist here because we need the event later after getFilesFromEvent() is done
+
+    event.persist();
+    stopPropagation(event); // Count the dropzone and any children that are entered.
+
+    if (dragTargetsRef.current.indexOf(event.target) === -1) {
+      dragTargetsRef.current = [].concat(_toConsumableArray(dragTargetsRef.current), [event.target]);
+    }
+
+    if (Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["isEvtWithFiles"])(event)) {
+      Promise.resolve(getFilesFromEvent(event)).then(function (draggedFiles) {
+        if (Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["isPropagationStopped"])(event) && !noDragEventsBubbling) {
+          return;
+        }
+
+        dispatch({
+          draggedFiles: draggedFiles,
+          isDragActive: true,
+          type: 'setDraggedFiles'
+        });
+
+        if (onDragEnter) {
+          onDragEnter(event);
+        }
+      });
+    }
+  }, [getFilesFromEvent, onDragEnter, noDragEventsBubbling]);
+  var onDragOverCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (event) {
+    event.preventDefault();
+    event.persist();
+    stopPropagation(event);
+
+    if (event.dataTransfer) {
+      try {
+        event.dataTransfer.dropEffect = 'copy';
+      } catch (_unused) {}
+      /* eslint-disable-line no-empty */
+
+    }
+
+    if (Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["isEvtWithFiles"])(event) && onDragOver) {
+      onDragOver(event);
+    }
+
+    return false;
+  }, [onDragOver, noDragEventsBubbling]);
+  var onDragLeaveCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (event) {
+    event.preventDefault();
+    event.persist();
+    stopPropagation(event); // Only deactivate once the dropzone and all children have been left
+
+    var targets = dragTargetsRef.current.filter(function (target) {
+      return target !== event.target && rootRef.current && rootRef.current.contains(target);
+    });
+    dragTargetsRef.current = targets;
+
+    if (targets.length > 0) {
+      return;
+    }
+
+    dispatch({
+      isDragActive: false,
+      type: 'setDraggedFiles',
+      draggedFiles: []
+    });
+
+    if (Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["isEvtWithFiles"])(event) && onDragLeave) {
+      onDragLeave(event);
+    }
+  }, [rootRef, onDragLeave, noDragEventsBubbling]);
+  var onDropCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (event) {
+    event.preventDefault(); // Persist here because we need the event later after getFilesFromEvent() is done
+
+    event.persist();
+    stopPropagation(event);
+    dragTargetsRef.current = [];
+    dispatch({
+      type: 'reset'
+    });
+
+    if (Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["isEvtWithFiles"])(event)) {
+      Promise.resolve(getFilesFromEvent(event)).then(function (files) {
+        if (Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["isPropagationStopped"])(event) && !noDragEventsBubbling) {
+          return;
+        }
+
+        var acceptedFiles = [];
+        var rejectedFiles = [];
+        files.forEach(function (file) {
+          if (Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["fileAccepted"])(file, accept) && Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["fileMatchSize"])(file, minSize, maxSize)) {
+            acceptedFiles.push(file);
+          } else {
+            rejectedFiles.push(file);
+          }
+        });
+
+        if (!multiple && acceptedFiles.length > 1) {
+          rejectedFiles.push.apply(rejectedFiles, _toConsumableArray(acceptedFiles.splice(0))); // Reject everything and empty accepted files
+        }
+
+        dispatch({
+          acceptedFiles: acceptedFiles,
+          rejectedFiles: rejectedFiles,
+          type: 'setFiles'
+        });
+
+        if (onDrop) {
+          onDrop(acceptedFiles, rejectedFiles, event);
+        }
+
+        if (rejectedFiles.length > 0 && onDropRejected) {
+          onDropRejected(rejectedFiles, event);
+        }
+
+        if (acceptedFiles.length > 0 && onDropAccepted) {
+          onDropAccepted(acceptedFiles, event);
+        }
+      });
+    }
+  }, [multiple, accept, minSize, maxSize, getFilesFromEvent, onDrop, onDropAccepted, onDropRejected, noDragEventsBubbling]);
+
+  var composeHandler = function composeHandler(fn) {
+    return disabled ? null : fn;
+  };
+
+  var composeKeyboardHandler = function composeKeyboardHandler(fn) {
+    return noKeyboard ? null : composeHandler(fn);
+  };
+
+  var composeDragHandler = function composeDragHandler(fn) {
+    return noDrag ? null : composeHandler(fn);
+  };
+
+  var stopPropagation = function stopPropagation(event) {
+    if (noDragEventsBubbling) {
+      event.stopPropagation();
+    }
+  };
+
+  var getRootProps = Object(react__WEBPACK_IMPORTED_MODULE_0__["useMemo"])(function () {
+    return function () {
+      var _ref3 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+          _ref3$refKey = _ref3.refKey,
+          refKey = _ref3$refKey === void 0 ? 'ref' : _ref3$refKey,
+          onKeyDown = _ref3.onKeyDown,
+          onFocus = _ref3.onFocus,
+          onBlur = _ref3.onBlur,
+          onClick = _ref3.onClick,
+          onDragEnter = _ref3.onDragEnter,
+          onDragOver = _ref3.onDragOver,
+          onDragLeave = _ref3.onDragLeave,
+          onDrop = _ref3.onDrop,
+          rest = _objectWithoutProperties(_ref3, ["refKey", "onKeyDown", "onFocus", "onBlur", "onClick", "onDragEnter", "onDragOver", "onDragLeave", "onDrop"]);
+
+      return _objectSpread(_defineProperty({
+        onKeyDown: composeKeyboardHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onKeyDown, onKeyDownCb)),
+        onFocus: composeKeyboardHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onFocus, onFocusCb)),
+        onBlur: composeKeyboardHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onBlur, onBlurCb)),
+        onClick: composeHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onClick, onClickCb)),
+        onDragEnter: composeDragHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onDragEnter, onDragEnterCb)),
+        onDragOver: composeDragHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onDragOver, onDragOverCb)),
+        onDragLeave: composeDragHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onDragLeave, onDragLeaveCb)),
+        onDrop: composeDragHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onDrop, onDropCb))
+      }, refKey, rootRef), !disabled && !noKeyboard ? {
+        tabIndex: 0
+      } : {}, {}, rest);
+    };
+  }, [rootRef, onKeyDownCb, onFocusCb, onBlurCb, onClickCb, onDragEnterCb, onDragOverCb, onDragLeaveCb, onDropCb, noKeyboard, noDrag, disabled]);
+  var onInputElementClick = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (event) {
+    event.stopPropagation();
+  }, []);
+  var getInputProps = Object(react__WEBPACK_IMPORTED_MODULE_0__["useMemo"])(function () {
+    return function () {
+      var _ref4 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+          _ref4$refKey = _ref4.refKey,
+          refKey = _ref4$refKey === void 0 ? 'ref' : _ref4$refKey,
+          onChange = _ref4.onChange,
+          onClick = _ref4.onClick,
+          rest = _objectWithoutProperties(_ref4, ["refKey", "onChange", "onClick"]);
+
+      var inputProps = _defineProperty({
+        accept: accept,
+        multiple: multiple,
+        type: 'file',
+        style: {
+          display: 'none'
+        },
+        onChange: composeHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onChange, onDropCb)),
+        onClick: composeHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onClick, onInputElementClick)),
+        autoComplete: 'off',
+        tabIndex: -1
+      }, refKey, inputRef);
+
+      return _objectSpread({}, inputProps, {}, rest);
+    };
+  }, [inputRef, accept, multiple, onDropCb, disabled]);
+  var fileCount = draggedFiles.length;
+  var isMultipleAllowed = multiple || fileCount <= 1;
+  var isDragAccept = fileCount > 0 && Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["allFilesAccepted"])(draggedFiles, accept, minSize, maxSize);
+  var isDragReject = fileCount > 0 && (!isDragAccept || !isMultipleAllowed);
+  return _objectSpread({}, state, {
+    isDragAccept: isDragAccept,
+    isDragReject: isDragReject,
+    isFocused: isFocused && !disabled,
+    getRootProps: getRootProps,
+    getInputProps: getInputProps,
+    rootRef: rootRef,
+    inputRef: inputRef,
+    open: composeHandler(openFileDialog)
+  });
+}
+
+function reducer(state, action) {
+  /* istanbul ignore next */
+  switch (action.type) {
+    case 'focus':
+      return _objectSpread({}, state, {
+        isFocused: true
+      });
+
+    case 'blur':
+      return _objectSpread({}, state, {
+        isFocused: false
+      });
+
+    case 'openDialog':
+      return _objectSpread({}, state, {
+        isFileDialogActive: true
+      });
+
+    case 'closeDialog':
+      return _objectSpread({}, state, {
+        isFileDialogActive: false
+      });
+
+    case 'setDraggedFiles':
+      /* eslint no-case-declarations: 0 */
+      var isDragActive = action.isDragActive,
+          draggedFiles = action.draggedFiles;
+      return _objectSpread({}, state, {
+        draggedFiles: draggedFiles,
+        isDragActive: isDragActive
+      });
+
+    case 'setFiles':
+      return _objectSpread({}, state, {
+        acceptedFiles: action.acceptedFiles,
+        rejectedFiles: action.rejectedFiles
+      });
+
+    case 'reset':
+      return _objectSpread({}, state, {
+        isFileDialogActive: false,
+        isDragActive: false,
+        draggedFiles: []
+      });
+
+    default:
+      return state;
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-dropzone/dist/es/utils/index.js":
+/*!************************************************************!*\
+  !*** ./node_modules/react-dropzone/dist/es/utils/index.js ***!
+  \************************************************************/
+/*! exports provided: fileAccepted, fileMatchSize, allFilesAccepted, isPropagationStopped, isEvtWithFiles, isKindFile, onDocumentDragOver, isIeOrEdge, composeEventHandlers */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fileAccepted", function() { return fileAccepted; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fileMatchSize", function() { return fileMatchSize; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "allFilesAccepted", function() { return allFilesAccepted; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isPropagationStopped", function() { return isPropagationStopped; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isEvtWithFiles", function() { return isEvtWithFiles; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isKindFile", function() { return isKindFile; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onDocumentDragOver", function() { return onDocumentDragOver; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isIeOrEdge", function() { return isIeOrEdge; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "composeEventHandlers", function() { return composeEventHandlers; });
+/* harmony import */ var attr_accept__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! attr-accept */ "./node_modules/attr-accept/dist/index.js");
+/* harmony import */ var attr_accept__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(attr_accept__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+ // Firefox versions prior to 53 return a bogus MIME type for every file drag, so dragovers with
+// that MIME type will always be accepted
+
+function fileAccepted(file, accept) {
+  return file.type === 'application/x-moz-file' || attr_accept__WEBPACK_IMPORTED_MODULE_0___default()(file, accept);
+}
+function fileMatchSize(file, minSize, maxSize) {
+  if (isDefined(file.size)) {
+    if (isDefined(minSize) && isDefined(maxSize)) return file.size >= minSize && file.size <= maxSize;else if (isDefined(minSize)) return file.size >= minSize;else if (isDefined(maxSize)) return file.size <= maxSize;
+  }
+
+  return true;
+}
+
+function isDefined(value) {
+  return value !== undefined && value !== null;
+}
+
+function allFilesAccepted(files, accept, minSize, maxSize) {
+  return files.every(function (file) {
+    return fileAccepted(file, accept) && fileMatchSize(file, minSize, maxSize);
+  });
+} // React's synthetic events has event.isPropagationStopped,
+// but to remain compatibility with other libs (Preact) fall back
+// to check event.cancelBubble
+
+function isPropagationStopped(event) {
+  if (typeof event.isPropagationStopped === 'function') {
+    return event.isPropagationStopped();
+  } else if (typeof event.cancelBubble !== 'undefined') {
+    return event.cancelBubble;
+  }
+
+  return false;
+}
+function isEvtWithFiles(event) {
+  if (!event.dataTransfer) {
+    return !!event.target && !!event.target.files;
+  } // https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/types
+  // https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API/Recommended_drag_types#file
+
+
+  return Array.prototype.some.call(event.dataTransfer.types, function (type) {
+    return type === 'Files' || type === 'application/x-moz-file';
+  });
+}
+function isKindFile(item) {
+  return _typeof(item) === 'object' && item !== null && item.kind === 'file';
+} // allow the entire document to be a drag target
+
+function onDocumentDragOver(event) {
+  event.preventDefault();
+}
+
+function isIe(userAgent) {
+  return userAgent.indexOf('MSIE') !== -1 || userAgent.indexOf('Trident/') !== -1;
+}
+
+function isEdge(userAgent) {
+  return userAgent.indexOf('Edge/') !== -1;
+}
+
+function isIeOrEdge() {
+  var userAgent = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : window.navigator.userAgent;
+  return isIe(userAgent) || isEdge(userAgent);
+}
+/**
+ * This is intended to be used to compose event handlers
+ * They are executed in order until one of them calls `event.isPropagationStopped()`.
+ * Note that the check is done on the first invoke too,
+ * meaning that if propagation was stopped before invoking the fns,
+ * no handlers will be executed.
+ *
+ * @param {Function} fns the event hanlder functions
+ * @return {Function} the event handler to add to an element
+ */
+
+function composeEventHandlers() {
+  for (var _len = arguments.length, fns = new Array(_len), _key = 0; _key < _len; _key++) {
+    fns[_key] = arguments[_key];
+  }
+
+  return function (event) {
+    for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+      args[_key2 - 1] = arguments[_key2];
+    }
+
+    return fns.some(function (fn) {
+      if (!isPropagationStopped(event) && fn) {
+        fn.apply(void 0, [event].concat(args));
+      }
+
+      return isPropagationStopped(event);
+    });
+  };
+}
+
+/***/ }),
+
 /***/ "./node_modules/react-is/cjs/react-is.development.js":
 /*!***********************************************************!*\
   !*** ./node_modules/react-is/cjs/react-is.development.js ***!
@@ -55168,6 +56392,235 @@ function warning(condition, message) {
 
 /***/ }),
 
+/***/ "./node_modules/tslib/tslib.es6.js":
+/*!*****************************************!*\
+  !*** ./node_modules/tslib/tslib.es6.js ***!
+  \*****************************************/
+/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__extends", function() { return __extends; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function() { return __assign; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__rest", function() { return __rest; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__decorate", function() { return __decorate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__param", function() { return __param; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function() { return __metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function() { return __awaiter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function() { return __generator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function() { return __exportStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function() { return __values; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function() { return __read; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spread", function() { return __spread; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spreadArrays", function() { return __spreadArrays; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__await", function() { return __await; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function() { return __asyncGenerator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function() { return __asyncDelegator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncValues", function() { return __asyncValues; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function() { return __makeTemplateObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function() { return __importStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function() { return __importDefault; });
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License. You may obtain a copy of the
+License at http://www.apache.org/licenses/LICENSE-2.0
+
+THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+MERCHANTABLITY OR NON-INFRINGEMENT.
+
+See the Apache Version 2.0 License for specific language governing permissions
+and limitations under the License.
+***************************************************************************** */
+/* global Reflect, Promise */
+
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+function __extends(d, b) {
+    extendStatics(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    }
+    return __assign.apply(this, arguments);
+}
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+}
+
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+
+function __param(paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+}
+
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+
+function __generator(thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+}
+
+function __exportStar(m, exports) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+function __values(o) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator], i = 0;
+    if (m) return m.call(o);
+    return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+}
+
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+}
+
+function __spread() {
+    for (var ar = [], i = 0; i < arguments.length; i++)
+        ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+
+function __spreadArrays() {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
+    function fulfill(value) { resume("next", value); }
+    function reject(value) { resume("throw", value); }
+    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+}
+
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+}
+
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+}
+
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result.default = mod;
+    return result;
+}
+
+function __importDefault(mod) {
+    return (mod && mod.__esModule) ? mod : { default: mod };
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/value-equal/esm/value-equal.js":
 /*!*****************************************************!*\
   !*** ./node_modules/value-equal/esm/value-equal.js ***!
@@ -55327,6 +56780,10 @@ var _Signup_page = __webpack_require__(/*! ./containers/signUpPage/Signup_page *
 
 var _Signup_page2 = _interopRequireDefault(_Signup_page);
 
+var _CreateListing = __webpack_require__(/*! ./containers/create_listing/CreateListing */ "./src/containers/create_listing/CreateListing.js");
+
+var _CreateListing2 = _interopRequireDefault(_CreateListing);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
@@ -55344,6 +56801,7 @@ var App = function App() {
             null,
             _react2.default.createElement(_reactRouterDom.Route, { path: "/sell_car", component: _SellCarPage2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { path: "/signup", component: _Signup_page2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: "/create_listing", component: _CreateListing2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { path: "/", component: _Main_page2.default })
         )
     );
@@ -55459,9 +56917,15 @@ var Input = function Input(props) {
         arrayOfStyles.push(_input2.default.invalid);
     }
 
-    if (props.notMatched) {
-        arrayOfStyles.push(_input2.default.invalid);
+    var selectStyles = [];
+
+    if (!props.selectValid && props.clicked) {
+        selectStyles.push(_input2.default.invalid);
     }
+    /*
+        if(props.notMatched){
+            arrayOfStyles.push(classes.invalid);
+        }*/
 
     switch (props.element) {
 
@@ -55475,7 +56939,7 @@ var Input = function Input(props) {
                     _react2.default.createElement(
                         'label',
                         { htmlFor: 'email' },
-                        'Email'
+                        'Email Address'
                     ),
                     _react2.default.createElement(
                         'p',
@@ -55548,6 +57012,408 @@ var Input = function Input(props) {
             return _react2.default.createElement('input', { className: _input2.default.submit,
                 type: 'submit',
                 value: 'Log In' });
+        case 'year':
+            return _react2.default.createElement(
+                'div',
+                { className: _input2.default.selectWrapper },
+                _react2.default.createElement(
+                    'label',
+                    { htmlFor: 'year' },
+                    'Year'
+                ),
+                _react2.default.createElement(
+                    'select',
+                    { className: selectStyles.join(' '),
+                        disabled: props.invalid,
+                        name: 'year',
+                        onChange: props.onChangeHandler },
+                    _react2.default.createElement(
+                        'option',
+                        { value: 'select' },
+                        'Select year'
+                    ),
+                    props.children
+                )
+            );
+        case 'make':
+            return _react2.default.createElement(
+                'div',
+                { className: _input2.default.selectWrapper },
+                _react2.default.createElement(
+                    'label',
+                    { htmlFor: 'make' },
+                    'Make'
+                ),
+                _react2.default.createElement(
+                    'select',
+                    { className: selectStyles.join(' '),
+                        disabled: props.invalid,
+                        name: 'make',
+                        onChange: props.onChangeHandler },
+                    _react2.default.createElement(
+                        'option',
+                        { value: 'select' },
+                        'Select make'
+                    ),
+                    props.children
+                )
+            );
+        case 'model':
+            return _react2.default.createElement(
+                'div',
+                { className: _input2.default.selectWrapper },
+                _react2.default.createElement(
+                    'label',
+                    { htmlFor: 'model' },
+                    'Model'
+                ),
+                _react2.default.createElement(
+                    'select',
+                    { className: selectStyles.join(' '),
+                        disabled: props.invalid,
+                        name: 'model',
+                        onChange: props.onChangeHandler },
+                    _react2.default.createElement(
+                        'option',
+                        { value: 'select' },
+                        'Select model'
+                    ),
+                    props.children
+                )
+            );
+        case 'bodyStyle':
+            return _react2.default.createElement(
+                'div',
+                { className: _input2.default.selectWrapper },
+                _react2.default.createElement(
+                    'label',
+                    { htmlFor: 'bodyStyle' },
+                    'Body Style'
+                ),
+                _react2.default.createElement(
+                    'select',
+                    { className: selectStyles.join(' '),
+                        disabled: props.invalid,
+                        name: 'bodyStyle',
+                        onChange: props.onChangeHandler },
+                    _react2.default.createElement(
+                        'option',
+                        { value: 'select' },
+                        'Select body style'
+                    ),
+                    props.children
+                )
+            );
+        case 'transmission':
+            return _react2.default.createElement(
+                'div',
+                { className: _input2.default.selectWrapper },
+                _react2.default.createElement(
+                    'label',
+                    { htmlFor: 'transmission' },
+                    'Transmission'
+                ),
+                _react2.default.createElement(
+                    'select',
+                    { className: selectStyles.join(' '),
+                        disabled: props.invalid,
+                        name: 'transmission',
+                        onChange: props.onChangeHandler },
+                    _react2.default.createElement(
+                        'option',
+                        { value: 'select' },
+                        'Select transmission'
+                    ),
+                    props.children
+                )
+            );
+        case 'exteriorColor':
+            return _react2.default.createElement(
+                'div',
+                { className: _input2.default.selectWrapper },
+                _react2.default.createElement(
+                    'label',
+                    { htmlFor: 'exteriorColor' },
+                    'Exterior Color'
+                ),
+                _react2.default.createElement(
+                    'select',
+                    { className: selectStyles.join(' '),
+                        disabled: props.invalid,
+                        name: 'exteriorColor',
+                        onChange: props.onChangeHandler },
+                    _react2.default.createElement(
+                        'option',
+                        { value: 'select' },
+                        'Select exterior color'
+                    ),
+                    props.children
+                )
+            );
+        case 'interiorColor':
+            return _react2.default.createElement(
+                'div',
+                { className: _input2.default.selectWrapper },
+                _react2.default.createElement(
+                    'label',
+                    { htmlFor: 'interiorColor' },
+                    'Interior Color'
+                ),
+                _react2.default.createElement(
+                    'select',
+                    { className: selectStyles.join(' '),
+                        disabled: props.invalid,
+                        name: 'interiorColor',
+                        onChange: props.onChangeHandler },
+                    _react2.default.createElement(
+                        'option',
+                        { value: 'select' },
+                        'Select interior color'
+                    ),
+                    props.children
+                )
+            );
+        case 'numberOfDoors':
+            return _react2.default.createElement(
+                'div',
+                { className: _input2.default.selectWrapper },
+                _react2.default.createElement(
+                    'label',
+                    { htmlFor: 'numberOfDoors' },
+                    'Number of doors'
+                ),
+                _react2.default.createElement(
+                    'select',
+                    { className: selectStyles.join(' '),
+                        disabled: props.invalid,
+                        name: 'numberOfDoors',
+                        onChange: props.onChangeHandler },
+                    _react2.default.createElement(
+                        'option',
+                        { value: 'select' },
+                        'Select number of doors'
+                    ),
+                    props.children
+                )
+            );
+        case 'fuelType':
+            return _react2.default.createElement(
+                'div',
+                { className: _input2.default.selectWrapper },
+                _react2.default.createElement(
+                    'label',
+                    { htmlFor: 'fuelType' },
+                    'Fuel type'
+                ),
+                _react2.default.createElement(
+                    'select',
+                    { className: selectStyles.join(' '),
+                        disabled: props.invalid,
+                        name: 'fuelType',
+                        onChange: props.onChangeHandler },
+                    _react2.default.createElement(
+                        'option',
+                        { value: 'select' },
+                        'Select fuel type'
+                    ),
+                    props.children
+                )
+            );
+        case 'condition':
+            return _react2.default.createElement(
+                'div',
+                { className: _input2.default.selectWrapper },
+                _react2.default.createElement(
+                    'label',
+                    { htmlFor: 'condition' },
+                    'Condition'
+                ),
+                _react2.default.createElement(
+                    'select',
+                    { className: selectStyles.join(' '),
+                        disabled: props.invalid,
+                        name: 'condition',
+                        onChange: props.onChangeHandler },
+                    _react2.default.createElement(
+                        'option',
+                        { value: 'select' },
+                        'Select condition'
+                    ),
+                    props.children
+                )
+            );
+        case 'price':
+            return _react2.default.createElement(
+                _react2.default.Fragment,
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { className: _input2.default.wrapper },
+                    _react2.default.createElement(
+                        'label',
+                        { htmlFor: 'price' },
+                        'Price'
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        props.error
+                    )
+                ),
+                _react2.default.createElement('input', { type: 'text',
+                    className: arrayOfStyles.join(' '),
+                    name: 'price',
+                    value: props.value,
+                    onChange: props.onChangeHandler,
+                    onBlur: props.onBlurHandler,
+                    onKeyDown: props.onKeyDownHandler })
+            );
+        case 'mileage':
+            return _react2.default.createElement(
+                _react2.default.Fragment,
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { className: _input2.default.wrapper },
+                    _react2.default.createElement(
+                        'label',
+                        { htmlFor: 'mileage' },
+                        'Mileage'
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        props.error
+                    )
+                ),
+                _react2.default.createElement('input', { type: 'text',
+                    className: arrayOfStyles.join(' '),
+                    name: 'mileage',
+                    value: props.value,
+                    onChange: props.onChangeHandler,
+                    onBlur: props.onBlurHandler,
+                    onKeyDown: props.onKeyDownHandler })
+            );
+        case 'createListing':
+            return _react2.default.createElement('input', { className: _input2.default.submit,
+                type: 'submit',
+                value: 'Create Listing' });
+        case 'description':
+            return _react2.default.createElement(
+                'div',
+                { className: _input2.default.textarea },
+                _react2.default.createElement(
+                    'label',
+                    { htmlFor: 'textarea' },
+                    'Description(optional)'
+                ),
+                _react2.default.createElement(
+                    'textarea',
+                    { name: 'textarea', cols: '65', rows: '10',
+                        onChange: props.onChangeHandler },
+                    props.value
+                )
+            );
+        case 'firstName':
+            return _react2.default.createElement(
+                _react2.default.Fragment,
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { className: _input2.default.wrapper },
+                    _react2.default.createElement(
+                        'label',
+                        { htmlFor: 'firstName' },
+                        'First Name'
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        props.error
+                    )
+                ),
+                _react2.default.createElement('input', { type: 'text',
+                    className: arrayOfStyles.join(' '),
+                    name: 'firstName',
+                    value: props.value,
+                    onChange: props.onChangeHandler,
+                    onBlur: props.onBlurHandler })
+            );
+        case 'lastName':
+            return _react2.default.createElement(
+                _react2.default.Fragment,
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { className: _input2.default.wrapper },
+                    _react2.default.createElement(
+                        'label',
+                        { htmlFor: 'lastName' },
+                        'Last Name'
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        props.error
+                    )
+                ),
+                _react2.default.createElement('input', { type: 'text',
+                    className: arrayOfStyles.join(' '),
+                    name: 'lastName',
+                    value: props.value,
+                    onChange: props.onChangeHandler,
+                    onBlur: props.onBlurHandler })
+            );
+        case 'phoneNumber':
+            return _react2.default.createElement(
+                _react2.default.Fragment,
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { className: _input2.default.wrapper },
+                    _react2.default.createElement(
+                        'label',
+                        { htmlFor: 'phoneNumber' },
+                        'Phone number'
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        props.error
+                    )
+                ),
+                _react2.default.createElement('input', { type: 'text',
+                    className: arrayOfStyles.join(' '),
+                    name: 'phoneNumber',
+                    value: props.value,
+                    onChange: props.onChangeHandler,
+                    onBlur: props.onBlurHandler })
+            );
+        case 'zipCode':
+            return _react2.default.createElement(
+                _react2.default.Fragment,
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { className: _input2.default.wrapper },
+                    _react2.default.createElement(
+                        'label',
+                        { htmlFor: 'zip code' },
+                        'zip code'
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        props.error
+                    )
+                ),
+                _react2.default.createElement('input', { type: 'number',
+                    className: arrayOfStyles.join(' '),
+                    name: 'zip code',
+                    value: props.value,
+                    onChange: props.onChangeHandler,
+                    onBlur: props.onBlurHandler })
+            );
     }
 };
 
@@ -56988,6 +58854,744 @@ exports.default = Title;
 
 /***/ }),
 
+/***/ "./src/containers/create_listing/CreateListing.css":
+/*!*********************************************************!*\
+  !*** ./src/containers/create_listing/CreateListing.css ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./CreateListing.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/create_listing/CreateListing.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+
+/***/ }),
+
+/***/ "./src/containers/create_listing/CreateListing.js":
+/*!********************************************************!*\
+  !*** ./src/containers/create_listing/CreateListing.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _CreateListing = __webpack_require__(/*! ./CreateListing.css */ "./src/containers/create_listing/CreateListing.css");
+
+var _CreateListing2 = _interopRequireDefault(_CreateListing);
+
+var _axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+
+var _axios2 = _interopRequireDefault(_axios);
+
+var _Inputs = __webpack_require__(/*! ../../components/UIElements/inputs/Inputs */ "./src/components/UIElements/inputs/Inputs.js");
+
+var _Inputs2 = _interopRequireDefault(_Inputs);
+
+var _reactDropzone = __webpack_require__(/*! react-dropzone */ "./node_modules/react-dropzone/dist/es/index.js");
+
+var _reactDropzone2 = _interopRequireDefault(_reactDropzone);
+
+var _Spinner = __webpack_require__(/*! ../../components/UIElements/spinner/Spinner */ "./src/components/UIElements/spinner/Spinner.js");
+
+var _Spinner2 = _interopRequireDefault(_Spinner);
+
+var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var CreateListing = function (_Component) {
+    _inherits(CreateListing, _Component);
+
+    function CreateListing() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, CreateListing);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = CreateListing.__proto__ || Object.getPrototypeOf(CreateListing)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+            elements: {
+                year: {
+                    type: 'year',
+                    value: [],
+                    active: true,
+                    valid: false,
+                    clicked: false,
+                    data: ''
+                },
+                make: {
+                    type: 'make',
+                    value: [],
+                    active: false,
+                    valid: false,
+                    clicked: false,
+                    data: ''
+                },
+                model: {
+                    type: 'model',
+                    value: [],
+                    active: false,
+                    valid: false,
+                    clicked: false,
+                    data: ''
+                },
+                bodyStyle: {
+                    type: 'bodyStyle',
+                    value: [],
+                    active: false,
+                    valid: false,
+                    clicked: false,
+                    data: ''
+                },
+                transmission: {
+                    type: 'transmission',
+                    value: [],
+                    active: false,
+                    valid: false,
+                    clicked: false,
+                    data: ''
+                },
+                exteriorColor: {
+                    type: 'exteriorColor',
+                    value: [],
+                    active: false,
+                    valid: false,
+                    clicked: false,
+                    data: ''
+                },
+                interiorColor: {
+                    type: 'interiorColor',
+                    value: [],
+                    active: false,
+                    valid: false,
+                    clicked: false,
+                    data: ''
+                },
+                numberOfDoors: {
+                    type: 'numberOfDoors',
+                    value: [],
+                    active: false,
+                    valid: false,
+                    clicked: false,
+                    data: ''
+                },
+                fuelType: {
+                    type: 'fuelType',
+                    value: [],
+                    active: false,
+                    valid: false,
+                    clicked: false,
+                    data: ''
+                },
+                condition: {
+                    type: 'condition',
+                    value: [],
+                    active: false,
+                    valid: false,
+                    clicked: false,
+                    data: ''
+                }
+            },
+            inputs: {
+                price: {
+                    type: 'price',
+                    value: '',
+                    valid: false,
+                    touched: false,
+                    errorMessage: '',
+                    rules: {
+                        required: true
+                    }
+                },
+                mileage: {
+                    type: 'mileage',
+                    value: '',
+                    valid: false,
+                    touched: false,
+                    errorMessage: '',
+                    rules: {
+                        required: true
+                    }
+                },
+                description: {
+                    type: 'description',
+                    value: '',
+                    valid: true,
+                    touched: false,
+                    errorMessage: '',
+                    rules: {
+                        required: false
+                    }
+                },
+                firstName: {
+                    type: 'firstName',
+                    value: '',
+                    valid: false,
+                    touched: false,
+                    errorMessage: '',
+                    rules: {
+                        required: true
+                    }
+                },
+                lastName: {
+                    type: 'lastName',
+                    value: '',
+                    valid: false,
+                    touched: false,
+                    errorMessage: '',
+                    rules: {
+                        required: true
+                    }
+                },
+                email: {
+                    type: 'email',
+                    value: '',
+                    valid: false,
+                    touched: false,
+                    errorMessage: '',
+                    rules: {
+                        required: true
+                    }
+                },
+                phoneNumber: {
+                    type: 'phoneNumber',
+                    value: '',
+                    valid: false,
+                    touched: false,
+                    errorMessage: '',
+                    rules: {
+                        required: true
+                    }
+                },
+                zipCode: {
+                    type: 'zipCode',
+                    value: null,
+                    valid: false,
+                    touched: false,
+                    errorMessage: '',
+                    rules: {
+                        required: true
+                    }
+                }
+            },
+            images: [],
+            formIsValid: true,
+            loading: false,
+            formSubmitted: false
+        }, _this.onChangeHandler = function (event, current) {
+            var value = event.target.value;
+
+            var copyElements = _extends({}, _this.state.elements);
+
+            copyElements[current.type].data = event.target.value;
+
+            if (value === 'select') {
+                copyElements[current.type].valid = false;
+            } else {
+                copyElements[current.type].valid = true;
+            }
+
+            var arrayOfValues = [];
+            for (var prop in _this.state.elements) {
+                arrayOfValues.push(prop);
+            }
+
+            var index = arrayOfValues.findIndex(function (element) {
+                return element === current.type;
+            });
+            var nextElement = arrayOfValues[index + 1];
+
+            var element = arrayOfValues[index];
+            if (element === arrayOfValues[arrayOfValues.length - 1]) {
+                return;
+            } else {
+
+                _axios2.default.post('/get_' + nextElement, {
+                    type: nextElement,
+                    params: value
+                }).then(function (response) {
+                    if (response.data !== '') {
+                        copyElements[nextElement].value = response.data;
+                        copyElements[nextElement].active = true;
+                    } else if (response.data === '') {
+                        var shortArray = arrayOfValues.slice(index + 1);
+
+                        shortArray.forEach(function (element) {
+                            copyElements[element].active = false;
+                            copyElements[element].value = [];
+                            copyElements[element].data = '';
+                        });
+                    }
+
+                    _this.setState({
+                        elements: copyElements
+                    });
+                });
+            }
+        }, _this.getOptionsForRender = function (element) {
+
+            var options = element.value.map(function (current) {
+                return _react2.default.createElement(
+                    'option',
+                    { value: current },
+                    current
+                );
+            });
+
+            return options;
+        }, _this.onDrop = function (acceptedFiles) {
+            var files = _this.state.images;
+
+            for (var i = 0; i < acceptedFiles.length; i++) {
+                files.push(acceptedFiles[i]);
+            }
+
+            _this.setState({
+                images: files
+            }, function () {
+                console.log(_this.state.images);
+            });
+        }, _this.onSubmitHandler = function (event) {
+            event.preventDefault();
+
+            var valid = _this.validateForm();
+
+            var arrayOfElements = [];
+
+            var copyElements = _extends({}, _this.state.elements);
+
+            for (var prop in copyElements) {
+                arrayOfElements.push(copyElements[prop]);
+            }
+
+            arrayOfElements.forEach(function (element) {
+                copyElements[element.type].clicked = true;
+            });
+
+            var copyInputs = _extends({}, _this.state.inputs);
+
+            var arrayOfInputs = [];
+
+            for (var input in copyInputs) {
+                arrayOfInputs.push(copyInputs[input]);
+            }
+
+            arrayOfInputs.forEach(function (element) {
+                copyInputs[element.type].touched = true;
+                _this.validateData(element);
+            });
+
+            _this.setState({
+                elements: copyElements,
+                inputs: copyInputs
+            });
+
+            if (valid) {
+                var fd = new FormData();
+
+                fd.append('year', _this.state.elements.year.data);
+                fd.append('make', _this.state.elements.make.data);
+                fd.append('model', _this.state.elements.model.data);
+                fd.append('bodyStyle', _this.state.elements.bodyStyle.data);
+                fd.append('transmission', _this.state.elements.transmission.data);
+                fd.append('exteriorColor', _this.state.elements.exteriorColor.data);
+                fd.append('interiorColor', _this.state.elements.interiorColor.data);
+                fd.append('numberOfDoors', _this.state.elements.numberOfDoors.data);
+                fd.append('fuelType', _this.state.elements.fuelType.data);
+                fd.append('condition', _this.state.elements.condition.data);
+                fd.append('price', _this.state.inputs.price.value);
+                fd.append('mileage', _this.state.inputs.mileage.value);
+                fd.append('description', _this.state.inputs.description.value);
+                fd.append('firstName', _this.state.inputs.firstName.value);
+                fd.append('lastName', _this.state.inputs.lastName.value);
+                fd.append('email', _this.state.inputs.email.value);
+                fd.append('phoneNumber', _this.state.inputs.phoneNumber.value);
+                fd.append('zip', _this.state.inputs.zipCode.value);
+
+                for (var i = 0; i < _this.state.images.length; i++) {
+                    fd.append('images[]', _this.state.images[i]);
+                }
+
+                _this.setState({
+                    loading: true
+                });
+
+                _axios2.default.post('/create_listing', fd).then(function (response) {
+                    if (response.data === 'submitted') {
+                        _this.setState({
+                            loading: false,
+                            formSubmitted: true
+                        });
+                    }
+                });
+            }
+        }, _this.validateData = function (element) {
+            var copyInputs = _extends({}, _this.state.inputs);
+
+            var valid = false;
+
+            if (element.value.trim() !== '' && element.rules.required) {
+                valid = true;
+            }
+
+            if (valid) {
+                copyInputs[element.type].valid = true;
+                copyInputs[element.type].errorMessage = '';
+            } else if (!element.rules.required && !valid) {
+                copyInputs[element.type].valid = true;
+            } else {
+                copyInputs[element.type].valid = false;
+                copyInputs[element.type].errorMessage = 'Field cannot be empty';
+            }
+
+            if (element.type === 'phoneNumber' && !/\(\d{3}\)-\d{3}-\d{4}/.test(element.value) && valid) {
+                copyInputs[element.type].valid = false;
+                copyInputs[element.type].errorMessage = 'does not match valid format: (000)-000-0000';
+            }
+            _this.setState({
+                inputs: copyInputs
+            });
+        }, _this.onBlurHandler = function (element) {
+            _this.validateData(element);
+        }, _this.onChangeInput = function (event, currentElement) {
+
+            var copyInputs = _extends({}, _this.state.inputs);
+            copyInputs[currentElement.type].touched = true;
+
+            if (currentElement.type === 'phoneNumber') {
+
+                if (/^[\(]*[0-9]*[\)]*[-]*\d*[-]*\d*$/.test(event.target.value)) {
+                    copyInputs[currentElement.type].value = event.target.value;
+
+                    if (event.target.value.length === 3) {
+                        copyInputs[currentElement.type].value = '(' + event.target.value + ')-';
+                    } else if (event.target.value.length === 9) {
+                        copyInputs[currentElement.type].value = event.target.value + '-';
+                    } else if (event.target.value.length === 15) {
+                        copyInputs[currentElement.type].value = copyInputs[currentElement.type].value.slice(0, copyInputs[currentElement.type].value.length - 1);
+                        return;
+                    } else if (event.target.value.length === 10 || event.target.value.length === 5) {
+                        copyInputs[currentElement.type].value = '';
+                    }
+                } else {
+                    copyInputs[currentElement.type].value = '';
+                }
+            } else if (currentElement.type === 'price' || currentElement.type === 'mileage') {
+                if (/^\d*[,]*\d*$/.test(event.target.value)) {
+                    copyInputs[currentElement.type].value = event.target.value;
+
+                    var firstVal = void 0;
+                    var secondVal = void 0;
+                    var fullNumber = void 0;
+
+                    if (event.target.value.length === 4) {
+                        firstVal = event.target.value.slice(0, 1);
+                        secondVal = event.target.value.slice(1);
+                        copyInputs[currentElement.type].value = firstVal + ',' + secondVal;
+                    } else if (event.target.value.length === 6) {
+                        firstVal = event.target.value.slice(0, 1);
+                        secondVal = event.target.value.slice(2, 6);
+                        fullNumber = '' + firstVal + secondVal;
+                        copyInputs[currentElement.type].value = fullNumber.slice(0, 2) + ',' + fullNumber.slice(2);
+                    } else if (event.target.value.length === 7) {
+                        firstVal = event.target.value.slice(0, 2);
+                        secondVal = event.target.value.slice(3, 7);
+                        fullNumber = '' + firstVal + secondVal;
+                        copyInputs[currentElement.type].value = fullNumber.slice(0, 3) + ',' + fullNumber.slice(3);
+                    } else if (event.target.value.length === 8) {
+                        copyInputs[currentElement.type].value = event.target.value.slice(0, event.target.length - 2);
+                    }
+                } else {
+                    copyInputs[currentElement.type].value = '';
+                }
+            } else if (currentElement.type === 'zipCode') {
+                copyInputs[currentElement.type].value = event.target.value;
+                if (event.target.value.length === 6) {
+                    copyInputs[currentElement.type].value = copyInputs[currentElement.type].value.slice(0, copyInputs[currentElement.type].value.length - 1);
+                    return;
+                }
+            } else if (currentElement.type === 'firstName' || currentElement.type === 'lastName') {
+                if (/^[a-zA-Z]*$/.test(event.target.value)) {
+                    copyInputs[currentElement.type].value = event.target.value;
+                }
+            } else {
+                copyInputs[currentElement.type].value = event.target.value;
+            }
+
+            _this.setState({
+                inputs: copyInputs
+            });
+        }, _this.onKeyDownHandler = function (event, currentElement) {
+            var copyElements = _extends({}, _this.state.inputs);
+            if (event.keyCode === 8) {
+                copyElements[currentElement.type].value = '';
+            }
+
+            _this.setState({
+                inputs: copyElements
+            });
+        }, _this.validateForm = function () {
+            var elements = [];
+
+            for (var prop in _this.state.elements) {
+                elements.push(_this.state.elements[prop]);
+            }
+
+            for (var input in _this.state.inputs) {
+                elements.push(_this.state.inputs[input]);
+            }
+
+            var valids = elements.map(function (current) {
+                return current.valid;
+            });
+
+            if (valids.includes(false)) {
+                _this.setState({
+                    formIsValid: false
+                });
+
+                return false;
+            } else {
+                _this.setState({
+                    formIsValid: true
+                });
+
+                return true;
+            }
+        }, _this.deleteImage = function (items, item) {
+            var index = items.findIndex(function (current) {
+                return current === item;
+            });
+            var copyImages = _this.state.images;
+
+            copyImages.splice(index, 1);
+
+            _this.setState({
+                images: copyImages
+            });
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(CreateListing, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var _this2 = this;
+
+            var copyElements = _extends({}, this.state.elements);
+
+            _axios2.default.post('/get_param', {
+                type: this.state.elements.year.type
+            }).then(function (response) {
+                copyElements['year'].value = response.data;
+
+                _this2.setState({
+                    elements: copyElements
+                });
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this3 = this;
+
+            var arrayOfElements = [];
+
+            for (var element in this.state.elements) {
+                arrayOfElements.push(this.state.elements[element]);
+            }
+
+            var selects = arrayOfElements.map(function (element) {
+                return _react2.default.createElement(
+                    _Inputs2.default,
+                    { element: element.type,
+                        invalid: !element.active,
+                        selectValid: element.valid,
+                        clicked: element.clicked,
+                        onChangeHandler: function onChangeHandler(event) {
+                            return _this3.onChangeHandler(event, element);
+                        } },
+                    _this3.getOptionsForRender(element)
+                );
+            });
+
+            var urls = this.state.images.map(function (current) {
+                return URL.createObjectURL(current);
+            });
+
+            var images = urls.map(function (current) {
+                return _react2.default.createElement(
+                    'div',
+                    { className: _CreateListing2.default.image },
+                    _react2.default.createElement(
+                        'div',
+                        { className: _CreateListing2.default.imageWrapper,
+                            onClick: function onClick() {
+                                return _this3.deleteImage(urls, current);
+                            } },
+                        _react2.default.createElement('img', { src: current }),
+                        _react2.default.createElement(
+                            'div',
+                            { className: _CreateListing2.default.deleteButton },
+                            'X'
+                        )
+                    )
+                );
+            });
+
+            var arrayOfInputs = [];
+
+            for (var param in this.state.inputs) {
+                arrayOfInputs.push(this.state.inputs[param]);
+            }
+
+            var inputs = arrayOfInputs.map(function (current) {
+                return _react2.default.createElement(_Inputs2.default, { element: current.type,
+                    value: current.value,
+                    valid: current.valid,
+                    touched: current.touched,
+                    error: current.errorMessage,
+                    onChangeHandler: function onChangeHandler(event) {
+                        return _this3.onChangeInput(event, current);
+                    },
+                    onBlurHandler: function onBlurHandler() {
+                        return _this3.onBlurHandler(current);
+                    },
+                    onKeyDownHandler: function onKeyDownHandler(event) {
+                        return _this3.onKeyDownHandler(event, current);
+                    } });
+            });
+
+            var contactData = inputs.slice(3);
+
+            var component = _react2.default.createElement(
+                'form',
+                { method: 'post', encType: 'multipart/form-data',
+                    onSubmit: function onSubmit(event) {
+                        return _this3.onSubmitHandler(event);
+                    } },
+                _react2.default.createElement(
+                    'div',
+                    { className: _CreateListing2.default.wrapperListing },
+                    _react2.default.createElement(
+                        'div',
+                        { className: _CreateListing2.default.vehicleInfo },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            'Vehicle Information'
+                        ),
+                        selects,
+                        _react2.default.createElement(
+                            'div',
+                            { className: _CreateListing2.default.inputs },
+                            inputs[0],
+                            inputs[1]
+                        ),
+                        _react2.default.createElement(
+                            _reactDropzone2.default,
+                            { onDrop: this.onDrop },
+                            function (_ref2) {
+                                var getRootProps = _ref2.getRootProps,
+                                    getInputProps = _ref2.getInputProps;
+                                return _react2.default.createElement(
+                                    'div',
+                                    _extends({ className: _CreateListing2.default.drop }, getRootProps()),
+                                    _react2.default.createElement('input', getInputProps()),
+                                    'Drop photos here'
+                                );
+                            }
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: _CreateListing2.default.images },
+                            images
+                        ),
+                        inputs[2]
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: _CreateListing2.default.contactData },
+                        _react2.default.createElement(
+                            'h2',
+                            null,
+                            'Contact Information'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: _CreateListing2.default.inputs },
+                            contactData
+                        )
+                    ),
+                    _react2.default.createElement(_Inputs2.default, { element: 'createListing' }),
+                    !this.state.formIsValid ? _react2.default.createElement(
+                        'p',
+                        null,
+                        'Selected fields must be filled'
+                    ) : null
+                )
+            );
+
+            if (this.state.formSubmitted) {
+                component = _react2.default.createElement(_reactRouterDom.Redirect, { to: '/sell_car' });
+            }
+
+            if (this.state.loading) {
+                component = _react2.default.createElement(
+                    'div',
+                    { style: { paddingTop: '80px' } },
+                    _react2.default.createElement(_Spinner2.default, null)
+                );
+            }
+
+            return component;
+        }
+    }]);
+
+    return CreateListing;
+}(_react.Component);
+
+exports.default = CreateListing;
+
+/***/ }),
+
 /***/ "./src/containers/main_page/Main_page.js":
 /*!***********************************************!*\
   !*** ./src/containers/main_page/Main_page.js ***!
@@ -57158,6 +59762,8 @@ var _Button = __webpack_require__(/*! ../../components/UIElements/button/Button 
 
 var _Button2 = _interopRequireDefault(_Button);
 
+var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -57183,6 +59789,11 @@ var SellCarPage = function (_Component) {
             this.props.setAuthParamToState();
         }
     }, {
+        key: 'navigateToCreateListingPage',
+        value: function navigateToCreateListingPage() {
+            this.props.history.push('/create_listing');
+        }
+    }, {
         key: 'render',
         value: function render() {
 
@@ -57205,9 +59816,13 @@ var SellCarPage = function (_Component) {
                             'Sell Your Car'
                         ),
                         _react2.default.createElement(
-                            _Button2.default,
-                            { createListingButton: true },
-                            'Create Listing'
+                            _reactRouterDom.Link,
+                            { to: '/create_listing' },
+                            _react2.default.createElement(
+                                _Button2.default,
+                                { createListingButton: true },
+                                'Create Listing'
+                            )
                         )
                     )
                 ) : null
@@ -57220,6 +59835,16 @@ var SellCarPage = function (_Component) {
                     _react2.default.createElement(_Spinner2.default, null)
                 );
             }
+            /*
+                    let component = (
+                        <HeroImage img="../../assets/sell_your_car.jpg" loggedIn>
+                            <div className={classes.wrapper}>
+                                <h1>Sell Your Car</h1>
+                                <Button createListingButton
+                                        onClickHandler={() => this.navigateToCreateListingPage()}>Create Listing</Button>
+                            </div>
+                        </HeroImage>
+                    )*/
 
             return _react2.default.createElement(
                 'div',

@@ -6,6 +6,7 @@ import * as actions from '../../reduxStore/authentication/Actions';
 import ListingsIfNotLogin from '../../components/listingsIfNotLogIn/ListingsIfNotLogIn';
 import Spinner from '../../components/UIElements/spinner/Spinner';
 import Button from '../../components/UIElements/button/Button';
+import { Link } from 'react-router-dom';
 
 class SellCarPage extends Component {
 
@@ -18,7 +19,7 @@ class SellCarPage extends Component {
     }
     
     render() {
-/*
+
         let component = (
             <React.Fragment>
                 {this.props.auth === false ? (
@@ -29,8 +30,9 @@ class SellCarPage extends Component {
                     <HeroImage img="../../assets/sell_your_car.jpg" loggedIn>
                         <div className={classes.wrapper}>
                             <h1>Sell Your Car</h1>
-                            <Button createListingButton
-                                    onClick={() => this.navigateToCreateListingPage()}>Create Listing</Button>
+                            <Link to="/create_listing">
+                                <Button createListingButton>Create Listing</Button>
+                            </Link>
                         </div>
                     </HeroImage>
                 ) : null}
@@ -43,8 +45,8 @@ class SellCarPage extends Component {
                     <Spinner />
                 </div>
             )
-        }*/
-
+        }
+/*
         let component = (
             <HeroImage img="../../assets/sell_your_car.jpg" loggedIn>
                 <div className={classes.wrapper}>
@@ -53,7 +55,7 @@ class SellCarPage extends Component {
                             onClickHandler={() => this.navigateToCreateListingPage()}>Create Listing</Button>
                 </div>
             </HeroImage>
-        )
+        )*/
         
         return (
             <div>

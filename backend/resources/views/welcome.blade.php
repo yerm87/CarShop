@@ -64,13 +64,15 @@
         </style>
     </head>
     <body>
-        <form action="/auth_user" method="post">
-            <input type="hidden" name="_method" value="POST" />
+        <form action="/test5" method="post" enctype="multipart/form-data">
             <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
-            <input type="email" name="email" value="romanermeev@gmail.com" />
-            <input type="password" name="password" value="1234567890" />
+            <input type="text" name="type" value="make" />
+            <input type="file" name="file" />
             <input type="submit" value="submit" />
         </form>
+        @foreach($arrayImages as $image)
+            <image src="data:jpeg;base64, {{$image}}" />
+        @endforeach
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -103,5 +105,6 @@
                 </div>
             </div>
         </div>
+        
     </body>
 </html>

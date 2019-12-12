@@ -1,11 +1,107 @@
-.wrapper {
+.wrapperListing {
     background-color: var(--mainWhite);
     padding: 100px 0 40px 70px;
     font-family: 'Montserrat';
+    width: 40%;
 }
 
-.wrapper h1 {
+.wrapperListing p {
+    color: var(--mainRed);
+}
+
+.wrapperListing h1 {
     margin: 0;
     color: var(--mainBlue);
 }
 
+.drop {
+    padding: 90px;
+    border: 3px dashed rgb(175, 155, 155);
+    width: 60%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.image {
+    border-radius: 8px;
+    border: 1px solid gray;
+    padding: 6px;
+    text-align: center;
+}
+
+.image img {
+    max-width: 110px;
+    max-height: 70px;
+}
+
+.images {
+    display: grid;
+    width: 60%;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 14px;
+    grid-row-gap: 14px;
+}
+
+.inputs {
+    font-family: 'Rubik';
+    padding-top: 20px;
+}
+
+.inputs label, .inputs input {
+    display: block;
+}
+
+.inputs label {
+    padding: 8px 0 5px 0;
+    font-weight: 600;
+}
+
+.inputs input {
+    width: 100%;
+    border-radius: 8px;
+    
+    font-size: 1.1em;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.inputs p {
+    color: var(--mainRed);
+}
+
+.vehicleInfo {
+    padding-bottom: 40px;
+    border-bottom: 1px solid gray;
+}
+
+.contactData h2 {
+    color: var(--mainBlue);
+}
+
+.image img {
+    max-width: 110px;
+    max-height: 70px;
+}
+
+.imageWrapper {
+    position: relative;
+}
+
+.deleteButton {
+    display: none;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: 5px;
+    right: 5px;
+    background-color: var(--mainRed);
+    color: var(--mainWhite);
+    font-weight: bold;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.image:hover .deleteButton {
+    display: block;
+}

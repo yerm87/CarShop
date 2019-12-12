@@ -31,7 +31,7 @@
     height: 40px;
 }
 
-select {
+.select {
     display: block;
     width: 40%;
     font-family: 'Montserrat';
@@ -40,8 +40,27 @@ select {
     padding: 8px;
 }
 
-label {
+.selectWrapper select {
+    display: block;
+    width: 100%;
+    font-family: 'Montserrat';
+    border-radius: 11px;
+    font-size: 1.1em;
+    padding: 8px;
+}
+
+.selectWrapper label {
     display: block;
     margin: 15px 0 6px 0;
     font-weight: bold;
+}
+
+.textarea label {
+    display: block;
+    margin: 15px 0 6px 0;
+    font-weight: bold;
+}
+
+.textarea textarea {
+    resize: none;
 }
