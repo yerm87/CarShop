@@ -98,6 +98,9 @@ Route::post('/checkEmails', 'AuthController@checkEmails');
 //route to login
 Route::post('/auth_user', 'AuthController@login');
 
+//route to logout
+Route::get('/logout', 'AuthController@logout');
+
 
 
 // ******fetch vehicle parameters data by request ********
@@ -147,4 +150,11 @@ Route::post('/create_listing', function(Request $request){
 	$listing->user_id = $request->session()->get('key');
 	$listing->save();
     return 'submitted';
+});
+
+Route::get('/getEmail', function(Request $request){
+	if($request->session()->get('key')){
+		$user = User::find($request->session()->get('key'));
+	return $user->email;
+	}
 });

@@ -4,3 +4,7 @@ export const setSignupOrLoginMode = 'setSignupOrLoginMode';
 export const userWasLoggedIn = 'userWasLoggedIn';
 export const failedToLogin = 'failedToLogin';
 export const removeSpinner = 'removeSpinner';
+export const dispatchEmail = 'dispatchEmail';
+export const openModal = 'openModal';
+export const closeModal = 'closeModal';
+export const userWasLoggedOut = 'userWasLoggedOut';

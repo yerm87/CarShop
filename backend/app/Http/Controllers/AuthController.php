@@ -114,4 +114,9 @@ class AuthController extends Controller
         
         return count($users);
     }
+
+    public function logout(Request $request){
+        $request->session()->forget('key');
+        return 'logout';
+    }
 }

@@ -13,10 +13,6 @@ class SellCarPage extends Component {
     componentWillMount() {
         this.props.setAuthParamToState();
     }
-
-    navigateToCreateListingPage(){
-        this.props.history.push('/create_listing');
-    }
     
     render() {
 
@@ -46,16 +42,6 @@ class SellCarPage extends Component {
                 </div>
             )
         }
-/*
-        let component = (
-            <HeroImage img="../../assets/sell_your_car.jpg" loggedIn>
-                <div className={classes.wrapper}>
-                    <h1>Sell Your Car</h1>
-                    <Button createListingButton
-                            onClickHandler={() => this.navigateToCreateListingPage()}>Create Listing</Button>
-                </div>
-            </HeroImage>
-        )*/
         
         return (
             <div>

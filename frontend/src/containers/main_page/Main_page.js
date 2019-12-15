@@ -1,42 +1,22 @@
 import React, { Component } from 'react';
 import HeroImage from '../../components/heroImage/HeroImage';
-import { connect } from 'react-redux';
-//import * as actions from '../../reduxStore/Actions';
 import Title from '../../components/title/Title';
 import SearchComponent from '../../components/searchComponent/SearchComponent';
+import classes from './Main_page.css';
 
 class MainPage extends Component {
-    /*
-
-    test = () => {
-        
-        fetch('http://localhost/shopping/backend/public/testRequest').then(response => {
-            response.json().then(result => {
-                this.props.auth(result.name);
-                console.log(result);
-            })
-        });
-    }
-    */
 
     render() {
         return (
-            <React.Fragment>
+            <div className={classes.wrapper}>
                 <HeroImage img="../../assets/wallpaper_image.jpg">
                     <Title title="Find your car"
                            subtitle="Search cars from thousands of individual sellers" />
                     <SearchComponent />
                 </HeroImage>
-            </React.Fragment>
+            </div>
         )
     }
 }
-/*
-const mapDispatchToProps = (dispatch) => {
-    return {
-        auth: (param) => dispatch(actions.userIsAuth(param))
-    }
-}
-*/
 
 export default MainPage;

@@ -1,0 +1,45 @@
+.wrapper {
+    display: none;
+    position: relative;
+    width: 250px;
+    height: 170px;
+    background-color: rgba(250, 245, 245, 0.993);
+    position: absolute;
+    top: 74px;
+    right: 20px;
+}
+
+.show {
+    display: block;
+}
+
+.wrapper p {
+    margin: 0;
+    padding: 12px 0;   
+    font-family: 'Montserrat';
+    color: rgba(12, 10, 10, 0.692);
+}
+
+.wrapper .email {
+    margin-left: 10px;
+}
+
+.wrapper .item {
+    text-align: center;
+    cursor: pointer;
+}
+
+.wrapper .item:hover {
+    background-color: var(--mainBlue);
+    color: var(--mainWhite);
+}
+
+.element {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-color: rgba(250, 245, 245, 0.993);
+    top: -8px;
+    right: 21px;
+    transform: rotate(45deg);
+}

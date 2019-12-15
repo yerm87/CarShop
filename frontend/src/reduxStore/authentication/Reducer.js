@@ -3,7 +3,9 @@ import * as actionTypes from '../actionTypes';
 const initialState = {
     loading: false,
     signupOrLoginMode: 'signup',
-    userIsLoggedIn: false
+    userIsLoggedIn: false,
+    email: '',
+    showModal: false
 }
 
 const reducer = (state=initialState, action) => {
@@ -34,6 +36,26 @@ const reducer = (state=initialState, action) => {
             return {
                 ...state,
                 loading: false
+            }
+        case(actionTypes.dispatchEmail):
+            return {
+                ...state,
+                email: action.email
+            }
+        case(actionTypes.openModal):
+            return {
+                ...state,
+                showModal: true
+            }
+        case(actionTypes.closeModal):
+            return {
+                ...state,
+                showModal: false
+            }
+        case(actionTypes.userWasLoggedOut):
+            return {
+                ...state,
+                userIsLoggedIn: false
             }
         default: 
             return state;

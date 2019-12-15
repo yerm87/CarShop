@@ -96,6 +96,7 @@ class LoginComponent extends Component {
                         formIsValid: true
                     })
                 }
+                this.props.getEmail();
             })
         } else {
             const copyElements = {
@@ -162,7 +163,8 @@ const mapDispatchToProps = (dispatch) => {
     return {
         userWasLoggedIn: () => dispatch(actions.userWasLoggedIn()),
         init: () => dispatch(actions.init()),
-        removeSpinner: () => dispatch(actions.removeSpinner())
+        removeSpinner: () => dispatch(actions.removeSpinner()),
+        getEmail: () => dispatch(actions.getEmail())
     }
 }
 

@@ -53,3 +53,46 @@ export const removeSpinner = () => {
         type: actionTypes.removeSpinner
     }
 }
+
+const dispatchEmail = email => {
+    return {
+        type: actionTypes.dispatchEmail,
+        email: email
+    }
+}
+
+export const getEmail = () => {
+    return (dispatch) => {
+        axios.get('/getEmail').then(response => {
+            dispatch(dispatchEmail(response.data));
+        })
+    }
+}
+
+export const openModal = () => {
+    return {
+        type: actionTypes.openModal
+    }
+}
+
+export const closeModal = () => {
+    return {
+        type: actionTypes.closeModal
+    }
+}
+
+export const userWasLoggedOut = () => {
+    return {
+        type: actionTypes.userWasLoggedOut
+    }
+}
+
+export const logout = () => {
+    return (dispatch) => {
+        axios.get('/logout').then(response => {
+            if(response.data === 'logout'){
+                dispatch(userWasLoggedOut());
+            }
+        })
+    }
+}
