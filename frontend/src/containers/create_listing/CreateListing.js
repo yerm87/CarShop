@@ -161,8 +161,8 @@ class CreateListing extends Component {
                     required: true
                 }
             },
-            zipCode: {
-                type: 'zipCode',
+            zip: {
+                type: 'zip',
                 value: null,
                 valid: false,
                 touched: false,
@@ -306,47 +306,64 @@ class CreateListing extends Component {
         this.setState({
             elements: copyElements,
             inputs: copyInputs
-        })
+        }, () => {
+            const inputs = {
+                ...this.state.inputs
+            }
+            const arrayInputs = [];
 
-        if(valid){
-            const fd = new FormData();
-
-            fd.append('year', this.state.elements.year.data);
-            fd.append('make', this.state.elements.make.data);
-            fd.append('model', this.state.elements.model.data);
-            fd.append('bodyStyle', this.state.elements.bodyStyle.data);
-            fd.append('transmission', this.state.elements.transmission.data);
-            fd.append('exteriorColor', this.state.elements.exteriorColor.data);
-            fd.append('interiorColor', this.state.elements.interiorColor.data);
-            fd.append('numberOfDoors', this.state.elements.numberOfDoors.data);
-            fd.append('fuelType', this.state.elements.fuelType.data);
-            fd.append('condition', this.state.elements.condition.data);
-            fd.append('price', this.state.inputs.price.value);
-            fd.append('mileage', this.state.inputs.mileage.value);
-            fd.append('description', this.state.inputs.description.value);
-            fd.append('firstName', this.state.inputs.firstName.value);
-            fd.append('lastName', this.state.inputs.lastName.value);
-            fd.append('email', this.state.inputs.email.value);
-            fd.append('phoneNumber', this.state.inputs.phoneNumber.value);
-            fd.append('zip', this.state.inputs.zipCode.value);
-
-            for(let i=0; i<this.state.images.length; i++){
-                fd.append('images[]', this.state.images[i]);
+            for(let prop in inputs){
+                arrayInputs.push(inputs[prop]);
             }
 
-            this.setState({
-                loading: true
-            })
-
-            axios.post('/create_listing', fd).then(response => {
-                if(response.data === 'submitted'){
-                    this.setState({
-                        loading: false,
-                        formSubmitted: true
-                    })
-                }
+            arrayInputs.forEach(element => {
+                const index = element.value.indexOf(',');
+                inputs[element.type].value = element.value.replace(element.value.charAt(index), '');
             });
-        }
+
+            this.setState({
+                inputs: inputs
+            }, () => {
+                if(valid){
+                    const fd = new FormData();
+
+                    const elementsArray = [];
+                    for(let prop in this.state.elements){
+                        elementsArray.push(this.state.elements[prop]);
+                    }
+
+                    elementsArray.forEach(element => {
+                        fd.append(element.type, element.data);
+                    });
+
+                    const inputsArray = [];
+                    for(let prop in this.state.inputs){
+                        inputsArray.push(this.state.inputs[prop]);
+                    }
+
+                    inputsArray.forEach(element => {
+                        fd.append(element.type, element.value);
+                    });
+        
+                    for(let i=0; i<this.state.images.length; i++){
+                        fd.append('images[]', this.state.images[i]);
+                    }
+        
+                    this.setState({
+                        loading: true
+                    })
+        
+                    axios.post('/create_listing', fd).then(response => {
+                        if(response.data === 'submitted'){
+                            this.setState({
+                                loading: false,
+                                formSubmitted: true
+                            })
+                        }
+                    });
+                }
+            })
+        });
     }
 
     validateData = (element) => {
@@ -438,7 +455,7 @@ class CreateListing extends Component {
             } else {
                 copyInputs[currentElement.type].value = '';
             }
-        } else if(currentElement.type === 'zipCode'){
+        } else if(currentElement.type === 'zip'){
             copyInputs[currentElement.type].value = event.target.value;
             if(event.target.value.length === 6){
                 copyInputs[currentElement.type].value=

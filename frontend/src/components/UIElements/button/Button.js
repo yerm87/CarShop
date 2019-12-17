@@ -11,6 +11,8 @@ const Button = props => {
         classList.push(classes.signupOrLoginButton);
     } else if(props.createListingButton){
         classList.push(classes.createListingButton);
+    } else if(props.updateListingButton){
+        classList.push(classes.updateListingButton);
     }
 
     return (

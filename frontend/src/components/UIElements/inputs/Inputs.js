@@ -298,7 +298,7 @@ const Input = props => {
                            onBlur={props.onBlurHandler} />
                 </React.Fragment>
             )
-        case('zipCode'):
+        case('zip'):
             return (
                 <React.Fragment>
                     <div className={classes.wrapper}>

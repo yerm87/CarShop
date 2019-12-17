@@ -56,3 +56,18 @@
     background-color: var(--mainWhite);
     color: var(--mainBlue);
 }
+
+.updateListingButton {
+    background: var(--mainBlue);
+    color: var(--mainWhite);
+    width: 200px;
+    height: 40px;
+    font-size: 1.2em;
+    padding: 8px;
+}
+
+.updateListingButton:hover {
+    color: var(--mainBlue);
+    background: var(--mainWhite);
+    border: 1px solid var(--mainBlue);
+}

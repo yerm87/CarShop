@@ -1,0 +1,95 @@
+.imageWrapper {
+    overflow: hidden;
+    position: relative;
+    min-height: 240px;
+    border: 1px solid var(--mainBlack);
+    margin-top: 10px;
+    max-width: 1011.75px;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    width: 711.75px;
+    height: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.content p {
+    margin: 8px 0;
+    padding-left: 10px;
+}
+
+.priceAndMileage {
+    display: flex;
+    align-items: flex-end;
+}
+
+.priceAndMileage .price {
+    font-size: 1.4em;
+}
+
+.priceAndMileage .mileage {
+    font-size: 0.9em;
+}
+
+.priceAndMileage p span {
+    margin-left: 8px;
+}
+
+.params {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 8px;
+}
+
+.params p {
+    font-size: 0.8em;
+}
+
+.images {
+
+}
+
+.arrowLeft {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 45px;
+    height: 42px;
+    background-color: rgba(158, 137, 137, 0.4);
+    padding: 9px 0 0 9px;
+    cursor: pointer;
+}
+
+.arrowRight {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    width: 45px;
+    height: 42px;
+    background-color: rgba(158, 137, 137, 0.4);
+    padding: 9px 0 0 9px;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.imageWrapper:hover .arrowLeft {
+    display: block
+}
+
+.imageWrapper:hover .arrowRight {
+    display: block;
+}

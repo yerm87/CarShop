@@ -13142,14 +13142,15 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".Button__button__3N-Dq {\r\n    font-family: 'Rubik';\r\n    border-radius: 10px;\r\n    cursor: pointer;\r\n}\r\n\r\n.Button__menuButton__2LvJ_ {\r\n    font-size: 16px;\r\n    padding: 7px;\r\n    background: transparent;\r\n    color: var(--mainWhite);\r\n    border: 1px solid var(--mainWhite);\r\n    margin: 15px 25px;\r\n}\r\n\r\n.Button__menuButton__2LvJ_:hover {\r\n    background: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.Button__loginInListings__393A3 {\r\n    font-size: 16px;\r\n    padding: 7px 18px 7px 18px;\r\n    color: var(--mainWhite);\r\n    border: 1px solid var(--mainWhite);\r\n    background-color: transparent;\r\n    margin: 15px 25px;\r\n}\r\n\r\n.Button__loginInListings__393A3:hover {\r\n    background-color: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.Button__signupOrLoginButton__2CQ2i {\r\n    font-size: 16px;\r\n    width: 100%;\r\n    border: none;\r\n    padding: 10px 0;\r\n    background: var(--mainBlue);\r\n    color: var(--mainWhite);\r\n    margin-top: 20px;\r\n}\r\n\r\n.Button__createListingButton__2icz4 {\r\n    margin-top: 100px;\r\n    width: 200px;\r\n    height: 80px;\r\n    color: var(--mainWhite);\r\n    background: transparent;\r\n    border: 1px solid var(--mainWhite);\r\n    font-size: 1.5em;\r\n}\r\n\r\n.Button__createListingButton__2icz4:hover {\r\n    background-color: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}", ""]);
+exports.push([module.i, ".Button__button__3N-Dq {\r\n    font-family: 'Rubik';\r\n    border-radius: 10px;\r\n    cursor: pointer;\r\n}\r\n\r\n.Button__menuButton__2LvJ_ {\r\n    font-size: 16px;\r\n    padding: 7px;\r\n    background: transparent;\r\n    color: var(--mainWhite);\r\n    border: 1px solid var(--mainWhite);\r\n    margin: 15px 25px;\r\n}\r\n\r\n.Button__menuButton__2LvJ_:hover {\r\n    background: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.Button__loginInListings__393A3 {\r\n    font-size: 16px;\r\n    padding: 7px 18px 7px 18px;\r\n    color: var(--mainWhite);\r\n    border: 1px solid var(--mainWhite);\r\n    background-color: transparent;\r\n    margin: 15px 25px;\r\n}\r\n\r\n.Button__loginInListings__393A3:hover {\r\n    background-color: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.Button__signupOrLoginButton__2CQ2i {\r\n    font-size: 16px;\r\n    width: 100%;\r\n    border: none;\r\n    padding: 10px 0;\r\n    background: var(--mainBlue);\r\n    color: var(--mainWhite);\r\n    margin-top: 20px;\r\n}\r\n\r\n.Button__createListingButton__2icz4 {\r\n    margin-top: 100px;\r\n    width: 200px;\r\n    height: 80px;\r\n    color: var(--mainWhite);\r\n    background: transparent;\r\n    border: 1px solid var(--mainWhite);\r\n    font-size: 1.5em;\r\n}\r\n\r\n.Button__createListingButton__2icz4:hover {\r\n    background-color: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.Button__updateListingButton__26VnD {\r\n    background: var(--mainBlue);\r\n    color: var(--mainWhite);\r\n    width: 200px;\r\n    height: 40px;\r\n    font-size: 1.2em;\r\n    padding: 8px;\r\n}\r\n\r\n.Button__updateListingButton__26VnD:hover {\r\n    color: var(--mainBlue);\r\n    background: var(--mainWhite);\r\n    border: 1px solid var(--mainBlue);\r\n}", ""]);
 // Exports
 exports.locals = {
 	"button": "Button__button__3N-Dq",
 	"menuButton": "Button__menuButton__2LvJ_",
 	"loginInListings": "Button__loginInListings__393A3",
 	"signupOrLoginButton": "Button__signupOrLoginButton__2CQ2i",
-	"createListingButton": "Button__createListingButton__2icz4"
+	"createListingButton": "Button__createListingButton__2icz4",
+	"updateListingButton": "Button__updateListingButton__26VnD"
 };
 
 /***/ }),
@@ -13227,6 +13228,32 @@ exports.push([module.i, ".UserIcon__wrapper__3iaRx {\r\n    margin-right: 30px;\
 exports.locals = {
 	"wrapper": "UserIcon__wrapper__3iaRx",
 	"item": "UserIcon__item__2olcV"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/listingItem/ListingItem.css":
+/*!***********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/listingItem/ListingItem.css ***!
+  \***********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".ListingItem__imageWrapper__1NQji {\r\n    overflow: hidden;\r\n    position: relative;\r\n    min-height: 240px;\r\n    border: 1px solid var(--mainBlack);\r\n    margin-top: 10px;\r\n    max-width: 1011.75px;\r\n}\r\n\r\n.ListingItem__content__U_jzQ {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 0;\r\n    padding: 10px;\r\n    width: 711.75px;\r\n    height: 100%;\r\n    background-color: white;\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n    font-family: 'Montserrat';\r\n    font-weight: bold;\r\n}\r\n\r\n.ListingItem__content__U_jzQ p {\r\n    margin: 8px 0;\r\n    padding-left: 10px;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: end;\r\n        -ms-flex-align: end;\r\n            align-items: flex-end;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c .ListingItem__price__tKqVf {\r\n    font-size: 1.4em;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c .ListingItem__mileage__3r2zF {\r\n    font-size: 0.9em;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c p span {\r\n    margin-left: 8px;\r\n}\r\n\r\n.ListingItem__params__2k34p {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    margin: 8px;\r\n}\r\n\r\n.ListingItem__params__2k34p p {\r\n    font-size: 0.8em;\r\n}\r\n\r\n.ListingItem__images__2WJyw {\r\n\r\n}\r\n\r\n.ListingItem__arrowLeft__WZrvT {\r\n    display: none;\r\n    position: absolute;\r\n    top: 100px;\r\n    left: 0;\r\n    width: 45px;\r\n    height: 42px;\r\n    background-color: rgba(158, 137, 137, 0.4);\r\n    padding: 9px 0 0 9px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingItem__arrowRight__3_9-- {\r\n    display: none;\r\n    position: absolute;\r\n    top: 100px;\r\n    left: 240px;\r\n    width: 45px;\r\n    height: 42px;\r\n    background-color: rgba(158, 137, 137, 0.4);\r\n    padding: 9px 0 0 9px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingItem__wrapper__UgLa3 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    overflow: hidden;\r\n    -webkit-transition: all 0.3s;\r\n    -o-transition: all 0.3s;\r\n    transition: all 0.3s;\r\n}\r\n\r\n.ListingItem__imageWrapper__1NQji:hover .ListingItem__arrowLeft__WZrvT {\r\n    display: block\r\n}\r\n\r\n.ListingItem__imageWrapper__1NQji:hover .ListingItem__arrowRight__3_9-- {\r\n    display: block;\r\n}", ""]);
+// Exports
+exports.locals = {
+	"imageWrapper": "ListingItem__imageWrapper__1NQji",
+	"content": "ListingItem__content__U_jzQ",
+	"priceAndMileage": "ListingItem__priceAndMileage__1ab6c",
+	"price": "ListingItem__price__tKqVf",
+	"mileage": "ListingItem__mileage__3r2zF",
+	"params": "ListingItem__params__2k34p",
+	"images": "ListingItem__images__2WJyw",
+	"arrowLeft": "ListingItem__arrowLeft__WZrvT",
+	"arrowRight": "ListingItem__arrowRight__3_9--",
+	"wrapper": "ListingItem__wrapper__UgLa3"
 };
 
 /***/ }),
@@ -13459,11 +13486,13 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".SellCarPage__spinner__2lul4 {\r\n    padding-top: 90px;\r\n}\r\n\r\n.SellCarPage__wrapper__3rkDR {\r\n    text-align: center;\r\n}\r\n\r\n.SellCarPage__wrapper__3rkDR h1 {\r\n    margin: 0;\r\n    padding-top: 150px;\r\n    font-family: 'Montserrat';\r\n    color: var(--mainWhite);\r\n}", ""]);
+exports.push([module.i, ".SellCarPage__wrapperSellPage__1ikfT {\r\n    background-color: #f2f2f2;\r\n}\r\n\r\n.SellCarPage__spinner__2lul4 {\r\n    padding-top: 90px;\r\n}\r\n\r\n.SellCarPage__wrapper__3rkDR {\r\n    text-align: center;\r\n}\r\n\r\n.SellCarPage__wrapper__3rkDR h1 {\r\n    margin: 0;\r\n    padding-top: 150px;\r\n    font-family: 'Montserrat';\r\n    color: var(--mainWhite);\r\n}\r\n\r\n.SellCarPage__listings__2hJHL {\r\n    width: 75%;\r\n    margin-left: 50px;\r\n}\r\n\r\n.SellCarPage__listings__2hJHL h1 {\r\n    color: var(--mainBlack);\r\n}", ""]);
 // Exports
 exports.locals = {
+	"wrapperSellPage": "SellCarPage__wrapperSellPage__1ikfT",
 	"spinner": "SellCarPage__spinner__2lul4",
-	"wrapper": "SellCarPage__wrapper__3rkDR"
+	"wrapper": "SellCarPage__wrapper__3rkDR",
+	"listings": "SellCarPage__listings__2hJHL"
 };
 
 /***/ }),
@@ -13477,7 +13506,7 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".Toolbar__toolbar__UKnml {\r\n    background: -webkit-gradient(linear, left top, left bottom, from(var(--lightBlue)), to(var(--mainBlue)));\r\n    background: -o-linear-gradient(var(--lightBlue), var(--mainBlue));\r\n    background: linear-gradient(var(--lightBlue), var(--mainBlue));\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    height: 70px;\r\n    width: 100%;\r\n    position: fixed;\r\n}", ""]);
+exports.push([module.i, ".Toolbar__toolbar__UKnml {\r\n    background: -webkit-gradient(linear, left top, left bottom, from(var(--lightBlue)), to(var(--mainBlue)));\r\n    background: -o-linear-gradient(var(--lightBlue), var(--mainBlue));\r\n    background: linear-gradient(var(--lightBlue), var(--mainBlue));\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    height: 70px;\r\n    width: 100%;\r\n}", ""]);
 // Exports
 exports.locals = {
 	"toolbar": "Toolbar__toolbar__UKnml"
@@ -64839,6 +64868,19 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(
 
 /***/ }),
 
+/***/ "./src/assets/no_photo.jpg":
+/*!*********************************!*\
+  !*** ./src/assets/no_photo.jpg ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "no_photo.jpg");
+
+/***/ }),
+
 /***/ "./src/components/UIElements/button/Button.css":
 /*!*****************************************************!*\
   !*** ./src/components/UIElements/button/Button.css ***!
@@ -64900,6 +64942,8 @@ var Button = function Button(props) {
         classList.push(_Button2.default.signupOrLoginButton);
     } else if (props.createListingButton) {
         classList.push(_Button2.default.createListingButton);
+    } else if (props.updateListingButton) {
+        classList.push(_Button2.default.updateListingButton);
     }
 
     return _react2.default.createElement(
@@ -65417,7 +65461,7 @@ var Input = function Input(props) {
                     onChange: props.onChangeHandler,
                     onBlur: props.onBlurHandler })
             );
-        case 'zipCode':
+        case 'zip':
             return _react2.default.createElement(
                 _react2.default.Fragment,
                 null,
@@ -65725,8 +65769,10 @@ exports.default = (0, _reactRedux.connect)(null, mapDispatchToProps)(UserIcon);
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.ImageListing = undefined;
 
-var _templateObject = _taggedTemplateLiteral(['\n    background: url(', ') no-repeat center center;\n    background-size: cover;\n    height: ', '\n    margin: 0; \n'], ['\n    background: url(', ') no-repeat center center;\n    background-size: cover;\n    height: ', '\n    margin: 0; \n']);
+var _templateObject = _taggedTemplateLiteral(['\n    background: url(', ') no-repeat center center;\n    background-size: cover;\n    height: ', '\n    margin: 0; \n'], ['\n    background: url(', ') no-repeat center center;\n    background-size: cover;\n    height: ', '\n    margin: 0; \n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    min-height: 240px;\n    min-width: 300px;\n    margin: 0; \n'], ['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    min-height: 240px;\n    min-width: 300px;\n    margin: 0; \n']);
 
 var _styledComponents = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
@@ -65739,10 +65785,283 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 var HeroImage = _styledComponents2.default.div(_templateObject, function (props) {
     return props.img;
 }, function (props) {
-    return props.sellPage ? '480px' : props.loggedIn ? '450px' : '700px';
+    return props.sellPage ? '480px' : props.loggedIn ? '450px' : props.listings ? '240px' : '700px';
+});
+
+var ImageListing = exports.ImageListing = _styledComponents2.default.div(_templateObject2, function (props) {
+    return props.img;
 });
 
 exports.default = HeroImage;
+
+/***/ }),
+
+/***/ "./src/components/listingItem/ListingItem.css":
+/*!****************************************************!*\
+  !*** ./src/components/listingItem/ListingItem.css ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./ListingItem.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/listingItem/ListingItem.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+
+/***/ }),
+
+/***/ "./src/components/listingItem/ListingItem.js":
+/*!***************************************************!*\
+  !*** ./src/components/listingItem/ListingItem.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _ListingItem = __webpack_require__(/*! ./ListingItem.css */ "./src/components/listingItem/ListingItem.css");
+
+var _ListingItem2 = _interopRequireDefault(_ListingItem);
+
+var _HeroImage = __webpack_require__(/*! ../heroImage/HeroImage */ "./src/components/heroImage/HeroImage.js");
+
+var _Button = __webpack_require__(/*! ../UIElements/button/Button */ "./src/components/UIElements/button/Button.js");
+
+var _Button2 = _interopRequireDefault(_Button);
+
+var _fa = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.esm.js");
+
+var _reactIcons = __webpack_require__(/*! react-icons */ "./node_modules/react-icons/lib/esm/index.js");
+
+var _no_photo = __webpack_require__(/*! ../../assets/no_photo.jpg */ "./src/assets/no_photo.jpg");
+
+var _no_photo2 = _interopRequireDefault(_no_photo);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ListingItem = function (_Component) {
+    _inherits(ListingItem, _Component);
+
+    function ListingItem() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, ListingItem);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ListingItem.__proto__ || Object.getPrototypeOf(ListingItem)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+            elementCounter: 1,
+            counterMargin: 0
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(ListingItem, [{
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var _props$item = this.props.item,
+                condition = _props$item.condition,
+                price = _props$item.price,
+                mileage = _props$item.mileage,
+                year = _props$item.year,
+                make = _props$item.make,
+                model = _props$item.model,
+                exteriorColor = _props$item.exteriorColor,
+                transmission = _props$item.transmission,
+                interiorColor = _props$item.interiorColor,
+                fuelType = _props$item.fuelType,
+                images = _props$item.images;
+
+
+            var modifiedPrice = void 0;
+            var modifiedMileage = void 0;
+
+            if (price.length > 3) {
+                var firstNumber = price.substring(0, price.length - 3);
+                var secondNumber = price.substring(price.length - 3, price.length);
+                modifiedPrice = firstNumber + ',' + secondNumber;
+            } else {
+                modifiedPrice = price;
+            }
+
+            if (mileage.length > 3) {
+                var _firstNumber = mileage.substring(0, mileage.length - 3);
+                var _secondNumber = mileage.substring(mileage.length - 3, mileage.length);
+                modifiedMileage = _firstNumber + ',' + _secondNumber;
+            } else {
+                modifiedMileage = mileage;
+            }
+
+            var listingImages = images.map(function (current) {
+                return _react2.default.createElement(_HeroImage.ImageListing, { img: current });
+            });
+            return _react2.default.createElement(
+                'div',
+                { className: _ListingItem2.default.imageWrapper },
+                this.state.elementCounter !== images.length ? _react2.default.createElement(
+                    _reactIcons.IconContext.Provider,
+                    { value: { color: 'white', size: '30px' } },
+                    _react2.default.createElement(
+                        'div',
+                        { className: _ListingItem2.default.arrowLeft,
+                            onClick: function onClick(event) {
+                                var wrapper = event.target.closest('.ListingItem__imageWrapper__1NQji').querySelector('.ListingItem__wrapper__UgLa3');
+                                _this2.setState(function (prevState) {
+                                    return {
+                                        counterMargin: prevState.counterMargin - 300
+                                    };
+                                }, function () {
+                                    wrapper.style.marginLeft = _this2.state.counterMargin + 'px';
+                                    _this2.setState(function (prevState) {
+                                        return {
+                                            elementCounter: prevState.elementCounter + 1
+                                        };
+                                    });
+                                });
+                            } },
+                        _react2.default.createElement(_fa.FaArrowLeft, null)
+                    )
+                ) : null,
+                this.state.elementCounter > 1 ? _react2.default.createElement(
+                    _reactIcons.IconContext.Provider,
+                    { value: { color: 'white', size: '30px' } },
+                    _react2.default.createElement(
+                        'div',
+                        { className: _ListingItem2.default.arrowRight,
+                            onClick: function onClick(event) {
+                                var wrapper = event.target.closest('.ListingItem__imageWrapper__1NQji').querySelector('.ListingItem__wrapper__UgLa3');
+                                _this2.setState(function (prevState) {
+                                    return {
+                                        counterMargin: prevState.counterMargin + 300
+                                    };
+                                }, function () {
+                                    wrapper.style.marginLeft = _this2.state.counterMargin + 'px';
+                                    _this2.setState(function (prevState) {
+                                        return {
+                                            elementCounter: prevState.elementCounter - 1
+                                        };
+                                    });
+                                });
+                            } },
+                        _react2.default.createElement(_fa.FaArrowRight, null)
+                    )
+                ) : null,
+                _react2.default.createElement(
+                    'div',
+                    { className: _ListingItem2.default.content },
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        condition
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: _ListingItem2.default.priceAndMileage },
+                        _react2.default.createElement(
+                            'p',
+                            { className: _ListingItem2.default.price },
+                            '$',
+                            modifiedPrice
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            { className: _ListingItem2.default.mileage },
+                            '| ',
+                            _react2.default.createElement(
+                                'span',
+                                null,
+                                modifiedMileage,
+                                'mi'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: _ListingItem2.default.yearAndModel },
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            year + ' ' + make + ' ' + model
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: _ListingItem2.default.params },
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'Ext.Color: ' + exteriorColor
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'Transmission: ' + transmission
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'Int.Color: ' + interiorColor
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'Fuel Type: ' + fuelType
+                        )
+                    ),
+                    this.props.admin ? _react2.default.createElement(
+                        _Button2.default,
+                        { updateListingButton: true },
+                        'Update Listing'
+                    ) : null
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: _ListingItem2.default.wrapper },
+                    listingImages.length > 0 ? listingImages : _react2.default.createElement('img', { src: _no_photo2.default, height: '240', width: '300' })
+                )
+            );
+        }
+    }]);
+
+    return ListingItem;
+}(_react.Component);
+
+exports.default = ListingItem;
 
 /***/ }),
 
@@ -67409,8 +67728,8 @@ var CreateListing = function (_Component) {
                         required: true
                     }
                 },
-                zipCode: {
-                    type: 'zipCode',
+                zip: {
+                    type: 'zip',
                     value: null,
                     valid: false,
                     touched: false,
@@ -67530,47 +67849,62 @@ var CreateListing = function (_Component) {
             _this.setState({
                 elements: copyElements,
                 inputs: copyInputs
-            });
+            }, function () {
+                var inputs = _extends({}, _this.state.inputs);
+                var arrayInputs = [];
 
-            if (valid) {
-                var fd = new FormData();
-
-                fd.append('year', _this.state.elements.year.data);
-                fd.append('make', _this.state.elements.make.data);
-                fd.append('model', _this.state.elements.model.data);
-                fd.append('bodyStyle', _this.state.elements.bodyStyle.data);
-                fd.append('transmission', _this.state.elements.transmission.data);
-                fd.append('exteriorColor', _this.state.elements.exteriorColor.data);
-                fd.append('interiorColor', _this.state.elements.interiorColor.data);
-                fd.append('numberOfDoors', _this.state.elements.numberOfDoors.data);
-                fd.append('fuelType', _this.state.elements.fuelType.data);
-                fd.append('condition', _this.state.elements.condition.data);
-                fd.append('price', _this.state.inputs.price.value);
-                fd.append('mileage', _this.state.inputs.mileage.value);
-                fd.append('description', _this.state.inputs.description.value);
-                fd.append('firstName', _this.state.inputs.firstName.value);
-                fd.append('lastName', _this.state.inputs.lastName.value);
-                fd.append('email', _this.state.inputs.email.value);
-                fd.append('phoneNumber', _this.state.inputs.phoneNumber.value);
-                fd.append('zip', _this.state.inputs.zipCode.value);
-
-                for (var i = 0; i < _this.state.images.length; i++) {
-                    fd.append('images[]', _this.state.images[i]);
+                for (var _prop in inputs) {
+                    arrayInputs.push(inputs[_prop]);
                 }
 
-                _this.setState({
-                    loading: true
+                arrayInputs.forEach(function (element) {
+                    var index = element.value.indexOf(',');
+                    inputs[element.type].value = element.value.replace(element.value.charAt(index), '');
                 });
 
-                _axios2.default.post('/create_listing', fd).then(function (response) {
-                    if (response.data === 'submitted') {
+                _this.setState({
+                    inputs: inputs
+                }, function () {
+                    if (valid) {
+                        var fd = new FormData();
+
+                        var elementsArray = [];
+                        for (var _prop2 in _this.state.elements) {
+                            elementsArray.push(_this.state.elements[_prop2]);
+                        }
+
+                        elementsArray.forEach(function (element) {
+                            fd.append(element.type, element.data);
+                        });
+
+                        var inputsArray = [];
+                        for (var _prop3 in _this.state.inputs) {
+                            inputsArray.push(_this.state.inputs[_prop3]);
+                        }
+
+                        inputsArray.forEach(function (element) {
+                            fd.append(element.type, element.value);
+                        });
+
+                        for (var i = 0; i < _this.state.images.length; i++) {
+                            fd.append('images[]', _this.state.images[i]);
+                        }
+
                         _this.setState({
-                            loading: false,
-                            formSubmitted: true
+                            loading: true
+                        });
+
+                        _axios2.default.post('/create_listing', fd).then(function (response) {
+                            if (response.data === 'submitted') {
+                                _this.setState({
+                                    loading: false,
+                                    formSubmitted: true
+                                });
+                            }
                         });
                     }
                 });
-            }
+            });
         }, _this.validateData = function (element) {
             var copyInputs = _extends({}, _this.state.inputs);
 
@@ -67650,7 +67984,7 @@ var CreateListing = function (_Component) {
                 } else {
                     copyInputs[currentElement.type].value = '';
                 }
-            } else if (currentElement.type === 'zipCode') {
+            } else if (currentElement.type === 'zip') {
                 copyInputs[currentElement.type].value = event.target.value;
                 if (event.target.value.length === 6) {
                     copyInputs[currentElement.type].value = copyInputs[currentElement.type].value.slice(0, copyInputs[currentElement.type].value.length - 1);
@@ -68247,6 +68581,14 @@ var _Button2 = _interopRequireDefault(_Button);
 
 var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 
+var _ListingItem = __webpack_require__(/*! ../../components/listingItem/ListingItem */ "./src/components/listingItem/ListingItem.js");
+
+var _ListingItem2 = _interopRequireDefault(_ListingItem);
+
+var _axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+
+var _axios2 = _interopRequireDefault(_axios);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -68261,9 +68603,19 @@ var SellCarPage = function (_Component) {
     _inherits(SellCarPage, _Component);
 
     function SellCarPage() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
         _classCallCheck(this, SellCarPage);
 
-        return _possibleConstructorReturn(this, (SellCarPage.__proto__ || Object.getPrototypeOf(SellCarPage)).apply(this, arguments));
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SellCarPage.__proto__ || Object.getPrototypeOf(SellCarPage)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+            items: []
+        }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(SellCarPage, [{
@@ -68272,17 +68624,58 @@ var SellCarPage = function (_Component) {
             this.props.setAuthParamToState();
         }
     }, {
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var _this2 = this;
+
+            if (this.props.auth) {
+                _axios2.default.get('/items_by_userId').then(function (response) {
+                    _this2.setState({
+                        items: response.data
+                    });
+                });
+            }
+        }
+    }, {
         key: 'render',
         value: function render() {
 
+            var listings = this.state.items.map(function (current) {
+                return _react2.default.createElement(_ListingItem2.default, { item: current,
+                    admin: true });
+            });
+            /*
+                    let component = (
+                        <React.Fragment>
+                            {this.props.auth === false ? (
+                                <HeroImage img="../../assets/sell_your_car.jpg" sellPage>
+                                    <ListingsIfNotLogin />
+                                </HeroImage>
+                            ) : this.props.auth === true ? (
+                                <HeroImage img="../../assets/sell_your_car.jpg" loggedIn>
+                                    <div className={classes.wrapper}>
+                                        <h1>Sell Your Car</h1>
+                                        <Link to="/create_listing">
+                                            <Button createListingButton>Create Listing</Button>
+                                        </Link>
+                                    </div>
+                                </HeroImage>
+                            ) : null}
+                        </React.Fragment>
+                    )
+            
+                    if(this.props.loading){
+                        component = (
+                            <div className={classes.spinner}>
+                                <Spinner />
+                            </div>
+                        )
+                    }
+             */
             var component = _react2.default.createElement(
-                _react2.default.Fragment,
-                null,
-                this.props.auth === false ? _react2.default.createElement(
-                    _HeroImage2.default,
-                    { img: '../../assets/sell_your_car.jpg', sellPage: true },
-                    _react2.default.createElement(_ListingsIfNotLogIn2.default, null)
-                ) : this.props.auth === true ? _react2.default.createElement(
+                'div',
+                { className: _SellCarPage2.default.wrapperSellPage },
+                _react2.default.createElement(
                     _HeroImage2.default,
                     { img: '../../assets/sell_your_car.jpg', loggedIn: true },
                     _react2.default.createElement(
@@ -68303,16 +68696,18 @@ var SellCarPage = function (_Component) {
                             )
                         )
                     )
-                ) : null
-            );
-
-            if (this.props.loading) {
-                component = _react2.default.createElement(
+                ),
+                _react2.default.createElement(
                     'div',
-                    { className: _SellCarPage2.default.spinner },
-                    _react2.default.createElement(_Spinner2.default, null)
-                );
-            }
+                    { className: _SellCarPage2.default.listings },
+                    _react2.default.createElement(
+                        'h1',
+                        null,
+                        'My Listings'
+                    ),
+                    listings
+                )
+            );
 
             return _react2.default.createElement(
                 'div',

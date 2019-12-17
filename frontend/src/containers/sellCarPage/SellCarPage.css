@@ -1,3 +1,7 @@
+.wrapperSellPage {
+    background-color: #f2f2f2;
+}
+
 .spinner {
     padding-top: 90px;
 }
@@ -11,4 +15,13 @@
     padding-top: 150px;
     font-family: 'Montserrat';
     color: var(--mainWhite);
+}
+
+.listings {
+    width: 75%;
+    margin-left: 50px;
+}
+
+.listings h1 {
+    color: var(--mainBlack);
 }

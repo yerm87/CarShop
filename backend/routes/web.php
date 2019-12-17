@@ -158,3 +158,5 @@ Route::get('/getEmail', function(Request $request){
 	return $user->email;
 	}
 });
+
+Route::get('/items_by_userId', 'ListingController@fetchItemsForSeller');
