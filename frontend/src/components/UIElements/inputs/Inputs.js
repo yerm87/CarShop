@@ -84,6 +84,7 @@ const Input = props => {
                     <select className={selectStyles.join(' ')}
                             disabled={props.invalid}
                             name="year"
+                            value={props.value}
                             onChange={props.onChangeHandler}>
                             <option value="select">Select year</option>
                             {props.children}
@@ -97,6 +98,7 @@ const Input = props => {
                     <select className={selectStyles.join(' ')}
                             disabled={props.invalid}
                             name="make"
+                            value={props.value}
                             onChange={props.onChangeHandler}>
                             <option value="select">Select make</option>
                             {props.children}
@@ -110,6 +112,7 @@ const Input = props => {
                     <select className={selectStyles.join(' ')}
                             disabled={props.invalid}
                             name="model"
+                            value={props.value}
                             onChange={props.onChangeHandler}>
                             <option value="select">Select model</option>
                             {props.children}
@@ -123,6 +126,7 @@ const Input = props => {
                     <select className={selectStyles.join(' ')}
                             disabled={props.invalid}
                             name="bodyStyle"
+                            value={props.value}
                             onChange={props.onChangeHandler}>
                             <option value="select">Select body style</option>
                             {props.children}
@@ -136,6 +140,7 @@ const Input = props => {
                     <select className={selectStyles.join(' ')}
                             disabled={props.invalid}
                             name="transmission"
+                            value={props.value}
                             onChange={props.onChangeHandler}>
                             <option value="select">Select transmission</option>
                             {props.children}
@@ -149,6 +154,7 @@ const Input = props => {
                     <select className={selectStyles.join(' ')}
                             disabled={props.invalid}
                             name="exteriorColor"
+                            value={props.value}
                             onChange={props.onChangeHandler}>
                             <option value="select">Select exterior color</option>
                             {props.children}
@@ -162,6 +168,7 @@ const Input = props => {
                     <select className={selectStyles.join(' ')}
                             disabled={props.invalid}
                             name="interiorColor"
+                            value={props.value}
                             onChange={props.onChangeHandler}>
                             <option value="select">Select interior color</option>
                             {props.children}
@@ -175,6 +182,7 @@ const Input = props => {
                     <select className={selectStyles.join(' ')}
                             disabled={props.invalid}
                             name="numberOfDoors"
+                            value={props.value}
                             onChange={props.onChangeHandler}>
                             <option value="select">Select number of doors</option>
                             {props.children}
@@ -188,6 +196,7 @@ const Input = props => {
                     <select className={selectStyles.join(' ')}
                             disabled={props.invalid}
                             name="fuelType"
+                            value={props.value}
                             onChange={props.onChangeHandler}>
                             <option value="select">Select fuel type</option>
                             {props.children}
@@ -201,6 +210,7 @@ const Input = props => {
                     <select className={selectStyles.join(' ')}
                             disabled={props.invalid}
                             name="condition"
+                            value={props.value}
                             onChange={props.onChangeHandler}>
                             <option value="select">Select condition</option>
                             {props.children}
@@ -312,6 +322,12 @@ const Input = props => {
                            onChange={props.onChangeHandler}
                            onBlur={props.onBlurHandler} />
                 </React.Fragment>
+            )
+        case('updateListing'):
+            return (
+                <input className={classes.submit}
+                       type="submit"
+                       value="Update Listing" />
             )
     }
 }

@@ -3689,7 +3689,7 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.6.10' };
+var core = module.exports = { version: '2.6.11' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -13123,13 +13123,17 @@ module.exports = __webpack_require__(/*! ./modules/_core */ "./node_modules/core
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".App__mainWrapper__1gK1z {\r\n    \r\n}", ""]);
 // Exports
 exports.locals = {
 	"mainWrapper": "App__mainWrapper__1gK1z"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13140,7 +13144,9 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".Button__button__3N-Dq {\r\n    font-family: 'Rubik';\r\n    border-radius: 10px;\r\n    cursor: pointer;\r\n}\r\n\r\n.Button__menuButton__2LvJ_ {\r\n    font-size: 16px;\r\n    padding: 7px;\r\n    background: transparent;\r\n    color: var(--mainWhite);\r\n    border: 1px solid var(--mainWhite);\r\n    margin: 15px 25px;\r\n}\r\n\r\n.Button__menuButton__2LvJ_:hover {\r\n    background: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.Button__loginInListings__393A3 {\r\n    font-size: 16px;\r\n    padding: 7px 18px 7px 18px;\r\n    color: var(--mainWhite);\r\n    border: 1px solid var(--mainWhite);\r\n    background-color: transparent;\r\n    margin: 15px 25px;\r\n}\r\n\r\n.Button__loginInListings__393A3:hover {\r\n    background-color: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.Button__signupOrLoginButton__2CQ2i {\r\n    font-size: 16px;\r\n    width: 100%;\r\n    border: none;\r\n    padding: 10px 0;\r\n    background: var(--mainBlue);\r\n    color: var(--mainWhite);\r\n    margin-top: 20px;\r\n}\r\n\r\n.Button__createListingButton__2icz4 {\r\n    margin-top: 100px;\r\n    width: 200px;\r\n    height: 80px;\r\n    color: var(--mainWhite);\r\n    background: transparent;\r\n    border: 1px solid var(--mainWhite);\r\n    font-size: 1.5em;\r\n}\r\n\r\n.Button__createListingButton__2icz4:hover {\r\n    background-color: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.Button__updateListingButton__26VnD {\r\n    background: var(--mainBlue);\r\n    color: var(--mainWhite);\r\n    width: 200px;\r\n    height: 40px;\r\n    font-size: 1.2em;\r\n    padding: 8px;\r\n}\r\n\r\n.Button__updateListingButton__26VnD:hover {\r\n    color: var(--mainBlue);\r\n    background: var(--mainWhite);\r\n    border: 1px solid var(--mainBlue);\r\n}", ""]);
 // Exports
@@ -13152,6 +13158,8 @@ exports.locals = {
 	"createListingButton": "Button__createListingButton__2icz4",
 	"updateListingButton": "Button__updateListingButton__26VnD"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13162,7 +13170,9 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".input__input__184-b {\r\n    border: 1px solid rgb(163, 156, 156);\r\n    height: 32px;\r\n}\r\n\r\n.input__invalid__3-QHW {\r\n    border: 1px solid var(--mainRed);\r\n}\r\n\r\n.input__wrapper__2JVeI {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n}\r\n\r\n.input__wrapper__2JVeI p {\r\n    color: var(--mainRed);\r\n    font-size: 0.8em;\r\n}\r\n\r\n.input__submit__hTeYa {\r\n    font-family: 'Rubik';\r\n    font-size: 16px;\r\n    border-radius: 10px;\r\n    width: 100%;\r\n    border: none;\r\n    padding: 10px 0;\r\n    background: var(--mainBlue);\r\n    color: var(--mainWhite);\r\n    margin-top: 20px;\r\n    cursor: pointer;\r\n    height: 40px;\r\n}\r\n\r\n.input__select__7Mdt4 {\r\n    display: block;\r\n    width: 40%;\r\n    font-family: 'Montserrat';\r\n    border-radius: 11px;\r\n    font-size: 1.1em;\r\n    padding: 8px;\r\n}\r\n\r\n.input__selectWrapper__2Tpan select {\r\n    display: block;\r\n    width: 100%;\r\n    font-family: 'Montserrat';\r\n    border-radius: 11px;\r\n    font-size: 1.1em;\r\n    padding: 8px;\r\n}\r\n\r\n.input__selectWrapper__2Tpan label {\r\n    display: block;\r\n    margin: 15px 0 6px 0;\r\n    font-weight: bold;\r\n}\r\n\r\n.input__textarea__1qwNb label {\r\n    display: block;\r\n    margin: 15px 0 6px 0;\r\n    font-weight: bold;\r\n}\r\n\r\n.input__textarea__1qwNb textarea {\r\n    resize: none;\r\n}", ""]);
 // Exports
@@ -13175,6 +13185,8 @@ exports.locals = {
 	"selectWrapper": "input__selectWrapper__2Tpan",
 	"textarea": "input__textarea__1qwNb"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13185,7 +13197,9 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".Logo__logoText__3HlRp {\r\n    margin: 0;\r\n    padding: 10px;\r\n    font-family: 'Lobster';\r\n    color: #C1E3CD;\r\n}\r\n\r\n.Logo__logoWrapper__1j_Jg {\r\n    background: rgb(63, 3, 75);\r\n    margin: 10px 0 10px 10px;\r\n    border-radius: 25px;\r\n}\r\n\r\n.Logo__logoWrapper__1j_Jg:hover {\r\n    cursor: pointer;\r\n}", ""]);
 // Exports
@@ -13193,6 +13207,8 @@ exports.locals = {
 	"logoText": "Logo__logoText__3HlRp",
 	"logoWrapper": "Logo__logoWrapper__1j_Jg"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13203,7 +13219,9 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".Spinner__loader__2JPKK,\r\n.Spinner__loader__2JPKK:after {\r\n  border-radius: 50%;\r\n  width: 10em;\r\n  height: 10em;\r\n}\r\n.Spinner__loader__2JPKK {\r\n  margin: 60px auto;\r\n  font-size: 10px;\r\n  position: relative;\r\n  text-indent: -9999em;\r\n  border-top: 1.1em solid rgba(46,119,209, 0.2);\r\n  border-right: 1.1em solid rgba(46,119,209, 0.2);\r\n  border-bottom: 1.1em solid rgba(46,119,209, 0.2);\r\n  border-left: 1.1em solid #2e77d1;\r\n  -webkit-transform: translateZ(0);\r\n  -ms-transform: translateZ(0);\r\n  transform: translateZ(0);\r\n  -webkit-animation: Spinner__load8__2gjoE 1.1s infinite linear;\r\n  animation: Spinner__load8__2gjoE 1.1s infinite linear;\r\n}\r\n@-webkit-keyframes Spinner__load8__2gjoE {\r\n  0% {\r\n    -webkit-transform: rotate(0deg);\r\n    transform: rotate(0deg);\r\n  }\r\n  100% {\r\n    -webkit-transform: rotate(360deg);\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n@keyframes Spinner__load8__2gjoE {\r\n  0% {\r\n    -webkit-transform: rotate(0deg);\r\n    transform: rotate(0deg);\r\n  }\r\n  100% {\r\n    -webkit-transform: rotate(360deg);\r\n    transform: rotate(360deg);\r\n  }\r\n}", ""]);
 // Exports
@@ -13211,6 +13229,8 @@ exports.locals = {
 	"loader": "Spinner__loader__2JPKK",
 	"load8": "Spinner__load8__2gjoE"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13221,7 +13241,9 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".UserIcon__wrapper__3iaRx {\r\n    margin-right: 30px;\r\n    cursor: pointer;\r\n}\r\n\r\n.UserIcon__item__2olcV {\r\n    \r\n}", ""]);
 // Exports
@@ -13229,6 +13251,8 @@ exports.locals = {
 	"wrapper": "UserIcon__wrapper__3iaRx",
 	"item": "UserIcon__item__2olcV"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13239,7 +13263,9 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".ListingItem__imageWrapper__1NQji {\r\n    overflow: hidden;\r\n    position: relative;\r\n    min-height: 240px;\r\n    border: 1px solid var(--mainBlack);\r\n    margin-top: 10px;\r\n    max-width: 1011.75px;\r\n}\r\n\r\n.ListingItem__content__U_jzQ {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 0;\r\n    padding: 10px;\r\n    width: 711.75px;\r\n    height: 100%;\r\n    background-color: white;\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n    font-family: 'Montserrat';\r\n    font-weight: bold;\r\n}\r\n\r\n.ListingItem__content__U_jzQ p {\r\n    margin: 8px 0;\r\n    padding-left: 10px;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: end;\r\n        -ms-flex-align: end;\r\n            align-items: flex-end;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c .ListingItem__price__tKqVf {\r\n    font-size: 1.4em;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c .ListingItem__mileage__3r2zF {\r\n    font-size: 0.9em;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c p span {\r\n    margin-left: 8px;\r\n}\r\n\r\n.ListingItem__params__2k34p {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    margin: 8px;\r\n}\r\n\r\n.ListingItem__params__2k34p p {\r\n    font-size: 0.8em;\r\n}\r\n\r\n.ListingItem__images__2WJyw {\r\n\r\n}\r\n\r\n.ListingItem__arrowLeft__WZrvT {\r\n    display: none;\r\n    position: absolute;\r\n    top: 100px;\r\n    left: 0;\r\n    width: 45px;\r\n    height: 42px;\r\n    background-color: rgba(158, 137, 137, 0.4);\r\n    padding: 9px 0 0 9px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingItem__arrowRight__3_9-- {\r\n    display: none;\r\n    position: absolute;\r\n    top: 100px;\r\n    left: 240px;\r\n    width: 45px;\r\n    height: 42px;\r\n    background-color: rgba(158, 137, 137, 0.4);\r\n    padding: 9px 0 0 9px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingItem__wrapper__UgLa3 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    overflow: hidden;\r\n    -webkit-transition: all 0.3s;\r\n    -o-transition: all 0.3s;\r\n    transition: all 0.3s;\r\n}\r\n\r\n.ListingItem__imageWrapper__1NQji:hover .ListingItem__arrowLeft__WZrvT {\r\n    display: block\r\n}\r\n\r\n.ListingItem__imageWrapper__1NQji:hover .ListingItem__arrowRight__3_9-- {\r\n    display: block;\r\n}", ""]);
 // Exports
@@ -13255,6 +13281,8 @@ exports.locals = {
 	"arrowRight": "ListingItem__arrowRight__3_9--",
 	"wrapper": "ListingItem__wrapper__UgLa3"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13265,13 +13293,17 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".ListingsIfNotLogin__listings__2EHgy {\r\n    text-align: center;\r\n    padding-top: 160px;\r\n    font-family: 'Rubik';\r\n}\r\n\r\n.ListingsIfNotLogin__listings__2EHgy h1, .ListingsIfNotLogin__listings__2EHgy p {\r\n    color: var(--mainWhite);\r\n}", ""]);
 // Exports
 exports.locals = {
 	"listings": "ListingsIfNotLogin__listings__2EHgy"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13282,13 +13314,17 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".LoginComponent__form__3BkZc {\r\n    width: 25%;\r\n    margin: 0 auto;\r\n    font-family: 'Rubik';\r\n    padding-top: 20px;\r\n}\r\n\r\n.LoginComponent__form__3BkZc label, .LoginComponent__form__3BkZc input {\r\n    display: block;\r\n}\r\n\r\n.LoginComponent__form__3BkZc label {\r\n    padding: 15px 0 5px 0;\r\n    font-weight: 600;\r\n}\r\n\r\n.LoginComponent__form__3BkZc input {\r\n    width: 100%;\r\n    border-radius: 8px;\r\n    font-size: 1.1em;\r\n    padding-left: 10px;\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n}\r\n\r\n.LoginComponent__form__3BkZc p {\r\n    color: var(--mainRed);\r\n}", ""]);
 // Exports
 exports.locals = {
 	"form": "LoginComponent__form__3BkZc"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13299,7 +13335,9 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".LoginOrSignup__wrapper__R4pPZ {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    padding-top: 90px;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    font-family: 'Rubik';\r\n    border-bottom: 1px solid rgb(179, 169, 169);\r\n    margin: 0 100px 0 100px;\r\n}\r\n\r\n.LoginOrSignup__wrapper__R4pPZ p {\r\n    padding: 5px;\r\n    margin: 15px;\r\n}\r\n\r\n.LoginOrSignup__wrapper__R4pPZ p:hover{\r\n    cursor: pointer;\r\n}\r\n\r\n.LoginOrSignup__activeClass__zn_wS {\r\n    border-bottom: 5px solid var(--mainBlue);\r\n}", ""]);
 // Exports
@@ -13307,6 +13345,8 @@ exports.locals = {
 	"wrapper": "LoginOrSignup__wrapper__R4pPZ",
 	"activeClass": "LoginOrSignup__activeClass__zn_wS"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13317,7 +13357,9 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".ModalUserInfo__wrapper__WbLuR {\r\n    display: none;\r\n    position: relative;\r\n    width: 250px;\r\n    height: 170px;\r\n    background-color: rgba(250, 245, 245, 0.993);\r\n    position: absolute;\r\n    top: 74px;\r\n    right: 20px;\r\n}\r\n\r\n.ModalUserInfo__show__2-FdC {\r\n    display: block;\r\n}\r\n\r\n.ModalUserInfo__wrapper__WbLuR p {\r\n    margin: 0;\r\n    padding: 12px 0;   \r\n    font-family: 'Montserrat';\r\n    color: rgba(12, 10, 10, 0.692);\r\n}\r\n\r\n.ModalUserInfo__wrapper__WbLuR .ModalUserInfo__email__2LUb4 {\r\n    margin-left: 10px;\r\n}\r\n\r\n.ModalUserInfo__wrapper__WbLuR .ModalUserInfo__item__2Tt6R {\r\n    text-align: center;\r\n    cursor: pointer;\r\n}\r\n\r\n.ModalUserInfo__wrapper__WbLuR .ModalUserInfo__item__2Tt6R:hover {\r\n    background-color: var(--mainBlue);\r\n    color: var(--mainWhite);\r\n}\r\n\r\n.ModalUserInfo__element__YaoIx {\r\n    position: absolute;\r\n    width: 17px;\r\n    height: 17px;\r\n    background-color: rgba(250, 245, 245, 0.993);\r\n    top: -8px;\r\n    right: 21px;\r\n    -webkit-transform: rotate(45deg);\r\n        -ms-transform: rotate(45deg);\r\n            transform: rotate(45deg);\r\n}", ""]);
 // Exports
@@ -13328,6 +13370,8 @@ exports.locals = {
 	"item": "ModalUserInfo__item__2Tt6R",
 	"element": "ModalUserInfo__element__YaoIx"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13338,13 +13382,17 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".NavigationItems__items__1DGJ9 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    font-family: 'Rubik';\r\n    color: var(--mainWhite);\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n}", ""]);
 // Exports
 exports.locals = {
 	"items": "NavigationItems__items__1DGJ9"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13355,7 +13403,9 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".NavigationItem__item__1IIYu {\r\n    display: inline;\r\n    margin: 10px 20px 0 0;\r\n}\r\n\r\n.NavigationItem__wrapping__2UHGj {\r\n    padding: 26px 9px 24px 20px;\r\n}\r\n\r\n.NavigationItem__wrapping__2UHGj:hover {\r\n    background: rgba(0, 0, 0, 0.5);\r\n    cursor: pointer;\r\n}\r\n\r\na {\r\n    text-decoration: none;\r\n    color: var(--mainWhite);\r\n}", ""]);
 // Exports
@@ -13363,6 +13413,8 @@ exports.locals = {
 	"item": "NavigationItem__item__1IIYu",
 	"wrapping": "NavigationItem__wrapping__2UHGj"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13373,7 +13425,9 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".SearchComponent__searchContainer__2qab3 {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr 1fr;\r\n    grid-template-rows: 1fr 1fr;\r\n    background: -webkit-gradient(linear, left top, left bottom, from(var(--lightBlue)), to(var(--mainBlue)));\r\n    background: -o-linear-gradient(var(--lightBlue), var(--mainBlue));\r\n    background: linear-gradient(var(--lightBlue), var(--mainBlue));\r\n    width: 70%;\r\n    margin: 0 auto;\r\n    padding: 27px;\r\n    margin-top: 290px;\r\n}\r\n\r\n.SearchComponent__searchContainer__2qab3 select {\r\n    width: 100%;\r\n    border-top: none;\r\n    border-left: none;\r\n    border-right: none;\r\n    font-family: 'Montserrat';\r\n    font-size: 1rem;\r\n    padding: 10px;\r\n    cursor: pointer;\r\n}\r\n\r\n.SearchComponent__searchContainer__2qab3 input {\r\n    border-top: none;\r\n    border-left: none;\r\n    border-right: none;\r\n    border-bottom: 1px solid gray;\r\n    font-family: 'Montserrat';\r\n    font-size: 1rem;\r\n    padding: 10px;\r\n    width: 30%;\r\n}\r\n\r\n.SearchComponent__zip__tssMJ {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n}\r\n\r\n.SearchComponent__searchContainer__2qab3 button {\r\n    background-color: rgb(26, 100, 26);\r\n    font-family: 'Montserrat';\r\n    color: var(--mainWhite);\r\n    border: none;\r\n    cursor: pointer;\r\n}", ""]);
 // Exports
@@ -13381,6 +13435,8 @@ exports.locals = {
 	"searchContainer": "SearchComponent__searchContainer__2qab3",
 	"zip": "SearchComponent__zip__tssMJ"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13391,13 +13447,17 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".SignupComponent__form__3VOfe {\r\n    width: 25%;\r\n    margin: 0 auto;\r\n    font-family: 'Rubik';\r\n    padding-top: 20px;\r\n}\r\n\r\n.SignupComponent__form__3VOfe label, .SignupComponent__form__3VOfe input {\r\n    display: block;\r\n}\r\n\r\n.SignupComponent__form__3VOfe label {\r\n    padding: 15px 0 5px 0;\r\n    font-weight: 600;\r\n}\r\n\r\n.SignupComponent__form__3VOfe input {\r\n    width: 100%;\r\n    border-radius: 8px;\r\n    \r\n    font-size: 1.1em;\r\n    padding-left: 10px;\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n}\r\n\r\n.SignupComponent__form__3VOfe p {\r\n    color: var(--mainRed);\r\n}", ""]);
 // Exports
 exports.locals = {
 	"form": "SignupComponent__form__3VOfe"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13408,13 +13468,17 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".Title__title__AW-QN h1 {\r\n    font-family: 'Montserrat';\r\n    padding-top: 180px;\r\n    padding-left: 70px;\r\n    color: var(--mainWhite);\r\n    margin: 0;\r\n    font-size: 2.2em;\r\n}\r\n\r\n.Title__title__AW-QN p {\r\n    font-family: 'Montserrat';\r\n    color: var(--mainWhite);\r\n    padding-left: 70px;\r\n}", ""]);
 // Exports
 exports.locals = {
 	"title": "Title__title__AW-QN"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13425,7 +13489,9 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".CreateListing__wrapperListing__2BA2C {\r\n    background-color: var(--mainWhite);\r\n    padding: 100px 0 40px 70px;\r\n    font-family: 'Montserrat';\r\n    width: 40%;\r\n}\r\n\r\n.CreateListing__wrapperListing__2BA2C p {\r\n    color: var(--mainRed);\r\n}\r\n\r\n.CreateListing__wrapperListing__2BA2C h1 {\r\n    margin: 0;\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.CreateListing__drop__1uTlS {\r\n    padding: 90px;\r\n    border: 3px dashed rgb(175, 155, 155);\r\n    width: 60%;\r\n    margin: 20px 0;\r\n    text-align: center;\r\n}\r\n\r\n.CreateListing__image__PXnjY {\r\n    border-radius: 8px;\r\n    border: 1px solid gray;\r\n    padding: 6px;\r\n    text-align: center;\r\n}\r\n\r\n.CreateListing__image__PXnjY img {\r\n    max-width: 110px;\r\n    max-height: 70px;\r\n}\r\n\r\n.CreateListing__images__2lYnj {\r\n    display: grid;\r\n    width: 60%;\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n    grid-template-columns: 1fr 1fr 1fr 1fr;\r\n    grid-column-gap: 14px;\r\n    grid-row-gap: 14px;\r\n}\r\n\r\n.CreateListing__inputs__2u_G8 {\r\n    font-family: 'Rubik';\r\n    padding-top: 20px;\r\n}\r\n\r\n.CreateListing__inputs__2u_G8 label, .CreateListing__inputs__2u_G8 input {\r\n    display: block;\r\n}\r\n\r\n.CreateListing__inputs__2u_G8 label {\r\n    padding: 8px 0 5px 0;\r\n    font-weight: 600;\r\n}\r\n\r\n.CreateListing__inputs__2u_G8 input {\r\n    width: 100%;\r\n    border-radius: 8px;\r\n    \r\n    font-size: 1.1em;\r\n    padding-left: 10px;\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n}\r\n\r\n.CreateListing__inputs__2u_G8 p {\r\n    color: var(--mainRed);\r\n}\r\n\r\n.CreateListing__vehicleInfo__9FJ1V {\r\n    padding-bottom: 40px;\r\n    border-bottom: 1px solid gray;\r\n}\r\n\r\n.CreateListing__contactData__3qzfc h2 {\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.CreateListing__image__PXnjY img {\r\n    max-width: 110px;\r\n    max-height: 70px;\r\n}\r\n\r\n.CreateListing__imageWrapper__3vYJQ {\r\n    position: relative;\r\n}\r\n\r\n.CreateListing__deleteButton__33l3c {\r\n    display: none;\r\n    position: absolute;\r\n    width: 19px;\r\n    height: 19px;\r\n    top: 5px;\r\n    right: 5px;\r\n    background-color: var(--mainRed);\r\n    color: var(--mainWhite);\r\n    font-weight: bold;\r\n    border-radius: 14px;\r\n    cursor: pointer;\r\n}\r\n\r\n.CreateListing__image__PXnjY:hover .CreateListing__deleteButton__33l3c {\r\n    display: block;\r\n}\r\n", ""]);
 // Exports
@@ -13440,6 +13506,8 @@ exports.locals = {
 	"imageWrapper": "CreateListing__imageWrapper__3vYJQ",
 	"deleteButton": "CreateListing__deleteButton__33l3c"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13450,13 +13518,17 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".LoginPage__wrapper__4VyXr {\r\n    padding-top: 100px;\r\n}\r\n\r\n.LoginPage__wrapper__4VyXr p {\r\n    text-align: center;\r\n    font-family: 'Montserrat';\r\n}\r\n\r\n.LoginPage__wrapper__4VyXr span {\r\n    color: var(--mainBlue);\r\n    cursor: pointer;\r\n}", ""]);
 // Exports
 exports.locals = {
 	"wrapper": "LoginPage__wrapper__4VyXr"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13467,13 +13539,17 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".Main_page__wrapper__3DlnG {\r\n    \r\n}", ""]);
 // Exports
 exports.locals = {
 	"wrapper": "Main_page__wrapper__3DlnG"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13484,7 +13560,9 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".SellCarPage__wrapperSellPage__1ikfT {\r\n    background-color: #f2f2f2;\r\n}\r\n\r\n.SellCarPage__spinner__2lul4 {\r\n    padding-top: 90px;\r\n}\r\n\r\n.SellCarPage__wrapper__3rkDR {\r\n    text-align: center;\r\n}\r\n\r\n.SellCarPage__wrapper__3rkDR h1 {\r\n    margin: 0;\r\n    padding-top: 150px;\r\n    font-family: 'Montserrat';\r\n    color: var(--mainWhite);\r\n}\r\n\r\n.SellCarPage__listings__2hJHL {\r\n    width: 75%;\r\n    margin-left: 50px;\r\n}\r\n\r\n.SellCarPage__listings__2hJHL h1 {\r\n    color: var(--mainBlack);\r\n}", ""]);
 // Exports
@@ -13494,6 +13572,8 @@ exports.locals = {
 	"wrapper": "SellCarPage__wrapper__3rkDR",
 	"listings": "SellCarPage__listings__2hJHL"
 };
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13504,13 +13584,46 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".Toolbar__toolbar__UKnml {\r\n    background: -webkit-gradient(linear, left top, left bottom, from(var(--lightBlue)), to(var(--mainBlue)));\r\n    background: -o-linear-gradient(var(--lightBlue), var(--mainBlue));\r\n    background: linear-gradient(var(--lightBlue), var(--mainBlue));\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    height: 70px;\r\n    width: 100%;\r\n}", ""]);
 // Exports
 exports.locals = {
 	"toolbar": "Toolbar__toolbar__UKnml"
 };
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/update_listing/UpdateListing.css":
+/*!****************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/containers/update_listing/UpdateListing.css ***!
+  \****************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".UpdateListing__wrapperListing__3kB14 {\r\n    background-color: var(--mainWhite);\r\n    padding: 100px 0 40px 70px;\r\n    font-family: 'Montserrat';\r\n    width: 40%;\r\n}\r\n\r\n.UpdateListing__wrapperListing__3kB14 p {\r\n    color: var(--mainRed);\r\n}\r\n\r\n.UpdateListing__wrapperListing__3kB14 h1 {\r\n    margin: 0;\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.UpdateListing__drop__365Fh {\r\n    padding: 90px;\r\n    border: 3px dashed rgb(175, 155, 155);\r\n    width: 60%;\r\n    margin: 20px 0;\r\n    text-align: center;\r\n}\r\n\r\n.UpdateListing__image__34YNz {\r\n    border-radius: 8px;\r\n    border: 1px solid gray;\r\n    padding: 6px;\r\n    text-align: center;\r\n}\r\n\r\n.UpdateListing__image__34YNz img {\r\n    max-width: 110px;\r\n    max-height: 70px;\r\n}\r\n\r\n.UpdateListing__images__ebQz1 {\r\n    display: grid;\r\n    width: 60%;\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n    grid-template-columns: 1fr 1fr 1fr 1fr;\r\n    grid-column-gap: 14px;\r\n    grid-row-gap: 14px;\r\n}\r\n\r\n.UpdateListing__inputs__2fVWq {\r\n    font-family: 'Rubik';\r\n    padding-top: 20px;\r\n}\r\n\r\n.UpdateListing__inputs__2fVWq label, .UpdateListing__inputs__2fVWq input {\r\n    display: block;\r\n}\r\n\r\n.UpdateListing__inputs__2fVWq label {\r\n    padding: 8px 0 5px 0;\r\n    font-weight: 600;\r\n}\r\n\r\n.UpdateListing__inputs__2fVWq input {\r\n    width: 100%;\r\n    border-radius: 8px;\r\n    \r\n    font-size: 1.1em;\r\n    padding-left: 10px;\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n}\r\n\r\n.UpdateListing__inputs__2fVWq p {\r\n    color: var(--mainRed);\r\n}\r\n\r\n.UpdateListing__vehicleInfo__23WRz {\r\n    padding-bottom: 40px;\r\n    border-bottom: 1px solid gray;\r\n}\r\n\r\n.UpdateListing__contactData__3Mixb h2 {\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.UpdateListing__image__34YNz img {\r\n    max-width: 110px;\r\n    max-height: 70px;\r\n}\r\n\r\n.UpdateListing__imageWrapper__pUFuo {\r\n    position: relative;\r\n}\r\n\r\n.UpdateListing__deleteButton__3N5qw {\r\n    display: none;\r\n    position: absolute;\r\n    width: 19px;\r\n    height: 19px;\r\n    top: 5px;\r\n    right: 5px;\r\n    background-color: var(--mainRed);\r\n    color: var(--mainWhite);\r\n    font-weight: bold;\r\n    border-radius: 14px;\r\n    cursor: pointer;\r\n}\r\n\r\n.UpdateListing__image__34YNz:hover .UpdateListing__deleteButton__3N5qw {\r\n    display: block;\r\n}", ""]);
+// Exports
+exports.locals = {
+	"wrapperListing": "UpdateListing__wrapperListing__3kB14",
+	"drop": "UpdateListing__drop__365Fh",
+	"image": "UpdateListing__image__34YNz",
+	"images": "UpdateListing__images__ebQz1",
+	"inputs": "UpdateListing__inputs__2fVWq",
+	"vehicleInfo": "UpdateListing__vehicleInfo__23WRz",
+	"contactData": "UpdateListing__contactData__3Mixb",
+	"imageWrapper": "UpdateListing__imageWrapper__pUFuo",
+	"deleteButton": "UpdateListing__deleteButton__3N5qw"
+};
+module.exports = exports;
+
 
 /***/ }),
 
@@ -13538,7 +13651,7 @@ module.exports = function (useSourceMap) {
       var content = cssWithMappingToString(item, useSourceMap);
 
       if (item[2]) {
-        return "@media ".concat(item[2], "{").concat(content, "}");
+        return "@media ".concat(item[2], " {").concat(content, "}");
       }
 
       return content;
@@ -13553,32 +13666,18 @@ module.exports = function (useSourceMap) {
       modules = [[null, modules, '']];
     }
 
-    var alreadyImportedModules = {};
+    for (var i = 0; i < modules.length; i++) {
+      var item = [].concat(modules[i]);
 
-    for (var i = 0; i < this.length; i++) {
-      // eslint-disable-next-line prefer-destructuring
-      var id = this[i][0];
-
-      if (id != null) {
-        alreadyImportedModules[id] = true;
-      }
-    }
-
-    for (var _i = 0; _i < modules.length; _i++) {
-      var item = modules[_i]; // skip already imported module
-      // this implementation is not 100% perfect for weird media query combinations
-      // when a module is imported multiple times with different media queries.
-      // I hope this will never occur (Hey this way we have smaller bundles)
-
-      if (item[0] == null || !alreadyImportedModules[item[0]]) {
-        if (mediaQuery && !item[2]) {
+      if (mediaQuery) {
+        if (!item[2]) {
           item[2] = mediaQuery;
-        } else if (mediaQuery) {
-          item[2] = "(".concat(item[2], ") and (").concat(mediaQuery, ")");
+        } else {
+          item[2] = "".concat(mediaQuery, " and ").concat(item[2]);
         }
-
-        list.push(item);
       }
+
+      list.push(item);
     }
   };
 
@@ -64679,6 +64778,7 @@ module.exports = function(originalModule) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -64770,6 +64870,10 @@ var _Logout = __webpack_require__(/*! ./containers/logout_page/Logout */ "./src/
 
 var _Logout2 = _interopRequireDefault(_Logout);
 
+var _UpdateListing = __webpack_require__(/*! ./containers/update_listing/UpdateListing */ "./src/containers/update_listing/UpdateListing.js");
+
+var _UpdateListing2 = _interopRequireDefault(_UpdateListing);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -64834,6 +64938,7 @@ var App = function (_Component) {
                     _react2.default.createElement(_reactRouterDom.Route, { path: "/create_listing", component: _CreateListing2.default }),
                     _react2.default.createElement(_reactRouterDom.Route, { path: "/login", component: _LoginPage2.default }),
                     _react2.default.createElement(_reactRouterDom.Route, { path: "/logout", component: _Logout2.default }),
+                    _react2.default.createElement(_reactRouterDom.Route, { path: "/update_listing/:listingId", component: _UpdateListing2.default }),
                     _react2.default.createElement(_reactRouterDom.Route, { path: "/", component: _Main_page2.default })
                 )
             );
@@ -64889,6 +64994,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./Button.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/UIElements/button/Button.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -65098,6 +65204,7 @@ var Input = function Input(props) {
                     { className: selectStyles.join(' '),
                         disabled: props.invalid,
                         name: 'year',
+                        value: props.value,
                         onChange: props.onChangeHandler },
                     _react2.default.createElement(
                         'option',
@@ -65121,6 +65228,7 @@ var Input = function Input(props) {
                     { className: selectStyles.join(' '),
                         disabled: props.invalid,
                         name: 'make',
+                        value: props.value,
                         onChange: props.onChangeHandler },
                     _react2.default.createElement(
                         'option',
@@ -65144,6 +65252,7 @@ var Input = function Input(props) {
                     { className: selectStyles.join(' '),
                         disabled: props.invalid,
                         name: 'model',
+                        value: props.value,
                         onChange: props.onChangeHandler },
                     _react2.default.createElement(
                         'option',
@@ -65167,6 +65276,7 @@ var Input = function Input(props) {
                     { className: selectStyles.join(' '),
                         disabled: props.invalid,
                         name: 'bodyStyle',
+                        value: props.value,
                         onChange: props.onChangeHandler },
                     _react2.default.createElement(
                         'option',
@@ -65190,6 +65300,7 @@ var Input = function Input(props) {
                     { className: selectStyles.join(' '),
                         disabled: props.invalid,
                         name: 'transmission',
+                        value: props.value,
                         onChange: props.onChangeHandler },
                     _react2.default.createElement(
                         'option',
@@ -65213,6 +65324,7 @@ var Input = function Input(props) {
                     { className: selectStyles.join(' '),
                         disabled: props.invalid,
                         name: 'exteriorColor',
+                        value: props.value,
                         onChange: props.onChangeHandler },
                     _react2.default.createElement(
                         'option',
@@ -65236,6 +65348,7 @@ var Input = function Input(props) {
                     { className: selectStyles.join(' '),
                         disabled: props.invalid,
                         name: 'interiorColor',
+                        value: props.value,
                         onChange: props.onChangeHandler },
                     _react2.default.createElement(
                         'option',
@@ -65259,6 +65372,7 @@ var Input = function Input(props) {
                     { className: selectStyles.join(' '),
                         disabled: props.invalid,
                         name: 'numberOfDoors',
+                        value: props.value,
                         onChange: props.onChangeHandler },
                     _react2.default.createElement(
                         'option',
@@ -65282,6 +65396,7 @@ var Input = function Input(props) {
                     { className: selectStyles.join(' '),
                         disabled: props.invalid,
                         name: 'fuelType',
+                        value: props.value,
                         onChange: props.onChangeHandler },
                     _react2.default.createElement(
                         'option',
@@ -65305,6 +65420,7 @@ var Input = function Input(props) {
                     { className: selectStyles.join(' '),
                         disabled: props.invalid,
                         name: 'condition',
+                        value: props.value,
                         onChange: props.onChangeHandler },
                     _react2.default.createElement(
                         'option',
@@ -65486,6 +65602,10 @@ var Input = function Input(props) {
                     onChange: props.onChangeHandler,
                     onBlur: props.onBlurHandler })
             );
+        case 'updateListing':
+            return _react2.default.createElement('input', { className: _input2.default.submit,
+                type: 'submit',
+                value: 'Update Listing' });
     }
 };
 
@@ -65501,6 +65621,7 @@ exports.default = Input;
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./input.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/UIElements/inputs/input.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -65528,6 +65649,7 @@ if (content.locals) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./Logo.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/UIElements/logo/Logo.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -65595,6 +65717,7 @@ exports.default = Logo;
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./Spinner.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/UIElements/spinner/Spinner.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -65654,6 +65777,7 @@ exports.default = Spinner;
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./UserIcon.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/UIElements/userIcon/UserIcon.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -65804,6 +65928,7 @@ exports.default = HeroImage;
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./ListingItem.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/listingItem/ListingItem.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -65861,6 +65986,8 @@ var _no_photo = __webpack_require__(/*! ../../assets/no_photo.jpg */ "./src/asse
 
 var _no_photo2 = _interopRequireDefault(_no_photo);
 
+var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -65895,6 +66022,7 @@ var ListingItem = function (_Component) {
             var _this2 = this;
 
             var _props$item = this.props.item,
+                _id = _props$item._id,
                 condition = _props$item.condition,
                 price = _props$item.price,
                 mileage = _props$item.mileage,
@@ -66044,9 +66172,13 @@ var ListingItem = function (_Component) {
                         )
                     ),
                     this.props.admin ? _react2.default.createElement(
-                        _Button2.default,
-                        { updateListingButton: true },
-                        'Update Listing'
+                        _reactRouterDom.Link,
+                        { to: '/update_listing/' + _id },
+                        _react2.default.createElement(
+                            _Button2.default,
+                            { updateListingButton: true },
+                            'Update Listing'
+                        )
                     ) : null
                 ),
                 _react2.default.createElement(
@@ -66055,6 +66187,77 @@ var ListingItem = function (_Component) {
                     listingImages.length > 0 ? listingImages : _react2.default.createElement('img', { src: _no_photo2.default, height: '240', width: '300' })
                 )
             );
+
+            /*return (
+                <div className={classes.imageWrapper}>
+                    <IconContext.Provider value={{color: 'white', size: '30px'}}>
+                        <div className={classes.arrowLeft}
+                             onClick={(event) => {
+                                const wrapper = event.target.closest('.ListingItem__imageWrapper__1NQji')
+                                .querySelector('.ListingItem__wrapper__UgLa3');
+                                this.setState(prevState => {
+                                    return {
+                                        counterMargin: prevState.counterMargin - 300
+                                    }
+                                }, () => {
+                                    wrapper.style.marginLeft = this.state.counterMargin + 'px';
+                                    this.setState((prevState) => {
+                                        return {
+                                            elementCounter: prevState.elementCounter + 1
+                                        }
+                                    });
+                                })
+                            }}>
+                            <FaArrowLeft />
+                        </div>
+                    </IconContext.Provider>
+                    <IconContext.Provider value={{color: 'white', size: '30px'}}>
+                        <div className={classes.arrowRight}
+                             onClick={(event) => {
+                                const wrapper = event.target.closest('.ListingItem__imageWrapper__1NQji')
+                                .querySelector('.ListingItem__wrapper__UgLa3');
+                                this.setState((prevState) => {
+                                    return {
+                                        counterMargin: prevState.counterMargin + 300
+                                    }
+                                }, () => {
+                                    wrapper.style.marginLeft = this.state.counterMargin + 'px';
+                                    this.setState((prevState) => {
+                                        return {
+                                            elementCounter: prevState.elementCounter - 1
+                                        }
+                                    });
+                                });
+                             }}>
+                            <FaArrowRight />
+                        </div>
+                    </IconContext.Provider>
+                    <div className={classes.content}>
+                        <p>Used</p>
+                        <div className={classes.priceAndMileage}>
+                            <p className={classes.price}>$9999</p>
+                            <p className={classes.mileage}>| <span>30123mi</span></p>
+                        </div>
+                        <div className={classes.yearAndModel}>
+                            <p>{`2014 Chevrolet Camaro`}</p>
+                        </div>
+                        <div className={classes.params}>
+                            <p>{`Ext.Color:`}</p>
+                            <p>{`Transmission:`}</p>
+                            <p>{`Int.Color:`}</p>
+                            <p>{`Fuel Type:`}</p>
+                        </div>
+                        {this.props.admin ? (
+                            <Link to="/update_listing/777">
+                                <Button updateListingButton>Update Listing</Button>
+                            </Link>
+                        ) : null}
+                    </div>
+                    <div className={classes.wrapper}>
+                        
+                    </div>
+                </div>
+            )*/
         }
     }]);
 
@@ -66133,6 +66336,7 @@ exports.default = ListingsIfNotLogIn;
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./ListingsIfNotLogin.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/listingsIfNotLogIn/ListingsIfNotLogin.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -66160,6 +66364,7 @@ if (content.locals) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./LoginComponent.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/loginComponent/LoginComponent.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -66433,6 +66638,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./LoginOrSignup.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/loginOrSignupMode/LoginOrSignup.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -66593,6 +66799,7 @@ exports.default = (0, _reactRedux.connect)(null, mapDispatchToProps)(LoginOrSign
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./ModalUserInfo.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/modalUserInfo/ModalUserInfo.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -66710,6 +66917,7 @@ exports.default = ModalUserInfo;
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./NavigationItems.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/navigationItems/NavigationItems.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -66844,6 +67052,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps)(NavigationItems);
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./NavigationItem.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/navigationItems/item/NavigationItem.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -66917,6 +67126,7 @@ exports.default = NavigationItem;
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./SearchComponent.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/searchComponent/SearchComponent.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -67034,6 +67244,7 @@ exports.default = SearchComponent;
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./SignupComponent.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/signupComponent/SignupComponent.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -67416,6 +67627,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps)(SignupForm);
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./Title.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/title/Title.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -67489,6 +67701,7 @@ exports.default = Title;
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./CreateListing.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/create_listing/CreateListing.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -67783,6 +67996,7 @@ var CreateListing = function (_Component) {
 
                         shortArray.forEach(function (element) {
                             copyElements[element].active = false;
+                            copyElements[element].valid = false;
                             copyElements[element].value = [];
                             copyElements[element].data = '';
                         });
@@ -68242,6 +68456,7 @@ exports.default = CreateListing;
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./LoginPage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/login_page/LoginPage.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -68410,6 +68625,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./Main_page.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/main_page/Main_page.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -68514,6 +68730,7 @@ exports.default = MainPage;
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./SellCarPage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/sellCarPage/SellCarPage.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -68810,6 +69027,7 @@ exports.default = SignupPage;
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./Toolbar.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/toolbar/Toolbar.css");
+content = content.__esModule ? content.default : content;
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -68885,6 +69103,791 @@ var Toolbar = function (_Component) {
 }(_react.Component);
 
 exports.default = Toolbar;
+
+/***/ }),
+
+/***/ "./src/containers/update_listing/UpdateListing.css":
+/*!*********************************************************!*\
+  !*** ./src/containers/update_listing/UpdateListing.css ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./UpdateListing.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/update_listing/UpdateListing.css");
+content = content.__esModule ? content.default : content;
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+
+/***/ }),
+
+/***/ "./src/containers/update_listing/UpdateListing.js":
+/*!********************************************************!*\
+  !*** ./src/containers/update_listing/UpdateListing.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+
+var _axios2 = _interopRequireDefault(_axios);
+
+var _UpdateListing = __webpack_require__(/*! ./UpdateListing.css */ "./src/containers/update_listing/UpdateListing.css");
+
+var _UpdateListing2 = _interopRequireDefault(_UpdateListing);
+
+var _Inputs = __webpack_require__(/*! ../../components/UIElements/inputs/Inputs */ "./src/components/UIElements/inputs/Inputs.js");
+
+var _Inputs2 = _interopRequireDefault(_Inputs);
+
+var _reactDropzone = __webpack_require__(/*! react-dropzone */ "./node_modules/react-dropzone/dist/es/index.js");
+
+var _reactDropzone2 = _interopRequireDefault(_reactDropzone);
+
+var _Spinner = __webpack_require__(/*! ../../components/UIElements/spinner/Spinner */ "./src/components/UIElements/spinner/Spinner.js");
+
+var _Spinner2 = _interopRequireDefault(_Spinner);
+
+var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var UpdateListing = function (_Component) {
+    _inherits(UpdateListing, _Component);
+
+    function UpdateListing() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, UpdateListing);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = UpdateListing.__proto__ || Object.getPrototypeOf(UpdateListing)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+            elements: {
+                year: {
+                    type: 'year',
+                    value: [],
+                    active: true,
+                    valid: true,
+                    clicked: false,
+                    data: ''
+                },
+                make: {
+                    type: 'make',
+                    value: [],
+                    active: true,
+                    valid: true,
+                    clicked: false,
+                    data: ''
+                },
+                model: {
+                    type: 'model',
+                    value: [],
+                    active: true,
+                    valid: true,
+                    clicked: false,
+                    data: ''
+                },
+                bodyStyle: {
+                    type: 'bodyStyle',
+                    value: [],
+                    active: true,
+                    valid: true,
+                    clicked: false,
+                    data: ''
+                },
+                transmission: {
+                    type: 'transmission',
+                    value: [],
+                    active: true,
+                    valid: true,
+                    clicked: false,
+                    data: ''
+                },
+                exteriorColor: {
+                    type: 'exteriorColor',
+                    value: [],
+                    active: true,
+                    valid: true,
+                    clicked: false,
+                    data: ''
+                },
+                interiorColor: {
+                    type: 'interiorColor',
+                    value: [],
+                    active: true,
+                    valid: true,
+                    clicked: false,
+                    data: ''
+                },
+                numberOfDoors: {
+                    type: 'numberOfDoors',
+                    value: [],
+                    active: true,
+                    valid: true,
+                    clicked: false,
+                    data: ''
+                },
+                fuelType: {
+                    type: 'fuelType',
+                    value: [],
+                    active: true,
+                    valid: true,
+                    clicked: false,
+                    data: ''
+                },
+                condition: {
+                    type: 'condition',
+                    value: [],
+                    active: true,
+                    valid: true,
+                    clicked: false,
+                    data: ''
+                }
+            },
+            inputs: {
+                price: {
+                    type: 'price',
+                    value: '',
+                    valid: true,
+                    touched: true,
+                    errorMessage: '',
+                    rules: {
+                        required: true
+                    }
+                },
+                mileage: {
+                    type: 'mileage',
+                    value: '',
+                    valid: true,
+                    touched: true,
+                    errorMessage: '',
+                    rules: {
+                        required: true
+                    }
+                },
+                description: {
+                    type: 'description',
+                    value: '',
+                    valid: true,
+                    touched: true,
+                    errorMessage: '',
+                    rules: {
+                        required: false
+                    }
+                },
+                firstName: {
+                    type: 'firstName',
+                    value: '',
+                    valid: true,
+                    touched: true,
+                    errorMessage: '',
+                    rules: {
+                        required: true
+                    }
+                },
+                lastName: {
+                    type: 'lastName',
+                    value: '',
+                    valid: true,
+                    touched: true,
+                    errorMessage: '',
+                    rules: {
+                        required: true
+                    }
+                },
+                email: {
+                    type: 'email',
+                    value: '',
+                    valid: true,
+                    touched: true,
+                    errorMessage: '',
+                    rules: {
+                        required: true
+                    }
+                },
+                phoneNumber: {
+                    type: 'phoneNumber',
+                    value: '',
+                    valid: true,
+                    touched: true,
+                    errorMessage: '',
+                    rules: {
+                        required: true
+                    }
+                },
+                zip: {
+                    type: 'zip',
+                    value: null,
+                    valid: true,
+                    touched: true,
+                    errorMessage: '',
+                    rules: {
+                        required: true
+                    }
+                }
+            },
+            images: [],
+            formIsValid: true,
+            loading: false,
+            formSubmitted: false
+        }, _this.getOptionsForRender = function (element) {
+
+            var options = element.value.map(function (current) {
+                return _react2.default.createElement(
+                    'option',
+                    { value: current },
+                    current
+                );
+            });
+
+            return options;
+        }, _this.onChangeHandler = function (event, current) {
+            var value = event.target.value;
+
+            var copyElements = _extends({}, _this.state.elements);
+
+            copyElements[current.type].data = event.target.value;
+
+            if (value === 'select') {
+                copyElements[current.type].valid = false;
+            } else {
+                copyElements[current.type].valid = true;
+            }
+
+            var arrayOfValues = [];
+            for (var prop in _this.state.elements) {
+                arrayOfValues.push(prop);
+            }
+
+            var index = arrayOfValues.findIndex(function (element) {
+                return element === current.type;
+            });
+            var nextElement = arrayOfValues[index + 1];
+
+            var element = arrayOfValues[index];
+            if (element === arrayOfValues[arrayOfValues.length - 1]) {
+                return;
+            } else {
+
+                _axios2.default.post('/get_' + nextElement, {
+                    type: nextElement,
+                    params: value
+                }).then(function (response) {
+                    if (response.data !== '') {
+                        copyElements[nextElement].value = response.data;
+                        copyElements[nextElement].active = true;
+                    } else if (response.data === '') {
+                        var shortArray = arrayOfValues.slice(index + 1);
+
+                        shortArray.forEach(function (element) {
+                            copyElements[element].active = false;
+                            copyElements[element].value = [];
+                            copyElements[element].valid = false;
+                            copyElements[element].data = '';
+                        });
+                    }
+
+                    _this.setState({
+                        elements: copyElements
+                    });
+                });
+            }
+        }, _this.deleteImage = function (items, item) {
+            var index = items.findIndex(function (current) {
+                return current === item;
+            });
+            var copyImages = _this.state.images;
+
+            copyImages.splice(index, 1);
+
+            _this.setState({
+                images: copyImages
+            });
+        }, _this.onDrop = function (acceptedFiles) {
+            var files = _this.state.images;
+
+            for (var i = 0; i < acceptedFiles.length; i++) {
+                files.push(acceptedFiles[i]);
+            }
+
+            _this.setState({
+                images: files
+            }, function () {
+                console.log(_this.state.images);
+            });
+        }, _this.validateData = function (element) {
+            var copyInputs = _extends({}, _this.state.inputs);
+
+            var valid = false;
+
+            if (element.value.trim() !== '' && element.rules.required) {
+                valid = true;
+            }
+
+            if (valid) {
+                copyInputs[element.type].valid = true;
+                copyInputs[element.type].errorMessage = '';
+            } else if (!element.rules.required && !valid) {
+                copyInputs[element.type].valid = true;
+            } else {
+                copyInputs[element.type].valid = false;
+                copyInputs[element.type].errorMessage = 'Field cannot be empty';
+            }
+
+            if (element.type === 'phoneNumber' && !/\(\d{3}\)-\d{3}-\d{4}/.test(element.value) && valid) {
+                copyInputs[element.type].valid = false;
+                copyInputs[element.type].errorMessage = 'does not match valid format: (000)-000-0000';
+            }
+            _this.setState({
+                inputs: copyInputs
+            });
+        }, _this.onBlurHandler = function (element) {
+            _this.validateData(element);
+        }, _this.onChangeInput = function (event, currentElement) {
+
+            var copyInputs = _extends({}, _this.state.inputs);
+            copyInputs[currentElement.type].touched = true;
+
+            if (currentElement.type === 'phoneNumber') {
+
+                if (/^[\(]*[0-9]*[\)]*[-]*\d*[-]*\d*$/.test(event.target.value)) {
+                    copyInputs[currentElement.type].value = event.target.value;
+
+                    if (event.target.value.length === 3) {
+                        copyInputs[currentElement.type].value = '(' + event.target.value + ')-';
+                    } else if (event.target.value.length === 9) {
+                        copyInputs[currentElement.type].value = event.target.value + '-';
+                    } else if (event.target.value.length === 15) {
+                        copyInputs[currentElement.type].value = copyInputs[currentElement.type].value.slice(0, copyInputs[currentElement.type].value.length - 1);
+                        return;
+                    } else if (event.target.value.length === 10 || event.target.value.length === 5) {
+                        copyInputs[currentElement.type].value = '';
+                    }
+                } else {
+                    copyInputs[currentElement.type].value = '';
+                }
+            } else if (currentElement.type === 'price' || currentElement.type === 'mileage') {
+                if (/^\d*[,]*\d*$/.test(event.target.value)) {
+                    copyInputs[currentElement.type].value = event.target.value;
+
+                    var firstVal = void 0;
+                    var secondVal = void 0;
+                    var fullNumber = void 0;
+
+                    if (event.target.value.length === 4) {
+                        firstVal = event.target.value.slice(0, 1);
+                        secondVal = event.target.value.slice(1);
+                        copyInputs[currentElement.type].value = firstVal + ',' + secondVal;
+                    } else if (event.target.value.length === 6) {
+                        firstVal = event.target.value.slice(0, 1);
+                        secondVal = event.target.value.slice(2, 6);
+                        fullNumber = '' + firstVal + secondVal;
+                        copyInputs[currentElement.type].value = fullNumber.slice(0, 2) + ',' + fullNumber.slice(2);
+                    } else if (event.target.value.length === 7) {
+                        firstVal = event.target.value.slice(0, 2);
+                        secondVal = event.target.value.slice(3, 7);
+                        fullNumber = '' + firstVal + secondVal;
+                        copyInputs[currentElement.type].value = fullNumber.slice(0, 3) + ',' + fullNumber.slice(3);
+                    } else if (event.target.value.length === 8) {
+                        copyInputs[currentElement.type].value = event.target.value.slice(0, event.target.length - 2);
+                    }
+                } else {
+                    copyInputs[currentElement.type].value = '';
+                }
+            } else if (currentElement.type === 'zip') {
+                copyInputs[currentElement.type].value = event.target.value;
+                if (event.target.value.length === 6) {
+                    copyInputs[currentElement.type].value = copyInputs[currentElement.type].value.slice(0, copyInputs[currentElement.type].value.length - 1);
+                    return;
+                }
+            } else if (currentElement.type === 'firstName' || currentElement.type === 'lastName') {
+                if (/^[a-zA-Z]*$/.test(event.target.value)) {
+                    copyInputs[currentElement.type].value = event.target.value;
+                }
+            } else {
+                copyInputs[currentElement.type].value = event.target.value;
+            }
+
+            _this.setState({
+                inputs: copyInputs
+            });
+        }, _this.onKeyDownHandler = function (event, currentElement) {
+            var copyElements = _extends({}, _this.state.inputs);
+            if (event.keyCode === 8) {
+                copyElements[currentElement.type].value = '';
+            }
+
+            _this.setState({
+                inputs: copyElements
+            });
+        }, _this.onSubmitHandler = function (event) {
+            event.preventDefault();
+
+            var valid = _this.validateForm();
+
+            var arrayOfElements = [];
+
+            var copyElements = _extends({}, _this.state.elements);
+
+            for (var prop in copyElements) {
+                arrayOfElements.push(copyElements[prop]);
+            }
+
+            arrayOfElements.forEach(function (element) {
+                copyElements[element.type].clicked = true;
+            });
+
+            var copyInputs = _extends({}, _this.state.inputs);
+
+            var arrayOfInputs = [];
+
+            for (var input in copyInputs) {
+                arrayOfInputs.push(copyInputs[input]);
+            }
+
+            arrayOfInputs.forEach(function (element) {
+                copyInputs[element.type].touched = true;
+                _this.validateData(element);
+            });
+
+            _this.setState({
+                elements: copyElements,
+                inputs: copyInputs
+            }, function () {
+                var inputs = _extends({}, _this.state.inputs);
+                var arrayInputs = [];
+
+                for (var _prop in inputs) {
+                    arrayInputs.push(inputs[_prop]);
+                }
+
+                arrayInputs.forEach(function (element) {
+                    var index = element.value.indexOf(',');
+                    inputs[element.type].value = element.value.replace(element.value.charAt(index), '');
+                });
+
+                _this.setState({
+                    inputs: inputs
+                }, function () {
+                    if (valid) {
+                        var fd = new FormData();
+
+                        var elementsArray = [];
+                        for (var _prop2 in _this.state.elements) {
+                            elementsArray.push(_this.state.elements[_prop2]);
+                        }
+
+                        elementsArray.forEach(function (element) {
+                            fd.append(element.type, element.data);
+                        });
+
+                        var inputsArray = [];
+                        for (var _prop3 in _this.state.inputs) {
+                            inputsArray.push(_this.state.inputs[_prop3]);
+                        }
+
+                        inputsArray.forEach(function (element) {
+                            fd.append(element.type, element.value);
+                        });
+
+                        for (var i = 0; i < _this.state.images.length; i++) {
+                            fd.append('images[]', _this.state.images[i]);
+                        }
+
+                        fd.append('_id', _this.props.match.params.listingId);
+
+                        _this.setState({
+                            loading: true
+                        });
+
+                        _axios2.default.post('/update_listing', fd).then(function (response) {
+                            _this.setState({
+                                loading: false,
+                                formSubmitted: true
+                            });
+                        });
+                    }
+                });
+            });
+        }, _this.validateForm = function () {
+            var elements = [];
+
+            for (var prop in _this.state.elements) {
+                elements.push(_this.state.elements[prop]);
+            }
+
+            for (var input in _this.state.inputs) {
+                elements.push(_this.state.inputs[input]);
+            }
+
+            var valids = elements.map(function (current) {
+                return current.valid;
+            });
+
+            if (valids.includes(false)) {
+                _this.setState({
+                    formIsValid: false
+                });
+
+                return false;
+            } else {
+                _this.setState({
+                    formIsValid: true
+                });
+
+                return true;
+            }
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(UpdateListing, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var _this2 = this;
+
+            var listingId = this.props.match.params.listingId;
+            _axios2.default.get('/data_listing?listingId=' + listingId).then(function (response) {
+                var arrayOfParams = response.data.parameters;
+
+                var copyElements = _extends({}, _this2.state.elements);
+
+                arrayOfParams.forEach(function (current) {
+                    if (current.type === 'model') {
+                        var make = response.data.make;
+                        copyElements['model'].value = current.values[make];
+                    } else {
+                        copyElements[current.type].value = current.values;
+                    }
+                });
+
+                var arrayOfTypes = [];
+                for (var prop in _this2.state.elements) {
+                    arrayOfTypes.push(prop);
+                }
+
+                arrayOfTypes.forEach(function (element) {
+                    copyElements[element].data = response.data[element];
+                });
+
+                var copyInputs = _extends({}, _this2.state.inputs);
+
+                var arrayOfInputs = [];
+
+                for (var _prop4 in _this2.state.inputs) {
+                    arrayOfInputs.push(_prop4);
+                }
+
+                arrayOfInputs.forEach(function (current) {
+                    copyInputs[current].value = response.data[current];
+                });
+
+                _this2.setState({
+                    elements: copyElements,
+                    inputs: copyInputs
+                });
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this3 = this;
+
+            var arrayOfElements = [];
+
+            for (var prop in this.state.elements) {
+                arrayOfElements.push(this.state.elements[prop]);
+            }
+            var selects = arrayOfElements.map(function (element) {
+                return _react2.default.createElement(
+                    _Inputs2.default,
+                    { element: element.type,
+                        invalid: !element.active,
+                        selectValid: element.valid,
+                        clicked: element.clicked,
+                        value: element.data,
+                        onChangeHandler: function onChangeHandler(event) {
+                            return _this3.onChangeHandler(event, element);
+                        } },
+                    _this3.getOptionsForRender(element)
+                );
+            });
+
+            var urls = this.state.images.map(function (current) {
+                return URL.createObjectURL(current);
+            });
+
+            var images = urls.map(function (current) {
+                return _react2.default.createElement(
+                    'div',
+                    { className: _UpdateListing2.default.image },
+                    _react2.default.createElement(
+                        'div',
+                        { className: _UpdateListing2.default.imageWrapper,
+                            onClick: function onClick() {
+                                return _this3.deleteImage(urls, current);
+                            } },
+                        _react2.default.createElement('img', { src: current }),
+                        _react2.default.createElement(
+                            'div',
+                            { className: _UpdateListing2.default.deleteButton },
+                            'X'
+                        )
+                    )
+                );
+            });
+
+            var arrayOfInputs = [];
+
+            for (var param in this.state.inputs) {
+                arrayOfInputs.push(this.state.inputs[param]);
+            }
+
+            var inputs = arrayOfInputs.map(function (current) {
+                return _react2.default.createElement(_Inputs2.default, { element: current.type,
+                    value: current.value,
+                    valid: current.valid,
+                    touched: current.touched,
+                    error: current.errorMessage,
+                    onChangeHandler: function onChangeHandler(event) {
+                        return _this3.onChangeInput(event, current);
+                    },
+                    onBlurHandler: function onBlurHandler() {
+                        return _this3.onBlurHandler(current);
+                    },
+                    onKeyDownHandler: function onKeyDownHandler(event) {
+                        return _this3.onKeyDownHandler(event, current);
+                    } });
+            });
+
+            var contactData = inputs.slice(3);
+
+            var component = _react2.default.createElement(
+                'form',
+                { method: 'post', encType: 'multipart/form-data',
+                    onSubmit: function onSubmit(event) {
+                        return _this3.onSubmitHandler(event);
+                    } },
+                _react2.default.createElement(
+                    'div',
+                    { className: _UpdateListing2.default.wrapperListing },
+                    _react2.default.createElement(
+                        'div',
+                        { className: _UpdateListing2.default.vehicleInfo },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            'Vehicle Information'
+                        ),
+                        selects,
+                        _react2.default.createElement(
+                            'div',
+                            { className: _UpdateListing2.default.inputs },
+                            inputs[0],
+                            inputs[1]
+                        ),
+                        _react2.default.createElement(
+                            _reactDropzone2.default,
+                            { onDrop: this.onDrop },
+                            function (_ref2) {
+                                var getRootProps = _ref2.getRootProps,
+                                    getInputProps = _ref2.getInputProps;
+                                return _react2.default.createElement(
+                                    'div',
+                                    _extends({ className: _UpdateListing2.default.drop }, getRootProps()),
+                                    _react2.default.createElement('input', getInputProps()),
+                                    'Drop photos here'
+                                );
+                            }
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: _UpdateListing2.default.images },
+                            images
+                        ),
+                        inputs[2]
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: _UpdateListing2.default.contactData },
+                        _react2.default.createElement(
+                            'h2',
+                            null,
+                            'Contact Information'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: _UpdateListing2.default.inputs },
+                            contactData
+                        )
+                    ),
+                    _react2.default.createElement(_Inputs2.default, { element: 'updateListing' }),
+                    !this.state.formIsValid ? _react2.default.createElement(
+                        'p',
+                        null,
+                        'Selected fields must be filled'
+                    ) : null
+                )
+            );
+
+            if (this.state.formSubmitted) {
+                component = _react2.default.createElement(_reactRouterDom.Redirect, { to: '/sell_car' });
+            }
+
+            if (this.state.loading) {
+                component = _react2.default.createElement(
+                    'div',
+                    { style: { paddingTop: '80px' } },
+                    _react2.default.createElement(_Spinner2.default, null)
+                );
+            }
+
+            return component;
+        }
+    }]);
+
+    return UpdateListing;
+}(_react.Component);
+
+exports.default = UpdateListing;
 
 /***/ }),
 

@@ -106,6 +106,8 @@ Route::get('/logout', 'AuthController@logout');
 // ******fetch vehicle parameters data by request ********
 Route::post('/get_param', 'VehicleParameters@getParameters');
 
+Route::post('/get_year', 'VehicleParameters@getData');
+
 Route::post('/get_make', 'VehicleParameters@getData');
 
 Route::post('/get_model', 'VehicleParameters@getModel');
@@ -159,4 +161,32 @@ Route::get('/getEmail', function(Request $request){
 	}
 });
 
+
 Route::get('/items_by_userId', 'ListingController@fetchItemsForSeller');
+
+Route::get('/data_listing', 'ListingController@fetchDataForListing');
+
+Route::post('/update_listing', function(Request $request){
+		$id = $request->_id;
+    	$listing = Listing::find($id);
+    	$images = array();
+    	$listing->update($request->all());
+
+		if($request->file('images')){
+			$data = $request->file('images');
+
+	        for($i=0; $i<count($data); $i++){
+		        $image = new MongoDB\BSON\Binary(file_get_contents($data[$i]), 
+			             MongoDB\BSON\Binary::TYPE_GENERIC);
+		        array_push($images, $image);
+	        }
+
+	        $listing->images = $images;
+		} else {
+			$listing->images = [];
+		}
+
+		$listing->save();
+    	
+    	return $listing;
+});

@@ -13,6 +13,7 @@ import * as actions from './reduxStore/authentication/Actions';
 import ModalUserInfo from './components/modalUserInfo/ModalUserInfo';
 import classes from './App.css';
 import Logout from './containers/logout_page/Logout';
+import UpdateListing from "./containers/update_listing/UpdateListing";
 
 class App extends Component {
     
@@ -47,6 +48,7 @@ class App extends Component {
                     <Route path="/create_listing" component={CreateListing} />
                     <Route path="/login" component={LoginPage} />
                     <Route path="/logout" component={Logout} />
+                    <Route path="/update_listing/:listingId" component={UpdateListing} />
                     <Route path="/" component={MainPage} />
                 </Switch>
             </div>

@@ -4,7 +4,8 @@ import {ImageListing} from '../heroImage/HeroImage';
 import Button from '../UIElements/button/Button';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
-import Image from '../../assets/no_photo.jpg'
+import Image from '../../assets/no_photo.jpg';
+import { Link } from 'react-router-dom';
 
 class ListingItem extends Component {
     state={
@@ -13,7 +14,7 @@ class ListingItem extends Component {
     }
     render(){
 
-        const {condition, price, mileage, year, make, model, exteriorColor, transmission,
+        const {_id, condition, price, mileage, year, make, model, exteriorColor, transmission,
         interiorColor, fuelType, images} = this.props.item;
 
         let modifiedPrice;
@@ -99,7 +100,11 @@ class ListingItem extends Component {
                         <p>{`Int.Color: ${interiorColor}`}</p>
                         <p>{`Fuel Type: ${fuelType}`}</p>
                     </div>
-                    {this.props.admin ? <Button updateListingButton>Update Listing</Button> : null}
+                    {this.props.admin ? (
+                        <Link to={`/update_listing/${_id}`}>
+                            <Button updateListingButton>Update Listing</Button>
+                        </Link>
+                    ) : null}
                 </div>
                 <div className={classes.wrapper}>
                     {listingImages.length > 0 ? listingImages : 
@@ -107,6 +112,77 @@ class ListingItem extends Component {
                 </div>
             </div>
         )
+
+        /*return (
+            <div className={classes.imageWrapper}>
+                <IconContext.Provider value={{color: 'white', size: '30px'}}>
+                    <div className={classes.arrowLeft}
+                         onClick={(event) => {
+                            const wrapper = event.target.closest('.ListingItem__imageWrapper__1NQji')
+                            .querySelector('.ListingItem__wrapper__UgLa3');
+                            this.setState(prevState => {
+                                return {
+                                    counterMargin: prevState.counterMargin - 300
+                                }
+                            }, () => {
+                                wrapper.style.marginLeft = this.state.counterMargin + 'px';
+                                this.setState((prevState) => {
+                                    return {
+                                        elementCounter: prevState.elementCounter + 1
+                                    }
+                                });
+                            })
+                        }}>
+                        <FaArrowLeft />
+                    </div>
+                </IconContext.Provider>
+                <IconContext.Provider value={{color: 'white', size: '30px'}}>
+                    <div className={classes.arrowRight}
+                         onClick={(event) => {
+                            const wrapper = event.target.closest('.ListingItem__imageWrapper__1NQji')
+                            .querySelector('.ListingItem__wrapper__UgLa3');
+                            this.setState((prevState) => {
+                                return {
+                                    counterMargin: prevState.counterMargin + 300
+                                }
+                            }, () => {
+                                wrapper.style.marginLeft = this.state.counterMargin + 'px';
+                                this.setState((prevState) => {
+                                    return {
+                                        elementCounter: prevState.elementCounter - 1
+                                    }
+                                });
+                            });
+                         }}>
+                        <FaArrowRight />
+                    </div>
+                </IconContext.Provider>
+                <div className={classes.content}>
+                    <p>Used</p>
+                    <div className={classes.priceAndMileage}>
+                        <p className={classes.price}>$9999</p>
+                        <p className={classes.mileage}>| <span>30123mi</span></p>
+                    </div>
+                    <div className={classes.yearAndModel}>
+                        <p>{`2014 Chevrolet Camaro`}</p>
+                    </div>
+                    <div className={classes.params}>
+                        <p>{`Ext.Color:`}</p>
+                        <p>{`Transmission:`}</p>
+                        <p>{`Int.Color:`}</p>
+                        <p>{`Fuel Type:`}</p>
+                    </div>
+                    {this.props.admin ? (
+                        <Link to="/update_listing/777">
+                            <Button updateListingButton>Update Listing</Button>
+                        </Link>
+                    ) : null}
+                </div>
+                <div className={classes.wrapper}>
+                    
+                </div>
+            </div>
+        )*/
     }
 }
 

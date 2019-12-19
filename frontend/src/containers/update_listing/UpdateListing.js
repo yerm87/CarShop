@@ -1,91 +1,91 @@
 import React, { Component } from 'react';
-import classes from './CreateListing.css';
 import axios from 'axios';
+import classes from './UpdateListing.css';
 import Input from '../../components/UIElements/inputs/Inputs';
 import Dropzone from 'react-dropzone';
 import Spinner from '../../components/UIElements/spinner/Spinner';
 import { Redirect } from 'react-router-dom';
 
-class CreateListing extends Component {
+class UpdateListing extends Component {
     state={
         elements: {
             year: {
                 type: 'year',
                 value: [],
                 active: true,
-                valid: false,
+                valid: true,
                 clicked: false,
                 data: ''
             },
             make: {
                 type: 'make',
                 value: [],
-                active: false,
-                valid: false,
+                active: true,
+                valid: true,
                 clicked: false,
                 data: ''
             },
             model: {
                 type: 'model',
                 value: [],
-                active: false,
-                valid: false,
+                active: true,
+                valid: true,
                 clicked: false,
                 data: ''
             },
             bodyStyle: {
                 type: 'bodyStyle',
                 value: [],
-                active: false,
-                valid: false,
+                active: true,
+                valid: true,
                 clicked: false,
                 data: ''
             },
             transmission: {
                 type: 'transmission',
                 value: [],
-                active: false,
-                valid: false,
+                active: true,
+                valid: true,
                 clicked: false,
                 data: ''
             },
             exteriorColor: {
                 type: 'exteriorColor',
                 value: [],
-                active: false,
-                valid: false,
+                active: true,
+                valid: true,
                 clicked: false,
                 data: ''
             },
             interiorColor: {
                 type: 'interiorColor',
                 value: [],
-                active: false,
-                valid: false,
+                active: true,
+                valid: true,
                 clicked: false,
                 data: ''
             },
             numberOfDoors: {
                 type: 'numberOfDoors',
                 value: [],
-                active: false,
-                valid: false,
+                active: true,
+                valid: true,
                 clicked: false,
                 data: ''
             },
             fuelType: {
                 type: 'fuelType',
                 value: [],
-                active: false,
-                valid: false,
+                active: true,
+                valid: true,
                 clicked: false,
                 data: ''
             },
             condition: {
                 type: 'condition',
                 value: [],
-                active: false,
-                valid: false,
+                active: true,
+                valid: true,
                 clicked: false,
                 data: ''
             }
@@ -94,8 +94,8 @@ class CreateListing extends Component {
             price: {
                 type: 'price',
                 value: '',
-                valid: false,
-                touched: false,
+                valid: true,
+                touched: true,
                 errorMessage: '',
                 rules: {
                     required: true
@@ -104,8 +104,8 @@ class CreateListing extends Component {
             mileage: {
                 type: 'mileage',
                 value: '',
-                valid: false,
-                touched: false,
+                valid: true,
+                touched: true,
                 errorMessage: '',
                 rules: {
                     required: true
@@ -115,7 +115,7 @@ class CreateListing extends Component {
                 type: 'description',
                 value: '',
                 valid: true,
-                touched: false,
+                touched: true,
                 errorMessage: '',
                 rules: {
                     required: false
@@ -124,8 +124,8 @@ class CreateListing extends Component {
             firstName: {
                 type: 'firstName',
                 value: '',
-                valid: false,
-                touched: false,
+                valid: true,
+                touched: true,
                 errorMessage: '',
                 rules: {
                     required: true
@@ -134,8 +134,8 @@ class CreateListing extends Component {
             lastName: {
                 type: 'lastName',
                 value: '',
-                valid: false,
-                touched: false,
+                valid: true,
+                touched: true,
                 errorMessage: '',
                 rules: {
                     required: true
@@ -144,8 +144,8 @@ class CreateListing extends Component {
             email: {
                 type: 'email',
                 value: '',
-                valid: false,
-                touched: false,
+                valid: true,
+                touched: true,
                 errorMessage: '',
                 rules: {
                     required: true
@@ -154,8 +154,8 @@ class CreateListing extends Component {
             phoneNumber: {
                 type: 'phoneNumber',
                 value: '',
-                valid: false,
-                touched: false,
+                valid: true,
+                touched: true,
                 errorMessage: '',
                 rules: {
                     required: true
@@ -164,8 +164,8 @@ class CreateListing extends Component {
             zip: {
                 type: 'zip',
                 value: null,
-                valid: false,
-                touched: false,
+                valid: true,
+                touched: true,
                 errorMessage: '',
                 rules: {
                     required: true
@@ -177,21 +177,62 @@ class CreateListing extends Component {
         loading: false,
         formSubmitted: false
     }
-
     componentWillMount(){
-        const copyElements = {
-            ...this.state.elements
-        };
+        
+        const listingId = this.props.match.params.listingId;
+        axios.get(`/data_listing?listingId=${listingId}`).then(response => {
+            const arrayOfParams = response.data.parameters;
 
-        axios.post('/get_param', {
-            type: this.state.elements.year.type
-        }).then(response => {
-            copyElements['year'].value = response.data;
+            const copyElements = {
+                ...this.state.elements
+            }
+
+            arrayOfParams.forEach(current => {
+                if(current.type === 'model'){
+                    const make = response.data.make;
+                    copyElements['model'].value = current.values[make];
+                } else {
+                    copyElements[current.type].value = current.values;
+                }
+            });
+
+            const arrayOfTypes = [];
+            for(let prop in this.state.elements){
+                arrayOfTypes.push(prop);
+            }
+
+            arrayOfTypes.forEach(element => {
+                copyElements[element].data = response.data[element];
+            });
+
+            const copyInputs = {
+                ...this.state.inputs
+            }
+
+            const arrayOfInputs = [];
+
+            for(let prop in this.state.inputs){
+                arrayOfInputs.push(prop);
+            }
+
+            arrayOfInputs.forEach(current => {
+                copyInputs[current].value = response.data[current];
+            });
 
             this.setState({
-                elements: copyElements
-            });
+                elements: copyElements,
+                inputs: copyInputs
+            })
+        })
+    }           
+
+    getOptionsForRender = (element) => {
+
+        const options = element.value.map(current => {
+            return <option value={current}>{current}</option>
         });
+
+        return options;
     }
 
     onChangeHandler = (event, current) => {
@@ -234,8 +275,8 @@ class CreateListing extends Component {
                     
                     shortArray.forEach(element => {
                         copyElements[element].active = false;
-                        copyElements[element].valid = false;
                         copyElements[element].value = [];
+                        copyElements[element].valid = false;
                         copyElements[element].data = '';
                     });
                 }
@@ -247,13 +288,15 @@ class CreateListing extends Component {
         }
     }
 
-    getOptionsForRender = (element) => {
+    deleteImage = (items, item) => {
+        const index = items.findIndex(current => current === item);
+        const copyImages = this.state.images;
 
-        const options = element.value.map(current => {
-            return <option value={current}>{current}</option>
-        });
+        copyImages.splice(index, 1);
 
-        return options;
+        this.setState({
+            images: copyImages
+        })
     }
 
     onDrop = (acceptedFiles) => {
@@ -267,103 +310,6 @@ class CreateListing extends Component {
             images: files
         }, () => {
             console.log(this.state.images);
-        });
-    }
-
-    onSubmitHandler = (event) => {
-        event.preventDefault();
-
-        const valid = this.validateForm();
-
-        const arrayOfElements = [];
-
-        const copyElements = {
-            ...this.state.elements
-        }
-
-        for(let prop in copyElements){
-            arrayOfElements.push(copyElements[prop]);
-        }
-
-        arrayOfElements.forEach(element => {
-            copyElements[element.type].clicked = true;
-        })
-
-        const copyInputs = {
-            ...this.state.inputs
-        }
-
-        const arrayOfInputs = [];
-
-        for(let input in copyInputs){
-            arrayOfInputs.push(copyInputs[input]);
-        }
-
-        arrayOfInputs.forEach(element => {
-            copyInputs[element.type].touched = true;
-            this.validateData(element);
-        })
-
-        this.setState({
-            elements: copyElements,
-            inputs: copyInputs
-        }, () => {
-            const inputs = {
-                ...this.state.inputs
-            }
-            const arrayInputs = [];
-
-            for(let prop in inputs){
-                arrayInputs.push(inputs[prop]);
-            }
-
-            arrayInputs.forEach(element => {
-                const index = element.value.indexOf(',');
-                inputs[element.type].value = element.value.replace(element.value.charAt(index), '');
-            });
-
-            this.setState({
-                inputs: inputs
-            }, () => {
-                if(valid){
-                    const fd = new FormData();
-
-                    const elementsArray = [];
-                    for(let prop in this.state.elements){
-                        elementsArray.push(this.state.elements[prop]);
-                    }
-
-                    elementsArray.forEach(element => {
-                        fd.append(element.type, element.data);
-                    });
-
-                    const inputsArray = [];
-                    for(let prop in this.state.inputs){
-                        inputsArray.push(this.state.inputs[prop]);
-                    }
-
-                    inputsArray.forEach(element => {
-                        fd.append(element.type, element.value);
-                    });
-        
-                    for(let i=0; i<this.state.images.length; i++){
-                        fd.append('images[]', this.state.images[i]);
-                    }
-        
-                    this.setState({
-                        loading: true
-                    })
-        
-                    axios.post('/create_listing', fd).then(response => {
-                        if(response.data === 'submitted'){
-                            this.setState({
-                                loading: false,
-                                formSubmitted: true
-                            })
-                        }
-                    });
-                }
-            })
         });
     }
 
@@ -489,6 +435,103 @@ class CreateListing extends Component {
         });
     }
 
+    onSubmitHandler = (event) => {
+        event.preventDefault();
+
+        const valid = this.validateForm();
+
+        const arrayOfElements = [];
+
+        const copyElements = {
+            ...this.state.elements
+        }
+
+        for(let prop in copyElements){
+            arrayOfElements.push(copyElements[prop]);
+        }
+
+        arrayOfElements.forEach(element => {
+            copyElements[element.type].clicked = true;
+        })
+
+        const copyInputs = {
+            ...this.state.inputs
+        }
+
+        const arrayOfInputs = [];
+
+        for(let input in copyInputs){
+            arrayOfInputs.push(copyInputs[input]);
+        }
+
+        arrayOfInputs.forEach(element => {
+            copyInputs[element.type].touched = true;
+            this.validateData(element);
+        })
+
+        this.setState({
+            elements: copyElements,
+            inputs: copyInputs
+        }, () => {
+            const inputs = {
+                ...this.state.inputs
+            }
+            const arrayInputs = [];
+
+            for(let prop in inputs){
+                arrayInputs.push(inputs[prop]);
+            }
+
+            arrayInputs.forEach(element => {
+                const index = element.value.indexOf(',');
+                inputs[element.type].value = element.value.replace(element.value.charAt(index), '');
+            });
+
+            this.setState({
+                inputs: inputs
+            }, () => {
+                if(valid){
+                    const fd = new FormData();
+
+                    const elementsArray = [];
+                    for(let prop in this.state.elements){
+                        elementsArray.push(this.state.elements[prop]);
+                    }
+
+                    elementsArray.forEach(element => {
+                        fd.append(element.type, element.data);
+                    });
+
+                    const inputsArray = [];
+                    for(let prop in this.state.inputs){
+                        inputsArray.push(this.state.inputs[prop]);
+                    }
+
+                    inputsArray.forEach(element => {
+                        fd.append(element.type, element.value);
+                    });
+        
+                    for(let i=0; i<this.state.images.length; i++){
+                        fd.append('images[]', this.state.images[i]);
+                    }
+
+                    fd.append('_id', this.props.match.params.listingId);
+        
+                    this.setState({
+                        loading: true
+                    })
+        
+                    axios.post('/update_listing', fd).then(response => {
+                        this.setState({
+                            loading: false,
+                            formSubmitted: true
+                        })
+                    });
+                }
+            })
+        });
+    }
+
     validateForm = () => {
         const elements = [];
 
@@ -517,33 +560,23 @@ class CreateListing extends Component {
         }
     }
 
-    deleteImage = (items, item) => {
-        const index = items.findIndex(current => current === item);
-        const copyImages = this.state.images;
-
-        copyImages.splice(index, 1);
-
-        this.setState({
-            images: copyImages
-        })
-    }
-
-    render() {
+    render(){
         const arrayOfElements = [];
 
-        for(let element in this.state.elements){
-            arrayOfElements.push(this.state.elements[element]);
+        for(let prop in this.state.elements){
+            arrayOfElements.push(this.state.elements[prop]);
         }
-
-        const selects = arrayOfElements.map(element => (
-            <Input element={element.type}
-                   invalid={!element.active}
-                   selectValid={element.valid}
-                   clicked={element.clicked}
-                   onChangeHandler={(event) => this.onChangeHandler(event, element)}>
-                   {this.getOptionsForRender(element)}</Input>
+        const selects = arrayOfElements.map(element => { 
+            return (
+                <Input element={element.type}
+                       invalid={!element.active}
+                       selectValid={element.valid}
+                       clicked={element.clicked}
+                       value={element.data}
+                       onChangeHandler={(event) => this.onChangeHandler(event, element)}>
+                           {this.getOptionsForRender(element)}</Input>
             )
-        );
+        });
 
         const urls = this.state.images.map(current => {
             return URL.createObjectURL(current);
@@ -608,7 +641,7 @@ class CreateListing extends Component {
                             {contactData}
                         </div>
                     </div>
-                    <Input element="createListing" />
+                    <Input element="updateListing" />
                     {!this.state.formIsValid ? <p>Selected fields must be filled</p>: null}
                 </div>
             </form>
@@ -630,4 +663,4 @@ class CreateListing extends Component {
     }
 }
 
-export default CreateListing;
+export default UpdateListing;

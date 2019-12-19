@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Listing;
 use App\User;
+use App\Parameters;
 
 class ListingController extends Controller
 {
@@ -29,5 +30,19 @@ class ListingController extends Controller
     	}
 
     	return $modifiedListings;
+    }
+
+    public function fetchDataForListing(Request $request){
+    	$listing = Listing::find($request->all())->first();
+    	$listing->parameters = Parameters::all();
+
+    	$images = array();
+
+    	foreach($listing->images as $image){
+    		$image = base64_encode($image);
+    		array_push($images, $image);
+    	}
+    	$listing->images = $images;
+    	return $listing;
     }
 }
