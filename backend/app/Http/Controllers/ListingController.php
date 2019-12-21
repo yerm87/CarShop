@@ -45,4 +45,11 @@ class ListingController extends Controller
     	$listing->images = $images;
     	return $listing;
     }
+
+    public function deleteListing(Request $request){
+        $id = $request->_id;
+        $listing = Listing::find($id);
+        $listing->delete();
+        return 'deleted';
+    }
 }

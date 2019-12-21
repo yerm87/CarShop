@@ -22,6 +22,14 @@
     margin-left: 50px;
 }
 
+.ifNoListings p {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 16px 0;
+    text-align: center;
+    font-size: 1.1em;
+}
+
 .listings h1 {
     color: var(--mainBlack);
 }

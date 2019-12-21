@@ -6,12 +6,16 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import Image from '../../assets/no_photo.jpg';
 import { Link } from 'react-router-dom';
+import DeleteModal from '../../components/deleteModal/DeleteModal';
+import * as actions from '../../reduxStore/authentication/Actions';
+import axios from 'axios';
 
 class ListingItem extends Component {
     state={
         elementCounter: 1,
         counterMargin: 0
     }
+
     render(){
 
         const {_id, condition, price, mileage, year, make, model, exteriorColor, transmission,
@@ -105,7 +109,12 @@ class ListingItem extends Component {
                             <Button updateListingButton>Update Listing</Button>
                         </Link>
                     ) : null}
+                    <div className={classes.deleteButton}
+                         onClick={this.props.deleteItem}>X</div>
                 </div>
+                <DeleteModal deleteElement={this.props.deleteElement}
+                             active={this.props.active}
+                             closeModal={this.props.closeModal} />
                 <div className={classes.wrapper}>
                     {listingImages.length > 0 ? listingImages : 
                     <img src={Image} height="240" width="300" />}

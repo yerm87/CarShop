@@ -162,8 +162,10 @@ Route::get('/getEmail', function(Request $request){
 });
 
 
+// API to fetch all listings for individual user
 Route::get('/items_by_userId', 'ListingController@fetchItemsForSeller');
 
+// API to fetch data for individual listing to update it
 Route::get('/data_listing', 'ListingController@fetchDataForListing');
 
 Route::post('/update_listing', function(Request $request){
@@ -190,3 +192,6 @@ Route::post('/update_listing', function(Request $request){
     	
     	return $listing;
 });
+
+//delete listing from user account
+Route::post('/delete_listing', 'ListingController@deleteListing');

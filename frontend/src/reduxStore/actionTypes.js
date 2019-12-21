@@ -8,3 +8,5 @@ export const dispatchEmail = 'dispatchEmail';
 export const openModal = 'openModal';
 export const closeModal = 'closeModal';
 export const userWasLoggedOut = 'userWasLoggedOut';
+export const showDeleteModal = 'showDeleteModal';
+export const closeDeleteModal = 'closeDeleteModal';

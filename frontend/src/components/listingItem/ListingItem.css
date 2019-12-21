@@ -93,3 +93,26 @@
 .imageWrapper:hover .arrowRight {
     display: block;
 }
+
+.deleteButton {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background: rgba(158, 137, 137, 0.4);
+    color: var(--mainWhite);
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 6px 0 0 13px;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background-color: var(--mainRed);
+}
+
+.imageWrapper:hover .deleteButton {
+    display: block;
+}

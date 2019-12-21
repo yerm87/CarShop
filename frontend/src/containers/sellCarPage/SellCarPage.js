@@ -12,7 +12,8 @@ import axios from 'axios';
 
 class SellCarPage extends Component {
     state={
-        items: []
+        items: [],
+        activeModalsPerItem: []
     }
 
     componentWillMount() {
@@ -22,20 +23,74 @@ class SellCarPage extends Component {
     componentDidMount() {
         if(this.props.auth){
             axios.get('/items_by_userId').then(response => {
+                const items = response.data;
+                const activeModalsPerItem = [];
+
+                items.forEach(item => {
+                    activeModalsPerItem.push(false);
+                });
+
                 this.setState({
-                    items: response.data
+                    items: response.data,
+                    activeModalsPerItem: activeModalsPerItem
                 });
             });
         }
     }
+
+    openModal = (element) => {
+        const copyItems = this.state.items;
+        const index = copyItems.findIndex(item => item === element);
+        const activeModals = this.state.activeModalsPerItem;
+        activeModals[index] = true;
+
+        this.setState({
+            activeModalsPerItem: activeModals
+        })
+         
+    }
+
+    closeModalHandler = (element) => {
+        const copyItems = this.state.items;
+        const index = copyItems.findIndex(item => item === element);
+        const copyActiveModals = this.state.activeModalsPerItem;
+        copyActiveModals[index] = false;
+
+        this.setState({
+            activeModalsPerItem: copyActiveModals
+        })
+    }
+
+    deleteItemHandler = (element, id) => {
+        axios.post('/delete_listing', {
+            _id: id
+        }).then(response => {
+            if(response.data === 'deleted'){
+                const index = this.state.items.findIndex(item => item === element);
+                const copyActiveModals = this.state.activeModalsPerItem
+                copyActiveModals[index] = false;
+
+                axios.get('/items_by_userId').then(response => {
+                    this.setState({
+                        items: response.data,
+                        activeModalsPerItem: copyActiveModals
+                    });
+                });
+            }
+        })
+    }
     
     render() {
-
-        const listings = this.state.items.map(current => {
+        const activeValues = this.state.activeModalsPerItem;
+        const listings = this.state.items.map((current, index) => {
             return <ListingItem item={current}
-                                admin />
+                                admin
+                                deleteItem={() => this.openModal(current)}
+                                active={activeValues[index]}
+                                closeModal={() => this.closeModalHandler(current)}
+                                deleteElement={() => this.deleteItemHandler(current, current._id)} />
         })
-/*
+
         let component = (
             <React.Fragment>
                 {this.props.auth === false ? (
@@ -43,14 +98,24 @@ class SellCarPage extends Component {
                         <ListingsIfNotLogin />
                     </HeroImage>
                 ) : this.props.auth === true ? (
-                    <HeroImage img="../../assets/sell_your_car.jpg" loggedIn>
-                        <div className={classes.wrapper}>
-                            <h1>Sell Your Car</h1>
-                            <Link to="/create_listing">
-                                <Button createListingButton>Create Listing</Button>
-                            </Link>
+                    <div className={classes.wrapperSellPage}>
+                        <HeroImage img="../../assets/sell_your_car.jpg" loggedIn>
+                            <div className={classes.wrapper}>
+                                <h1>Sell Your Car</h1>
+                                <Link to="/create_listing">
+                                    <Button createListingButton>Create Listing</Button>
+                                </Link>
+                            </div>
+                        </HeroImage>
+                        <div className={classes.listings}>
+                            <h1>My Listings</h1>
+                            {this.state.items.length > 0 ? listings : (
+                                <div className={classes.ifNoListings}>
+                                    <p>You don't have listings yet</p>
+                                </div>
+                            )}
                         </div>
-                    </HeroImage>
+                    </div>
                 ) : null}
             </React.Fragment>
         )
@@ -62,7 +127,8 @@ class SellCarPage extends Component {
                 </div>
             )
         }
- */      
+
+/*
         let component = (
             <div className={classes.wrapperSellPage}>
                 <HeroImage img="../../assets/sell_your_car.jpg" loggedIn>
@@ -79,7 +145,7 @@ class SellCarPage extends Component {
                 </div>
             </div>
         )
- 
+*/ 
         return (
             <div>
                 {component}

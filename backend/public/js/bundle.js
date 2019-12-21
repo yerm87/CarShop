@@ -13256,6 +13256,30 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/deleteModal/DeleteModal.css":
+/*!***********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/deleteModal/DeleteModal.css ***!
+  \***********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".DeleteModal__modalWrapper__23mF_ {\r\n    position: absolute;\r\n    top: 60px;\r\n    right: 260px;\r\n    width: 260px;\r\n    height: 100px;\r\n    background-color: rgb(253, 245, 245);\r\n    padding: 10px;\r\n    font-family: 'Montserrat';\r\n    border-radius: 8px;\r\n    opacity: 0\r\n}\r\n\r\n.DeleteModal__modalButtons__18Q17 {\r\n    text-align: center;\r\n}\r\n\r\n.DeleteModal__modalButtons__18Q17 button {\r\n    margin: 0 20px;\r\n    border: none;\r\n    font-size: 1.2em;\r\n    background-color: transparent;\r\n    color: rgb(25, 83, 25);\r\n    font-weight: bold;\r\n}\r\n\r\n.DeleteModal__modalButtons__18Q17 button:hover {\r\n    cursor: pointer;\r\n}\r\n\r\n.DeleteModal__buttonYes__1g_jF{\r\n    \r\n}\r\n\r\n.DeleteModal__show__1nX8e {\r\n    opacity: 1\r\n}", ""]);
+// Exports
+exports.locals = {
+	"modalWrapper": "DeleteModal__modalWrapper__23mF_",
+	"modalButtons": "DeleteModal__modalButtons__18Q17",
+	"buttonYes": "DeleteModal__buttonYes__1g_jF",
+	"show": "DeleteModal__show__1nX8e"
+};
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/listingItem/ListingItem.css":
 /*!***********************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/listingItem/ListingItem.css ***!
@@ -13267,7 +13291,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".ListingItem__imageWrapper__1NQji {\r\n    overflow: hidden;\r\n    position: relative;\r\n    min-height: 240px;\r\n    border: 1px solid var(--mainBlack);\r\n    margin-top: 10px;\r\n    max-width: 1011.75px;\r\n}\r\n\r\n.ListingItem__content__U_jzQ {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 0;\r\n    padding: 10px;\r\n    width: 711.75px;\r\n    height: 100%;\r\n    background-color: white;\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n    font-family: 'Montserrat';\r\n    font-weight: bold;\r\n}\r\n\r\n.ListingItem__content__U_jzQ p {\r\n    margin: 8px 0;\r\n    padding-left: 10px;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: end;\r\n        -ms-flex-align: end;\r\n            align-items: flex-end;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c .ListingItem__price__tKqVf {\r\n    font-size: 1.4em;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c .ListingItem__mileage__3r2zF {\r\n    font-size: 0.9em;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c p span {\r\n    margin-left: 8px;\r\n}\r\n\r\n.ListingItem__params__2k34p {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    margin: 8px;\r\n}\r\n\r\n.ListingItem__params__2k34p p {\r\n    font-size: 0.8em;\r\n}\r\n\r\n.ListingItem__images__2WJyw {\r\n\r\n}\r\n\r\n.ListingItem__arrowLeft__WZrvT {\r\n    display: none;\r\n    position: absolute;\r\n    top: 100px;\r\n    left: 0;\r\n    width: 45px;\r\n    height: 42px;\r\n    background-color: rgba(158, 137, 137, 0.4);\r\n    padding: 9px 0 0 9px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingItem__arrowRight__3_9-- {\r\n    display: none;\r\n    position: absolute;\r\n    top: 100px;\r\n    left: 240px;\r\n    width: 45px;\r\n    height: 42px;\r\n    background-color: rgba(158, 137, 137, 0.4);\r\n    padding: 9px 0 0 9px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingItem__wrapper__UgLa3 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    overflow: hidden;\r\n    -webkit-transition: all 0.3s;\r\n    -o-transition: all 0.3s;\r\n    transition: all 0.3s;\r\n}\r\n\r\n.ListingItem__imageWrapper__1NQji:hover .ListingItem__arrowLeft__WZrvT {\r\n    display: block\r\n}\r\n\r\n.ListingItem__imageWrapper__1NQji:hover .ListingItem__arrowRight__3_9-- {\r\n    display: block;\r\n}", ""]);
+exports.push([module.i, ".ListingItem__imageWrapper__1NQji {\r\n    overflow: hidden;\r\n    position: relative;\r\n    min-height: 240px;\r\n    border: 1px solid var(--mainBlack);\r\n    margin-top: 10px;\r\n    max-width: 1011.75px;\r\n}\r\n\r\n.ListingItem__content__U_jzQ {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 0;\r\n    padding: 10px;\r\n    width: 711.75px;\r\n    height: 100%;\r\n    background-color: white;\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n    font-family: 'Montserrat';\r\n    font-weight: bold;\r\n}\r\n\r\n.ListingItem__content__U_jzQ p {\r\n    margin: 8px 0;\r\n    padding-left: 10px;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: end;\r\n        -ms-flex-align: end;\r\n            align-items: flex-end;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c .ListingItem__price__tKqVf {\r\n    font-size: 1.4em;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c .ListingItem__mileage__3r2zF {\r\n    font-size: 0.9em;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c p span {\r\n    margin-left: 8px;\r\n}\r\n\r\n.ListingItem__params__2k34p {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    margin: 8px;\r\n}\r\n\r\n.ListingItem__params__2k34p p {\r\n    font-size: 0.8em;\r\n}\r\n\r\n.ListingItem__images__2WJyw {\r\n\r\n}\r\n\r\n.ListingItem__arrowLeft__WZrvT {\r\n    display: none;\r\n    position: absolute;\r\n    top: 100px;\r\n    left: 0;\r\n    width: 45px;\r\n    height: 42px;\r\n    background-color: rgba(158, 137, 137, 0.4);\r\n    padding: 9px 0 0 9px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingItem__arrowRight__3_9-- {\r\n    display: none;\r\n    position: absolute;\r\n    top: 100px;\r\n    left: 240px;\r\n    width: 45px;\r\n    height: 42px;\r\n    background-color: rgba(158, 137, 137, 0.4);\r\n    padding: 9px 0 0 9px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingItem__wrapper__UgLa3 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    overflow: hidden;\r\n    -webkit-transition: all 0.3s;\r\n    -o-transition: all 0.3s;\r\n    transition: all 0.3s;\r\n}\r\n\r\n.ListingItem__imageWrapper__1NQji:hover .ListingItem__arrowLeft__WZrvT {\r\n    display: block\r\n}\r\n\r\n.ListingItem__imageWrapper__1NQji:hover .ListingItem__arrowRight__3_9-- {\r\n    display: block;\r\n}\r\n\r\n.ListingItem__deleteButton__3MrKC {\r\n    display: none;\r\n    position: absolute;\r\n    top: 5px;\r\n    right: 5px;\r\n    width: 30px;\r\n    height: 30px;\r\n    background: rgba(158, 137, 137, 0.4);\r\n    color: var(--mainWhite);\r\n    font-weight: bold;\r\n    font-size: 1.4em;\r\n    padding: 6px 0 0 13px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingItem__deleteButton__3MrKC:hover {\r\n    background-color: var(--mainRed);\r\n}\r\n\r\n.ListingItem__imageWrapper__1NQji:hover .ListingItem__deleteButton__3MrKC {\r\n    display: block;\r\n}", ""]);
 // Exports
 exports.locals = {
 	"imageWrapper": "ListingItem__imageWrapper__1NQji",
@@ -13279,7 +13303,8 @@ exports.locals = {
 	"images": "ListingItem__images__2WJyw",
 	"arrowLeft": "ListingItem__arrowLeft__WZrvT",
 	"arrowRight": "ListingItem__arrowRight__3_9--",
-	"wrapper": "ListingItem__wrapper__UgLa3"
+	"wrapper": "ListingItem__wrapper__UgLa3",
+	"deleteButton": "ListingItem__deleteButton__3MrKC"
 };
 module.exports = exports;
 
@@ -13564,13 +13589,14 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".SellCarPage__wrapperSellPage__1ikfT {\r\n    background-color: #f2f2f2;\r\n}\r\n\r\n.SellCarPage__spinner__2lul4 {\r\n    padding-top: 90px;\r\n}\r\n\r\n.SellCarPage__wrapper__3rkDR {\r\n    text-align: center;\r\n}\r\n\r\n.SellCarPage__wrapper__3rkDR h1 {\r\n    margin: 0;\r\n    padding-top: 150px;\r\n    font-family: 'Montserrat';\r\n    color: var(--mainWhite);\r\n}\r\n\r\n.SellCarPage__listings__2hJHL {\r\n    width: 75%;\r\n    margin-left: 50px;\r\n}\r\n\r\n.SellCarPage__listings__2hJHL h1 {\r\n    color: var(--mainBlack);\r\n}", ""]);
+exports.push([module.i, ".SellCarPage__wrapperSellPage__1ikfT {\r\n    background-color: #f2f2f2;\r\n}\r\n\r\n.SellCarPage__spinner__2lul4 {\r\n    padding-top: 90px;\r\n}\r\n\r\n.SellCarPage__wrapper__3rkDR {\r\n    text-align: center;\r\n}\r\n\r\n.SellCarPage__wrapper__3rkDR h1 {\r\n    margin: 0;\r\n    padding-top: 150px;\r\n    font-family: 'Montserrat';\r\n    color: var(--mainWhite);\r\n}\r\n\r\n.SellCarPage__listings__2hJHL {\r\n    width: 75%;\r\n    margin-left: 50px;\r\n}\r\n\r\n.SellCarPage__ifNoListings__1PWTG p {\r\n    font-family: 'Montserrat';\r\n    margin: 0;\r\n    padding: 16px 0;\r\n    text-align: center;\r\n    font-size: 1.1em;\r\n}\r\n\r\n.SellCarPage__listings__2hJHL h1 {\r\n    color: var(--mainBlack);\r\n}", ""]);
 // Exports
 exports.locals = {
 	"wrapperSellPage": "SellCarPage__wrapperSellPage__1ikfT",
 	"spinner": "SellCarPage__spinner__2lul4",
 	"wrapper": "SellCarPage__wrapper__3rkDR",
-	"listings": "SellCarPage__listings__2hJHL"
+	"listings": "SellCarPage__listings__2hJHL",
+	"ifNoListings": "SellCarPage__ifNoListings__1PWTG"
 };
 module.exports = exports;
 
@@ -65880,6 +65906,116 @@ exports.default = (0, _reactRedux.connect)(null, mapDispatchToProps)(UserIcon);
 
 /***/ }),
 
+/***/ "./src/components/deleteModal/DeleteModal.css":
+/*!****************************************************!*\
+  !*** ./src/components/deleteModal/DeleteModal.css ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./DeleteModal.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/deleteModal/DeleteModal.css");
+content = content.__esModule ? content.default : content;
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+
+/***/ }),
+
+/***/ "./src/components/deleteModal/DeleteModal.js":
+/*!***************************************************!*\
+  !*** ./src/components/deleteModal/DeleteModal.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _DeleteModal = __webpack_require__(/*! ./DeleteModal.css */ "./src/components/deleteModal/DeleteModal.css");
+
+var _DeleteModal2 = _interopRequireDefault(_DeleteModal);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var DeleteModal = function (_Component) {
+    _inherits(DeleteModal, _Component);
+
+    function DeleteModal() {
+        _classCallCheck(this, DeleteModal);
+
+        return _possibleConstructorReturn(this, (DeleteModal.__proto__ || Object.getPrototypeOf(DeleteModal)).apply(this, arguments));
+    }
+
+    _createClass(DeleteModal, [{
+        key: 'render',
+        value: function render() {
+            var classesModal = [_DeleteModal2.default.modalWrapper];
+            if (this.props.active) {
+                classesModal.push(_DeleteModal2.default.show);
+            }
+
+            return _react2.default.createElement(
+                'div',
+                { className: classesModal.join(' ') },
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'Are you sure you want to delete this item?'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: _DeleteModal2.default.modalButtons },
+                    _react2.default.createElement(
+                        'button',
+                        { onClick: this.props.deleteElement },
+                        'Yes'
+                    ),
+                    _react2.default.createElement(
+                        'button',
+                        { onClick: this.props.closeModal },
+                        'No'
+                    )
+                )
+            );
+        }
+    }]);
+
+    return DeleteModal;
+}(_react.Component);
+
+exports.default = DeleteModal;
+
+/***/ }),
+
 /***/ "./src/components/heroImage/HeroImage.js":
 /*!***********************************************!*\
   !*** ./src/components/heroImage/HeroImage.js ***!
@@ -65987,6 +66123,20 @@ var _no_photo = __webpack_require__(/*! ../../assets/no_photo.jpg */ "./src/asse
 var _no_photo2 = _interopRequireDefault(_no_photo);
 
 var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+var _DeleteModal = __webpack_require__(/*! ../../components/deleteModal/DeleteModal */ "./src/components/deleteModal/DeleteModal.js");
+
+var _DeleteModal2 = _interopRequireDefault(_DeleteModal);
+
+var _Actions = __webpack_require__(/*! ../../reduxStore/authentication/Actions */ "./src/reduxStore/authentication/Actions.js");
+
+var actions = _interopRequireWildcard(_Actions);
+
+var _axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -66179,8 +66329,17 @@ var ListingItem = function (_Component) {
                             { updateListingButton: true },
                             'Update Listing'
                         )
-                    ) : null
+                    ) : null,
+                    _react2.default.createElement(
+                        'div',
+                        { className: _ListingItem2.default.deleteButton,
+                            onClick: this.props.deleteItem },
+                        'X'
+                    )
                 ),
+                _react2.default.createElement(_DeleteModal2.default, { deleteElement: this.props.deleteElement,
+                    active: this.props.active,
+                    closeModal: this.props.closeModal }),
                 _react2.default.createElement(
                     'div',
                     { className: _ListingItem2.default.wrapper },
@@ -68831,7 +68990,49 @@ var SellCarPage = function (_Component) {
         }
 
         return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SellCarPage.__proto__ || Object.getPrototypeOf(SellCarPage)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-            items: []
+            items: [],
+            activeModalsPerItem: []
+        }, _this.openModal = function (element) {
+            var copyItems = _this.state.items;
+            var index = copyItems.findIndex(function (item) {
+                return item === element;
+            });
+            var activeModals = _this.state.activeModalsPerItem;
+            activeModals[index] = true;
+
+            _this.setState({
+                activeModalsPerItem: activeModals
+            });
+        }, _this.closeModalHandler = function (element) {
+            var copyItems = _this.state.items;
+            var index = copyItems.findIndex(function (item) {
+                return item === element;
+            });
+            var copyActiveModals = _this.state.activeModalsPerItem;
+            copyActiveModals[index] = false;
+
+            _this.setState({
+                activeModalsPerItem: copyActiveModals
+            });
+        }, _this.deleteItemHandler = function (element, id) {
+            _axios2.default.post('/delete_listing', {
+                _id: id
+            }).then(function (response) {
+                if (response.data === 'deleted') {
+                    var index = _this.state.items.findIndex(function (item) {
+                        return item === element;
+                    });
+                    var copyActiveModals = _this.state.activeModalsPerItem;
+                    copyActiveModals[index] = false;
+
+                    _axios2.default.get('/items_by_userId').then(function (response) {
+                        _this.setState({
+                            items: response.data,
+                            activeModalsPerItem: copyActiveModals
+                        });
+                    });
+                }
+            });
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
@@ -68847,8 +69048,16 @@ var SellCarPage = function (_Component) {
 
             if (this.props.auth) {
                 _axios2.default.get('/items_by_userId').then(function (response) {
+                    var items = response.data;
+                    var activeModalsPerItem = [];
+
+                    items.forEach(function (item) {
+                        activeModalsPerItem.push(false);
+                    });
+
                     _this2.setState({
-                        items: response.data
+                        items: response.data,
+                        activeModalsPerItem: activeModalsPerItem
                     });
                 });
             }
@@ -68856,76 +69065,103 @@ var SellCarPage = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
+            var _this3 = this;
 
-            var listings = this.state.items.map(function (current) {
+            var activeValues = this.state.activeModalsPerItem;
+            var listings = this.state.items.map(function (current, index) {
                 return _react2.default.createElement(_ListingItem2.default, { item: current,
-                    admin: true });
+                    admin: true,
+                    deleteItem: function deleteItem() {
+                        return _this3.openModal(current);
+                    },
+                    active: activeValues[index],
+                    closeModal: function closeModal() {
+                        return _this3.closeModalHandler(current);
+                    },
+                    deleteElement: function deleteElement() {
+                        return _this3.deleteItemHandler(current, current._id);
+                    } });
             });
-            /*
-                    let component = (
-                        <React.Fragment>
-                            {this.props.auth === false ? (
-                                <HeroImage img="../../assets/sell_your_car.jpg" sellPage>
-                                    <ListingsIfNotLogin />
-                                </HeroImage>
-                            ) : this.props.auth === true ? (
-                                <HeroImage img="../../assets/sell_your_car.jpg" loggedIn>
-                                    <div className={classes.wrapper}>
-                                        <h1>Sell Your Car</h1>
-                                        <Link to="/create_listing">
-                                            <Button createListingButton>Create Listing</Button>
-                                        </Link>
-                                    </div>
-                                </HeroImage>
-                            ) : null}
-                        </React.Fragment>
-                    )
-            
-                    if(this.props.loading){
-                        component = (
-                            <div className={classes.spinner}>
-                                <Spinner />
-                            </div>
-                        )
-                    }
-             */
+
             var component = _react2.default.createElement(
-                'div',
-                { className: _SellCarPage2.default.wrapperSellPage },
-                _react2.default.createElement(
+                _react2.default.Fragment,
+                null,
+                this.props.auth === false ? _react2.default.createElement(
                     _HeroImage2.default,
-                    { img: '../../assets/sell_your_car.jpg', loggedIn: true },
+                    { img: '../../assets/sell_your_car.jpg', sellPage: true },
+                    _react2.default.createElement(_ListingsIfNotLogIn2.default, null)
+                ) : this.props.auth === true ? _react2.default.createElement(
+                    'div',
+                    { className: _SellCarPage2.default.wrapperSellPage },
+                    _react2.default.createElement(
+                        _HeroImage2.default,
+                        { img: '../../assets/sell_your_car.jpg', loggedIn: true },
+                        _react2.default.createElement(
+                            'div',
+                            { className: _SellCarPage2.default.wrapper },
+                            _react2.default.createElement(
+                                'h1',
+                                null,
+                                'Sell Your Car'
+                            ),
+                            _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                { to: '/create_listing' },
+                                _react2.default.createElement(
+                                    _Button2.default,
+                                    { createListingButton: true },
+                                    'Create Listing'
+                                )
+                            )
+                        )
+                    ),
                     _react2.default.createElement(
                         'div',
-                        { className: _SellCarPage2.default.wrapper },
+                        { className: _SellCarPage2.default.listings },
                         _react2.default.createElement(
                             'h1',
                             null,
-                            'Sell Your Car'
+                            'My Listings'
                         ),
-                        _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: '/create_listing' },
+                        this.state.items.length > 0 ? listings : _react2.default.createElement(
+                            'div',
+                            { className: _SellCarPage2.default.ifNoListings },
                             _react2.default.createElement(
-                                _Button2.default,
-                                { createListingButton: true },
-                                'Create Listing'
+                                'p',
+                                null,
+                                'You don\'t have listings yet'
                             )
                         )
                     )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: _SellCarPage2.default.listings },
-                    _react2.default.createElement(
-                        'h1',
-                        null,
-                        'My Listings'
-                    ),
-                    listings
-                )
+                ) : null
             );
 
+            if (this.props.loading) {
+                component = _react2.default.createElement(
+                    'div',
+                    { className: _SellCarPage2.default.spinner },
+                    _react2.default.createElement(_Spinner2.default, null)
+                );
+            }
+
+            /*
+                    let component = (
+                        <div className={classes.wrapperSellPage}>
+                            <HeroImage img="../../assets/sell_your_car.jpg" loggedIn>
+                                <div className={classes.wrapper}>
+                                    <h1>Sell Your Car</h1>
+                                    <Link to="/create_listing">
+                                        <Button createListingButton>Create Listing</Button>
+                                    </Link>
+                                </div>
+                            </HeroImage>
+                            <div className={classes.listings}>
+                                <h1>My Listings</h1>
+                                {listings}
+                            </div>
+                        </div>
+                    )
+            */
             return _react2.default.createElement(
                 'div',
                 null,
@@ -69974,6 +70210,8 @@ var dispatchEmail = exports.dispatchEmail = 'dispatchEmail';
 var openModal = exports.openModal = 'openModal';
 var closeModal = exports.closeModal = 'closeModal';
 var userWasLoggedOut = exports.userWasLoggedOut = 'userWasLoggedOut';
+var showDeleteModal = exports.showDeleteModal = 'showDeleteModal';
+var closeDeleteModal = exports.closeDeleteModal = 'closeDeleteModal';
 
 /***/ }),
 
