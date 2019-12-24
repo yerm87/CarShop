@@ -20,13 +20,20 @@ use App\Parameters;
 use App\Http\Controllers\VehicleParameters;
 use App\Listing;
 use App\Http\Controllers\ListingController;
+use App\Http\Controllers\AdminController;
+use App\Http\Requests\AdminRequest;
+use App\Admin;
+use App\BuyingAdvice;
+use App\Http\Requests\BuyingAdviceRequest;
+use App\Http\Requests\ReviewRequest;
+use App\Review;
 
 Route::get('/test', function(){
     return view('welcome');
 });
 
 Route::get('/test2', function(Request $request){
-   return $request->session()->forget('key');
+   return $request->session()->forget('admin');
 });
 
 Route::post('/test3', function(Request $request){
@@ -195,3 +202,122 @@ Route::post('/update_listing', function(Request $request){
 
 //delete listing from user account
 Route::post('/delete_listing', 'ListingController@deleteListing');
+
+
+
+ /************ CMS routes *********/
+Route::get('/login_admin', 'AdminController@index');
+
+Route::post('/middleware', ['middleware' => 'admin', function(AdminRequest $request){
+	$admin = Admin::where([
+    	'username' => $request->username,
+    	'password' => $request->password
+    ])->get()->first();
+    session(['admin' => $admin->_id]);
+    
+    return redirect('/admin_tools');
+}]);
+
+Route::get('/admin_tools', 'AdminController@adminTools');
+
+Route::get('/create_buying_advice', 'AdminController@createBuyingAdvice');
+
+Route::post('/create_advice_handler', function(BuyingAdviceRequest $request){
+	    $advice = BuyingAdvice::create($request->all());
+	    $advice->admin_id = $request->session()->get('admin');
+
+	    $admin = Admin::find($request->session()->get('admin'));
+	    $firstName = $admin->firstName;
+	    $lastName = $admin->lastName;
+	    $advice->author = $firstName . " " . $lastName;
+
+    	if($request->file('image')){
+    		$image = new MongoDB\BSON\Binary(file_get_contents($request->file('image')), 
+			         MongoDB\BSON\Binary::TYPE_GENERIC);
+    		$advice->image = $image;
+    		$advice->save(); 
+    	} else {
+    		$advice->image = 'no image';
+    		$advice->save();
+    	}
+    	
+    	return redirect('/admin_tools');
+});
+
+Route::get('/update_buying_advice', 'AdminController@updateBuyingAdvice');
+
+Route::post('/update_advice_handler', function(BuyingAdviceRequest $request){
+	$advice = BuyingAdvice::find($request->_id);
+
+	$advice->update($request->all());
+	$advice->admin_id = $request->session()->get('admin');
+
+	$admin = Admin::find($request->session()->get('admin'));
+	$firstName = $admin->firstName;
+	$lastName = $admin->lastName;
+	$advice->author = $firstName . " " . $lastName;
+
+
+	if($request->file('image')){
+		$image = new MongoDB\BSON\Binary(file_get_contents($request->file('image')), 
+			         MongoDB\BSON\Binary::TYPE_GENERIC);
+		$advice->image = $image;
+	} else {
+		$advice->image = 'no image';
+	}
+	$advice->save();
+	return redirect('/admin_tools');
+});
+
+Route::get('/delete_buying_advice', 'AdminController@deleteBuyingAdvice');
+
+Route::get('/create_review', 'AdminController@createReview');
+
+Route::post('create_review_handler', function(ReviewRequest $request){
+	$review = Review::create($request->all());
+	$review->admin_id = $request->session()->get('admin');
+
+	$admin = Admin::find($request->session()->get('admin'));
+	$firstName = $admin->firstName;
+	$lastName = $admin->lastName;
+	$review->author = $firstName . " " . $lastName;
+
+    if($request->file('image')){
+    	$image = new MongoDB\BSON\Binary(file_get_contents($request->file('image')), 
+			    MongoDB\BSON\Binary::TYPE_GENERIC);
+        $review->image = $image;
+        $review->save(); 
+    } else {
+    	$review->image = 'no image';
+    	$review->save();
+    }
+    	
+    return redirect('/admin_tools?params=reviews');
+});
+
+Route::get('/update_review', 'AdminController@updateReview');
+
+Route::post('/update_review_handler', function(ReviewRequest $request){
+	$review = Review::find($request->_id);
+
+	$review->update($request->all());
+	$review->admin_id = $request->session()->get('admin');
+
+	$admin = Admin::find($request->session()->get('admin'));
+	$firstName = $admin->firstName;
+	$lastName = $admin->lastName;
+	$review->author = $firstName . " " . $lastName;
+
+
+	if($request->file('image')){
+		$image = new MongoDB\BSON\Binary(file_get_contents($request->file('image')), 
+			         MongoDB\BSON\Binary::TYPE_GENERIC);
+		$review->image = $image;
+	} else {
+		$review->image = 'no image';
+	}
+	$review->save();
+	return redirect('/admin_tools?params=reviews');
+});
+
+Route::get('/delete_review', 'AdminController@deleteReview');
