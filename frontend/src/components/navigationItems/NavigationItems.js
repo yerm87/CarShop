@@ -12,7 +12,7 @@ class NavigationItems extends Component {
             <div className={classes.items}>
                 <NavigationItem name='Cars for sale' />
                 <NavigationItem name='Sell Your Car'
-                                path='sell_car' />
+                                path='/sell_car' />
                 <NavigationItem name='Reviews' />
                 <NavigationItem name='About Us' />
                 {this.props.isLoggedIn ? <UserIcon /> : (

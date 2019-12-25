@@ -1,0 +1,8 @@
+.wrapper {
+    font-family: 'Montserrat';
+    padding: 40px 80px;
+}
+
+.wrapper h1 {
+    color: var(--mainBlack);
+}

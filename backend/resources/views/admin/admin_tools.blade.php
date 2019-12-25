@@ -7,7 +7,7 @@
     	        <p>Admin Page</p>
     	        <div>
     		        <p>Welcome, {{$firstName}} {{$lastName}}</p>
-    	            <p><a>Logout</a></p>
+    	            <a href="/logout_admin">Logout</a>
     	        </div>
             </div>
             <div class="adminToolsContent">
@@ -40,7 +40,13 @@
                 	    	    		@endif
                 	    	    	</td>
                 	    	    	<td>{{$buyingAdvice->title}}</td>
-                	    	    	<td>{{$buyingAdvice->content}}</td>
+                	    	    	<td>
+                	    	    		@if(strlen($buyingAdvice->content) < 100)
+                	    	    		   {{$buyingAdvice->content}}
+                	    	    		   @else
+                	    	    		      {{substr($buyingAdvice->content, 0, 100)}}...
+                	    	    		@endif
+                	    	    	</td>
                 	    	    	<td>{{$buyingAdvice->author}}</td>
                 	    	    	<td>{{$buyingAdvice->created_at}}</td>
                 	    	    	<td>

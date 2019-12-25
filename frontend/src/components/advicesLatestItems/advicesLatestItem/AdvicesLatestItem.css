@@ -1,0 +1,9 @@
+.itemElement p {
+    padding-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.itemElement:hover {
+    cursor:pointer;
+}

@@ -1,7 +1,7 @@
 /****Admin Login*****/
 .wrapper {
 	background: #F5F1F0;
-	padding: 100px 0;
+	padding: 100px 0 340px 0;
 	text-align: center;
 	font-family: 'Montserrat';
 }
@@ -32,7 +32,6 @@
 	display: flex;
 	justify-content: space-between;
 	font-size: 1.2em;
-	font-weight: bold;
 }
 
 .adminToolsMenu div {
@@ -48,6 +47,21 @@
 
 .adminToolsMenu p {
 	padding: 20px;
+	font-weight: bold;
+}
+
+.adminToolsMenu a {
+	display: block;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid var(--mainBlack);
+	color: var(--mainBlack);
+	text-decoration: none;
+}
+
+.adminToolsMenu a:hover {
+	background: var(--mainBlack);
+	color: var(--mainWhite);
 }
 
 .adminToolsWrapper ul {

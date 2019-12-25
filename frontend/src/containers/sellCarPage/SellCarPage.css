@@ -20,10 +20,10 @@
 .listings {
     width: 75%;
     margin-left: 50px;
+    font-family: 'Montserrat';
 }
 
 .ifNoListings p {
-    font-family: 'Montserrat';
     margin: 0;
     padding: 16px 0;
     text-align: center;

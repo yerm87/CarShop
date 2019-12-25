@@ -14,6 +14,8 @@ import ModalUserInfo from './components/modalUserInfo/ModalUserInfo';
 import classes from './App.css';
 import Logout from './containers/logout_page/Logout';
 import UpdateListing from "./containers/update_listing/UpdateListing";
+import BuyingAdvicesPage from './containers/buyingAdvicesPage/BuyingAdvicesPage';
+import AdvicesItemPage from './containers/advicesItemPage/AdvicesItemPage';
 
 class App extends Component {
     
@@ -49,6 +51,8 @@ class App extends Component {
                     <Route path="/login" component={LoginPage} />
                     <Route path="/logout" component={Logout} />
                     <Route path="/update_listing/:listingId" component={UpdateListing} />
+                    <Route path="/buying_advices/:advice_id" component={AdvicesItemPage} />
+                    <Route path="/buying_advices" component={BuyingAdvicesPage} />
                     <Route path="/" component={MainPage} />
                 </Switch>
             </div>

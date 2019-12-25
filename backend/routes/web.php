@@ -321,3 +321,12 @@ Route::post('/update_review_handler', function(ReviewRequest $request){
 });
 
 Route::get('/delete_review', 'AdminController@deleteReview');
+
+Route::get('/logout_admin', 'AdminController@adminLogout');
+
+
+/******** APIs to fetch buying advices**********/
+
+Route::get('/get_buying_advices', 'AdminController@fetchBuyingAdvices');
+
+Route::get('/fetch_advices_item', 'AdminController@fetchBuyingAdvicesItem');

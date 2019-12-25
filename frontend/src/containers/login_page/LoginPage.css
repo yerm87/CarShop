@@ -5,6 +5,7 @@
 .wrapper p {
     text-align: center;
     font-family: 'Montserrat';
+    padding-top: 10px;
 }
 
 .wrapper span {

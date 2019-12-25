@@ -10,8 +10,12 @@ use App\Review;
 
 class AdminController extends Controller
 {
-    public function index(){
-    	return view('admin.index');
+    public function index(Request $request){
+    	if(!$request->session()->get('admin')){
+    		return view('admin.index');
+    	} else {
+    		return redirect('/admin_tools');
+    	}
     }
 
     public function main_window(AdminRequest $request){
@@ -81,5 +85,28 @@ class AdminController extends Controller
     	$review->delete();
 
     	return redirect('/admin_tools?params=reviews');
+    }
+
+    public function adminLogout(Request $request){
+    	$request->session()->forget('admin');
+
+    	return redirect('/login_admin');
+    }
+
+    public function fetchBuyingAdvices(){
+    	$advices = BuyingAdvice::all();
+    	foreach($advices as $advice){
+    		$image = base64_encode($advice->image);
+    		$advice->image = $image;
+    	}
+    	return $advices;
+    }
+
+    public function fetchBuyingAdvicesItem(Request $request){
+    	$advice = BuyingAdvice::find($request->id);
+    	$image = base64_encode($advice->image);
+    	$advice->image = $image;
+    	
+    	return $advice;
     }
 }

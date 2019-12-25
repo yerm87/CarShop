@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    margin-top: 20px;
+}
+
+.nameAndDate p {
+    color: #292525;
+    padding: 10px 0 22px 0;
+}
+
+.content {
+    padding-left: 25px;
+}
+
+.content h4 {
+    margin: 0;
+}
+
+.wrapper:hover{
+    cursor:pointer;
+}

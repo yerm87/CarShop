@@ -71,3 +71,16 @@
     background: var(--mainWhite);
     border: 1px solid var(--mainBlue);
 }
+
+.viewAllAdvices {
+    border: 1px solid var(--mainBlue);
+    color: var(--mainBlue);
+    background: var(--mainWhite);
+    padding: 10px 24px;
+    font-size: 1.2em;
+}
+
+.viewAllAdvices:hover {
+    color: var(--mainWhite);
+    background: var(--mainBlue);
+}

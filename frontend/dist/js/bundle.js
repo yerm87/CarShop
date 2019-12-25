@@ -13148,7 +13148,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".Button__button__3N-Dq {\r\n    font-family: 'Rubik';\r\n    border-radius: 10px;\r\n    cursor: pointer;\r\n}\r\n\r\n.Button__menuButton__2LvJ_ {\r\n    font-size: 16px;\r\n    padding: 7px;\r\n    background: transparent;\r\n    color: var(--mainWhite);\r\n    border: 1px solid var(--mainWhite);\r\n    margin: 15px 25px;\r\n}\r\n\r\n.Button__menuButton__2LvJ_:hover {\r\n    background: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.Button__loginInListings__393A3 {\r\n    font-size: 16px;\r\n    padding: 7px 18px 7px 18px;\r\n    color: var(--mainWhite);\r\n    border: 1px solid var(--mainWhite);\r\n    background-color: transparent;\r\n    margin: 15px 25px;\r\n}\r\n\r\n.Button__loginInListings__393A3:hover {\r\n    background-color: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.Button__signupOrLoginButton__2CQ2i {\r\n    font-size: 16px;\r\n    width: 100%;\r\n    border: none;\r\n    padding: 10px 0;\r\n    background: var(--mainBlue);\r\n    color: var(--mainWhite);\r\n    margin-top: 20px;\r\n}\r\n\r\n.Button__createListingButton__2icz4 {\r\n    margin-top: 100px;\r\n    width: 200px;\r\n    height: 80px;\r\n    color: var(--mainWhite);\r\n    background: transparent;\r\n    border: 1px solid var(--mainWhite);\r\n    font-size: 1.5em;\r\n}\r\n\r\n.Button__createListingButton__2icz4:hover {\r\n    background-color: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.Button__updateListingButton__26VnD {\r\n    background: var(--mainBlue);\r\n    color: var(--mainWhite);\r\n    width: 200px;\r\n    height: 40px;\r\n    font-size: 1.2em;\r\n    padding: 8px;\r\n}\r\n\r\n.Button__updateListingButton__26VnD:hover {\r\n    color: var(--mainBlue);\r\n    background: var(--mainWhite);\r\n    border: 1px solid var(--mainBlue);\r\n}", ""]);
+exports.push([module.i, ".Button__button__3N-Dq {\r\n    font-family: 'Rubik';\r\n    border-radius: 10px;\r\n    cursor: pointer;\r\n}\r\n\r\n.Button__menuButton__2LvJ_ {\r\n    font-size: 16px;\r\n    padding: 7px;\r\n    background: transparent;\r\n    color: var(--mainWhite);\r\n    border: 1px solid var(--mainWhite);\r\n    margin: 15px 25px;\r\n}\r\n\r\n.Button__menuButton__2LvJ_:hover {\r\n    background: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.Button__loginInListings__393A3 {\r\n    font-size: 16px;\r\n    padding: 7px 18px 7px 18px;\r\n    color: var(--mainWhite);\r\n    border: 1px solid var(--mainWhite);\r\n    background-color: transparent;\r\n    margin: 15px 25px;\r\n}\r\n\r\n.Button__loginInListings__393A3:hover {\r\n    background-color: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.Button__signupOrLoginButton__2CQ2i {\r\n    font-size: 16px;\r\n    width: 100%;\r\n    border: none;\r\n    padding: 10px 0;\r\n    background: var(--mainBlue);\r\n    color: var(--mainWhite);\r\n    margin-top: 20px;\r\n}\r\n\r\n.Button__createListingButton__2icz4 {\r\n    margin-top: 100px;\r\n    width: 200px;\r\n    height: 80px;\r\n    color: var(--mainWhite);\r\n    background: transparent;\r\n    border: 1px solid var(--mainWhite);\r\n    font-size: 1.5em;\r\n}\r\n\r\n.Button__createListingButton__2icz4:hover {\r\n    background-color: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.Button__updateListingButton__26VnD {\r\n    background: var(--mainBlue);\r\n    color: var(--mainWhite);\r\n    width: 200px;\r\n    height: 40px;\r\n    font-size: 1.2em;\r\n    padding: 8px;\r\n}\r\n\r\n.Button__updateListingButton__26VnD:hover {\r\n    color: var(--mainBlue);\r\n    background: var(--mainWhite);\r\n    border: 1px solid var(--mainBlue);\r\n}\r\n\r\n.Button__viewAllAdvices__2cEW6 {\r\n    border: 1px solid var(--mainBlue);\r\n    color: var(--mainBlue);\r\n    background: var(--mainWhite);\r\n    padding: 10px 24px;\r\n    font-size: 1.2em;\r\n}\r\n\r\n.Button__viewAllAdvices__2cEW6:hover {\r\n    color: var(--mainWhite);\r\n    background: var(--mainBlue);\r\n}", ""]);
 // Exports
 exports.locals = {
 	"button": "Button__button__3N-Dq",
@@ -13156,7 +13156,8 @@ exports.locals = {
 	"loginInListings": "Button__loginInListings__393A3",
 	"signupOrLoginButton": "Button__signupOrLoginButton__2CQ2i",
 	"createListingButton": "Button__createListingButton__2icz4",
-	"updateListingButton": "Button__updateListingButton__26VnD"
+	"updateListingButton": "Button__updateListingButton__26VnD",
+	"viewAllAdvices": "Button__viewAllAdvices__2cEW6"
 };
 module.exports = exports;
 
@@ -13250,6 +13251,74 @@ exports.push([module.i, ".UserIcon__wrapper__3iaRx {\r\n    margin-right: 30px;\
 exports.locals = {
 	"wrapper": "UserIcon__wrapper__3iaRx",
 	"item": "UserIcon__item__2olcV"
+};
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/advicesAllItems/advicesItem/AdvicesItem.css":
+/*!***************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/advicesAllItems/advicesItem/AdvicesItem.css ***!
+  \***************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".AdvicesItem__wrapper__XKbxy {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    margin-top: 20px;\r\n}\r\n\r\n.AdvicesItem__nameAndDate__mzXFy p {\r\n    color: #292525;\r\n    padding: 10px 0 22px 0;\r\n}\r\n\r\n.AdvicesItem__content__-DsWu {\r\n    padding-left: 25px;\r\n}\r\n\r\n.AdvicesItem__content__-DsWu h4 {\r\n    margin: 0;\r\n}\r\n\r\n.AdvicesItem__wrapper__XKbxy:hover{\r\n    cursor:pointer;\r\n}", ""]);
+// Exports
+exports.locals = {
+	"wrapper": "AdvicesItem__wrapper__XKbxy",
+	"nameAndDate": "AdvicesItem__nameAndDate__mzXFy",
+	"content": "AdvicesItem__content__-DsWu"
+};
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/advicesLatestItems/AdvicesLatestItems.css":
+/*!*************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/advicesLatestItems/AdvicesLatestItems.css ***!
+  \*************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".AdvicesLatestItems__wrapper__hudsU {\r\n    font-family: 'Montserrat';\r\n    background: #f2f2f2;\r\n}\r\n\r\n.AdvicesLatestItems__wrapper__hudsU .AdvicesLatestItems__content__3ntLt {\r\n    padding: 20px 80px;\r\n}\r\n\r\n.AdvicesLatestItems__wrapper__hudsU .AdvicesLatestItems__content__3ntLt h2 {\r\n    color: var(--mainBlack);\r\n    text-align: center;\r\n}\r\n\r\n.AdvicesLatestItems__items__1zci6 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-pack: distribute;\r\n        justify-content: space-around;\r\n}\r\n\r\n.AdvicesLatestItems__viewAllButton__JStyr {\r\n    text-align: center;\r\n    padding-top: 18px;\r\n}", ""]);
+// Exports
+exports.locals = {
+	"wrapper": "AdvicesLatestItems__wrapper__hudsU",
+	"content": "AdvicesLatestItems__content__3ntLt",
+	"items": "AdvicesLatestItems__items__1zci6",
+	"viewAllButton": "AdvicesLatestItems__viewAllButton__JStyr"
+};
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/advicesLatestItems/advicesLatestItem/AdvicesLatestItem.css":
+/*!******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/advicesLatestItems/advicesLatestItem/AdvicesLatestItem.css ***!
+  \******************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".AdvicesLatestItem__itemElement__37vgZ p {\r\n    padding-top: 15px;\r\n    text-align: center;\r\n    font-weight: bold;\r\n}\r\n\r\n.AdvicesLatestItem__itemElement__37vgZ:hover {\r\n    cursor:pointer;\r\n}", ""]);
+// Exports
+exports.locals = {
+	"itemElement": "AdvicesLatestItem__itemElement__37vgZ"
 };
 module.exports = exports;
 
@@ -13507,6 +13576,51 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/advicesItemPage/AdvicesItemPage.css":
+/*!*******************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/containers/advicesItemPage/AdvicesItemPage.css ***!
+  \*******************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".AdvicesItemPage__wrapper__36WHr {\r\n    background: #b2b2b2;\r\n}\r\n\r\n.AdvicesItemPage__content__1FkSv {\r\n    font-family: 'Montserrat';\r\n    width: 80%;\r\n    padding-top: 100px;\r\n    margin: 0 auto;\r\n}\r\n\r\n.AdvicesItemPage__content__1FkSv h2 {\r\n    margin-bottom: 45px;\r\n}\r\n\r\n.AdvicesItemPage__content__1FkSv h4 {\r\n    margin: 0;\r\n}\r\n\r\n.AdvicesItemPage__date__NS9za {\r\n    margin-bottom: 35px;\r\n}\r\n\r\n.AdvicesItemPage__date__NS9za p {\r\n    font-size: 0.8em;\r\n}\r\n\r\n.AdvicesItemPage__text__2lLLV p {\r\n    padding-top: 30px;\r\n    padding-bottom: 80px;\r\n    line-height: 1.2;\r\n    letter-spacing: 1px;\r\n}", ""]);
+// Exports
+exports.locals = {
+	"wrapper": "AdvicesItemPage__wrapper__36WHr",
+	"content": "AdvicesItemPage__content__1FkSv",
+	"date": "AdvicesItemPage__date__NS9za",
+	"text": "AdvicesItemPage__text__2lLLV"
+};
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/buyingAdvicesPage/BuyingAdvicesPage.css":
+/*!***********************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/containers/buyingAdvicesPage/BuyingAdvicesPage.css ***!
+  \***********************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".BuyingAdvicesPage__wrapper__1NiSi {\r\n    font-family: 'Montserrat';\r\n    padding: 40px 80px;\r\n}\r\n\r\n.BuyingAdvicesPage__wrapper__1NiSi h1 {\r\n    color: var(--mainBlack);\r\n}", ""]);
+// Exports
+exports.locals = {
+	"wrapper": "BuyingAdvicesPage__wrapper__1NiSi"
+};
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/create_listing/CreateListing.css":
 /*!****************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/containers/create_listing/CreateListing.css ***!
@@ -13547,7 +13661,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".LoginPage__wrapper__4VyXr {\r\n    padding-top: 100px;\r\n}\r\n\r\n.LoginPage__wrapper__4VyXr p {\r\n    text-align: center;\r\n    font-family: 'Montserrat';\r\n}\r\n\r\n.LoginPage__wrapper__4VyXr span {\r\n    color: var(--mainBlue);\r\n    cursor: pointer;\r\n}", ""]);
+exports.push([module.i, ".LoginPage__wrapper__4VyXr {\r\n    padding-top: 100px;\r\n}\r\n\r\n.LoginPage__wrapper__4VyXr p {\r\n    text-align: center;\r\n    font-family: 'Montserrat';\r\n    padding-top: 10px;\r\n}\r\n\r\n.LoginPage__wrapper__4VyXr span {\r\n    color: var(--mainBlue);\r\n    cursor: pointer;\r\n}", ""]);
 // Exports
 exports.locals = {
 	"wrapper": "LoginPage__wrapper__4VyXr"
@@ -13589,7 +13703,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".SellCarPage__wrapperSellPage__1ikfT {\r\n    background-color: #f2f2f2;\r\n}\r\n\r\n.SellCarPage__spinner__2lul4 {\r\n    padding-top: 90px;\r\n}\r\n\r\n.SellCarPage__wrapper__3rkDR {\r\n    text-align: center;\r\n}\r\n\r\n.SellCarPage__wrapper__3rkDR h1 {\r\n    margin: 0;\r\n    padding-top: 150px;\r\n    font-family: 'Montserrat';\r\n    color: var(--mainWhite);\r\n}\r\n\r\n.SellCarPage__listings__2hJHL {\r\n    width: 75%;\r\n    margin-left: 50px;\r\n}\r\n\r\n.SellCarPage__ifNoListings__1PWTG p {\r\n    font-family: 'Montserrat';\r\n    margin: 0;\r\n    padding: 16px 0;\r\n    text-align: center;\r\n    font-size: 1.1em;\r\n}\r\n\r\n.SellCarPage__listings__2hJHL h1 {\r\n    color: var(--mainBlack);\r\n}", ""]);
+exports.push([module.i, ".SellCarPage__wrapperSellPage__1ikfT {\r\n    background-color: #f2f2f2;\r\n}\r\n\r\n.SellCarPage__spinner__2lul4 {\r\n    padding-top: 90px;\r\n}\r\n\r\n.SellCarPage__wrapper__3rkDR {\r\n    text-align: center;\r\n}\r\n\r\n.SellCarPage__wrapper__3rkDR h1 {\r\n    margin: 0;\r\n    padding-top: 150px;\r\n    font-family: 'Montserrat';\r\n    color: var(--mainWhite);\r\n}\r\n\r\n.SellCarPage__listings__2hJHL {\r\n    width: 75%;\r\n    margin-left: 50px;\r\n    font-family: 'Montserrat';\r\n}\r\n\r\n.SellCarPage__ifNoListings__1PWTG p {\r\n    margin: 0;\r\n    padding: 16px 0;\r\n    text-align: center;\r\n    font-size: 1.1em;\r\n}\r\n\r\n.SellCarPage__listings__2hJHL h1 {\r\n    color: var(--mainBlack);\r\n}", ""]);
 // Exports
 exports.locals = {
 	"wrapperSellPage": "SellCarPage__wrapperSellPage__1ikfT",
@@ -15151,7 +15265,7 @@ module.exports = invariant;
 /*!************************************************!*\
   !*** ./node_modules/is-what/dist/index.esm.js ***!
   \************************************************/
-/*! exports provided: getType, isAnyObject, isArray, isBlob, isBoolean, isDate, isEmptyString, isFile, isFullString, isFunction, isNull, isNumber, isObject, isObjectLike, isPlainObject, isPrimitive, isRegExp, isString, isSymbol, isType, isUndefined */
+/*! exports provided: getType, isAnyObject, isArray, isBlob, isBoolean, isDate, isEmptyString, isFile, isFullString, isFunction, isNull, isNullOrUndefined, isNumber, isObject, isObjectLike, isPlainObject, isPrimitive, isRegExp, isString, isSymbol, isType, isUndefined */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15167,6 +15281,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isFullString", function() { return isFullString; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isFunction", function() { return isFunction; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isNull", function() { return isNull; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isNullOrUndefined", function() { return isNullOrUndefined; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isNumber", function() { return isNumber; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isObject", function() { return isObject; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isObjectLike", function() { return isObjectLike; });
@@ -15213,7 +15328,7 @@ function isNull(payload) {
 function isPlainObject(payload) {
     if (getType(payload) !== 'Object')
         return false;
-    return (payload.constructor === Object && Object.getPrototypeOf(payload) === Object.prototype);
+    return payload.constructor === Object && Object.getPrototypeOf(payload) === Object.prototype;
 }
 /**
  * Returns whether the payload is a plain JavaScript object (excluding special classes or objects with other prototypes)
@@ -15299,7 +15414,7 @@ function isEmptyString(payload) {
  * @returns {payload is number}
  */
 function isNumber(payload) {
-    return (getType(payload) === 'Number' && !isNaN(payload));
+    return getType(payload) === 'Number' && !isNaN(payload);
 }
 /**
  * Returns whether the payload is a boolean
@@ -15326,7 +15441,7 @@ function isRegExp(payload) {
  * @returns {payload is symbol}
  */
 function isSymbol(payload) {
-    return (getType(payload) === 'Symbol');
+    return getType(payload) === 'Symbol';
 }
 /**
  * Returns whether the payload is a date, and that the date is Valid
@@ -15335,7 +15450,7 @@ function isSymbol(payload) {
  * @returns {payload is Date}
  */
 function isDate(payload) {
-    return (getType(payload) === 'Date' && !isNaN(payload));
+    return getType(payload) === 'Date' && !isNaN(payload);
 }
 /**
  * Returns whether the payload is a blob
@@ -15370,6 +15485,15 @@ function isPrimitive(payload) {
         isSymbol(payload));
 }
 /**
+ * Returns true whether the payload is null or undefined
+ *
+ * @param {*} payload
+ * @returns {(payload is null | undefined)}
+ */
+function isNullOrUndefined(payload) {
+    return isNull(payload) || isUndefined(payload);
+}
+/**
  * Does a generic check to check that the given payload is of a given type.
  * In cases like Number, it will return true for NaN as NaN is a Number (thanks javascript!);
  * It will, however, differentiate between object and null
@@ -15389,7 +15513,7 @@ function isType(payload, type) {
     }
     // Classes usually have names (as functions usually have names)
     var name = type.name;
-    return (getType(payload) === name) || Boolean(payload && (payload.constructor === type));
+    return getType(payload) === name || Boolean(payload && payload.constructor === type);
 }
 
 
@@ -59451,7 +59575,7 @@ function createStore(reducer, preloadedState, enhancer) {
     }
 
     if (isDispatching) {
-      throw new Error('You may not call store.subscribe() while the reducer is executing. ' + 'If you would like to be notified after the store has been updated, subscribe from a ' + 'component and invoke store.getState() in the callback to access the latest state. ' + 'See https://redux.js.org/api-reference/store#subscribe(listener) for more details.');
+      throw new Error('You may not call store.subscribe() while the reducer is executing. ' + 'If you would like to be notified after the store has been updated, subscribe from a ' + 'component and invoke store.getState() in the callback to access the latest state. ' + 'See https://redux.js.org/api-reference/store#subscribelistener for more details.');
     }
 
     var isSubscribed = true;
@@ -59463,13 +59587,14 @@ function createStore(reducer, preloadedState, enhancer) {
       }
 
       if (isDispatching) {
-        throw new Error('You may not unsubscribe from a store listener while the reducer is executing. ' + 'See https://redux.js.org/api-reference/store#subscribe(listener) for more details.');
+        throw new Error('You may not unsubscribe from a store listener while the reducer is executing. ' + 'See https://redux.js.org/api-reference/store#subscribelistener for more details.');
       }
 
       isSubscribed = false;
       ensureCanMutateNextListeners();
       var index = nextListeners.indexOf(listener);
       nextListeners.splice(index, 1);
+      currentListeners = null;
     };
   }
   /**
@@ -59771,6 +59896,7 @@ function combineReducers(reducers) {
       hasChanged = hasChanged || nextStateForKey !== previousStateForKey;
     }
 
+    hasChanged = hasChanged || finalReducerKeys.length !== Object.keys(state).length;
     return hasChanged ? nextState : state;
   };
 }
@@ -61493,80 +61619,56 @@ var getTarget = function getTarget() {
   };
 }();
 
-function listToStyles(list, options) {
-  var styles = [];
-  var newStyles = {};
+function addModulesToDom(id, list, options) {
+  id = options.base ? id + options.base : id;
+
+  if (!stylesInDom[id]) {
+    stylesInDom[id] = [];
+  }
 
   for (var i = 0; i < list.length; i++) {
     var item = list[i];
-    var id = options.base ? item[0] + options.base : item[0];
-    var css = item[1];
-    var media = item[2];
-    var sourceMap = item[3];
     var part = {
-      css: css,
-      media: media,
-      sourceMap: sourceMap
+      css: item[1],
+      media: item[2],
+      sourceMap: item[3]
     };
+    var styleInDomById = stylesInDom[id];
 
-    if (!newStyles[id]) {
-      styles.push(newStyles[id] = {
-        id: id,
-        parts: [part]
-      });
+    if (styleInDomById[i]) {
+      styleInDomById[i].updater(part);
     } else {
-      newStyles[id].parts.push(part);
+      styleInDomById.push({
+        updater: addStyle(part, options)
+      });
     }
   }
 
-  return styles;
-}
+  for (var j = list.length; j < stylesInDom[id].length; j++) {
+    stylesInDom[id][j].updater();
+  }
 
-function addStylesToDom(styles, options) {
-  for (var i = 0; i < styles.length; i++) {
-    var item = styles[i];
-    var domStyle = stylesInDom[item.id];
-    var j = 0;
+  stylesInDom[id].length = list.length;
 
-    if (domStyle) {
-      domStyle.refs++;
-
-      for (; j < domStyle.parts.length; j++) {
-        domStyle.parts[j](item.parts[j]);
-      }
-
-      for (; j < item.parts.length; j++) {
-        domStyle.parts.push(addStyle(item.parts[j], options));
-      }
-    } else {
-      var parts = [];
-
-      for (; j < item.parts.length; j++) {
-        parts.push(addStyle(item.parts[j], options));
-      }
-
-      stylesInDom[item.id] = {
-        id: item.id,
-        refs: 1,
-        parts: parts
-      };
-    }
+  if (stylesInDom[id].length === 0) {
+    delete stylesInDom[id];
   }
 }
 
 function insertStyleElement(options) {
   var style = document.createElement('style');
+  var attributes = options.attributes || {};
 
-  if (typeof options.attributes.nonce === 'undefined') {
+  if (typeof attributes.nonce === 'undefined') {
     var nonce =  true ? __webpack_require__.nc : undefined;
 
     if (nonce) {
-      options.attributes.nonce = nonce;
+      attributes.nonce = nonce;
     }
   }
 
-  Object.keys(options.attributes).forEach(function (key) {
-    style.setAttribute(key, options.attributes[key]);
+  Object.keys(attributes).forEach(function (key) {
+    style.setAttribute(key, attributes[key]);
   });
 
   if (typeof options.insert === 'function') {
@@ -61633,6 +61735,8 @@ function applyToTag(style, options, obj) {
 
   if (media) {
     style.setAttribute('media', media);
+  } else {
+    style.removeAttribute('media');
   }
 
   if (sourceMap && btoa) {
@@ -61689,46 +61793,17 @@ function addStyle(obj, options) {
   };
 }
 
-module.exports = function (list, options) {
-  options = options || {};
-  options.attributes = typeof options.attributes === 'object' ? options.attributes : {}; // Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+module.exports = function (id, list, options) {
+  options = options || {}; // Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
   // tags it will allow on a page
 
   if (!options.singleton && typeof options.singleton !== 'boolean') {
     options.singleton = isOldIE();
   }
 
-  var styles = listToStyles(list, options);
-  addStylesToDom(styles, options);
+  addModulesToDom(id, list, options);
   return function update(newList) {
-    var mayRemove = [];
-
-    for (var i = 0; i < styles.length; i++) {
-      var item = styles[i];
-      var domStyle = stylesInDom[item.id];
-
-      if (domStyle) {
-        domStyle.refs--;
-        mayRemove.push(domStyle);
-      }
-    }
-
-    if (newList) {
-      var newStyles = listToStyles(newList, options);
-      addStylesToDom(newStyles, options);
-    }
-
-    for (var _i = 0; _i < mayRemove.length; _i++) {
-      var _domStyle = mayRemove[_i];
-
-      if (_domStyle.refs === 0) {
-        for (var j = 0; j < _domStyle.parts.length; j++) {
-          _domStyle.parts[j]();
-        }
-
-        delete stylesInDom[_domStyle.id];
-      }
-    }
+    addModulesToDom(id, newList || [], options);
   };
 };
 
@@ -64803,24 +64878,28 @@ module.exports = function(originalModule) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../node_modules/css-loader/dist/cjs.js??ref--5-1!../node_modules/postcss-loader/src/index.js??postcss!./App.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -64900,6 +64979,14 @@ var _UpdateListing = __webpack_require__(/*! ./containers/update_listing/UpdateL
 
 var _UpdateListing2 = _interopRequireDefault(_UpdateListing);
 
+var _BuyingAdvicesPage = __webpack_require__(/*! ./containers/buyingAdvicesPage/BuyingAdvicesPage */ "./src/containers/buyingAdvicesPage/BuyingAdvicesPage.js");
+
+var _BuyingAdvicesPage2 = _interopRequireDefault(_BuyingAdvicesPage);
+
+var _AdvicesItemPage = __webpack_require__(/*! ./containers/advicesItemPage/AdvicesItemPage */ "./src/containers/advicesItemPage/AdvicesItemPage.js");
+
+var _AdvicesItemPage2 = _interopRequireDefault(_AdvicesItemPage);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -64965,6 +65052,8 @@ var App = function (_Component) {
                     _react2.default.createElement(_reactRouterDom.Route, { path: "/login", component: _LoginPage2.default }),
                     _react2.default.createElement(_reactRouterDom.Route, { path: "/logout", component: _Logout2.default }),
                     _react2.default.createElement(_reactRouterDom.Route, { path: "/update_listing/:listingId", component: _UpdateListing2.default }),
+                    _react2.default.createElement(_reactRouterDom.Route, { path: "/buying_advices/:advice_id", component: _AdvicesItemPage2.default }),
+                    _react2.default.createElement(_reactRouterDom.Route, { path: "/buying_advices", component: _BuyingAdvicesPage2.default }),
                     _react2.default.createElement(_reactRouterDom.Route, { path: "/", component: _Main_page2.default })
                 )
             );
@@ -65019,24 +65108,28 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./Button.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/UIElements/button/Button.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./Button.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/UIElements/button/Button.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src/index.js??postcss!./Button.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -65076,6 +65169,8 @@ var Button = function Button(props) {
         classList.push(_Button2.default.createListingButton);
     } else if (props.updateListingButton) {
         classList.push(_Button2.default.updateListingButton);
+    } else if (props.viewAllAdvices) {
+        classList.push(_Button2.default.viewAllAdvices);
     }
 
     return _react2.default.createElement(
@@ -65646,24 +65741,28 @@ exports.default = Input;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./input.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/UIElements/inputs/input.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./input.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/UIElements/inputs/input.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src/index.js??postcss!./input.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -65674,24 +65773,28 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./Logo.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/UIElements/logo/Logo.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./Logo.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/UIElements/logo/Logo.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src/index.js??postcss!./Logo.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -65742,24 +65845,28 @@ exports.default = Logo;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./Spinner.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/UIElements/spinner/Spinner.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./Spinner.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/UIElements/spinner/Spinner.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src/index.js??postcss!./Spinner.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -65802,24 +65909,28 @@ exports.default = Spinner;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./UserIcon.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/UIElements/userIcon/UserIcon.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./UserIcon.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/UIElements/userIcon/UserIcon.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src/index.js??postcss!./UserIcon.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -65906,6 +66017,432 @@ exports.default = (0, _reactRedux.connect)(null, mapDispatchToProps)(UserIcon);
 
 /***/ }),
 
+/***/ "./src/components/advicesAllItems/AdvicesAllItems.js":
+/*!***********************************************************!*\
+  !*** ./src/components/advicesAllItems/AdvicesAllItems.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _AdvicesItem = __webpack_require__(/*! ./advicesItem/AdvicesItem */ "./src/components/advicesAllItems/advicesItem/AdvicesItem.js");
+
+var _AdvicesItem2 = _interopRequireDefault(_AdvicesItem);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AdvicesAllItems = function AdvicesAllItems(props) {
+    var items = props.elements.map(function (element) {
+        return _react2.default.createElement(_AdvicesItem2.default, { element: element });
+    });
+    return _react2.default.createElement(
+        _react2.default.Fragment,
+        null,
+        items
+    );
+};
+
+exports.default = AdvicesAllItems;
+
+/***/ }),
+
+/***/ "./src/components/advicesAllItems/advicesItem/AdvicesItem.css":
+/*!********************************************************************!*\
+  !*** ./src/components/advicesAllItems/advicesItem/AdvicesItem.css ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./AdvicesItem.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/advicesAllItems/advicesItem/AdvicesItem.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var id = "!!../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src/index.js??postcss!./AdvicesItem.css";
+var update = api(id, content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;
+
+/***/ }),
+
+/***/ "./src/components/advicesAllItems/advicesItem/AdvicesItem.js":
+/*!*******************************************************************!*\
+  !*** ./src/components/advicesAllItems/advicesItem/AdvicesItem.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _AdvicesItem = __webpack_require__(/*! ./AdvicesItem.css */ "./src/components/advicesAllItems/advicesItem/AdvicesItem.css");
+
+var _AdvicesItem2 = _interopRequireDefault(_AdvicesItem);
+
+var _HeroImage = __webpack_require__(/*! ../../../components/heroImage/HeroImage */ "./src/components/heroImage/HeroImage.js");
+
+var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var AdvicesItem = function (_Component) {
+    _inherits(AdvicesItem, _Component);
+
+    function AdvicesItem() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, AdvicesItem);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = AdvicesItem.__proto__ || Object.getPrototypeOf(AdvicesItem)).call.apply(_ref, [this].concat(args))), _this), _this.elementClickHandler = function (id) {
+            _this.props.history.push('/buying_advices/' + id);
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(AdvicesItem, [{
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var _props$element = this.props.element,
+                _id = _props$element._id,
+                title = _props$element.title,
+                content = _props$element.content,
+                image = _props$element.image,
+                created_at = _props$element.created_at,
+                author = _props$element.author;
+
+
+            return _react2.default.createElement(
+                'div',
+                { className: _AdvicesItem2.default.wrapper,
+                    onClick: function onClick() {
+                        return _this2.elementClickHandler(_id);
+                    } },
+                _react2.default.createElement(_HeroImage.BuyingAdviceImage, { img: image }),
+                _react2.default.createElement(
+                    'div',
+                    { className: _AdvicesItem2.default.content },
+                    _react2.default.createElement(
+                        'h4',
+                        null,
+                        title
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: _AdvicesItem2.default.nameAndDate },
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'By ' + author + ' on ' + created_at.substring(0, 10)
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        content.length > 350 ? content.substring(0, 350) + '...' : content
+                    )
+                )
+            );
+        }
+    }]);
+
+    return AdvicesItem;
+}(_react.Component);
+
+exports.default = (0, _reactRouterDom.withRouter)(AdvicesItem);
+
+/***/ }),
+
+/***/ "./src/components/advicesLatestItems/AdvicesLatestItems.css":
+/*!******************************************************************!*\
+  !*** ./src/components/advicesLatestItems/AdvicesLatestItems.css ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./AdvicesLatestItems.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/advicesLatestItems/AdvicesLatestItems.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./AdvicesLatestItems.css";
+var update = api(id, content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;
+
+/***/ }),
+
+/***/ "./src/components/advicesLatestItems/AdvicesLatestItems.js":
+/*!*****************************************************************!*\
+  !*** ./src/components/advicesLatestItems/AdvicesLatestItems.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _AdvicesLatestItems = __webpack_require__(/*! ./AdvicesLatestItems.css */ "./src/components/advicesLatestItems/AdvicesLatestItems.css");
+
+var _AdvicesLatestItems2 = _interopRequireDefault(_AdvicesLatestItems);
+
+var _AdvicesLatestItem = __webpack_require__(/*! ./advicesLatestItem/AdvicesLatestItem */ "./src/components/advicesLatestItems/advicesLatestItem/AdvicesLatestItem.js");
+
+var _AdvicesLatestItem2 = _interopRequireDefault(_AdvicesLatestItem);
+
+var _Button = __webpack_require__(/*! ../../components/UIElements/button/Button */ "./src/components/UIElements/button/Button.js");
+
+var _Button2 = _interopRequireDefault(_Button);
+
+var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AdvicesLatestItems = function AdvicesLatestItems(props) {
+    var lastThreeElements = [];
+    if (props.elements.length > 3) {
+        for (var i = props.elements.length - 1; i >= props.elements.length - 3; i--) {
+            lastThreeElements.push(props.elements[i]);
+        }
+    } else {
+        lastThreeElements = props.elements;
+    }
+    var advicesItems = lastThreeElements.map(function (element) {
+        return _react2.default.createElement(_AdvicesLatestItem2.default, { element: element });
+    });
+
+    return _react2.default.createElement(
+        'div',
+        { className: _AdvicesLatestItems2.default.wrapper },
+        _react2.default.createElement(
+            'div',
+            { className: _AdvicesLatestItems2.default.content },
+            _react2.default.createElement(
+                'h2',
+                null,
+                'Latest Buying Advices'
+            ),
+            _react2.default.createElement(
+                'div',
+                { className: _AdvicesLatestItems2.default.items },
+                advicesItems
+            ),
+            _react2.default.createElement(
+                'div',
+                { className: _AdvicesLatestItems2.default.viewAllButton },
+                _react2.default.createElement(
+                    _reactRouterDom.Link,
+                    { to: '/buying_advices' },
+                    _react2.default.createElement(
+                        _Button2.default,
+                        { viewAllAdvices: true },
+                        'View All Advices'
+                    )
+                )
+            )
+        )
+    );
+};
+
+exports.default = AdvicesLatestItems;
+
+/***/ }),
+
+/***/ "./src/components/advicesLatestItems/advicesLatestItem/AdvicesLatestItem.css":
+/*!***********************************************************************************!*\
+  !*** ./src/components/advicesLatestItems/advicesLatestItem/AdvicesLatestItem.css ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./AdvicesLatestItem.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/advicesLatestItems/advicesLatestItem/AdvicesLatestItem.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var id = "!!../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src/index.js??postcss!./AdvicesLatestItem.css";
+var update = api(id, content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;
+
+/***/ }),
+
+/***/ "./src/components/advicesLatestItems/advicesLatestItem/AdvicesLatestItem.js":
+/*!**********************************************************************************!*\
+  !*** ./src/components/advicesLatestItems/advicesLatestItem/AdvicesLatestItem.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _HeroImage = __webpack_require__(/*! ../../../components/heroImage/HeroImage */ "./src/components/heroImage/HeroImage.js");
+
+var _AdvicesLatestItem = __webpack_require__(/*! ./AdvicesLatestItem.css */ "./src/components/advicesLatestItems/advicesLatestItem/AdvicesLatestItem.css");
+
+var _AdvicesLatestItem2 = _interopRequireDefault(_AdvicesLatestItem);
+
+var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var AdvicesLatestItem = function (_Component) {
+    _inherits(AdvicesLatestItem, _Component);
+
+    function AdvicesLatestItem() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, AdvicesLatestItem);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = AdvicesLatestItem.__proto__ || Object.getPrototypeOf(AdvicesLatestItem)).call.apply(_ref, [this].concat(args))), _this), _this.getItem = function (id) {
+            _this.props.history.push('/buying_advices/' + id);
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(AdvicesLatestItem, [{
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var _props$element = this.props.element,
+                _id = _props$element._id,
+                title = _props$element.title,
+                image = _props$element.image;
+
+
+            var modifiedTitle = title;
+
+            if (title.length > 24) {
+                modifiedTitle = title.substring(0, 24) + '...';
+            } else {
+                modifiedTitle = title;
+            }
+
+            return _react2.default.createElement(
+                'div',
+                { className: _AdvicesLatestItem2.default.itemElement,
+                    onClick: function onClick() {
+                        return _this2.getItem(_id);
+                    } },
+                _react2.default.createElement(_HeroImage.BuyingAdviceImage, { img: image }),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    modifiedTitle
+                )
+            );
+        }
+    }]);
+
+    return AdvicesLatestItem;
+}(_react.Component);
+
+exports.default = (0, _reactRouterDom.withRouter)(AdvicesLatestItem);
+
+/***/ }),
+
 /***/ "./src/components/deleteModal/DeleteModal.css":
 /*!****************************************************!*\
   !*** ./src/components/deleteModal/DeleteModal.css ***!
@@ -65913,24 +66450,28 @@ exports.default = (0, _reactRedux.connect)(null, mapDispatchToProps)(UserIcon);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./DeleteModal.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/deleteModal/DeleteModal.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./DeleteModal.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/deleteModal/DeleteModal.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./DeleteModal.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -66029,10 +66570,12 @@ exports.default = DeleteModal;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.ImageListing = undefined;
+exports.BuyingAdviceItemImage = exports.BuyingAdviceImage = exports.ImageListing = undefined;
 
 var _templateObject = _taggedTemplateLiteral(['\n    background: url(', ') no-repeat center center;\n    background-size: cover;\n    height: ', '\n    margin: 0; \n'], ['\n    background: url(', ') no-repeat center center;\n    background-size: cover;\n    height: ', '\n    margin: 0; \n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    min-height: 240px;\n    min-width: 300px;\n    margin: 0; \n'], ['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    min-height: 240px;\n    min-width: 300px;\n    margin: 0; \n']);
+    _templateObject2 = _taggedTemplateLiteral(['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    min-height: 240px;\n    min-width: 300px;\n    margin: 0; \n'], ['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    min-height: 240px;\n    min-width: 300px;\n    margin: 0; \n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    height: 250px;\n    width: 330px;\n    min-width: 330px;\n    margin: 0; \n'], ['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    height: 250px;\n    width: 330px;\n    min-width: 330px;\n    margin: 0; \n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    height: 350px;\n    width: 100%; \n'], ['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    height: 350px;\n    width: 100%; \n']);
 
 var _styledComponents = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
@@ -66052,6 +66595,14 @@ var ImageListing = exports.ImageListing = _styledComponents2.default.div(_templa
     return props.img;
 });
 
+var BuyingAdviceImage = exports.BuyingAdviceImage = _styledComponents2.default.div(_templateObject3, function (props) {
+    return props.img;
+});
+
+var BuyingAdviceItemImage = exports.BuyingAdviceItemImage = _styledComponents2.default.div(_templateObject4, function (props) {
+    return props.img;
+});
+
 exports.default = HeroImage;
 
 /***/ }),
@@ -66063,24 +66614,28 @@ exports.default = HeroImage;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./ListingItem.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/listingItem/ListingItem.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./ListingItem.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/listingItem/ListingItem.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./ListingItem.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -66494,24 +67049,28 @@ exports.default = ListingsIfNotLogIn;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./ListingsIfNotLogin.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/listingsIfNotLogIn/ListingsIfNotLogin.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./ListingsIfNotLogin.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/listingsIfNotLogIn/ListingsIfNotLogin.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./ListingsIfNotLogin.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -66522,24 +67081,28 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./LoginComponent.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/loginComponent/LoginComponent.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./LoginComponent.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/loginComponent/LoginComponent.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./LoginComponent.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -66796,24 +67359,28 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./LoginOrSignup.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/loginOrSignupMode/LoginOrSignup.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./LoginOrSignup.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/loginOrSignupMode/LoginOrSignup.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./LoginOrSignup.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -66957,24 +67524,28 @@ exports.default = (0, _reactRedux.connect)(null, mapDispatchToProps)(LoginOrSign
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./ModalUserInfo.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/modalUserInfo/ModalUserInfo.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./ModalUserInfo.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/modalUserInfo/ModalUserInfo.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./ModalUserInfo.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -67075,24 +67646,28 @@ exports.default = ModalUserInfo;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./NavigationItems.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/navigationItems/NavigationItems.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./NavigationItems.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/navigationItems/NavigationItems.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./NavigationItems.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -67161,7 +67736,7 @@ var NavigationItems = function (_Component) {
                 { className: _NavigationItems2.default.items },
                 _react2.default.createElement(_NavigationItem2.default, { name: 'Cars for sale' }),
                 _react2.default.createElement(_NavigationItem2.default, { name: 'Sell Your Car',
-                    path: 'sell_car' }),
+                    path: '/sell_car' }),
                 _react2.default.createElement(_NavigationItem2.default, { name: 'Reviews' }),
                 _react2.default.createElement(_NavigationItem2.default, { name: 'About Us' }),
                 this.props.isLoggedIn ? _react2.default.createElement(_UserIcon2.default, null) : _react2.default.createElement(
@@ -67210,24 +67785,28 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps)(NavigationItems);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./NavigationItem.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/navigationItems/item/NavigationItem.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./NavigationItem.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/navigationItems/item/NavigationItem.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src/index.js??postcss!./NavigationItem.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -67284,24 +67863,28 @@ exports.default = NavigationItem;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./SearchComponent.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/searchComponent/SearchComponent.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./SearchComponent.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/searchComponent/SearchComponent.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./SearchComponent.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -67402,24 +67985,28 @@ exports.default = SearchComponent;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./SignupComponent.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/signupComponent/SignupComponent.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./SignupComponent.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/signupComponent/SignupComponent.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./SignupComponent.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -67785,24 +68372,28 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps)(SignupForm);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./Title.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/title/Title.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./Title.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/title/Title.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./Title.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -67852,6 +68443,281 @@ exports.default = Title;
 
 /***/ }),
 
+/***/ "./src/containers/advicesItemPage/AdvicesItemPage.css":
+/*!************************************************************!*\
+  !*** ./src/containers/advicesItemPage/AdvicesItemPage.css ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./AdvicesItemPage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/advicesItemPage/AdvicesItemPage.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./AdvicesItemPage.css";
+var update = api(id, content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;
+
+/***/ }),
+
+/***/ "./src/containers/advicesItemPage/AdvicesItemPage.js":
+/*!***********************************************************!*\
+  !*** ./src/containers/advicesItemPage/AdvicesItemPage.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+
+var _axios2 = _interopRequireDefault(_axios);
+
+var _HeroImage = __webpack_require__(/*! ../../components/heroImage/HeroImage */ "./src/components/heroImage/HeroImage.js");
+
+var _AdvicesItemPage = __webpack_require__(/*! ./AdvicesItemPage.css */ "./src/containers/advicesItemPage/AdvicesItemPage.css");
+
+var _AdvicesItemPage2 = _interopRequireDefault(_AdvicesItemPage);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var AdvicesItemPage = function (_Component) {
+    _inherits(AdvicesItemPage, _Component);
+
+    function AdvicesItemPage() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, AdvicesItemPage);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = AdvicesItemPage.__proto__ || Object.getPrototypeOf(AdvicesItemPage)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+            item: []
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(AdvicesItemPage, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var _this2 = this;
+
+            _axios2.default.get('/fetch_advices_item?id=' + this.props.match.params.advice_id).then(function (response) {
+                _this2.setState({
+                    item: response.data
+                });
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: _AdvicesItemPage2.default.wrapper },
+                _react2.default.createElement(
+                    'div',
+                    { className: _AdvicesItemPage2.default.content },
+                    _react2.default.createElement(
+                        'h2',
+                        null,
+                        this.state.item.title
+                    ),
+                    _react2.default.createElement(
+                        'h4',
+                        null,
+                        'By ' + this.state.item.author
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: _AdvicesItemPage2.default.date },
+                        this.state.item.created_at ? this.state.item.created_at.substring(0, 10) : null
+                    ),
+                    _react2.default.createElement(_HeroImage.BuyingAdviceItemImage, { img: this.state.item.image }),
+                    _react2.default.createElement(
+                        'div',
+                        { className: _AdvicesItemPage2.default.text },
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.item.content
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return AdvicesItemPage;
+}(_react.Component);
+
+exports.default = AdvicesItemPage;
+
+/***/ }),
+
+/***/ "./src/containers/buyingAdvicesPage/BuyingAdvicesPage.css":
+/*!****************************************************************!*\
+  !*** ./src/containers/buyingAdvicesPage/BuyingAdvicesPage.css ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./BuyingAdvicesPage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/buyingAdvicesPage/BuyingAdvicesPage.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./BuyingAdvicesPage.css";
+var update = api(id, content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;
+
+/***/ }),
+
+/***/ "./src/containers/buyingAdvicesPage/BuyingAdvicesPage.js":
+/*!***************************************************************!*\
+  !*** ./src/containers/buyingAdvicesPage/BuyingAdvicesPage.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _BuyingAdvicesPage = __webpack_require__(/*! ./BuyingAdvicesPage.css */ "./src/containers/buyingAdvicesPage/BuyingAdvicesPage.css");
+
+var _BuyingAdvicesPage2 = _interopRequireDefault(_BuyingAdvicesPage);
+
+var _axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+
+var _axios2 = _interopRequireDefault(_axios);
+
+var _AdvicesAllItems = __webpack_require__(/*! ../../components/advicesAllItems/AdvicesAllItems */ "./src/components/advicesAllItems/AdvicesAllItems.js");
+
+var _AdvicesAllItems2 = _interopRequireDefault(_AdvicesAllItems);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var BuyingAdvicesPage = function (_Component) {
+    _inherits(BuyingAdvicesPage, _Component);
+
+    function BuyingAdvicesPage() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, BuyingAdvicesPage);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = BuyingAdvicesPage.__proto__ || Object.getPrototypeOf(BuyingAdvicesPage)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+            buyingAdvices: []
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(BuyingAdvicesPage, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var _this2 = this;
+
+            _axios2.default.get('/get_buying_advices').then(function (response) {
+                _this2.setState({
+                    buyingAdvices: response.data
+                });
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: _BuyingAdvicesPage2.default.wrapper },
+                _react2.default.createElement(
+                    'h1',
+                    null,
+                    'Buying Advices'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    _react2.default.createElement(_AdvicesAllItems2.default, { elements: this.state.buyingAdvices })
+                )
+            );
+        }
+    }]);
+
+    return BuyingAdvicesPage;
+}(_react.Component);
+
+exports.default = BuyingAdvicesPage;
+
+/***/ }),
+
 /***/ "./src/containers/create_listing/CreateListing.css":
 /*!*********************************************************!*\
   !*** ./src/containers/create_listing/CreateListing.css ***!
@@ -67859,24 +68725,28 @@ exports.default = Title;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./CreateListing.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/create_listing/CreateListing.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./CreateListing.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/create_listing/CreateListing.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./CreateListing.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -68614,24 +69484,28 @@ exports.default = CreateListing;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./LoginPage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/login_page/LoginPage.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./LoginPage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/login_page/LoginPage.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./LoginPage.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -68783,24 +69657,28 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./Main_page.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/main_page/Main_page.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./Main_page.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/main_page/Main_page.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./Main_page.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -68888,24 +69766,28 @@ exports.default = MainPage;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./SellCarPage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/sellCarPage/SellCarPage.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./SellCarPage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/sellCarPage/SellCarPage.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./SellCarPage.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -68965,6 +69847,10 @@ var _axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 
 var _axios2 = _interopRequireDefault(_axios);
 
+var _AdvicesLatestItems = __webpack_require__(/*! ../../components/advicesLatestItems/AdvicesLatestItems */ "./src/components/advicesLatestItems/AdvicesLatestItems.js");
+
+var _AdvicesLatestItems2 = _interopRequireDefault(_AdvicesLatestItems);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -68991,7 +69877,8 @@ var SellCarPage = function (_Component) {
 
         return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SellCarPage.__proto__ || Object.getPrototypeOf(SellCarPage)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
             items: [],
-            activeModalsPerItem: []
+            activeModalsPerItem: [],
+            buyingAdvices: []
         }, _this.openModal = function (element) {
             var copyItems = _this.state.items;
             var index = copyItems.findIndex(function (item) {
@@ -69039,12 +69926,19 @@ var SellCarPage = function (_Component) {
     _createClass(SellCarPage, [{
         key: 'componentWillMount',
         value: function componentWillMount() {
+            var _this2 = this;
+
             this.props.setAuthParamToState();
+            _axios2.default.get('/get_buying_advices').then(function (response) {
+                _this2.setState({
+                    buyingAdvices: response.data
+                });
+            });
         }
     }, {
         key: 'componentDidMount',
         value: function componentDidMount() {
-            var _this2 = this;
+            var _this3 = this;
 
             if (this.props.auth) {
                 _axios2.default.get('/items_by_userId').then(function (response) {
@@ -69055,7 +69949,7 @@ var SellCarPage = function (_Component) {
                         activeModalsPerItem.push(false);
                     });
 
-                    _this2.setState({
+                    _this3.setState({
                         items: response.data,
                         activeModalsPerItem: activeModalsPerItem
                     });
@@ -69065,23 +69959,41 @@ var SellCarPage = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
-            var _this3 = this;
+            var _this4 = this;
 
             var activeValues = this.state.activeModalsPerItem;
             var listings = this.state.items.map(function (current, index) {
                 return _react2.default.createElement(_ListingItem2.default, { item: current,
                     admin: true,
                     deleteItem: function deleteItem() {
-                        return _this3.openModal(current);
+                        return _this4.openModal(current);
                     },
                     active: activeValues[index],
                     closeModal: function closeModal() {
-                        return _this3.closeModalHandler(current);
+                        return _this4.closeModalHandler(current);
                     },
                     deleteElement: function deleteElement() {
-                        return _this3.deleteItemHandler(current, current._id);
+                        return _this4.deleteItemHandler(current, current._id);
                     } });
             });
+            /*
+                    let component = (
+                        <div className={classes.wrapperSellPage}>
+                            <HeroImage img="../../assets/sell_your_car.jpg" loggedIn>
+                                <div className={classes.wrapper}>
+                                    <h1>Sell Your Car</h1>
+                                    <Link to="/create_listing">
+                                        <Button createListingButton>Create Listing</Button>
+                                    </Link>
+                                </div>
+                            </HeroImage>
+                            <div className={classes.listings}>
+                                <h1>My Listings</h1>
+                                {listings}
+                            </div>
+                            <AdvicesLatestItems />
+                        </div>
+                    )*/
 
             var component = _react2.default.createElement(
                 _react2.default.Fragment,
@@ -69133,7 +70045,8 @@ var SellCarPage = function (_Component) {
                             )
                         )
                     )
-                ) : null
+                ) : null,
+                _react2.default.createElement(_AdvicesLatestItems2.default, { elements: this.state.buyingAdvices })
             );
 
             if (this.props.loading) {
@@ -69144,24 +70057,6 @@ var SellCarPage = function (_Component) {
                 );
             }
 
-            /*
-                    let component = (
-                        <div className={classes.wrapperSellPage}>
-                            <HeroImage img="../../assets/sell_your_car.jpg" loggedIn>
-                                <div className={classes.wrapper}>
-                                    <h1>Sell Your Car</h1>
-                                    <Link to="/create_listing">
-                                        <Button createListingButton>Create Listing</Button>
-                                    </Link>
-                                </div>
-                            </HeroImage>
-                            <div className={classes.listings}>
-                                <h1>My Listings</h1>
-                                {listings}
-                            </div>
-                        </div>
-                    )
-            */
             return _react2.default.createElement(
                 'div',
                 null,
@@ -69262,24 +70157,28 @@ exports.default = SignupPage;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./Toolbar.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/toolbar/Toolbar.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./Toolbar.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/toolbar/Toolbar.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./Toolbar.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -69349,24 +70248,28 @@ exports.default = Toolbar;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./UpdateListing.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/update_listing/UpdateListing.css");
-content = content.__esModule ? content.default : content;
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./UpdateListing.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/containers/update_listing/UpdateListing.css");
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
+            content = content.__esModule ? content.default : content;
 
-var options = {}
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
 
 options.insert = "head";
 options.singleton = false;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./UpdateListing.css";
+var update = api(id, content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+var exported = content.locals ? content.locals : {};
 
+
+
+module.exports = exported;
 
 /***/ }),
 

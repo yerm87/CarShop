@@ -9,15 +9,22 @@ import Button from '../../components/UIElements/button/Button';
 import { Link } from 'react-router-dom';
 import ListingItem from '../../components/listingItem/ListingItem';
 import axios from 'axios';
+import AdvicesLatestItems from '../../components/advicesLatestItems/AdvicesLatestItems';
 
 class SellCarPage extends Component {
     state={
         items: [],
-        activeModalsPerItem: []
+        activeModalsPerItem: [],
+        buyingAdvices: []
     }
 
     componentWillMount() {
         this.props.setAuthParamToState();
+        axios.get('/get_buying_advices').then(response => {
+            this.setState({
+                buyingAdvices: response.data
+            })
+        });
     }
 
     componentDidMount() {
@@ -90,6 +97,24 @@ class SellCarPage extends Component {
                                 closeModal={() => this.closeModalHandler(current)}
                                 deleteElement={() => this.deleteItemHandler(current, current._id)} />
         })
+/*
+        let component = (
+            <div className={classes.wrapperSellPage}>
+                <HeroImage img="../../assets/sell_your_car.jpg" loggedIn>
+                    <div className={classes.wrapper}>
+                        <h1>Sell Your Car</h1>
+                        <Link to="/create_listing">
+                            <Button createListingButton>Create Listing</Button>
+                        </Link>
+                    </div>
+                </HeroImage>
+                <div className={classes.listings}>
+                    <h1>My Listings</h1>
+                    {listings}
+                </div>
+                <AdvicesLatestItems />
+            </div>
+        )*/
 
         let component = (
             <React.Fragment>
@@ -117,6 +142,7 @@ class SellCarPage extends Component {
                         </div>
                     </div>
                 ) : null}
+                <AdvicesLatestItems elements={this.state.buyingAdvices} />
             </React.Fragment>
         )
 
@@ -128,24 +154,6 @@ class SellCarPage extends Component {
             )
         }
 
-/*
-        let component = (
-            <div className={classes.wrapperSellPage}>
-                <HeroImage img="../../assets/sell_your_car.jpg" loggedIn>
-                    <div className={classes.wrapper}>
-                        <h1>Sell Your Car</h1>
-                        <Link to="/create_listing">
-                            <Button createListingButton>Create Listing</Button>
-                        </Link>
-                    </div>
-                </HeroImage>
-                <div className={classes.listings}>
-                    <h1>My Listings</h1>
-                    {listings}
-                </div>
-            </div>
-        )
-*/ 
         return (
             <div>
                 {component}

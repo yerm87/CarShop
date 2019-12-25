@@ -13,6 +13,8 @@ const Button = props => {
         classList.push(classes.createListingButton);
     } else if(props.updateListingButton){
         classList.push(classes.updateListingButton);
+    } else if(props.viewAllAdvices){
+        classList.push(classes.viewAllAdvices);
     }
 
     return (
