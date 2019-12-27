@@ -13,10 +13,6 @@ const Input = props => {
     if(!props.selectValid && props.clicked){
         selectStyles.push(classes.invalid)
     }
-/*
-    if(props.notMatched){
-        arrayOfStyles.push(classes.invalid);
-    }*/
 
     switch(props.element){
     
@@ -328,6 +324,21 @@ const Input = props => {
                 <input className={classes.submit}
                        type="submit"
                        value="Update Listing" />
+            )
+        case('city'):
+            return (
+                <React.Fragment>
+                    <div className={classes.wrapper}>
+                        <label htmlFor="city">City</label>
+                        <p>{props.error}</p>
+                    </div>
+                    <input type="text"
+                           className={arrayOfStyles.join(' ')} 
+                           name="city" 
+                           value={props.value}
+                           onChange={props.onChangeHandler}
+                           onBlur={props.onBlurHandler} />
+                </React.Fragment>
             )
     }
 }

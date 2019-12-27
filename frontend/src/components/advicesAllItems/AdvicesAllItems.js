@@ -5,6 +5,7 @@ const AdvicesAllItems = props => {
     const items = props.elements.map(element => {
         return <AdvicesItem element={element} />
     })
+
     return (
         <React.Fragment>
             {items}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classes from './AdvicesItem.css';
-import { BuyingAdviceImage } from '../../../components/heroImage/HeroImage';
+import { BuyingAdviceImage, BuyingAdviceItemNoImage } from '../../../components/heroImage/HeroImage';
 import { withRouter } from 'react-router-dom';
 
 class AdvicesItem extends Component {
@@ -15,7 +15,8 @@ class AdvicesItem extends Component {
         return (
             <div className={classes.wrapper}
                  onClick={() => this.elementClickHandler(_id)}>
-                <BuyingAdviceImage img={image} />
+                {image !== 'no image' ? <BuyingAdviceImage img={image} /> : 
+                <BuyingAdviceItemNoImage img="../../../assets/no_photo.jpg" />}
                 <div className={classes.content}>
                     <h4>{title}</h4>
                     <div className={classes.nameAndDate}>

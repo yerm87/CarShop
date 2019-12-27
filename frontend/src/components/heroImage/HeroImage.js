@@ -32,4 +32,12 @@ export const BuyingAdviceItemImage = styled.div`
     width: 100%; 
 `
 
+export const BuyingAdviceItemNoImage = styled.div`
+    background: url(${props => props.img}) no-repeat center center;
+    background-size: cover;
+    height: 350px;
+    width: 330px;
+    min-width: 330px; 
+`
+
 export default HeroImage;

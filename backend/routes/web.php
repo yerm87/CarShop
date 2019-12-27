@@ -27,6 +27,7 @@ use App\BuyingAdvice;
 use App\Http\Requests\BuyingAdviceRequest;
 use App\Http\Requests\ReviewRequest;
 use App\Review;
+use App\City;
 
 Route::get('/test', function(){
     return view('welcome');
@@ -330,3 +331,10 @@ Route::get('/logout_admin', 'AdminController@adminLogout');
 Route::get('/get_buying_advices', 'AdminController@fetchBuyingAdvices');
 
 Route::get('/fetch_advices_item', 'AdminController@fetchBuyingAdvicesItem');
+
+Route::get('/get_certain_cities', function(){
+	$cities = City::where([
+		'city' => new MongoDB\BSON\Regex('^al', "i") 
+	])->get();
+	return $cities;
+});

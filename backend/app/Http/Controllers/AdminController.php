@@ -96,8 +96,10 @@ class AdminController extends Controller
     public function fetchBuyingAdvices(){
     	$advices = BuyingAdvice::all();
     	foreach($advices as $advice){
-    		$image = base64_encode($advice->image);
-    		$advice->image = $image;
+    		if($advice->image !== 'no image'){
+    			$image = base64_encode($advice->image);
+    		    $advice->image = $image;
+    		}
     	}
     	return $advices;
     }

@@ -13611,10 +13611,13 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".BuyingAdvicesPage__wrapper__1NiSi {\r\n    font-family: 'Montserrat';\r\n    padding: 40px 80px;\r\n}\r\n\r\n.BuyingAdvicesPage__wrapper__1NiSi h1 {\r\n    color: var(--mainBlack);\r\n}", ""]);
+exports.push([module.i, ".BuyingAdvicesPage__wrapper__1NiSi {\r\n    font-family: 'Montserrat';\r\n    padding: 40px 80px;\r\n}\r\n\r\n.BuyingAdvicesPage__wrapper__1NiSi h1 {\r\n    color: var(--mainBlack);\r\n}\r\n\r\n.BuyingAdvicesPage__pages__13NLF {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    text-align: center;\r\n    margin-top: 25px;\r\n}\r\n\r\n.BuyingAdvicesPage__page__1-lfp {\r\n    padding: 8px 0;\r\n    width: 25px;\r\n    text-align: center;\r\n    border: 1px solid var(--mainBlue);\r\n    color: var(--mainBlue);\r\n    margin-right: 10px;\r\n    cursor: pointer;\r\n}\r\n\r\n.BuyingAdvicesPage__activeElement__2K8I9 {\r\n    color: var(--mainWhite);\r\n    background: var(--mainBlue);\r\n}\r\n\r\n.BuyingAdvicesPage__page__1-lfp:hover {\r\n    color: var(--mainWhite);\r\n    background: var(--mainBlue);\r\n}", ""]);
 // Exports
 exports.locals = {
-	"wrapper": "BuyingAdvicesPage__wrapper__1NiSi"
+	"wrapper": "BuyingAdvicesPage__wrapper__1NiSi",
+	"pages": "BuyingAdvicesPage__pages__13NLF",
+	"page": "BuyingAdvicesPage__page__1-lfp",
+	"activeElement": "BuyingAdvicesPage__activeElement__2K8I9"
 };
 module.exports = exports;
 
@@ -66045,6 +66048,7 @@ var AdvicesAllItems = function AdvicesAllItems(props) {
     var items = props.elements.map(function (element) {
         return _react2.default.createElement(_AdvicesItem2.default, { element: element });
     });
+
     return _react2.default.createElement(
         _react2.default.Fragment,
         null,
@@ -66163,7 +66167,7 @@ var AdvicesItem = function (_Component) {
                     onClick: function onClick() {
                         return _this2.elementClickHandler(_id);
                     } },
-                _react2.default.createElement(_HeroImage.BuyingAdviceImage, { img: image }),
+                image !== 'no image' ? _react2.default.createElement(_HeroImage.BuyingAdviceImage, { img: image }) : _react2.default.createElement(_HeroImage.BuyingAdviceItemNoImage, { img: '../../../assets/no_photo.jpg' }),
                 _react2.default.createElement(
                     'div',
                     { className: _AdvicesItem2.default.content },
@@ -66420,13 +66424,20 @@ var AdvicesLatestItem = function (_Component) {
                 modifiedTitle = title;
             }
 
+            var imageElement = void 0;
+            if (image !== 'no image') {
+                imageElement = _react2.default.createElement(_HeroImage.BuyingAdviceImage, { img: image });
+            } else {
+                imageElement = _react2.default.createElement(_HeroImage.BuyingAdviceItemNoImage, { img: '../../../assets/no_photo.jpg' });
+            }
+
             return _react2.default.createElement(
                 'div',
                 { className: _AdvicesLatestItem2.default.itemElement,
                     onClick: function onClick() {
                         return _this2.getItem(_id);
                     } },
-                _react2.default.createElement(_HeroImage.BuyingAdviceImage, { img: image }),
+                imageElement,
                 _react2.default.createElement(
                     'p',
                     null,
@@ -66570,12 +66581,13 @@ exports.default = DeleteModal;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.BuyingAdviceItemImage = exports.BuyingAdviceImage = exports.ImageListing = undefined;
+exports.BuyingAdviceItemNoImage = exports.BuyingAdviceItemImage = exports.BuyingAdviceImage = exports.ImageListing = undefined;
 
 var _templateObject = _taggedTemplateLiteral(['\n    background: url(', ') no-repeat center center;\n    background-size: cover;\n    height: ', '\n    margin: 0; \n'], ['\n    background: url(', ') no-repeat center center;\n    background-size: cover;\n    height: ', '\n    margin: 0; \n']),
     _templateObject2 = _taggedTemplateLiteral(['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    min-height: 240px;\n    min-width: 300px;\n    margin: 0; \n'], ['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    min-height: 240px;\n    min-width: 300px;\n    margin: 0; \n']),
     _templateObject3 = _taggedTemplateLiteral(['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    height: 250px;\n    width: 330px;\n    min-width: 330px;\n    margin: 0; \n'], ['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    height: 250px;\n    width: 330px;\n    min-width: 330px;\n    margin: 0; \n']),
-    _templateObject4 = _taggedTemplateLiteral(['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    height: 350px;\n    width: 100%; \n'], ['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    height: 350px;\n    width: 100%; \n']);
+    _templateObject4 = _taggedTemplateLiteral(['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    height: 350px;\n    width: 100%; \n'], ['\n    background: url(data:image/png;base64,', ') no-repeat center center;\n    background-size: cover;\n    height: 350px;\n    width: 100%; \n']),
+    _templateObject5 = _taggedTemplateLiteral(['\n    background: url(', ') no-repeat center center;\n    background-size: cover;\n    height: 350px;\n    width: 330px;\n    min-width: 330px; \n'], ['\n    background: url(', ') no-repeat center center;\n    background-size: cover;\n    height: 350px;\n    width: 330px;\n    min-width: 330px; \n']);
 
 var _styledComponents = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
@@ -66600,6 +66612,10 @@ var BuyingAdviceImage = exports.BuyingAdviceImage = _styledComponents2.default.d
 });
 
 var BuyingAdviceItemImage = exports.BuyingAdviceItemImage = _styledComponents2.default.div(_templateObject4, function (props) {
+    return props.img;
+});
+
+var BuyingAdviceItemNoImage = exports.BuyingAdviceItemNoImage = _styledComponents2.default.div(_templateObject5, function (props) {
     return props.img;
 });
 
@@ -68676,7 +68692,34 @@ var BuyingAdvicesPage = function (_Component) {
         }
 
         return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = BuyingAdvicesPage.__proto__ || Object.getPrototypeOf(BuyingAdvicesPage)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-            buyingAdvices: []
+            allElements: [],
+            buyingAdvices: [],
+            pages: 1,
+            page: 1,
+            pagesArray: [],
+            activePages: []
+        }, _this.switchPageHandler = function (page) {
+            var pages = _this.state.pagesArray;
+            var activePages = _this.state.activePages;
+
+            var index = pages.findIndex(function (element) {
+                return element === page;
+            });
+            activePages.fill(false, 0, pages.length);
+            activePages[index] = true;
+
+            _this.setState({
+                activePages: activePages,
+                page: page
+            }, function () {
+                var endPoint = _this.state.page * 10;
+                var startPoint = endPoint - 10;
+                var buyingAdvices = _this.state.allElements.slice(startPoint, endPoint);
+
+                _this.setState({
+                    buyingAdvices: buyingAdvices
+                });
+            });
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
@@ -68686,14 +68729,62 @@ var BuyingAdvicesPage = function (_Component) {
             var _this2 = this;
 
             _axios2.default.get('/get_buying_advices').then(function (response) {
+                var modifiedArray = [];
+
+                for (var i = response.data.length - 1; i >= 0; i--) {
+                    modifiedArray.push(response.data[i]);
+                }
+
                 _this2.setState({
-                    buyingAdvices: response.data
+                    allElements: modifiedArray,
+                    buyingAdvices: modifiedArray,
+                    pages: Math.ceil(response.data.length / 10)
+                }, function () {
+                    var shortArray = _this2.state.allElements.slice(0, 10);
+                    var pagesArray = [];
+
+                    for (var _i = 1; _i <= _this2.state.pages; _i++) {
+                        pagesArray.push(_i);
+                    }
+
+                    var activePages = [];
+
+                    activePages[0] = true;
+                    for (var _i2 = 1; _i2 < pagesArray.length; _i2++) {
+                        activePages.push(false);
+                    }
+
+                    _this2.setState({
+                        buyingAdvices: shortArray,
+                        pagesArray: pagesArray,
+                        activePages: activePages
+                    });
                 });
             });
         }
     }, {
         key: 'render',
         value: function render() {
+            var _this3 = this;
+
+            var activePages = this.state.activePages;
+            var pages = this.state.pagesArray.map(function (page, index) {
+                var classList = [_BuyingAdvicesPage2.default.page];
+                if (activePages[index]) {
+                    classList.push(_BuyingAdvicesPage2.default.activeElement);
+                }
+                return _react2.default.createElement(
+                    'p',
+                    { className: classList.join(' '),
+                        onClick: function onClick() {
+                            return _this3.switchPageHandler(page);
+                        } },
+                    page
+                );
+            });
+
+            var elements = this.state.buyingAdvices;
+
             return _react2.default.createElement(
                 'div',
                 { className: _BuyingAdvicesPage2.default.wrapper },
@@ -68705,7 +68796,12 @@ var BuyingAdvicesPage = function (_Component) {
                 _react2.default.createElement(
                     'div',
                     null,
-                    _react2.default.createElement(_AdvicesAllItems2.default, { elements: this.state.buyingAdvices })
+                    _react2.default.createElement(_AdvicesAllItems2.default, { elements: elements })
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: _BuyingAdvicesPage2.default.pages },
+                    this.state.pages > 1 ? pages : null
                 )
             );
         }
