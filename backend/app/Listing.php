@@ -9,7 +9,7 @@ class Listing extends Eloquent
 {
     protected $fillable = [
         'images', 'bodyStyle', 'condition', 'description', 'email', 'exteriorColor', 'firstName', 'fuelType', 'interiorColor', 'lastName', 'make', 'mileage', 'model',
-        'numberOfDoors', 'phoneNumber', 'price', 'transmission', 'year', 'zip'
+        'numberOfDoors', 'phoneNumber', 'price', 'transmission', 'year', 'zip', 'city'
       ];
   
       protected $collection = 'listings';

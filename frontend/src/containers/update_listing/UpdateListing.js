@@ -5,6 +5,7 @@ import Input from '../../components/UIElements/inputs/Inputs';
 import Dropzone from 'react-dropzone';
 import Spinner from '../../components/UIElements/spinner/Spinner';
 import { Redirect } from 'react-router-dom';
+import { proxy, zipAPIKey } from '../../urlsAPI/urlsAPI';
 
 class UpdateListing extends Component {
     state={
@@ -161,9 +162,19 @@ class UpdateListing extends Component {
                     required: true
                 }
             },
+            city: {
+                type: 'city',
+                value: '',
+                valid: true,
+                touched: true,
+                errorMessage: '',
+                rules: {
+                    required: true
+                }
+            },
             zip: {
                 type: 'zip',
-                value: null,
+                value: '',
                 valid: true,
                 touched: true,
                 errorMessage: '',
@@ -175,7 +186,8 @@ class UpdateListing extends Component {
         images: [],
         formIsValid: true,
         loading: false,
-        formSubmitted: false
+        formSubmitted: false,
+        options: []
     }
     componentWillMount(){
         
@@ -338,6 +350,34 @@ class UpdateListing extends Component {
             copyInputs[element.type].valid = false;
             copyInputs[element.type].errorMessage = 'does not match valid format: (000)-000-0000'
         }
+
+        if(element.type === 'zip' && valid && element.value.length !== 5){
+            copyInputs[element.type].valid = false;
+            copyInputs[element.type].errorMessage = 'Field should have 5 digits';
+        } else if(element.type === 'zip' && valid && element.value.length === 5){
+            copyInputs[element.type].valid = true;
+            copyInputs[element.type].errorMessage = '';
+        }
+
+        if(element.type === 'zip' && valid && copyInputs['city'].value !== '' && 
+        element.value.length === 5){
+            axios.get(`${proxy}https://www.zipcodeapi.com/rest/${zipAPIKey}/info.json/${element.value}/radians`)
+            .then(response => {
+                let city = copyInputs['city'].value;
+                let index = city.indexOf(',');
+                city = city.slice(0, index);
+
+                if(response.data.city !== city){
+                    copyInputs[element.type].valid = false;
+                    copyInputs[element.type].errorMessage = 'invalid zip code for this location';
+
+                    this.setState({
+                        inputs: copyInputs
+                    });
+                }
+            });
+        }
+
         this.setState({
             inputs: copyInputs
         });
@@ -413,6 +453,13 @@ class UpdateListing extends Component {
             if(/^[a-zA-Z]*$/.test(event.target.value)){
                 copyInputs[currentElement.type].value = event.target.value;
             }
+        } else if(currentElement.type === 'city'){
+            copyInputs[currentElement.type].value = event.target.value;
+
+            copyInputs['zip'].value = '';
+            copyInputs['zip'].touched = false;
+            copyInputs['zip'].valid = false;
+            copyInputs['zip'].errorMessage = '';
         } else {
             copyInputs[currentElement.type].value = event.target.value;
         }
@@ -483,8 +530,10 @@ class UpdateListing extends Component {
             }
 
             arrayInputs.forEach(element => {
-                const index = element.value.indexOf(',');
-                inputs[element.type].value = element.value.replace(element.value.charAt(index), '');
+                if(element.type !== 'city'){
+                    const index = element.value.indexOf(',');
+                    inputs[element.type].value = element.value.replace(element.value.charAt(index), '');
+                }
             });
 
             this.setState({
@@ -560,6 +609,18 @@ class UpdateListing extends Component {
         }
     }
 
+    onKeyUpHandler = (param) => {
+        axios.post('/get_certain_cities', {
+            value: param 
+        }).then(response => {
+            const options = response.data.slice(0, 5);
+
+            this.setState({
+                options: options
+            });
+        });
+    }
+
     render(){
         const arrayOfElements = [];
 
@@ -598,6 +659,10 @@ class UpdateListing extends Component {
             arrayOfInputs.push(this.state.inputs[param]);
         }
 
+        const options = this.state.options.map(option => {
+            return <option value={`${option.city}, ${option.state}`}></option>
+        })
+
         const inputs = arrayOfInputs.map(current => (
             <Input element={current.type}
                    value={current.value}
@@ -606,7 +671,9 @@ class UpdateListing extends Component {
                    error={current.errorMessage}
                    onChangeHandler={(event) => this.onChangeInput(event, current)}
                    onBlurHandler={() => this.onBlurHandler(current)}
-                   onKeyDownHandler={(event) => this.onKeyDownHandler(event, current)} />
+                   onKeyDownHandler={(event) => this.onKeyDownHandler(event, current)}
+                   onKeyUpHandler={() => this.onKeyUpHandler(current.value)}
+                   options={options} />
         ))
 
         const contactData = inputs.slice(3);

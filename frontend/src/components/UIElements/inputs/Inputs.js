@@ -336,8 +336,13 @@ const Input = props => {
                            className={arrayOfStyles.join(' ')} 
                            name="city" 
                            value={props.value}
+                           list="datalistCities"
                            onChange={props.onChangeHandler}
-                           onBlur={props.onBlurHandler} />
+                           onBlur={props.onBlurHandler}
+                           onKeyUp={props.onKeyUpHandler} />
+                    <datalist id="datalistCities">
+                        {props.options}
+                    </datalist>
                 </React.Fragment>
             )
     }

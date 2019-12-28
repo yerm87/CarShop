@@ -13175,7 +13175,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".input__input__184-b {\r\n    border: 1px solid rgb(163, 156, 156);\r\n    height: 32px;\r\n}\r\n\r\n.input__invalid__3-QHW {\r\n    border: 1px solid var(--mainRed);\r\n}\r\n\r\n.input__wrapper__2JVeI {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n}\r\n\r\n.input__wrapper__2JVeI p {\r\n    color: var(--mainRed);\r\n    font-size: 0.8em;\r\n}\r\n\r\n.input__submit__hTeYa {\r\n    font-family: 'Rubik';\r\n    font-size: 16px;\r\n    border-radius: 10px;\r\n    width: 100%;\r\n    border: none;\r\n    padding: 10px 0;\r\n    background: var(--mainBlue);\r\n    color: var(--mainWhite);\r\n    margin-top: 20px;\r\n    cursor: pointer;\r\n    height: 40px;\r\n}\r\n\r\n.input__select__7Mdt4 {\r\n    display: block;\r\n    width: 40%;\r\n    font-family: 'Montserrat';\r\n    border-radius: 11px;\r\n    font-size: 1.1em;\r\n    padding: 8px;\r\n}\r\n\r\n.input__selectWrapper__2Tpan select {\r\n    display: block;\r\n    width: 100%;\r\n    font-family: 'Montserrat';\r\n    border-radius: 11px;\r\n    font-size: 1.1em;\r\n    padding: 8px;\r\n}\r\n\r\n.input__selectWrapper__2Tpan label {\r\n    display: block;\r\n    margin: 15px 0 6px 0;\r\n    font-weight: bold;\r\n}\r\n\r\n.input__textarea__1qwNb label {\r\n    display: block;\r\n    margin: 15px 0 6px 0;\r\n    font-weight: bold;\r\n}\r\n\r\n.input__textarea__1qwNb textarea {\r\n    resize: none;\r\n}", ""]);
+exports.push([module.i, ".input__input__184-b {\r\n    border: 1px solid rgb(163, 156, 156);\r\n    height: 32px;\r\n}\r\n\r\n.input__invalid__3-QHW {\r\n    border: 1px solid var(--mainRed);\r\n}\r\n\r\n.input__wrapper__2JVeI {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n}\r\n\r\n.input__wrapper__2JVeI p {\r\n    color: var(--mainRed);\r\n    font-size: 0.8em;\r\n    padding: 8px 0 5px 0;\r\n}\r\n\r\n.input__submit__hTeYa {\r\n    font-family: 'Rubik';\r\n    font-size: 16px;\r\n    border-radius: 10px;\r\n    width: 100%;\r\n    border: none;\r\n    padding: 10px 0;\r\n    background: var(--mainBlue);\r\n    color: var(--mainWhite);\r\n    margin-top: 20px;\r\n    cursor: pointer;\r\n    height: 40px;\r\n}\r\n\r\n.input__select__7Mdt4 {\r\n    display: block;\r\n    width: 40%;\r\n    font-family: 'Montserrat';\r\n    border-radius: 11px;\r\n    font-size: 1.1em;\r\n    padding: 8px;\r\n}\r\n\r\n.input__selectWrapper__2Tpan select {\r\n    display: block;\r\n    width: 100%;\r\n    font-family: 'Montserrat';\r\n    border-radius: 11px;\r\n    font-size: 1.1em;\r\n    padding: 8px;\r\n}\r\n\r\n.input__selectWrapper__2Tpan label {\r\n    display: block;\r\n    margin: 15px 0 6px 0;\r\n    font-weight: bold;\r\n}\r\n\r\n.input__textarea__1qwNb label {\r\n    display: block;\r\n    margin: 15px 0 6px 0;\r\n    font-weight: bold;\r\n}\r\n\r\n.input__textarea__1qwNb textarea {\r\n    resize: none;\r\n}", ""]);
 // Exports
 exports.locals = {
 	"input": "input__input__184-b",
@@ -65224,10 +65224,6 @@ var Input = function Input(props) {
     if (!props.selectValid && props.clicked) {
         selectStyles.push(_input2.default.invalid);
     }
-    /*
-        if(props.notMatched){
-            arrayOfStyles.push(classes.invalid);
-        }*/
 
     switch (props.element) {
 
@@ -65730,6 +65726,38 @@ var Input = function Input(props) {
             return _react2.default.createElement('input', { className: _input2.default.submit,
                 type: 'submit',
                 value: 'Update Listing' });
+        case 'city':
+            return _react2.default.createElement(
+                _react2.default.Fragment,
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { className: _input2.default.wrapper },
+                    _react2.default.createElement(
+                        'label',
+                        { htmlFor: 'city' },
+                        'City'
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        props.error
+                    )
+                ),
+                _react2.default.createElement('input', { type: 'text',
+                    className: arrayOfStyles.join(' '),
+                    name: 'city',
+                    value: props.value,
+                    list: 'datalistCities',
+                    onChange: props.onChangeHandler,
+                    onBlur: props.onBlurHandler,
+                    onKeyUp: props.onKeyUpHandler }),
+                _react2.default.createElement(
+                    'datalist',
+                    { id: 'datalistCities' },
+                    props.options
+                )
+            );
     }
 };
 
@@ -68890,6 +68918,8 @@ var _Spinner2 = _interopRequireDefault(_Spinner);
 
 var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 
+var _urlsAPI = __webpack_require__(/*! ../../urlsAPI/urlsAPI */ "./src/urlsAPI/urlsAPI.js");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -69066,9 +69096,19 @@ var CreateListing = function (_Component) {
                         required: true
                     }
                 },
+                city: {
+                    type: 'city',
+                    value: '',
+                    valid: false,
+                    touched: false,
+                    errorMessage: '',
+                    rules: {
+                        required: true
+                    }
+                },
                 zip: {
                     type: 'zip',
-                    value: null,
+                    value: '',
                     valid: false,
                     touched: false,
                     errorMessage: '',
@@ -69080,7 +69120,8 @@ var CreateListing = function (_Component) {
             images: [],
             formIsValid: true,
             loading: false,
-            formSubmitted: false
+            formSubmitted: false,
+            options: []
         }, _this.onChangeHandler = function (event, current) {
             var value = event.target.value;
 
@@ -69197,8 +69238,10 @@ var CreateListing = function (_Component) {
                 }
 
                 arrayInputs.forEach(function (element) {
-                    var index = element.value.indexOf(',');
-                    inputs[element.type].value = element.value.replace(element.value.charAt(index), '');
+                    if (element.type !== 'city') {
+                        var index = element.value.indexOf(',');
+                        inputs[element.type].value = element.value.replace(element.value.charAt(index), '');
+                    }
                 });
 
                 _this.setState({
@@ -69247,6 +69290,8 @@ var CreateListing = function (_Component) {
         }, _this.validateData = function (element) {
             var copyInputs = _extends({}, _this.state.inputs);
 
+            copyInputs[element.type].touched = true;
+
             var valid = false;
 
             if (element.value.trim() !== '' && element.rules.required) {
@@ -69267,6 +69312,32 @@ var CreateListing = function (_Component) {
                 copyInputs[element.type].valid = false;
                 copyInputs[element.type].errorMessage = 'does not match valid format: (000)-000-0000';
             }
+
+            if (element.type === 'zip' && valid && element.value.length !== 5) {
+                copyInputs[element.type].valid = false;
+                copyInputs[element.type].errorMessage = 'Field should have 5 digits';
+            } else if (element.type === 'zip' && valid && element.value.length === 5) {
+                copyInputs[element.type].valid = true;
+                copyInputs[element.type].errorMessage = '';
+            }
+
+            if (element.type === 'zip' && valid && copyInputs['city'].value !== '' && element.value.length === 5) {
+                _axios2.default.get(_urlsAPI.proxy + 'https://www.zipcodeapi.com/rest/' + _urlsAPI.zipAPIKey + '/info.json/' + element.value + '/radians').then(function (response) {
+                    var city = copyInputs['city'].value;
+                    var index = city.indexOf(',');
+                    city = city.slice(0, index);
+
+                    if (response.data.city !== city) {
+                        copyInputs[element.type].valid = false;
+                        copyInputs[element.type].errorMessage = 'invalid zip code for this location';
+
+                        _this.setState({
+                            inputs: copyInputs
+                        });
+                    }
+                });
+            }
+
             _this.setState({
                 inputs: copyInputs
             });
@@ -69278,7 +69349,6 @@ var CreateListing = function (_Component) {
             copyInputs[currentElement.type].touched = true;
 
             if (currentElement.type === 'phoneNumber') {
-
                 if (/^[\(]*[0-9]*[\)]*[-]*\d*[-]*\d*$/.test(event.target.value)) {
                     copyInputs[currentElement.type].value = event.target.value;
 
@@ -69333,6 +69403,13 @@ var CreateListing = function (_Component) {
                 if (/^[a-zA-Z]*$/.test(event.target.value)) {
                     copyInputs[currentElement.type].value = event.target.value;
                 }
+            } else if (currentElement.type === 'city') {
+                copyInputs[currentElement.type].value = event.target.value;
+
+                copyInputs['zip'].value = '';
+                copyInputs['zip'].touched = false;
+                copyInputs['zip'].valid = false;
+                copyInputs['zip'].errorMessage = '';
             } else {
                 copyInputs[currentElement.type].value = event.target.value;
             }
@@ -69387,6 +69464,16 @@ var CreateListing = function (_Component) {
 
             _this.setState({
                 images: copyImages
+            });
+        }, _this.onKeyUpHandler = function (param) {
+            _axios2.default.post('/get_certain_cities', {
+                value: param
+            }).then(function (response) {
+                var options = response.data.slice(0, 5);
+
+                _this.setState({
+                    options: options
+                });
             });
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
@@ -69463,6 +69550,10 @@ var CreateListing = function (_Component) {
                 arrayOfInputs.push(this.state.inputs[param]);
             }
 
+            var options = this.state.options.map(function (option) {
+                return _react2.default.createElement('option', { value: option.city + ', ' + option.state });
+            });
+
             var inputs = arrayOfInputs.map(function (current) {
                 return _react2.default.createElement(_Inputs2.default, { element: current.type,
                     value: current.value,
@@ -69477,7 +69568,11 @@ var CreateListing = function (_Component) {
                     },
                     onKeyDownHandler: function onKeyDownHandler(event) {
                         return _this3.onKeyDownHandler(event, current);
-                    } });
+                    },
+                    onKeyUpHandler: function onKeyUpHandler() {
+                        return _this3.onKeyUpHandler(current.value);
+                    },
+                    options: options });
             });
 
             var contactData = inputs.slice(3);
@@ -70413,6 +70508,8 @@ var _Spinner2 = _interopRequireDefault(_Spinner);
 
 var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 
+var _urlsAPI = __webpack_require__(/*! ../../urlsAPI/urlsAPI */ "./src/urlsAPI/urlsAPI.js");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -70589,9 +70686,19 @@ var UpdateListing = function (_Component) {
                         required: true
                     }
                 },
+                city: {
+                    type: 'city',
+                    value: '',
+                    valid: true,
+                    touched: true,
+                    errorMessage: '',
+                    rules: {
+                        required: true
+                    }
+                },
                 zip: {
                     type: 'zip',
-                    value: null,
+                    value: '',
                     valid: true,
                     touched: true,
                     errorMessage: '',
@@ -70603,7 +70710,8 @@ var UpdateListing = function (_Component) {
             images: [],
             formIsValid: true,
             loading: false,
-            formSubmitted: false
+            formSubmitted: false,
+            options: []
         }, _this.getOptionsForRender = function (element) {
 
             var options = element.value.map(function (current) {
@@ -70712,6 +70820,32 @@ var UpdateListing = function (_Component) {
                 copyInputs[element.type].valid = false;
                 copyInputs[element.type].errorMessage = 'does not match valid format: (000)-000-0000';
             }
+
+            if (element.type === 'zip' && valid && element.value.length !== 5) {
+                copyInputs[element.type].valid = false;
+                copyInputs[element.type].errorMessage = 'Field should have 5 digits';
+            } else if (element.type === 'zip' && valid && element.value.length === 5) {
+                copyInputs[element.type].valid = true;
+                copyInputs[element.type].errorMessage = '';
+            }
+
+            if (element.type === 'zip' && valid && copyInputs['city'].value !== '' && element.value.length === 5) {
+                _axios2.default.get(_urlsAPI.proxy + 'https://www.zipcodeapi.com/rest/' + _urlsAPI.zipAPIKey + '/info.json/' + element.value + '/radians').then(function (response) {
+                    var city = copyInputs['city'].value;
+                    var index = city.indexOf(',');
+                    city = city.slice(0, index);
+
+                    if (response.data.city !== city) {
+                        copyInputs[element.type].valid = false;
+                        copyInputs[element.type].errorMessage = 'invalid zip code for this location';
+
+                        _this.setState({
+                            inputs: copyInputs
+                        });
+                    }
+                });
+            }
+
             _this.setState({
                 inputs: copyInputs
             });
@@ -70778,6 +70912,13 @@ var UpdateListing = function (_Component) {
                 if (/^[a-zA-Z]*$/.test(event.target.value)) {
                     copyInputs[currentElement.type].value = event.target.value;
                 }
+            } else if (currentElement.type === 'city') {
+                copyInputs[currentElement.type].value = event.target.value;
+
+                copyInputs['zip'].value = '';
+                copyInputs['zip'].touched = false;
+                copyInputs['zip'].valid = false;
+                copyInputs['zip'].errorMessage = '';
             } else {
                 copyInputs[currentElement.type].value = event.target.value;
             }
@@ -70836,8 +70977,10 @@ var UpdateListing = function (_Component) {
                 }
 
                 arrayInputs.forEach(function (element) {
-                    var index = element.value.indexOf(',');
-                    inputs[element.type].value = element.value.replace(element.value.charAt(index), '');
+                    if (element.type !== 'city') {
+                        var index = element.value.indexOf(',');
+                        inputs[element.type].value = element.value.replace(element.value.charAt(index), '');
+                    }
                 });
 
                 _this.setState({
@@ -70911,6 +71054,16 @@ var UpdateListing = function (_Component) {
 
                 return true;
             }
+        }, _this.onKeyUpHandler = function (param) {
+            _axios2.default.post('/get_certain_cities', {
+                value: param
+            }).then(function (response) {
+                var options = response.data.slice(0, 5);
+
+                _this.setState({
+                    options: options
+                });
+            });
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
@@ -71016,6 +71169,10 @@ var UpdateListing = function (_Component) {
                 arrayOfInputs.push(this.state.inputs[param]);
             }
 
+            var options = this.state.options.map(function (option) {
+                return _react2.default.createElement('option', { value: option.city + ', ' + option.state });
+            });
+
             var inputs = arrayOfInputs.map(function (current) {
                 return _react2.default.createElement(_Inputs2.default, { element: current.type,
                     value: current.value,
@@ -71030,7 +71187,11 @@ var UpdateListing = function (_Component) {
                     },
                     onKeyDownHandler: function onKeyDownHandler(event) {
                         return _this3.onKeyDownHandler(event, current);
-                    } });
+                    },
+                    onKeyUpHandler: function onKeyUpHandler() {
+                        return _this3.onKeyUpHandler(current.value);
+                    },
+                    options: options });
             });
 
             var contactData = inputs.slice(3);
@@ -71419,6 +71580,27 @@ var reducer = function reducer() {
 };
 
 exports.default = reducer;
+
+/***/ }),
+
+/***/ "./src/urlsAPI/urlsAPI.js":
+/*!********************************!*\
+  !*** ./src/urlsAPI/urlsAPI.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//export const checkAuthentication = 'http://localhost/shopping/backend/public/checkAuth';
+
+var proxy = exports.proxy = 'https://cors-anywhere.herokuapp.com/';
+
+var zipAPIKey = exports.zipAPIKey = 'M6tAgLr5jvPCTiPx9WHDUfQCwrWICFpybdfCuKU8JdrQIahwQWkFYELI81uw01k7';
 
 /***/ }),
 

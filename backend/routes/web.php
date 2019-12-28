@@ -332,9 +332,14 @@ Route::get('/get_buying_advices', 'AdminController@fetchBuyingAdvices');
 
 Route::get('/fetch_advices_item', 'AdminController@fetchBuyingAdvicesItem');
 
-Route::get('/get_certain_cities', function(){
+
+//API to fetch locations on key up
+Route::post('/get_certain_cities', function(Request $request){
+	$value = $request->value;
+	$value = '^' . $value;
+
 	$cities = City::where([
-		'city' => new MongoDB\BSON\Regex('^al', "i") 
+		'city' => new MongoDB\BSON\Regex($value, "i") 
 	])->get();
 	return $cities;
 });

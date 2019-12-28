@@ -15,6 +15,7 @@
 .wrapper p {
     color: var(--mainRed);
     font-size: 0.8em;
+    padding: 8px 0 5px 0;
 }
 
 .submit {
