@@ -1,30 +1,157 @@
-import React from 'react';
+import React, { Component } from 'react';
 import classes from './SearchComponent.css';
+import { connect } from 'react-redux';
+import * as actions from '../../reduxStore/searching/Actions';
+import { withRouter } from 'react-router-dom';
+import axios from 'axios';
 
-const SearchComponent = props => {
-    return (
-        <div className={classes.searchContainer}>
-            <select style={{borderTopLeftRadius: '10px'}}>
-                <option>New & Used</option>
-            </select>
-            <select>
-                <option>All Makes</option>
-            </select>
-            <select style={{borderTopRightRadius: '10px'}}>
-                <option>All Models</option>
-            </select>
-            <select style={{borderBottomLeftRadius: '10px'}}>
-                <option>No Max Price</option>
-            </select>
-            <div className={classes.zip}>
-                <select style={{width: '70%'}}>
-                    <option>10 miles from</option>
-                </select>
-                <input type="text" value="33130" />
+class SearchComponent extends Component {
+    state={
+        errorMessage: '',
+        allMakes: [],
+        allModels: []
+    }
+
+    componentWillMount(){
+        axios.post('/get_make', {
+            type: 'make',
+            params: ''
+        }).then(response => {
+            this.setState({
+                allMakes: response.data
+            })
+        })
+    }
+
+    changeValue = (event) => {
+
+        if(event.target === document.querySelector('#zip')){
+            if(event.target.value.length === 6){
+                event.target.value = event.target.value.slice(0, event.target.value.length-1);
+            }
+        }
+
+        this.props.onChangeHandler(event.target.value, event.target.name);
+
+        if(event.target === document.querySelector('#makes')){
+            setTimeout(() => {
+                axios.post('/get_model', {
+                    type: 'model',
+                    params: this.props.searchParams.make
+                }).then(response => {
+                    if(response.data !== ''){
+                        this.setState({
+                            allModels: response.data
+                        });
+                    } else {
+                        this.setState({
+                            allModels: []
+                        })
+                    }
+                })
+            }, 500)
+        }
+    }
+
+    searchButtonHandler = () => {
+        if(this.props.zipValid){
+            this.props.history.push('/search_results');
+        } else if(!this.props.zipValid){
+            this.setState({
+                errorMessage: 'zip code should have 5 digits'
+            })
+        }
+    }
+
+    onBlurHandler = () => {
+        if(this.props.searchParams.zip.length !== 5 && this.props.searchParams.zip.length !== 0){
+            this.props.zipIsNotValid();
+        } else if(this.props.searchParams.zip.length === 5 || this.props.searchParams.zip.length === 0) {
+            this.props.zipIsValid();
+        }
+    }
+    
+    render(){
+        const zipCodeClasses = [classes.input];
+        if(!this.props.zipValid){
+            zipCodeClasses.push(classes.activeZipCode);
+        }
+
+        const allMakesOptions = this.state.allMakes.map(element => {
+            return <option value={element}>{element}</option>
+        })
+
+        const selectedModels = this.state.allModels.map(element => {
+            return <option value={element}>{element}</option>
+        })
+
+        return (
+            <div className={classes.mainContainer}>
+                <p>{this.state.errorMessage}</p>
+                <div className={classes.searchContainer}>
+                    <select style={{borderTopLeftRadius: '10px'}} 
+                            name="condition"
+                            onChange={(event) => this.changeValue(event)}>
+                        <option value="select">New & Used</option>
+                        <option value="New Car">New</option>
+                        <option value="Used Car">Used</option>
+                    </select>
+                    <select id="makes"
+                            name="make"
+                            onChange={(event) => this.changeValue(event)}>
+                        <option value="select">All Makes</option>
+                        {allMakesOptions}
+                    </select>
+                    <select style={{borderTopRightRadius: '10px'}} 
+                            name="model"
+                            onChange={(event) => this.changeValue(event)}>
+                        <option value="select">All Models</option>
+                        {selectedModels}
+                    </select>
+                    <select style={{borderBottomLeftRadius: '10px'}} 
+                            name="maxPrice"
+                            onChange={(event) => this.changeValue(event)}>
+                        <option value="select">No Max Price</option>
+                        <option value="6000">$6,000</option>
+                        <option value="8000">$8,000</option>
+                        <option value="10000">$10,000</option>
+                        <option value="15000">$15,000</option>
+                    </select>
+                    <div className={classes.zip}>
+                        <select style={{width: '70%'}} 
+                                name="radius"
+                                onChange={(event) => this.changeValue(event)}>
+                            <option value="10">10 miles from</option>
+                            <option value="50">50</option>
+                        </select>
+                        <input id="zip"
+                               className={zipCodeClasses.join(' ')}
+                               type="number" 
+                               name="zip" 
+                               placeholder="zip code"
+                               onChange={(event) => this.changeValue(event)}
+                               onBlur={() => this.onBlurHandler()} />
+                    </div>
+                    <button onClick={() => this.searchButtonHandler()}>Search</button>           
+                </div>
             </div>
-            <button style={{borderBottomRightRadius: '10px'}}>Search</button>            
-        </div>
-    )
+        )
+    }
 }
 
-export default SearchComponent
+const mapStateToProps = state => {
+    return {
+        searchParams: state.searchReducer.searchParams,
+        zipValid: state.searchReducer.zipIsValid
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onChangeHandler: (value, name) => dispatch(actions.onChangeHandler(value, name)),
+        zipIsValid: () => dispatch(actions.zipIsValid()),
+        zipIsNotValid: () => dispatch(actions.zipIsNotValid())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(SearchComponent));

@@ -66,13 +66,10 @@
     <body>
         <form action="/test5" method="post" enctype="multipart/form-data">
             <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
-            <input type="text" name="type" value="make" />
+            <input type="number" name="digit" />
             <input type="file" name="file" />
             <input type="submit" value="submit" />
         </form>
-        @foreach($arrayImages as $image)
-            <image src="data:jpeg;base64, {{$image}}" />
-        @endforeach
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">

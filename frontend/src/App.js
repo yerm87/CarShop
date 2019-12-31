@@ -16,6 +16,7 @@ import Logout from './containers/logout_page/Logout';
 import UpdateListing from "./containers/update_listing/UpdateListing";
 import BuyingAdvicesPage from './containers/buyingAdvicesPage/BuyingAdvicesPage';
 import AdvicesItemPage from './containers/advicesItemPage/AdvicesItemPage';
+import SearchResults from './containers/searchResults/SearchResults';
 
 class App extends Component {
     
@@ -53,6 +54,7 @@ class App extends Component {
                     <Route path="/update_listing/:listingId" component={UpdateListing} />
                     <Route path="/buying_advices/:advice_id" component={AdvicesItemPage} />
                     <Route path="/buying_advices" component={BuyingAdvicesPage} />
+                    <Route path="/search_results" component={SearchResults} />
                     <Route path="/" component={MainPage} />
                 </Switch>
             </div>

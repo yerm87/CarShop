@@ -6,11 +6,13 @@ import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import authReducer from './reduxStore/authentication/Reducer';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
+import searchReducer from './reduxStore/searching/Reducer';
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const combinedReducer = combineReducers({
-    authReducer: authReducer
+    authReducer: authReducer,
+    searchReducer: searchReducer
 });
 
 const store = createStore(combinedReducer, composeEnhancer(applyMiddleware(thunk)));

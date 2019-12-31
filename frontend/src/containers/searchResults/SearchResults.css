@@ -1,0 +1,12 @@
+.mainContainer {
+    font-family: 'Montserrat';
+}
+
+.title p {
+    text-align: center;
+}
+
+.title h1 {
+    color: var(--mainBlue);
+    padding-left: 20px;
+}

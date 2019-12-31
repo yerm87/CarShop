@@ -52,4 +52,107 @@ class ListingController extends Controller
         $listing->delete();
         return 'deleted';
     }
+
+    public function getItemsByZipCode(Request $request){
+
+        if($request->condition && !$request->make && !$request->model){
+            $results = Listing::where([
+                'condition' => $request->condition
+            ])->get();
+        } else if(!$request->condition && $request->make && !$request->model){
+            $results = Listing::where([
+                'make' => $request->make
+            ])->get();
+        } else if($request->condition && $request->make && !$request->model){
+            $results = Listing::where([
+                'make' => $request->make,
+                'condition' => $request->condition
+            ])->get();
+        } else if(!$request->condition && $request->make && $request->model){
+            $results = Listing::where([
+                'make' => $request->make,
+                'model' => $request->model
+            ])->get();
+        } else if($request->condition && $request->make && $request->model){
+            $results = Listing::where([
+                'condition' => $request->condition,
+                'make' => $request->make,
+                'model' => $request->model
+            ])->get();
+        } else {
+            $results = Listing::all();
+        }
+
+        $filterByPrice = array();
+        foreach($results as $result){
+            $result->price = intval($result->price);
+
+            if($request->maxPrice){
+                if($result->price <= intval($request->maxPrice)){
+                    array_push($filterByPrice, $result);
+                }
+            } else {
+                $filterByPrice = $results;
+            }
+        }
+
+        $zipCodes = $request->zipCodes;
+
+        $listings = $filterByPrice;
+
+        $searchResultByZip = array();
+
+        foreach($listings as $listing){
+            if(in_array($listing->zip, $zipCodes)){
+                array_push($searchResultByZip, $listing);
+            }
+        }
+
+        return $searchResultByZip;
+    }
+
+    public function getAllItems(Request $request){
+        if($request->condition && !$request->make && !$request->model){
+            $results = Listing::where([
+                'condition' => $request->condition
+            ])->get();
+        } else if(!$request->condition && $request->make && !$request->model){
+            $results = Listing::where([
+                'make' => $request->make
+            ])->get();
+        } else if($request->condition && $request->make && !$request->model){
+            $results = Listing::where([
+                'make' => $request->make,
+                'condition' => $request->condition
+            ])->get();
+        } else if(!$request->condition && $request->make && $request->model){
+            $results = Listing::where([
+                'make' => $request->make,
+                'model' => $request->model
+            ])->get();
+        } else if($request->condition && $request->make && $request->model){
+            $results = Listing::where([
+                'condition' => $request->condition,
+                'make' => $request->make,
+                'model' => $request->model
+            ])->get();
+        } else {
+            $results = Listing::all();
+        }
+
+        $filterByPrice = array();
+        foreach($results as $result){
+            $result->price = intval($result->price);
+
+            if($request->maxPrice){
+                if($result->price <= intval($request->maxPrice)){
+                    array_push($filterByPrice, $result);
+                }
+            } else {
+                $filterByPrice = $results;
+            }
+        }
+
+        return $filterByPrice;
+    }
 }

@@ -33,10 +33,6 @@ Route::get('/test', function(){
     return view('welcome');
 });
 
-Route::get('/test2', function(Request $request){
-   return $request->session()->forget('admin');
-});
-
 Route::post('/test3', function(Request $request){
 	$file = $request->file('file_id');
 	User::create([
@@ -62,24 +58,23 @@ Route::get('/test4', function(){
 });
 
 Route::post('/test5', function(Request $request){
-	
-	$data = $request->file('images');
+	$digit = $request->digit;
+/*
+	$listings = Listing::where(
+		'price', '<', 1000 
+	)->get();
 
-	$images = array();
-
-	for($i=0; $i<count($data); $i++){
-		$image = new MongoDB\BSON\Binary(file_get_contents($data[$i]), 
-			         MongoDB\BSON\Binary::TYPE_GENERIC);
-		array_push($images, $image);
+	return $listings;*/
+	$listings = Listing::all();
+	foreach($listings as $listing){
+		$listing->price = intval($listing->price);
 	}
-
-	Listing::create([
-		'images' => $images
-	]);
-
-	return $images;
-
-	//"image"=> new MongoDB\BSON\Binary(file_get_contents($image), MongoDB\BSON\Binary::TYPE_GENERIC)
+	$newListings = $listings->where('price', '>', 11500);
+	$array = array();
+	foreach($newListings as $listing){
+		array_push($array, $listing->price);
+	}
+	return $array;
 });
 
 //route for main page
@@ -343,3 +338,7 @@ Route::post('/get_certain_cities', function(Request $request){
 	])->get();
 	return $cities;
 });
+
+Route::post('/get_items_by_zipCode', 'ListingController@getItemsByZipCode');
+
+Route::post('/get_all_items', 'ListingController@getAllItems');

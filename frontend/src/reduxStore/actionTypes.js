@@ -10,3 +10,7 @@ export const closeModal = 'closeModal';
 export const userWasLoggedOut = 'userWasLoggedOut';
 export const showDeleteModal = 'showDeleteModal';
 export const closeDeleteModal = 'closeDeleteModal';
+export const changeValue = 'changeValue'
+export const zipIsValid = 'zipIsValid';
+export const zipIsNotValid = 'zipIsNotValid';
+export const resetParams = 'resetParams';
