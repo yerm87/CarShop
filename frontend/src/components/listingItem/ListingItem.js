@@ -41,13 +41,21 @@ class ListingItem extends Component {
         }
 
         const listingImages = images.map(current => <ImageListing img={current} />);
+        const wrapperClass = this.props.searchItem ? classes.imageWrapperForSearchItem : 
+        classes.imageWrapper;
+
+        const content = this.props.searchItem ? classes.contentForSearchItem : classes.content
+
         return (
-            <div className={classes.imageWrapper}>
+            <div className={wrapperClass}>
                 {this.state.elementCounter !== images.length ? (
                 <IconContext.Provider value={{color: 'white', size: '30px'}}>
                     <div className={classes.arrowLeft}
                          onClick={(event) => {
-                            const wrapper = event.target.closest('.ListingItem__imageWrapper__1NQji')
+                            const wrapper = this.props.searchItem ?
+                            event.target.closest('.ListingItem__imageWrapperForSearchItem__3QBbf')
+                            .querySelector('.ListingItem__wrapper__UgLa3') :
+                            event.target.closest('.ListingItem__imageWrapper__1NQji')
                             .querySelector('.ListingItem__wrapper__UgLa3');
                             this.setState(prevState => {
                                 return {
@@ -70,7 +78,10 @@ class ListingItem extends Component {
                 <IconContext.Provider value={{color: 'white', size: '30px'}}>
                     <div className={classes.arrowRight}
                          onClick={(event) => {
-                            const wrapper = event.target.closest('.ListingItem__imageWrapper__1NQji')
+                            const wrapper = this.props.searchItem ?
+                            event.target.closest('.ListingItem__imageWrapperForSearchItem__3QBbf')
+                            .querySelector('.ListingItem__wrapper__UgLa3') :
+                            event.target.closest('.ListingItem__imageWrapper__1NQji')
                             .querySelector('.ListingItem__wrapper__UgLa3');
                             this.setState((prevState) => {
                                 return {
@@ -89,7 +100,7 @@ class ListingItem extends Component {
                     </div>
                 </IconContext.Provider>
                 ) : null}
-                <div className={classes.content}>
+                <div className={content}>
                     <p>{condition}</p>
                     <div className={classes.priceAndMileage}>
                         <p className={classes.price}>${modifiedPrice}</p>

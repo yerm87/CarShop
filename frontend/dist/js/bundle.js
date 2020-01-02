@@ -13360,11 +13360,13 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".ListingItem__imageWrapper__1NQji {\r\n    overflow: hidden;\r\n    position: relative;\r\n    min-height: 240px;\r\n    border: 1px solid var(--mainBlack);\r\n    margin-top: 10px;\r\n    max-width: 1011.75px;\r\n}\r\n\r\n.ListingItem__content__U_jzQ {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 0;\r\n    padding: 10px;\r\n    width: 711.75px;\r\n    height: 100%;\r\n    background-color: white;\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n    font-family: 'Montserrat';\r\n    font-weight: bold;\r\n}\r\n\r\n.ListingItem__content__U_jzQ p {\r\n    margin: 8px 0;\r\n    padding-left: 10px;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: end;\r\n        -ms-flex-align: end;\r\n            align-items: flex-end;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c .ListingItem__price__tKqVf {\r\n    font-size: 1.4em;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c .ListingItem__mileage__3r2zF {\r\n    font-size: 0.9em;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c p span {\r\n    margin-left: 8px;\r\n}\r\n\r\n.ListingItem__params__2k34p {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    margin: 8px;\r\n}\r\n\r\n.ListingItem__params__2k34p p {\r\n    font-size: 0.8em;\r\n}\r\n\r\n.ListingItem__images__2WJyw {\r\n\r\n}\r\n\r\n.ListingItem__arrowLeft__WZrvT {\r\n    display: none;\r\n    position: absolute;\r\n    top: 100px;\r\n    left: 0;\r\n    width: 45px;\r\n    height: 42px;\r\n    background-color: rgba(158, 137, 137, 0.4);\r\n    padding: 9px 0 0 9px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingItem__arrowRight__3_9-- {\r\n    display: none;\r\n    position: absolute;\r\n    top: 100px;\r\n    left: 240px;\r\n    width: 45px;\r\n    height: 42px;\r\n    background-color: rgba(158, 137, 137, 0.4);\r\n    padding: 9px 0 0 9px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingItem__wrapper__UgLa3 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    overflow: hidden;\r\n    -webkit-transition: all 0.3s;\r\n    -o-transition: all 0.3s;\r\n    transition: all 0.3s;\r\n}\r\n\r\n.ListingItem__imageWrapper__1NQji:hover .ListingItem__arrowLeft__WZrvT {\r\n    display: block\r\n}\r\n\r\n.ListingItem__imageWrapper__1NQji:hover .ListingItem__arrowRight__3_9-- {\r\n    display: block;\r\n}\r\n\r\n.ListingItem__deleteButton__3MrKC {\r\n    display: none;\r\n    position: absolute;\r\n    top: 5px;\r\n    right: 5px;\r\n    width: 30px;\r\n    height: 30px;\r\n    background: rgba(158, 137, 137, 0.4);\r\n    color: var(--mainWhite);\r\n    font-weight: bold;\r\n    font-size: 1.4em;\r\n    padding: 6px 0 0 13px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingItem__deleteButton__3MrKC:hover {\r\n    background-color: var(--mainRed);\r\n}\r\n\r\n.ListingItem__imageWrapper__1NQji:hover .ListingItem__deleteButton__3MrKC {\r\n    display: block;\r\n}", ""]);
+exports.push([module.i, ".ListingItem__imageWrapper__1NQji {\r\n    overflow: hidden;\r\n    position: relative;\r\n    min-height: 240px;\r\n    border: 1px solid var(--mainBlack);\r\n    margin-top: 10px;\r\n    max-width: 1011.75px;\r\n}\r\n\r\n.ListingItem__imageWrapperForSearchItem__3QBbf {\r\n    overflow: hidden;\r\n    position: relative;\r\n    min-height: 240px;\r\n    border: 1px solid var(--mainBlack);\r\n    margin-top: 10px;\r\n    max-width: 861.75px;\r\n}\r\n\r\n.ListingItem__content__U_jzQ {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 0;\r\n    padding: 10px;\r\n    width: 711.75px;\r\n    height: 100%;\r\n    background-color: white;\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n    font-family: 'Montserrat';\r\n    font-weight: bold;\r\n}\r\n\r\n.ListingItem__content__U_jzQ p {\r\n    margin: 8px 0;\r\n    padding-left: 10px;\r\n}\r\n\r\n.ListingItem__contentForSearchItem__2Fu9a {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 0;\r\n    padding: 10px;\r\n    width: 561.75px;\r\n    height: 100%;\r\n    background-color: white;\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n    font-family: 'Montserrat';\r\n    font-weight: bold;\r\n}\r\n\r\n.ListingItem__contentForSearchItem__2Fu9a p {\r\n    margin: 8px 0;\r\n    padding-left: 10px;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: end;\r\n        -ms-flex-align: end;\r\n            align-items: flex-end;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c .ListingItem__price__tKqVf {\r\n    font-size: 1.4em;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c .ListingItem__mileage__3r2zF {\r\n    font-size: 0.9em;\r\n}\r\n\r\n.ListingItem__priceAndMileage__1ab6c p span {\r\n    margin-left: 8px;\r\n}\r\n\r\n.ListingItem__params__2k34p {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    margin: 8px;\r\n}\r\n\r\n.ListingItem__params__2k34p p {\r\n    font-size: 0.8em;\r\n}\r\n\r\n.ListingItem__images__2WJyw {\r\n\r\n}\r\n\r\n.ListingItem__arrowLeft__WZrvT {\r\n    display: none;\r\n    position: absolute;\r\n    top: 100px;\r\n    left: 0;\r\n    width: 45px;\r\n    height: 42px;\r\n    background-color: rgba(158, 137, 137, 0.4);\r\n    padding: 9px 0 0 9px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingItem__arrowRight__3_9-- {\r\n    display: none;\r\n    position: absolute;\r\n    top: 100px;\r\n    left: 240px;\r\n    width: 45px;\r\n    height: 42px;\r\n    background-color: rgba(158, 137, 137, 0.4);\r\n    padding: 9px 0 0 9px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingItem__wrapper__UgLa3 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    overflow: hidden;\r\n    -webkit-transition: all 0.3s;\r\n    -o-transition: all 0.3s;\r\n    transition: all 0.3s;\r\n}\r\n\r\n.ListingItem__imageWrapper__1NQji:hover .ListingItem__arrowLeft__WZrvT {\r\n    display: block\r\n}\r\n\r\n.ListingItem__imageWrapper__1NQji:hover .ListingItem__arrowRight__3_9-- {\r\n    display: block;\r\n}\r\n\r\n.ListingItem__imageWrapperForSearchItem__3QBbf:hover .ListingItem__arrowLeft__WZrvT, \r\n.ListingItem__imageWrapperForSearchItem__3QBbf:hover .ListingItem__arrowRight__3_9-- {\r\n    display: block\r\n}\r\n\r\n.ListingItem__deleteButton__3MrKC {\r\n    display: none;\r\n    position: absolute;\r\n    top: 5px;\r\n    right: 5px;\r\n    width: 30px;\r\n    height: 30px;\r\n    background: rgba(158, 137, 137, 0.4);\r\n    color: var(--mainWhite);\r\n    font-weight: bold;\r\n    font-size: 1.4em;\r\n    padding: 6px 0 0 13px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingItem__deleteButton__3MrKC:hover {\r\n    background-color: var(--mainRed);\r\n}\r\n\r\n.ListingItem__imageWrapper__1NQji:hover .ListingItem__deleteButton__3MrKC {\r\n    display: block;\r\n}", ""]);
 // Exports
 exports.locals = {
 	"imageWrapper": "ListingItem__imageWrapper__1NQji",
+	"imageWrapperForSearchItem": "ListingItem__imageWrapperForSearchItem__3QBbf",
 	"content": "ListingItem__content__U_jzQ",
+	"contentForSearchItem": "ListingItem__contentForSearchItem__2Fu9a",
 	"priceAndMileage": "ListingItem__priceAndMileage__1ab6c",
 	"price": "ListingItem__price__tKqVf",
 	"mileage": "ListingItem__mileage__3r2zF",
@@ -13709,11 +13711,13 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".SearchResults__mainContainer__2UXg4 {\r\n    font-family: 'Montserrat';\r\n}\r\n\r\n.SearchResults__title__2hEMs p {\r\n    text-align: center;\r\n}\r\n\r\n.SearchResults__title__2hEMs h1 {\r\n    color: var(--mainBlue);\r\n    padding-left: 20px;\r\n}", ""]);
+exports.push([module.i, ".SearchResults__mainContainer__2UXg4 {\r\n    font-family: 'Montserrat';\r\n}\r\n\r\n.SearchResults__title__2hEMs h1 {\r\n    color: var(--mainBlue);\r\n    padding-left: 20px;\r\n}\r\n\r\n.SearchResults__contentContainer__3BOcP {\r\n    display: grid;\r\n    grid-template-columns: 1fr 3fr;\r\n    width: 90%;\r\n    margin: 0 auto;\r\n}\r\n\r\n.SearchResults__items__3H7EF {\r\n    padding-left: 50px;\r\n}", ""]);
 // Exports
 exports.locals = {
 	"mainContainer": "SearchResults__mainContainer__2UXg4",
-	"title": "SearchResults__title__2hEMs"
+	"title": "SearchResults__title__2hEMs",
+	"contentContainer": "SearchResults__contentContainer__3BOcP",
+	"items": "SearchResults__items__3H7EF"
 };
 module.exports = exports;
 
@@ -66837,9 +66841,13 @@ var ListingItem = function (_Component) {
             var listingImages = images.map(function (current) {
                 return _react2.default.createElement(_HeroImage.ImageListing, { img: current });
             });
+            var wrapperClass = this.props.searchItem ? _ListingItem2.default.imageWrapperForSearchItem : _ListingItem2.default.imageWrapper;
+
+            var content = this.props.searchItem ? _ListingItem2.default.contentForSearchItem : _ListingItem2.default.content;
+
             return _react2.default.createElement(
                 'div',
-                { className: _ListingItem2.default.imageWrapper },
+                { className: wrapperClass },
                 this.state.elementCounter !== images.length ? _react2.default.createElement(
                     _reactIcons.IconContext.Provider,
                     { value: { color: 'white', size: '30px' } },
@@ -66847,7 +66855,7 @@ var ListingItem = function (_Component) {
                         'div',
                         { className: _ListingItem2.default.arrowLeft,
                             onClick: function onClick(event) {
-                                var wrapper = event.target.closest('.ListingItem__imageWrapper__1NQji').querySelector('.ListingItem__wrapper__UgLa3');
+                                var wrapper = _this2.props.searchItem ? event.target.closest('.ListingItem__imageWrapperForSearchItem__3QBbf').querySelector('.ListingItem__wrapper__UgLa3') : event.target.closest('.ListingItem__imageWrapper__1NQji').querySelector('.ListingItem__wrapper__UgLa3');
                                 _this2.setState(function (prevState) {
                                     return {
                                         counterMargin: prevState.counterMargin - 300
@@ -66871,7 +66879,7 @@ var ListingItem = function (_Component) {
                         'div',
                         { className: _ListingItem2.default.arrowRight,
                             onClick: function onClick(event) {
-                                var wrapper = event.target.closest('.ListingItem__imageWrapper__1NQji').querySelector('.ListingItem__wrapper__UgLa3');
+                                var wrapper = _this2.props.searchItem ? event.target.closest('.ListingItem__imageWrapperForSearchItem__3QBbf').querySelector('.ListingItem__wrapper__UgLa3') : event.target.closest('.ListingItem__imageWrapper__1NQji').querySelector('.ListingItem__wrapper__UgLa3');
                                 _this2.setState(function (prevState) {
                                     return {
                                         counterMargin: prevState.counterMargin + 300
@@ -66890,7 +66898,7 @@ var ListingItem = function (_Component) {
                 ) : null,
                 _react2.default.createElement(
                     'div',
-                    { className: _ListingItem2.default.content },
+                    { className: content },
                     _react2.default.createElement(
                         'p',
                         null,
@@ -70275,6 +70283,10 @@ var _SearchResults = __webpack_require__(/*! ./SearchResults.css */ "./src/conta
 
 var _SearchResults2 = _interopRequireDefault(_SearchResults);
 
+var _ListingItem = __webpack_require__(/*! ../../components/listingItem/ListingItem */ "./src/components/listingItem/ListingItem.js");
+
+var _ListingItem2 = _interopRequireDefault(_ListingItem);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -70360,6 +70372,10 @@ var SearchResults = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
+            var items = this.state.searchResults.map(function (element) {
+                return _react2.default.createElement(_ListingItem2.default, { item: element,
+                    searchItem: true });
+            });
             return _react2.default.createElement(
                 'div',
                 { className: _SearchResults2.default.mainContainer },
@@ -70372,12 +70388,21 @@ var SearchResults = function (_Component) {
                         'Search Results'
                     ),
                     this.state.searchResults.length > 0 ? _react2.default.createElement(
-                        'p',
-                        null,
-                        'results'
+                        'div',
+                        { className: _SearchResults2.default.contentContainer },
+                        _react2.default.createElement(
+                            'div',
+                            null,
+                            'filters'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: _SearchResults2.default.items },
+                            items
+                        )
                     ) : _react2.default.createElement(
                         'p',
-                        null,
+                        { style: { textAlign: 'center' } },
                         'There are no listings in this area'
                     )
                 )

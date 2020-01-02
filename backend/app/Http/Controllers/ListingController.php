@@ -108,7 +108,21 @@ class ListingController extends Controller
             }
         }
 
-        return $searchResultByZip;
+        $modifiedListings = array();
+
+        foreach($searchResultByZip as $listing){
+            $images = array();
+
+            foreach($listing->images as $image){
+                array_push($images, base64_encode($image));
+            }
+
+            $listing->images = $images;
+
+            array_push($modifiedListings, $listing);
+        }
+
+        return $modifiedListings;
     }
 
     public function getAllItems(Request $request){
@@ -153,6 +167,20 @@ class ListingController extends Controller
             }
         }
 
-        return $filterByPrice;
+        $modifiedListings = array();
+
+        foreach($filterByPrice as $listing){
+            $images = array();
+
+            foreach($listing->images as $image){
+                array_push($images, base64_encode($image));
+            }
+
+            $listing->images = $images;
+
+            array_push($modifiedListings, $listing);
+        }
+
+        return $modifiedListings;
     }
 }

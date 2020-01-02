@@ -4,6 +4,7 @@ import axios from 'axios';
 import { connect } from 'react-redux';
 import * as actions from '../../reduxStore/searching/Actions';
 import classes from './SearchResults.css';
+import ListingItem from '../../components/listingItem/ListingItem';
 
 class SearchResults extends Component {
     state={
@@ -62,14 +63,25 @@ class SearchResults extends Component {
     }
 
     render(){
+        const items = this.state.searchResults.map(element => {
+            return <ListingItem item={element}
+                                searchItem />
+        })
         return(
             <div className={classes.mainContainer}>
                 <div className={classes.title}>
                     <h1>Search Results</h1>
                     {this.state.searchResults.length > 0 ? (
-                        <p>results</p>
+                        <div className={classes.contentContainer}>
+                            <div>
+                                filters
+                            </div>
+                            <div className={classes.items}>
+                                {items}
+                            </div>
+                        </div>
                     ) : (
-                        <p>There are no listings in this area</p>
+                        <p style={{textAlign: 'center'}}>There are no listings in this area</p>
                     )}
                 </div>
             </div>

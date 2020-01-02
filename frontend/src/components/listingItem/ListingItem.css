@@ -7,6 +7,15 @@
     max-width: 1011.75px;
 }
 
+.imageWrapperForSearchItem {
+    overflow: hidden;
+    position: relative;
+    min-height: 240px;
+    border: 1px solid var(--mainBlack);
+    margin-top: 10px;
+    max-width: 861.75px;
+}
+
 .content {
     position: absolute;
     top: 0;
@@ -21,6 +30,24 @@
 }
 
 .content p {
+    margin: 8px 0;
+    padding-left: 10px;
+}
+
+.contentForSearchItem {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    width: 561.75px;
+    height: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.contentForSearchItem p {
     margin: 8px 0;
     padding-left: 10px;
 }
@@ -92,6 +119,11 @@
 
 .imageWrapper:hover .arrowRight {
     display: block;
+}
+
+.imageWrapperForSearchItem:hover .arrowLeft, 
+.imageWrapperForSearchItem:hover .arrowRight {
+    display: block
 }
 
 .deleteButton {
