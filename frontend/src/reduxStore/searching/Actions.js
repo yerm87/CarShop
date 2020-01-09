@@ -25,3 +25,37 @@ export const resetParameters = () => {
         type: actionTypes.resetParams
     }
 }
+
+export const setMakes = data => {
+    return {
+        type: actionTypes.allMakes,
+        makes: data
+    }
+}
+
+export const setModels = data => {
+    return {
+        type: actionTypes.allModels,
+        models: data
+    }
+}
+
+export const resetModels = () => {
+    return {
+        type: actionTypes.emptyModels
+    }
+}
+
+export const addItemsToModels = data => {
+    return {
+        type: actionTypes.addItemsToModels,
+        items: data
+    }
+}
+
+export const removeItemsFromModels = data => {
+    return {
+        type: actionTypes.removeItemsFromModels,
+        items: data
+    }
+}

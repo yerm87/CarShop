@@ -13539,6 +13539,81 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/sideBar/SideBar.css":
+/*!***************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/sideBar/SideBar.css ***!
+  \***************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".SideBar__mainContainer__vGb0J {\r\n\r\n}\r\n\r\n.SideBar__buttonsContainer__3QMwo {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n}\r\n\r\n.SideBar__buttonsContainer__3QMwo button {\r\n    padding: 10px 18px;\r\n    background: var(--mainBlue);\r\n    font-family: 'Montserrat';\r\n    border: none;\r\n    color: var(--mainWhite);\r\n    cursor: pointer;\r\n}\r\n\r\n.SideBar__filterResults__5yeEH button {\r\n    border-top-left-radius: 14px;\r\n}\r\n\r\n.SideBar__newSearch__3hbbX button {\r\n    border-top-right-radius: 14px;\r\n}\r\n\r\n.SideBar__active__1FLKW button {\r\n    background: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.SideBar__content__1Cg3n {\r\n    background: var(--mainWhite);\r\n}", ""]);
+// Exports
+exports.locals = {
+	"mainContainer": "SideBar__mainContainer__vGb0J",
+	"buttonsContainer": "SideBar__buttonsContainer__3QMwo",
+	"filterResults": "SideBar__filterResults__5yeEH",
+	"newSearch": "SideBar__newSearch__3hbbX",
+	"active": "SideBar__active__1FLKW",
+	"content": "SideBar__content__1Cg3n"
+};
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/sideBar/filterComponent/FilterComponent.css":
+/*!***************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/sideBar/filterComponent/FilterComponent.css ***!
+  \***************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".FilterComponent__mainContainer__2wdck {\r\n    color: var(--mainBlack);\r\n}\r\n\r\n.FilterComponent__resultsNumber__P63Ju {\r\n    padding: 12px 0;\r\n    text-align: center;\r\n    margin: 0;\r\n    border-bottom: 1px solid #d1d1d1;\r\n    font-weight: bold;\r\n}\r\n\r\n.FilterComponent__location__3jnH7, .FilterComponent__condition__LlKCb, .FilterComponent__year__3upAt, .FilterComponent__make__1SIQc, .FilterComponent__price__CnCez, .FilterComponent__mileage__3rMGr, .FilterComponent__model__3jJin {\r\n    padding-bottom: 20px;\r\n    border-bottom: 1px solid #d1d1d1;\r\n}\r\n\r\n.FilterComponent__location__3jnH7 p, .FilterComponent__condition__LlKCb p, .FilterComponent__year__3upAt p, .FilterComponent__make__1SIQc p, .FilterComponent__price__CnCez p,\r\n.FilterComponent__mileage__3rMGr p, .FilterComponent__model__3jJin p {\r\n    margin: 0;\r\n    padding: 14px 0 20px 20px;\r\n    font-weight: bold;\r\n    font-size: 1.1em;\r\n}\r\n\r\n.FilterComponent__selectLocation__13ILr {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: start;\r\n        -ms-flex-pack: start;\r\n            justify-content: start;\r\n    padding-left: 20px;\r\n}\r\n\r\n.FilterComponent__radius__1actv {\r\n    width: 135px;\r\n}\r\n\r\n.FilterComponent__searchRadius__3Dewt {\r\n    font-weight: bold;\r\n    font-size: 0.9em;\r\n}\r\n\r\n.FilterComponent__errorMessage__32A_v {\r\n    font-weight: bold;\r\n    font-size: 0.9em;\r\n    margin-left: 10px;\r\n    color: var(--mainRed);\r\n    opacity: 0;\r\n}\r\n\r\n.FilterComponent__errorMessageDisplay__lhmF2 {\r\n    opacity: 1;\r\n}\r\n\r\n.FilterComponent__selectLocation__13ILr input {\r\n    width: 90px;\r\n    margin-left: 10px;\r\n}\r\n\r\n.FilterComponent__selectLocation__13ILr select {\r\n    width: 115px;\r\n    padding-right: 10px;\r\n}\r\n\r\n.FilterComponent__selectLocation__13ILr input, .FilterComponent__selectLocation__13ILr select,\r\n.FilterComponent__yearSelect__2Xwx2 select, .FilterComponent__selectPrice__33kyf select {\r\n    font-size: 1.1em;\r\n    padding: 10px 0 10px 10px;\r\n    border: 1px solid #d1d1d1;\r\n    border-radius: 3px;\r\n    margin-top: 8px;\r\n}\r\n\r\n.FilterComponent__yearSelect__2Xwx2 {\r\n    padding-left: 10px;\r\n}\r\n\r\n.FilterComponent__invalid__1u00k input {\r\n    border: 1px solid var(--mainRed);\r\n}\r\n\r\n.FilterComponent__conditionButtons__1bxUx {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n}\r\n\r\n.FilterComponent__conditionButtons__1bxUx input {\r\n    width: 1.4em;\r\n    height: 1.4em;\r\n}\r\n\r\n.FilterComponent__conditionButtons__1bxUx .FilterComponent__allElements__15K9C,\r\n.FilterComponent__conditionButtons__1bxUx .FilterComponent__new__3eDcW,\r\n.FilterComponent__conditionButtons__1bxUx .FilterComponent__used__32zB4 {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    padding-left: 25px;\r\n}\r\n\r\n.FilterComponent__yearSelect__2Xwx2, .FilterComponent__selectPrice__33kyf, .FilterComponent__mileageItem__2mhKq {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n}\r\n\r\n.FilterComponent__yearSelect__2Xwx2 label, .FilterComponent__selectPrice__33kyf label {\r\n    display: block;\r\n    font-weight: bold;\r\n}\r\n\r\n.FilterComponent__selectPrice__33kyf {\r\n    padding-left: 10px;\r\n}\r\n\r\n.FilterComponent__yearSelectElement__1Lnol, .FilterComponent__selectPriceElement__1wMti {\r\n    padding-left: 10px;\r\n}\r\n\r\n.FilterComponent__makes__ffLru {\r\n    height: 240px;\r\n    overflow-y: scroll;\r\n}\r\n\r\n.FilterComponent__models__1egS_ {\r\n    height: 200px;\r\n    overflow-y: scroll;\r\n}\r\n\r\n.FilterComponent__makeItem__3X4Zq, .FilterComponent__modelItem__1XjWy {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    padding: 10px 0 0 20px;\r\n}\r\n\r\n.FilterComponent__makeItem__3X4Zq input, .FilterComponent__modelItem__1XjWy input {\r\n    width: 1.2em;\r\n    height: 1.2em;\r\n}\r\n\r\n.FilterComponent__mileageItems__2Wt7p {\r\n    padding-left: 20px;\r\n}\r\n\r\n.FilterComponent__mileageItem__2mhKq {\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    padding-bottom: 10px;\r\n}\r\n\r\n.FilterComponent__mileageItem__2mhKq input {\r\n    width: 1.2em;\r\n    height: 1.2em;\r\n}", ""]);
+// Exports
+exports.locals = {
+	"mainContainer": "FilterComponent__mainContainer__2wdck",
+	"resultsNumber": "FilterComponent__resultsNumber__P63Ju",
+	"location": "FilterComponent__location__3jnH7",
+	"condition": "FilterComponent__condition__LlKCb",
+	"year": "FilterComponent__year__3upAt",
+	"make": "FilterComponent__make__1SIQc",
+	"price": "FilterComponent__price__CnCez",
+	"mileage": "FilterComponent__mileage__3rMGr",
+	"model": "FilterComponent__model__3jJin",
+	"selectLocation": "FilterComponent__selectLocation__13ILr",
+	"radius": "FilterComponent__radius__1actv",
+	"searchRadius": "FilterComponent__searchRadius__3Dewt",
+	"errorMessage": "FilterComponent__errorMessage__32A_v",
+	"errorMessageDisplay": "FilterComponent__errorMessageDisplay__lhmF2",
+	"yearSelect": "FilterComponent__yearSelect__2Xwx2",
+	"selectPrice": "FilterComponent__selectPrice__33kyf",
+	"invalid": "FilterComponent__invalid__1u00k",
+	"conditionButtons": "FilterComponent__conditionButtons__1bxUx",
+	"allElements": "FilterComponent__allElements__15K9C",
+	"new": "FilterComponent__new__3eDcW",
+	"used": "FilterComponent__used__32zB4",
+	"mileageItem": "FilterComponent__mileageItem__2mhKq",
+	"yearSelectElement": "FilterComponent__yearSelectElement__1Lnol",
+	"selectPriceElement": "FilterComponent__selectPriceElement__1wMti",
+	"makes": "FilterComponent__makes__ffLru",
+	"models": "FilterComponent__models__1egS_",
+	"makeItem": "FilterComponent__makeItem__3X4Zq",
+	"modelItem": "FilterComponent__modelItem__1XjWy",
+	"mileageItems": "FilterComponent__mileageItems__2Wt7p"
+};
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/signupComponent/SignupComponent.css":
 /*!*******************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/signupComponent/SignupComponent.css ***!
@@ -13711,7 +13786,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".SearchResults__mainContainer__2UXg4 {\r\n    font-family: 'Montserrat';\r\n}\r\n\r\n.SearchResults__title__2hEMs h1 {\r\n    color: var(--mainBlue);\r\n    padding-left: 20px;\r\n}\r\n\r\n.SearchResults__contentContainer__3BOcP {\r\n    display: grid;\r\n    grid-template-columns: 1fr 3fr;\r\n    width: 90%;\r\n    margin: 0 auto;\r\n}\r\n\r\n.SearchResults__items__3H7EF {\r\n    padding-left: 50px;\r\n}", ""]);
+exports.push([module.i, ".SearchResults__mainContainer__2UXg4 {\r\n    font-family: 'Montserrat';\r\n    background: #f2f2f2;\r\n    min-height: 600px;\r\n    padding-bottom: 20px;\r\n    padding-top: 20px;\r\n}\r\n\r\n.SearchResults__title__2hEMs h1 {\r\n    color: var(--mainBlue);\r\n    margin: 0;\r\n    padding: 20px 0 20px 80px;\r\n}\r\n\r\n.SearchResults__contentContainer__3BOcP {\r\n    display: grid;\r\n    grid-template-columns: 1fr 3fr;\r\n    width: 90%;\r\n    margin: 0 auto;\r\n}\r\n\r\n.SearchResults__items__3H7EF {\r\n    padding-left: 50px;\r\n}", ""]);
 // Exports
 exports.locals = {
 	"mainContainer": "SearchResults__mainContainer__2UXg4",
@@ -66819,15 +66894,18 @@ var ListingItem = function (_Component) {
                 images = _props$item.images;
 
 
+            var priceValue = void 0;
             var modifiedPrice = void 0;
             var modifiedMileage = void 0;
 
-            if (price.length > 3) {
-                var firstNumber = price.substring(0, price.length - 3);
-                var secondNumber = price.substring(price.length - 3, price.length);
+            this.props.searchItem ? priceValue = price.toString() : priceValue = price;
+
+            if (priceValue.length > 3) {
+                var firstNumber = priceValue.substring(0, priceValue.length - 3);
+                var secondNumber = priceValue.substring(priceValue.length - 3, priceValue.length);
                 modifiedPrice = firstNumber + ',' + secondNumber;
             } else {
-                modifiedPrice = price;
+                modifiedPrice = priceValue;
             }
 
             if (mileage.length > 3) {
@@ -66837,6 +66915,8 @@ var ListingItem = function (_Component) {
             } else {
                 modifiedMileage = mileage;
             }
+
+            console.log(price.length);
 
             var listingImages = images.map(function (current) {
                 return _react2.default.createElement(_HeroImage.ImageListing, { img: current });
@@ -68031,9 +68111,7 @@ var SearchComponent = function (_Component) {
         }
 
         return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SearchComponent.__proto__ || Object.getPrototypeOf(SearchComponent)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-            errorMessage: '',
-            allMakes: [],
-            allModels: []
+            errorMessage: ''
         }, _this.changeValue = function (event) {
 
             if (event.target === document.querySelector('#zip')) {
@@ -68051,13 +68129,9 @@ var SearchComponent = function (_Component) {
                         params: _this.props.searchParams.make
                     }).then(function (response) {
                         if (response.data !== '') {
-                            _this.setState({
-                                allModels: response.data
-                            });
+                            _this.props.setModels(response.data);
                         } else {
-                            _this.setState({
-                                allModels: []
-                            });
+                            _this.props.resetModels();
                         }
                     });
                 }, 500);
@@ -68084,13 +68158,13 @@ var SearchComponent = function (_Component) {
         value: function componentWillMount() {
             var _this2 = this;
 
+            this.props.resetModels();
+
             _axios2.default.post('/get_make', {
                 type: 'make',
                 params: ''
             }).then(function (response) {
-                _this2.setState({
-                    allMakes: response.data
-                });
+                _this2.props.setMakes(response.data);
             });
         }
     }, {
@@ -68103,7 +68177,7 @@ var SearchComponent = function (_Component) {
                 zipCodeClasses.push(_SearchComponent2.default.activeZipCode);
             }
 
-            var allMakesOptions = this.state.allMakes.map(function (element) {
+            var allMakesOptions = this.props.allMakes.map(function (element) {
                 return _react2.default.createElement(
                     'option',
                     { value: element },
@@ -68111,7 +68185,7 @@ var SearchComponent = function (_Component) {
                 );
             });
 
-            var selectedModels = this.state.allModels.map(function (element) {
+            var selectedModels = this.props.selectedModels.map(function (element) {
                 return _react2.default.createElement(
                     'option',
                     { value: element },
@@ -68265,7 +68339,9 @@ var SearchComponent = function (_Component) {
 var mapStateToProps = function mapStateToProps(state) {
     return {
         searchParams: state.searchReducer.searchParams,
-        zipValid: state.searchReducer.zipIsValid
+        zipValid: state.searchReducer.zipIsValid,
+        allMakes: state.searchReducer.allMakes,
+        selectedModels: state.searchReducer.selectedModels
     };
 };
 
@@ -68279,11 +68355,736 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
         },
         zipIsNotValid: function zipIsNotValid() {
             return dispatch(actions.zipIsNotValid());
+        },
+        setMakes: function setMakes(data) {
+            return dispatch(actions.setMakes(data));
+        },
+        setModels: function setModels(data) {
+            return dispatch(actions.setModels(data));
+        },
+        resetModels: function resetModels() {
+            return dispatch(actions.resetModels());
         }
     };
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)((0, _reactRouterDom.withRouter)(SearchComponent));
+
+/***/ }),
+
+/***/ "./src/components/sideBar/SideBar.css":
+/*!********************************************!*\
+  !*** ./src/components/sideBar/SideBar.css ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./SideBar.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/sideBar/SideBar.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var id = "!!../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../node_modules/postcss-loader/src/index.js??postcss!./SideBar.css";
+var update = api(id, content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;
+
+/***/ }),
+
+/***/ "./src/components/sideBar/SideBar.js":
+/*!*******************************************!*\
+  !*** ./src/components/sideBar/SideBar.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _SideBar = __webpack_require__(/*! ./SideBar.css */ "./src/components/sideBar/SideBar.css");
+
+var _SideBar2 = _interopRequireDefault(_SideBar);
+
+var _FilterComponent = __webpack_require__(/*! ./filterComponent/FilterComponent */ "./src/components/sideBar/filterComponent/FilterComponent.js");
+
+var _FilterComponent2 = _interopRequireDefault(_FilterComponent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SideBar = function (_Component) {
+    _inherits(SideBar, _Component);
+
+    function SideBar() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, SideBar);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SideBar.__proto__ || Object.getPrototypeOf(SideBar)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+            activeField: true
+        }, _this.filterResultsFieldActive = function () {
+            _this.setState({
+                activeField: true
+            });
+        }, _this.newSearchActive = function () {
+            _this.setState({
+                activeField: false
+            });
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(SideBar, [{
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var arrayOfFilterResults = [_SideBar2.default.filterResults];
+            var arrayOfNewSearch = [_SideBar2.default.newSearch];
+
+            if (this.state.activeField) {
+                arrayOfFilterResults.push(_SideBar2.default.active);
+            } else if (!this.state.activeField) {
+                arrayOfNewSearch.push(_SideBar2.default.active);
+            }
+
+            return _react2.default.createElement(
+                'div',
+                { className: _SideBar2.default.mainContainer },
+                _react2.default.createElement(
+                    'div',
+                    { className: _SideBar2.default.buttonsContainer },
+                    _react2.default.createElement(
+                        'div',
+                        { className: arrayOfFilterResults.join(' ') },
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: function onClick() {
+                                    return _this2.filterResultsFieldActive();
+                                } },
+                            'Filter Results'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: arrayOfNewSearch.join(' ') },
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: function onClick() {
+                                    return _this2.newSearchActive();
+                                } },
+                            'New Search'
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: _SideBar2.default.content },
+                    this.state.activeField ? _react2.default.createElement(_FilterComponent2.default, { resultsNumber: this.props.resultsNumber,
+                        changeHandler: this.props.changeHandler,
+                        makesItems: this.props.makesItems,
+                        modelsItems: this.props.modelsItems,
+                        onChangeInputNumber: this.props.onChangeInputNumber,
+                        zipValid: this.props.zipValid }) : _react2.default.createElement(
+                        'p',
+                        null,
+                        'new search'
+                    )
+                )
+            );
+        }
+    }]);
+
+    return SideBar;
+}(_react.Component);
+
+exports.default = SideBar;
+
+/***/ }),
+
+/***/ "./src/components/sideBar/filterComponent/FilterComponent.css":
+/*!********************************************************************!*\
+  !*** ./src/components/sideBar/filterComponent/FilterComponent.css ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./FilterComponent.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/sideBar/filterComponent/FilterComponent.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var id = "!!../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src/index.js??postcss!./FilterComponent.css";
+var update = api(id, content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;
+
+/***/ }),
+
+/***/ "./src/components/sideBar/filterComponent/FilterComponent.js":
+/*!*******************************************************************!*\
+  !*** ./src/components/sideBar/filterComponent/FilterComponent.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _FilterComponent = __webpack_require__(/*! ./FilterComponent.css */ "./src/components/sideBar/filterComponent/FilterComponent.css");
+
+var _FilterComponent2 = _interopRequireDefault(_FilterComponent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var FilterComponent = function (_Component) {
+    _inherits(FilterComponent, _Component);
+
+    function FilterComponent() {
+        _classCallCheck(this, FilterComponent);
+
+        return _possibleConstructorReturn(this, (FilterComponent.__proto__ || Object.getPrototypeOf(FilterComponent)).apply(this, arguments));
+    }
+
+    _createClass(FilterComponent, [{
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var makesItemsForRender = this.props.makesItems.map(function (item) {
+                return _react2.default.createElement(
+                    'div',
+                    { className: _FilterComponent2.default.makeItem },
+                    _react2.default.createElement('input', { type: 'checkbox',
+                        id: item,
+                        name: 'makes',
+                        value: item,
+                        onChange: _this2.props.changeHandler }),
+                    _react2.default.createElement(
+                        'label',
+                        { htmlFor: item },
+                        item
+                    )
+                );
+            });
+
+            var modelsItemsForRender = this.props.modelsItems.map(function (item) {
+                return _react2.default.createElement(
+                    'div',
+                    { className: _FilterComponent2.default.modelItem },
+                    _react2.default.createElement('input', { type: 'checkbox',
+                        id: item,
+                        name: 'models',
+                        value: item,
+                        onChange: _this2.props.changeHandler }),
+                    _react2.default.createElement(
+                        'label',
+                        { htmlFor: item },
+                        item
+                    )
+                );
+            });
+
+            var inputClasses = [_FilterComponent2.default.selectLocation];
+            if (!this.props.zipValid) {
+                inputClasses.push(_FilterComponent2.default.invalid);
+            }
+
+            var errorMessageClasses = [_FilterComponent2.default.errorMessage];
+            if (!this.props.zipValid) {
+                errorMessageClasses.push(_FilterComponent2.default.errorMessageDisplay);
+            }
+
+            return _react2.default.createElement(
+                'div',
+                { className: _FilterComponent2.default.mainContainer },
+                _react2.default.createElement(
+                    'p',
+                    { className: _FilterComponent2.default.resultsNumber },
+                    this.props.resultsNumber
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: _FilterComponent2.default.location },
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        'Location'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: inputClasses.join(' ') },
+                        _react2.default.createElement(
+                            'div',
+                            { className: _FilterComponent2.default.radius },
+                            _react2.default.createElement(
+                                'div',
+                                { className: _FilterComponent2.default.searchRadius },
+                                'Search radius'
+                            ),
+                            _react2.default.createElement(
+                                'select',
+                                { name: 'radius',
+                                    onChange: this.props.changeHandler },
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '10' },
+                                    '10 miles'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '20' },
+                                    '20 miles'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '30' },
+                                    '30 miles'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '40' },
+                                    '40 miles'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '50' },
+                                    '50 miles'
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            null,
+                            _react2.default.createElement(
+                                'div',
+                                { className: errorMessageClasses.join(' ') },
+                                'zip is not valid'
+                            ),
+                            _react2.default.createElement('input', { type: 'number',
+                                name: 'zip',
+                                placeholder: 'zip code',
+                                onChange: this.props.onChangeInputNumber,
+                                onBlur: this.props.changeHandler })
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: _FilterComponent2.default.condition },
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        'Condition'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: _FilterComponent2.default.conditionButtons },
+                        _react2.default.createElement(
+                            'div',
+                            { className: _FilterComponent2.default.allElements },
+                            _react2.default.createElement(
+                                'label',
+                                { htmlFor: 'all' },
+                                'All'
+                            ),
+                            _react2.default.createElement('input', { type: 'radio',
+                                name: 'condition',
+                                value: 'select',
+                                onChange: this.props.changeHandler })
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: _FilterComponent2.default.new },
+                            _react2.default.createElement(
+                                'label',
+                                { htmlFor: 'condition' },
+                                'New'
+                            ),
+                            _react2.default.createElement('input', { type: 'radio',
+                                name: 'condition',
+                                value: 'New Car',
+                                onChange: this.props.changeHandler })
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: _FilterComponent2.default.used },
+                            _react2.default.createElement(
+                                'label',
+                                { htmlFor: 'condition' },
+                                'Used'
+                            ),
+                            _react2.default.createElement('input', { type: 'radio',
+                                name: 'condition',
+                                value: 'Used Car',
+                                onChange: this.props.changeHandler })
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: _FilterComponent2.default.year },
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        'Year'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: _FilterComponent2.default.yearSelect },
+                        _react2.default.createElement(
+                            'div',
+                            { className: _FilterComponent2.default.yearSelectElement },
+                            _react2.default.createElement(
+                                'label',
+                                { htmlFor: 'minYear' },
+                                'Min'
+                            ),
+                            _react2.default.createElement(
+                                'select',
+                                { name: 'minYear',
+                                    onChange: this.props.changeHandler },
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: 'select' },
+                                    'select'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '2015' },
+                                    '2015'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '2016' },
+                                    '2016'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '2017' },
+                                    '2017'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '2018' },
+                                    '2018'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '2019' },
+                                    '2019'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '2020' },
+                                    '2020'
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { style: { fontWeight: 'bold',
+                                    padding: '36px 20px 0 30px' } },
+                            'to'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: _FilterComponent2.default.yearSelectElement },
+                            _react2.default.createElement(
+                                'label',
+                                { htmlFor: 'maxYear' },
+                                'Max'
+                            ),
+                            _react2.default.createElement(
+                                'select',
+                                { name: 'maxYear',
+                                    onChange: this.props.changeHandler },
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: 'select' },
+                                    'select'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '2020' },
+                                    '2020'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '2019' },
+                                    '2019'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '2018' },
+                                    '2018'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '2017' },
+                                    '2017'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '2016' },
+                                    '2016'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '2015' },
+                                    '2015'
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: _FilterComponent2.default.make },
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        'Make'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: _FilterComponent2.default.makes },
+                        makesItemsForRender
+                    )
+                ),
+                this.props.modelsItems.length > 0 ? _react2.default.createElement(
+                    'div',
+                    { className: _FilterComponent2.default.model },
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        'Model'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: _FilterComponent2.default.models },
+                        modelsItemsForRender
+                    )
+                ) : null,
+                _react2.default.createElement(
+                    'div',
+                    { className: _FilterComponent2.default.price },
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        'Price'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: _FilterComponent2.default.selectPrice },
+                        _react2.default.createElement(
+                            'div',
+                            { className: _FilterComponent2.default.selectPriceElement },
+                            _react2.default.createElement(
+                                'label',
+                                { htmlFor: 'minPrice' },
+                                'Min'
+                            ),
+                            _react2.default.createElement(
+                                'select',
+                                { name: 'minPrice',
+                                    onChange: this.props.changeHandler },
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: 'select' },
+                                    'Min Price'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '8000' },
+                                    '$8,000'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '10000' },
+                                    '$10,000'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '15000' },
+                                    '$15,000'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '20000' },
+                                    '$20,000'
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { style: { fontWeight: 'bold',
+                                    padding: '36px 0 0 10px' } },
+                            'to'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: _FilterComponent2.default.selectPriceElement },
+                            _react2.default.createElement(
+                                'label',
+                                { htmlFor: 'maxPrice' },
+                                'Max'
+                            ),
+                            _react2.default.createElement(
+                                'select',
+                                { name: 'maxPrice',
+                                    onChange: this.props.changeHandler },
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: 'select' },
+                                    'Max Price'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '8000' },
+                                    '$8,000'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '10000' },
+                                    '$10,000'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '15000' },
+                                    '$15,000'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '20000' },
+                                    '$20,000'
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: _FilterComponent2.default.mileage },
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        'Mileage'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: _FilterComponent2.default.mileageItems },
+                        _react2.default.createElement(
+                            'div',
+                            { className: _FilterComponent2.default.mileageItem },
+                            _react2.default.createElement('input', { type: 'radio',
+                                name: 'mileage',
+                                value: '10000',
+                                onChange: this.props.changeHandler }),
+                            _react2.default.createElement(
+                                'label',
+                                { htmlFor: 'mileageItem' },
+                                '10,000 or less'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: _FilterComponent2.default.mileageItem },
+                            _react2.default.createElement('input', { type: 'radio',
+                                name: 'mileage',
+                                value: '15000',
+                                onChange: this.props.changeHandler }),
+                            _react2.default.createElement(
+                                'label',
+                                { htmlFor: 'mileageItem' },
+                                '15,000 or less'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: _FilterComponent2.default.mileageItem },
+                            _react2.default.createElement('input', { type: 'radio',
+                                name: 'mileage',
+                                value: '20000',
+                                onChange: this.props.changeHandler }),
+                            _react2.default.createElement(
+                                'label',
+                                { htmlFor: 'mileageItem' },
+                                '20,000 or less'
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return FilterComponent;
+}(_react.Component);
+
+exports.default = FilterComponent;
 
 /***/ }),
 
@@ -70261,6 +71062,8 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -70287,9 +71090,19 @@ var _ListingItem = __webpack_require__(/*! ../../components/listingItem/ListingI
 
 var _ListingItem2 = _interopRequireDefault(_ListingItem);
 
+var _SideBar = __webpack_require__(/*! ../../components/sideBar/SideBar */ "./src/components/sideBar/SideBar.js");
+
+var _SideBar2 = _interopRequireDefault(_SideBar);
+
+var _Spinner = __webpack_require__(/*! ../../components/UIElements/spinner/Spinner */ "./src/components/UIElements/spinner/Spinner.js");
+
+var _Spinner2 = _interopRequireDefault(_Spinner);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -70301,7 +71114,7 @@ var SearchResults = function (_Component) {
     _inherits(SearchResults, _Component);
 
     function SearchResults() {
-        var _ref;
+        var _ref, _this$state;
 
         var _temp, _this, _ret;
 
@@ -70311,9 +71124,149 @@ var SearchResults = function (_Component) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SearchResults.__proto__ || Object.getPrototypeOf(SearchResults)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SearchResults.__proto__ || Object.getPrototypeOf(SearchResults)).call.apply(_ref, [this].concat(args))), _this), _this.state = (_this$state = {
             zipCodes: [],
-            searchResults: []
+            searchResults: [],
+            filters: null
+        }, _defineProperty(_this$state, 'zipCodes', []), _defineProperty(_this$state, 'loading', true), _this$state), _this.changeHandler = function (event) {
+            var filters = void 0;
+
+            _this.setState({
+                loading: true
+            });
+
+            if (event.target.type === 'checkbox') {
+                filters = _extends({}, _this.state.filters);
+                var arrayOfMakes = filters.makes;
+
+                var arrayOfModels = filters.models;
+
+                if (event.target.checked && event.target.name === 'makes') {
+                    arrayOfMakes.push(event.target.value);
+
+                    _axios2.default.post('/get_model', {
+                        type: 'model',
+                        params: event.target.value
+                    }).then(function (response) {
+                        _this.props.addItemsToModels(response.data);
+                    });
+                } else if (!event.target.checked && event.target.name === 'makes') {
+                    var index = arrayOfMakes.findIndex(function (element) {
+                        return element === event.target.value;
+                    });
+                    arrayOfMakes.splice(index, 1);
+
+                    _axios2.default.post('/get_model', {
+                        type: 'model',
+                        params: event.target.value
+                    }).then(function (response) {
+                        response.data.forEach(function (element) {
+                            var elementsDOM = document.querySelectorAll('.FilterComponent__models__1egS_ input');
+                            elementsDOM.forEach(function (element) {
+                                element.checked = false;
+                            });
+
+                            if (arrayOfModels.includes(element)) {
+                                var _index = arrayOfModels.findIndex(function (current) {
+                                    return current === element;
+                                });
+                                arrayOfModels.splice(_index, 1);
+                            }
+                        });
+                        _this.props.removeItemsFromModels(response.data);
+
+                        var models = document.querySelectorAll('.FilterComponent__models__1egS_ input');
+                        models.forEach(function (model) {
+                            if (_this.state.filters.models.includes(model.value)) {
+                                model.checked = true;
+                            }
+                        });
+                    });
+                } else if (event.target.checked && event.target.name === 'models') {
+                    arrayOfModels.push(event.target.value);
+                } else if (!event.target.checked && event.target.name === 'models') {
+                    var _index2 = arrayOfModels.findIndex(function (element) {
+                        return element === event.target.value;
+                    });
+                    arrayOfModels.splice(_index2, 1);
+                }
+            } else if (event.target.type === 'number') {
+                if (event.target.value.length !== 5 && event.target.value.length !== 0) {
+                    _this.props.zipIsNotValid();
+                } else if (event.target.value.length === 5 || event.target.value.length === 0) {
+                    _this.props.zipIsValid();
+                }
+                filters = _extends({}, _this.state.filters, _defineProperty({}, event.target.name, event.target.value));
+            } else {
+                filters = _extends({}, _this.state.filters, _defineProperty({}, event.target.name, event.target.value));
+            }
+
+            _this.setState({
+                filters: filters
+            }, function () {
+                setTimeout(function () {
+                    var fd = new FormData();
+
+                    for (var filter in _this.state.filters) {
+                        if (filter === 'makes') {
+                            _this.state.filters.makes.forEach(function (current) {
+                                fd.append('makes[]', current);
+                            });
+                        } else if (filter === 'models') {
+                            _this.state.filters.models.forEach(function (current) {
+                                fd.append('models[]', current);
+                            });
+                        } else {
+                            if (_this.state.filters[filter] !== 'select') {
+                                fd.append(filter, _this.state.filters[filter]);
+                            }
+                        }
+                    }
+
+                    if (_this.state.filters.zip === '') {
+                        _axios2.default.post('/filter_items', fd).then(function (response) {
+                            var data = response.data;
+                            data.forEach(function (current) {
+                                current.year = current.year.toString();
+                                current.price = current.price.toString();
+                                current.mileage = current.mileage.toString();
+                            });
+
+                            _this.setState({
+                                searchResults: data,
+                                loading: false
+                            });
+                        });
+                    } else if (_this.state.filters.zip !== '' && _this.props.zipValid) {
+                        _axios2.default.get(_urlsAPI.proxy + 'https://www.zipcodeapi.com/rest/' + _urlsAPI.zipAPIKey + '/radius.json/' + _this.state.filters.zip + '/' + _this.state.filters.radius + '/mile').then(function (response) {
+                            var zipCodes = response.data.zip_codes.map(function (current) {
+                                return current.zip_code;
+                            });
+
+                            zipCodes.forEach(function (element) {
+                                fd.append('zipCodes[]', element);
+                            });
+                            _axios2.default.post('/filter_items_withZipCodes', fd).then(function (response) {
+                                var data = response.data;
+                                data.forEach(function (current) {
+                                    current.year = current.year.toString();
+                                    current.price = current.price.toString();
+                                    current.mileage = current.mileage.toString();
+                                });
+
+                                _this.setState({
+                                    searchResults: data,
+                                    loading: false
+                                });
+                            });
+                        });
+                    }
+                }, 1000);
+            });
+        }, _this.onChangeInputNumber = function (event) {
+            if (event.target.value.length === 6) {
+                event.target.value = event.target.value.slice(0, event.target.value.length - 1);
+            }
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
@@ -70342,11 +71295,77 @@ var SearchResults = function (_Component) {
                             fd.append('zipCodes[]', zip);
                         });
                         _axios2.default.post('/get_items_by_zipCode', fd).then(function (response) {
-                            _this2.props.resetParameters();
+                            var makes = [];
+                            var models = [];
+
+                            if (_this2.props.params['make'] !== 'select') {
+                                makes.push(_this2.props.params['make']);
+                            }
+
+                            if (_this2.props.params['model'] !== 'select') {
+                                models.push(_this2.props.params['model']);
+                            }
+
                             _this2.setState({
-                                searchResults: response.data
+                                searchResults: response.data,
+                                filters: _extends({}, _this2.props.params, {
+                                    minYear: 'select',
+                                    maxYear: 'select',
+                                    makes: makes,
+                                    models: models,
+                                    minPrice: 'select',
+                                    mileage: 'select'
+                                }),
+                                loading: false
                             }, function () {
-                                console.log(_this2.state.searchResults);
+                                _this2.props.resetParameters();
+
+                                var filters = [];
+                                var params = {};
+
+                                for (var filter in _this2.state.filters) {
+                                    if (filter !== 'make' && filter !== 'model') {
+                                        filters.push(filter);
+                                    }
+                                }
+
+                                filters.forEach(function (element) {
+                                    params[element] = _this2.state.filters[element];
+                                });
+
+                                _this2.setState({
+                                    filters: params
+                                }, function () {
+                                    var elements = document.querySelectorAll('.FilterComponent__conditionButtons__1bxUx input');
+
+                                    if (_this2.state.filters.condition === 'select') {
+                                        elements[0].checked = true;
+                                    } else if (_this2.state.filters.condition === 'New Car') {
+                                        elements[1].checked = true;
+                                    } else if (_this2.state.filters.condition === 'Used Car') {
+                                        elements[2].checked = true;
+                                    }
+
+                                    var radius = document.querySelector('.FilterComponent__radius__1actv select option[value="' + _this2.state.filters.radius + '"]');
+                                    radius.selected = true;
+
+                                    var zip = document.querySelector('.FilterComponent__selectLocation__13ILr input');
+                                    zip.value = _this2.state.filters.zip;
+
+                                    var makes = document.querySelectorAll('.FilterComponent__makes__ffLru input');
+                                    makes.forEach(function (make) {
+                                        if (_this2.state.filters.makes.includes(make.value)) {
+                                            make.checked = true;
+                                        }
+                                    });
+
+                                    var models = document.querySelectorAll('.FilterComponent__models__1egS_ input');
+                                    models.forEach(function (model) {
+                                        if (_this2.state.filters.models.includes(model.value)) {
+                                            model.checked = true;
+                                        }
+                                    });
+                                });
                             });
                         });
                     });
@@ -70360,11 +71379,70 @@ var SearchResults = function (_Component) {
                     }
                 }
                 _axios2.default.post('/get_all_items', fd).then(function (response) {
-                    _this2.props.resetParameters();
+                    var makes = [];
+                    var models = [];
+
+                    if (_this2.props.params['make'] !== 'select') {
+                        makes.push(_this2.props.params['make']);
+                    }
+
+                    if (_this2.props.params['model'] !== 'select') {
+                        models.push(_this2.props.params['model']);
+                    }
+
                     _this2.setState({
-                        searchResults: response.data
+                        searchResults: response.data,
+                        filters: _extends({}, _this2.props.params, {
+                            minYear: 'select',
+                            maxYear: 'select',
+                            makes: makes,
+                            models: models,
+                            minPrice: 'select',
+                            mileage: 'select'
+                        }),
+                        loading: false
                     }, function () {
-                        console.log(_this2.state.searchResults);
+                        _this2.props.resetParameters();
+                        var filters = [];
+                        var params = {};
+
+                        for (var filter in _this2.state.filters) {
+                            if (filter !== 'make' && filter !== 'model') {
+                                filters.push(filter);
+                            }
+                        }
+
+                        filters.forEach(function (element) {
+                            params[element] = _this2.state.filters[element];
+                        });
+
+                        _this2.setState({
+                            filters: params
+                        }, function () {
+                            var elements = document.querySelectorAll('.FilterComponent__conditionButtons__1bxUx input');
+
+                            if (_this2.state.filters.condition === 'select') {
+                                elements[0].checked = true;
+                            } else if (_this2.state.filters.condition === 'New Car') {
+                                elements[1].checked = true;
+                            } else if (_this2.state.filters.condition === 'Used Car') {
+                                elements[2].checked = true;
+                            }
+
+                            var makes = document.querySelectorAll('.FilterComponent__makes__ffLru input');
+                            makes.forEach(function (make) {
+                                if (_this2.state.filters.makes.includes(make.value)) {
+                                    make.checked = true;
+                                }
+                            });
+
+                            var models = document.querySelectorAll('.FilterComponent__models__1egS_ input');
+                            models.forEach(function (model) {
+                                if (_this2.state.filters.models.includes(model.value)) {
+                                    model.checked = true;
+                                }
+                            });
+                        });
                     });
                 });
             }
@@ -70372,10 +71450,29 @@ var SearchResults = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
+            var _this3 = this;
+
             var items = this.state.searchResults.map(function (element) {
                 return _react2.default.createElement(_ListingItem2.default, { item: element,
                     searchItem: true });
             });
+
+            var component = void 0;
+
+            if (this.state.searchResults.length > 0) {
+                component = _react2.default.createElement(
+                    'div',
+                    { className: _SearchResults2.default.items },
+                    items
+                );
+            } else {
+                component = _react2.default.createElement(
+                    'p',
+                    { style: { textAlign: 'center',
+                            fontWeight: 'bold' } },
+                    'There are no results with this parameters'
+                );
+            }
             return _react2.default.createElement(
                 'div',
                 { className: _SearchResults2.default.mainContainer },
@@ -70387,26 +71484,42 @@ var SearchResults = function (_Component) {
                         null,
                         'Search Results'
                     ),
-                    this.state.searchResults.length > 0 ? _react2.default.createElement(
+                    _react2.default.createElement(
                         'div',
                         { className: _SearchResults2.default.contentContainer },
                         _react2.default.createElement(
                             'div',
                             null,
-                            'filters'
+                            _react2.default.createElement(_SideBar2.default, { resultsNumber: this.state.searchResults.length + ' results',
+                                changeHandler: function changeHandler(event) {
+                                    return _this3.changeHandler(event);
+                                },
+                                makesItems: this.props.allMakes,
+                                modelsItems: this.props.selectedModels,
+                                onChangeInputNumber: function onChangeInputNumber(event) {
+                                    return _this3.onChangeInputNumber(event);
+                                },
+                                zipValid: this.props.zipValid })
                         ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: _SearchResults2.default.items },
-                            items
-                        )
-                    ) : _react2.default.createElement(
-                        'p',
-                        { style: { textAlign: 'center' } },
-                        'There are no listings in this area'
+                        this.state.loading ? _react2.default.createElement(_Spinner2.default, null) : component
                     )
                 )
             );
+
+            /*    return (
+                    <div className={classes.mainContainer}>
+                    <div className={classes.contentContainer}>
+                        <SideBar resultsNumber={`${this.state.searchResults.length} results`}
+                                 changeHandler={(event) => this.changeHandler(event)}
+                                 makesItems={this.props.allMakes}
+                                 modelsItems={this.props.selectedModels}
+                                 onChangeInputNumber={(event) => this.onChangeInputNumber(event)}
+                                 zipValid={this.props.zipValid} />
+                        <p style={{ textAlign: 'center',
+                                    fontWeight: 'bold' }}>There are no listingss in this area</p>
+                    </div>
+                    </div>
+                )*/
         }
     }]);
 
@@ -70415,7 +71528,10 @@ var SearchResults = function (_Component) {
 
 var mapStateToProps = function mapStateToProps(state) {
     return {
-        params: state.searchReducer.searchParams
+        params: state.searchReducer.searchParams,
+        allMakes: state.searchReducer.allMakes,
+        selectedModels: state.searchReducer.selectedModels,
+        zipValid: state.searchReducer.zipIsValid
     };
 };
 
@@ -70423,6 +71539,18 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
     return {
         resetParameters: function resetParameters() {
             return dispatch(actions.resetParameters());
+        },
+        addItemsToModels: function addItemsToModels(data) {
+            return dispatch(actions.addItemsToModels(data));
+        },
+        removeItemsFromModels: function removeItemsFromModels(data) {
+            return dispatch(actions.removeItemsFromModels(data));
+        },
+        zipIsValid: function zipIsValid() {
+            return dispatch(actions.zipIsValid());
+        },
+        zipIsNotValid: function zipIsNotValid() {
+            return dispatch(actions.zipIsNotValid());
         }
     };
 };
@@ -71862,6 +72990,11 @@ var changeValue = exports.changeValue = 'changeValue';
 var zipIsValid = exports.zipIsValid = 'zipIsValid';
 var zipIsNotValid = exports.zipIsNotValid = 'zipIsNotValid';
 var resetParams = exports.resetParams = 'resetParams';
+var allMakes = exports.allMakes = 'allMakes';
+var allModels = exports.allModels = 'allModels';
+var emptyModels = exports.emptyModels = 'emptyModels';
+var addItemsToModels = exports.addItemsToModels = 'addItemsToModels';
+var removeItemsFromModels = exports.removeItemsFromModels = 'removeItemsFromModels';
 
 /***/ }),
 
@@ -72086,7 +73219,7 @@ exports.default = reducer;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.resetParameters = exports.zipIsNotValid = exports.zipIsValid = exports.onChangeHandler = undefined;
+exports.removeItemsFromModels = exports.addItemsToModels = exports.resetModels = exports.setModels = exports.setMakes = exports.resetParameters = exports.zipIsNotValid = exports.zipIsValid = exports.onChangeHandler = undefined;
 
 var _actionTypes = __webpack_require__(/*! ../actionTypes */ "./src/reduxStore/actionTypes.js");
 
@@ -72117,6 +73250,40 @@ var zipIsNotValid = exports.zipIsNotValid = function zipIsNotValid() {
 var resetParameters = exports.resetParameters = function resetParameters() {
     return {
         type: actionTypes.resetParams
+    };
+};
+
+var setMakes = exports.setMakes = function setMakes(data) {
+    return {
+        type: actionTypes.allMakes,
+        makes: data
+    };
+};
+
+var setModels = exports.setModels = function setModels(data) {
+    return {
+        type: actionTypes.allModels,
+        models: data
+    };
+};
+
+var resetModels = exports.resetModels = function resetModels() {
+    return {
+        type: actionTypes.emptyModels
+    };
+};
+
+var addItemsToModels = exports.addItemsToModels = function addItemsToModels(data) {
+    return {
+        type: actionTypes.addItemsToModels,
+        items: data
+    };
+};
+
+var removeItemsFromModels = exports.removeItemsFromModels = function removeItemsFromModels(data) {
+    return {
+        type: actionTypes.removeItemsFromModels,
+        items: data
     };
 };
 
@@ -72155,7 +73322,9 @@ var initialState = {
         radius: '10',
         zip: ''
     },
-    zipIsValid: true
+    zipIsValid: true,
+    allMakes: [],
+    selectedModels: []
 };
 
 var reducer = function reducer() {
@@ -72185,6 +73354,34 @@ var reducer = function reducer() {
                     radius: '10',
                     zip: ''
                 }
+            });
+        case actionTypes.allMakes:
+            return _extends({}, state, {
+                allMakes: action.makes
+            });
+        case actionTypes.allModels:
+            return _extends({}, state, {
+                selectedModels: action.models
+            });
+        case actionTypes.emptyModels:
+            return _extends({}, state, {
+                selectedModels: []
+            });
+        case actionTypes.addItemsToModels:
+            var updatedModels = state.selectedModels.concat(action.items);
+
+            return _extends({}, state, {
+                selectedModels: updatedModels
+            });
+        case actionTypes.removeItemsFromModels:
+            var changedModels = [];
+            state.selectedModels.forEach(function (element) {
+                if (!action.items.includes(element)) {
+                    changedModels.push(element);
+                }
+            });
+            return _extends({}, state, {
+                selectedModels: changedModels
             });
         default:
             return state;

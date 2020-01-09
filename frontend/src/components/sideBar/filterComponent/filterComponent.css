@@ -1,0 +1,148 @@
+.mainContainer {
+    color: var(--mainBlack);
+}
+
+.resultsNumber {
+    padding: 12px 0;
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px solid #d1d1d1;
+    font-weight: bold;
+}
+
+.location, .condition, .year, .make, .price, .mileage, .model {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.location p, .condition p, .year p, .make p, .price p,
+.mileage p, .model p {
+    margin: 0;
+    padding: 14px 0 20px 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.selectLocation {
+    display: flex;
+    justify-content: start;
+    padding-left: 20px;
+}
+
+.radius {
+    width: 135px;
+}
+
+.searchRadius {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.errorMessage {
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-left: 10px;
+    color: var(--mainRed);
+    opacity: 0;
+}
+
+.errorMessageDisplay {
+    opacity: 1;
+}
+
+.selectLocation input {
+    width: 90px;
+    margin-left: 10px;
+}
+
+.selectLocation select {
+    width: 115px;
+    padding-right: 10px;
+}
+
+.selectLocation input, .selectLocation select,
+.yearSelect select, .selectPrice select {
+    font-size: 1.1em;
+    padding: 10px 0 10px 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    margin-top: 8px;
+}
+
+.yearSelect {
+    padding-left: 10px;
+}
+
+.invalid input {
+    border: 1px solid var(--mainRed);
+}
+
+.conditionButtons {
+    display: flex;
+    align-items: center;
+}
+
+.conditionButtons input {
+    width: 1.4em;
+    height: 1.4em;
+}
+
+.conditionButtons .allElements,
+.conditionButtons .new,
+.conditionButtons .used {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.yearSelect, .selectPrice, .mileageItem {
+    display: flex;
+}
+
+.yearSelect label, .selectPrice label {
+    display: block;
+    font-weight: bold;
+}
+
+.selectPrice {
+    padding-left: 10px;
+}
+
+.yearSelectElement, .selectPriceElement {
+    padding-left: 10px;
+}
+
+.makes {
+    height: 240px;
+    overflow-y: scroll;
+}
+
+.models {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.makeItem, .modelItem {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 0 20px;
+}
+
+.makeItem input, .modelItem input {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.mileageItems {
+    padding-left: 20px;
+}
+
+.mileageItem {
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.mileageItem input {
+    width: 1.2em;
+    height: 1.2em;
+}

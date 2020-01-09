@@ -7,19 +7,17 @@ import axios from 'axios';
 
 class SearchComponent extends Component {
     state={
-        errorMessage: '',
-        allMakes: [],
-        allModels: []
+        errorMessage: ''
     }
 
     componentWillMount(){
+        this.props.resetModels();
+        
         axios.post('/get_make', {
             type: 'make',
             params: ''
         }).then(response => {
-            this.setState({
-                allMakes: response.data
-            })
+            this.props.setMakes(response.data);
         })
     }
 
@@ -40,13 +38,9 @@ class SearchComponent extends Component {
                     params: this.props.searchParams.make
                 }).then(response => {
                     if(response.data !== ''){
-                        this.setState({
-                            allModels: response.data
-                        });
+                        this.props.setModels(response.data);
                     } else {
-                        this.setState({
-                            allModels: []
-                        })
+                        this.props.resetModels();
                     }
                 })
             }, 500)
@@ -77,11 +71,11 @@ class SearchComponent extends Component {
             zipCodeClasses.push(classes.activeZipCode);
         }
 
-        const allMakesOptions = this.state.allMakes.map(element => {
+        const allMakesOptions = this.props.allMakes.map(element => {
             return <option value={element}>{element}</option>
         })
 
-        const selectedModels = this.state.allModels.map(element => {
+        const selectedModels = this.props.selectedModels.map(element => {
             return <option value={element}>{element}</option>
         })
 
@@ -142,7 +136,9 @@ class SearchComponent extends Component {
 const mapStateToProps = state => {
     return {
         searchParams: state.searchReducer.searchParams,
-        zipValid: state.searchReducer.zipIsValid
+        zipValid: state.searchReducer.zipIsValid,
+        allMakes: state.searchReducer.allMakes,
+        selectedModels: state.searchReducer.selectedModels
     }
 }
 
@@ -150,7 +146,10 @@ const mapDispatchToProps = dispatch => {
     return {
         onChangeHandler: (value, name) => dispatch(actions.onChangeHandler(value, name)),
         zipIsValid: () => dispatch(actions.zipIsValid()),
-        zipIsNotValid: () => dispatch(actions.zipIsNotValid())
+        zipIsNotValid: () => dispatch(actions.zipIsNotValid()),
+        setMakes: (data) => dispatch(actions.setMakes(data)),
+        setModels: (data) => dispatch(actions.setModels(data)),
+        resetModels: () => dispatch(actions.resetModels())
     }
 }
 

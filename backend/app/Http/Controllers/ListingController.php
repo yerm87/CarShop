@@ -183,4 +183,161 @@ class ListingController extends Controller
 
         return $modifiedListings;
     }
+
+    private function filter($request, $listings){
+        foreach($listings as $listing){
+            $listing->price = intval($listing->price);
+            $listing->year = intval($listing->year);
+            $listing->mileage = intval($listing->mileage);
+
+            $images = array();
+
+            foreach($listing->images as $image){
+                array_push($images, base64_encode($image));
+            }
+
+            $listing->images = $images;
+        }
+
+        $updatedListings = $listings;
+        
+        if($request->condition){
+            $updatedListings = array();
+            
+            foreach($listings as $listing){
+                if($listing->condition === $request->condition){
+                    array_push($updatedListings, $listing);
+                }
+            }
+
+            $listings = $updatedListings;
+        }
+
+        if($request->minYear){
+            $updatedListings = array();
+            
+            foreach($listings as $listing){
+                if($listing->year >= intval($request->minYear)){
+                    array_push($updatedListings, $listing);
+                }
+            }
+
+            $listings = $updatedListings;
+        }
+
+        if($request->maxYear){
+            $updatedListings = array();
+            
+            foreach($listings as $listing){
+                if($listing->year <= intval($request->maxYear)){
+                    array_push($updatedListings, $listing);
+                }
+            }
+
+            $listings = $updatedListings;
+        }
+
+        if($request->maxYear){
+            $updatedListings = array();
+            
+            foreach($listings as $listing){
+                if($listing->year <= intval($request->maxYear)){
+                    array_push($updatedListings, $listing);
+                }
+            }
+
+            $listings = $updatedListings;
+        }
+
+        if($request->minPrice){
+            $updatedListings = array();
+            
+            foreach($listings as $listing){
+                if($listing->price >= intval($request->minPrice)){
+                    array_push($updatedListings, $listing);
+                }
+            }
+
+            $listings = $updatedListings;
+        }
+
+        if($request->maxPrice){
+            $updatedListings = array();
+            
+            foreach($listings as $listing){
+                if($listing->price <= intval($request->maxPrice)){
+                    array_push($updatedListings, $listing);
+                }
+            }
+
+            $listings = $updatedListings;
+        }
+
+        if($request->mileage){
+            $updatedListings = array();
+            
+            foreach($listings as $listing){
+                if($listing->mileage <= intval($request->mileage)){
+                    array_push($updatedListings, $listing);
+                }
+            }
+
+            $listings = $updatedListings;
+        }
+
+        if($request->makes){
+            $updatedListings = array();
+
+            foreach($listings as $listing){
+                if(in_array($listing->make, $request->makes)){
+                    array_push($updatedListings, $listing);
+                }
+            }
+
+            $listings = $updatedListings;
+        }
+
+        if($request->models){
+            $updatedListings = array();
+
+            foreach($listings as $listing){
+                if(in_array($listing->model, $request->models)){
+                    array_push($updatedListings, $listing);
+                }
+            }
+
+            $listings = $updatedListings;
+        }
+
+        return $updatedListings;
+    }
+
+    public function filterItems(Request $request){
+
+        $listings = Listing::all();
+
+        $updatedListings = $this->filter($request, $listings);
+
+        return $updatedListings;
+    }
+
+    public function filterItemsWithZipCodes(Request $request){
+        $zipCodes = $request->zipCodes;
+
+        $listingsByZip = array();
+
+        foreach($zipCodes as $zip){
+            $listings = Listing::where([
+                'zip' => $zip
+            ])->get();
+
+            foreach($listings as $listing){
+                array_push($listingsByZip, $listing);
+            }
+        }
+
+        $updatedListings = $this->filter($request, $listingsByZip);
+
+        return $updatedListings;
+    }
 }

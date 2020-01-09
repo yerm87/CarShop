@@ -21,15 +21,18 @@ class ListingItem extends Component {
         const {_id, condition, price, mileage, year, make, model, exteriorColor, transmission,
         interiorColor, fuelType, images} = this.props.item;
 
+        let priceValue;
         let modifiedPrice;
         let modifiedMileage;
 
-        if(price.length > 3){
-            const firstNumber = price.substring(0, price.length -3);
-            const secondNumber = price.substring(price.length-3, price.length);
+        this.props.searchItem ? priceValue = price.toString() : priceValue = price;
+
+        if(priceValue.length > 3){
+            const firstNumber = priceValue.substring(0, priceValue.length -3);
+            const secondNumber = priceValue.substring(priceValue.length-3, priceValue.length);
             modifiedPrice = `${firstNumber},${secondNumber}`;
         } else {
-            modifiedPrice = price;
+            modifiedPrice = priceValue;
         }
 
         if(mileage.length > 3){
@@ -39,6 +42,8 @@ class ListingItem extends Component {
         } else {
             modifiedMileage = mileage;
         }
+
+        console.log(price.length);
 
         const listingImages = images.map(current => <ImageListing img={current} />);
         const wrapperClass = this.props.searchItem ? classes.imageWrapperForSearchItem : 

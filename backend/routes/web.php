@@ -342,3 +342,9 @@ Route::post('/get_certain_cities', function(Request $request){
 Route::post('/get_items_by_zipCode', 'ListingController@getItemsByZipCode');
 
 Route::post('/get_all_items', 'ListingController@getAllItems');
+
+
+//API to filter items
+Route::post('/filter_items', 'ListingController@filterItems');
+
+Route::post('/filter_items_withZipCodes', 'ListingController@filterItemsWithZipCodes');

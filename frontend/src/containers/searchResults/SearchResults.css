@@ -1,10 +1,15 @@
 .mainContainer {
     font-family: 'Montserrat';
+    background: #f2f2f2;
+    min-height: 600px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .title h1 {
     color: var(--mainBlue);
-    padding-left: 20px;
+    margin: 0;
+    padding: 20px 0 20px 80px;
 }
 
 .contentContainer {

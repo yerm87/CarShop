@@ -9,7 +9,9 @@ const initialState = {
         radius: '10',
         zip: ''
     },
-    zipIsValid: true
+    zipIsValid: true,
+    allMakes: [],
+    selectedModels: []
 }
 
 const reducer = (state=initialState, action) => {
@@ -43,6 +45,39 @@ const reducer = (state=initialState, action) => {
                     radius: '10',
                     zip: ''
                 }
+            }
+        case(actionTypes.allMakes):
+            return {
+                ...state,
+                allMakes: action.makes
+            }
+        case(actionTypes.allModels):
+            return {
+                ...state,
+                selectedModels: action.models
+            }
+        case(actionTypes.emptyModels):
+            return {
+                ...state,
+                selectedModels: []
+            }
+        case(actionTypes.addItemsToModels):
+            const updatedModels = state.selectedModels.concat(action.items);
+
+            return {
+                ...state,
+                selectedModels: updatedModels
+            }
+        case(actionTypes.removeItemsFromModels):
+            const changedModels = [];
+            state.selectedModels.forEach(element => {
+                if(!action.items.includes(element)){
+                    changedModels.push(element);
+                }
+            })
+            return {
+                ...state,
+                selectedModels: changedModels
             }
         default:
             return state;
