@@ -13550,7 +13550,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".SideBar__mainContainer__vGb0J {\r\n\r\n}\r\n\r\n.SideBar__buttonsContainer__3QMwo {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n}\r\n\r\n.SideBar__buttonsContainer__3QMwo button {\r\n    padding: 10px 18px;\r\n    background: var(--mainBlue);\r\n    font-family: 'Montserrat';\r\n    border: none;\r\n    color: var(--mainWhite);\r\n    cursor: pointer;\r\n}\r\n\r\n.SideBar__filterResults__5yeEH button {\r\n    border-top-left-radius: 14px;\r\n}\r\n\r\n.SideBar__newSearch__3hbbX button {\r\n    border-top-right-radius: 14px;\r\n}\r\n\r\n.SideBar__active__1FLKW button {\r\n    background: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.SideBar__content__1Cg3n {\r\n    background: var(--mainWhite);\r\n}", ""]);
+exports.push([module.i, ".SideBar__mainContainer__vGb0J {\r\n\r\n}\r\n\r\n.SideBar__buttonsContainer__3QMwo {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n}\r\n\r\n.SideBar__buttonsContainer__3QMwo button {\r\n    padding: 10px 18px;\r\n    background: var(--mainBlue);\r\n    font-family: 'Montserrat';\r\n    border: none;\r\n    color: var(--mainWhite);\r\n    cursor: pointer;\r\n    font-weight: bold;\r\n}\r\n\r\n.SideBar__filterResults__5yeEH button {\r\n    border-top-left-radius: 14px;\r\n}\r\n\r\n.SideBar__newSearch__3hbbX button {\r\n    border-top-right-radius: 14px;\r\n}\r\n\r\n.SideBar__active__1FLKW button {\r\n    background: var(--mainWhite);\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.SideBar__content__1Cg3n {\r\n    background: var(--mainWhite);\r\n}", ""]);
 // Exports
 exports.locals = {
 	"mainContainer": "SideBar__mainContainer__vGb0J",
@@ -13608,6 +13608,27 @@ exports.locals = {
 	"makeItem": "FilterComponent__makeItem__3X4Zq",
 	"modelItem": "FilterComponent__modelItem__1XjWy",
 	"mileageItems": "FilterComponent__mileageItems__2Wt7p"
+};
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/sideBar/newSearch/NewSearch.css":
+/*!***************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/sideBar/newSearch/NewSearch.css ***!
+  \***************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".NewSearch__container__3zru8 {\r\n    padding: 25px 20px;\r\n}\r\n\r\n.NewSearch__container__3zru8 select {\r\n    width: 200px;\r\n    height: 40px;\r\n    margin: 0 auto;\r\n    border-bottom: none;\r\n    font-family: 'Montserrat';\r\n    font-size: 1.1em\r\n}\r\n\r\n.NewSearch__container__3zru8 div {\r\n    text-align: center;\r\n}\r\n\r\n.NewSearch__container__3zru8 button {\r\n    background: transparent;\r\n    color: var(--mainBlue);\r\n    font-weight: bold;\r\n    border: none;\r\n    font-size: 1.3em;\r\n    text-align: center;\r\n    margin-top: 15px;\r\n}\r\n\r\n.NewSearch__container__3zru8 button:hover {\r\n    cursor: pointer;\r\n}", ""]);
+// Exports
+exports.locals = {
+	"container": "NewSearch__container__3zru8"
 };
 module.exports = exports;
 
@@ -68090,6 +68111,8 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -68159,6 +68182,8 @@ var SearchComponent = function (_Component) {
             var _this2 = this;
 
             this.props.resetModels();
+            this.props.resetParameters();
+            this.props.zipIsValid();
 
             _axios2.default.post('/get_make', {
                 type: 'make',
@@ -68346,7 +68371,7 @@ var mapStateToProps = function mapStateToProps(state) {
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-    return {
+    return _defineProperty({
         onChangeHandler: function onChangeHandler(value, name) {
             return dispatch(actions.onChangeHandler(value, name));
         },
@@ -68364,8 +68389,13 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
         },
         resetModels: function resetModels() {
             return dispatch(actions.resetModels());
+        },
+        resetParameters: function resetParameters() {
+            return dispatch(actions.resetParameters());
         }
-    };
+    }, 'zipIsValid', function zipIsValid() {
+        return dispatch(actions.zipIsValid());
+    });
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)((0, _reactRouterDom.withRouter)(SearchComponent));
@@ -68432,6 +68462,18 @@ var _FilterComponent = __webpack_require__(/*! ./filterComponent/FilterComponent
 
 var _FilterComponent2 = _interopRequireDefault(_FilterComponent);
 
+var _NewSearch = __webpack_require__(/*! ./newSearch/NewSearch */ "./src/components/sideBar/newSearch/NewSearch.js");
+
+var _NewSearch2 = _interopRequireDefault(_NewSearch);
+
+var _reactRedux = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+
+var _Actions = __webpack_require__(/*! ../../reduxStore/searching/Actions */ "./src/reduxStore/searching/Actions.js");
+
+var actions = _interopRequireWildcard(_Actions);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -68454,16 +68496,10 @@ var SideBar = function (_Component) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SideBar.__proto__ || Object.getPrototypeOf(SideBar)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-            activeField: true
-        }, _this.filterResultsFieldActive = function () {
-            _this.setState({
-                activeField: true
-            });
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SideBar.__proto__ || Object.getPrototypeOf(SideBar)).call.apply(_ref, [this].concat(args))), _this), _this.filterResultsFieldActive = function () {
+            _this.props.filterComponentActive();
         }, _this.newSearchActive = function () {
-            _this.setState({
-                activeField: false
-            });
+            _this.props.filterComponentNotActive();
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
@@ -68475,9 +68511,9 @@ var SideBar = function (_Component) {
             var arrayOfFilterResults = [_SideBar2.default.filterResults];
             var arrayOfNewSearch = [_SideBar2.default.newSearch];
 
-            if (this.state.activeField) {
+            if (this.props.filterComponent) {
                 arrayOfFilterResults.push(_SideBar2.default.active);
-            } else if (!this.state.activeField) {
+            } else if (!this.props.filterComponent) {
                 arrayOfNewSearch.push(_SideBar2.default.active);
             }
 
@@ -68513,16 +68549,12 @@ var SideBar = function (_Component) {
                 _react2.default.createElement(
                     'div',
                     { className: _SideBar2.default.content },
-                    this.state.activeField ? _react2.default.createElement(_FilterComponent2.default, { resultsNumber: this.props.resultsNumber,
+                    this.props.filterComponent ? _react2.default.createElement(_FilterComponent2.default, { resultsNumber: this.props.resultsNumber,
                         changeHandler: this.props.changeHandler,
                         makesItems: this.props.makesItems,
                         modelsItems: this.props.modelsItems,
                         onChangeInputNumber: this.props.onChangeInputNumber,
-                        zipValid: this.props.zipValid }) : _react2.default.createElement(
-                        'p',
-                        null,
-                        'new search'
-                    )
+                        zipValid: this.props.zipValid }) : _react2.default.createElement(_NewSearch2.default, { searchItems: this.props.searchItems })
                 )
             );
         }
@@ -68531,7 +68563,24 @@ var SideBar = function (_Component) {
     return SideBar;
 }(_react.Component);
 
-exports.default = SideBar;
+var mapStateToProps = function mapStateToProps(state) {
+    return {
+        filterComponent: state.searchReducer.filterComponent
+    };
+};
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+    return {
+        filterComponentActive: function filterComponentActive() {
+            return dispatch(actions.filterComponentActive());
+        },
+        filterComponentNotActive: function filterComponentNotActive() {
+            return dispatch(actions.filterComponentNotActive());
+        }
+    };
+};
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(SideBar);
 
 /***/ }),
 
@@ -69085,6 +69134,281 @@ var FilterComponent = function (_Component) {
 }(_react.Component);
 
 exports.default = FilterComponent;
+
+/***/ }),
+
+/***/ "./src/components/sideBar/newSearch/NewSearch.css":
+/*!********************************************************!*\
+  !*** ./src/components/sideBar/newSearch/NewSearch.css ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src??postcss!./NewSearch.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/sideBar/newSearch/NewSearch.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var id = "!!../../../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../../../node_modules/postcss-loader/src/index.js??postcss!./NewSearch.css";
+var update = api(id, content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;
+
+/***/ }),
+
+/***/ "./src/components/sideBar/newSearch/NewSearch.js":
+/*!*******************************************************!*\
+  !*** ./src/components/sideBar/newSearch/NewSearch.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _NewSearch = __webpack_require__(/*! ./NewSearch.css */ "./src/components/sideBar/newSearch/NewSearch.css");
+
+var _NewSearch2 = _interopRequireDefault(_NewSearch);
+
+var _reactRedux = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+
+var _Actions = __webpack_require__(/*! ../../../reduxStore/searching/Actions */ "./src/reduxStore/searching/Actions.js");
+
+var actions = _interopRequireWildcard(_Actions);
+
+var _axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var NewSearch = function (_Component) {
+    _inherits(NewSearch, _Component);
+
+    function NewSearch() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, NewSearch);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = NewSearch.__proto__ || Object.getPrototypeOf(NewSearch)).call.apply(_ref, [this].concat(args))), _this), _this.changeValue = function (event) {
+
+            _this.props.onChangeHandler(event.target.value, event.target.name);
+
+            if (event.target === document.querySelector('#makesNewSearch')) {
+                setTimeout(function () {
+                    _axios2.default.post('/get_model', {
+                        type: 'model',
+                        params: _this.props.searchParams.make
+                    }).then(function (response) {
+                        if (response.data !== '') {
+                            _this.props.setModels(response.data);
+                        } else {
+                            _this.props.resetModels();
+                        }
+                    });
+                }, 500);
+            }
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(NewSearch, [{
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var makes = this.props.allMakes.map(function (element) {
+                return _react2.default.createElement(
+                    'option',
+                    { value: element },
+                    element
+                );
+            });
+
+            var selectedModelsRender = this.props.selectedModels.map(function (element) {
+                return _react2.default.createElement(
+                    'option',
+                    { value: element },
+                    element
+                );
+            });
+
+            return _react2.default.createElement(
+                'div',
+                { className: _NewSearch2.default.container },
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    _react2.default.createElement(
+                        'select',
+                        { name: 'condition',
+                            onChange: function onChange(event) {
+                                return _this2.changeValue(event);
+                            } },
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'select' },
+                            'New & Used Cars'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'New Car' },
+                            'New'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Used Car' },
+                            'Used'
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    _react2.default.createElement(
+                        'select',
+                        { id: 'makesNewSearch',
+                            name: 'make',
+                            onChange: function onChange(event) {
+                                return _this2.changeValue(event);
+                            } },
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'select' },
+                            'All Makes'
+                        ),
+                        makes
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    _react2.default.createElement(
+                        'select',
+                        { name: 'model',
+                            onChange: function onChange(event) {
+                                return _this2.changeValue(event);
+                            } },
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'select' },
+                            'All Models'
+                        ),
+                        selectedModelsRender
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    _react2.default.createElement(
+                        'select',
+                        { name: 'maxPrice',
+                            style: { borderBottom: '1px solid rgb(169, 169, 169)' },
+                            onChange: function onChange(event) {
+                                return _this2.changeValue(event);
+                            } },
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'select' },
+                            'Max Price'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: '6000' },
+                            '$6,000'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: '8000' },
+                            '$8,000'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: '10000' },
+                            '$10,000'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: '15000' },
+                            '$15,000'
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    _react2.default.createElement(
+                        'button',
+                        { onClick: this.props.searchItems },
+                        'Search'
+                    )
+                )
+            );
+        }
+    }]);
+
+    return NewSearch;
+}(_react.Component);
+
+var mapStateToProps = function mapStateToProps(state) {
+    return {
+        allMakes: state.searchReducer.allMakes,
+        selectedModels: state.searchReducer.selectedModels,
+        searchParams: state.searchReducer.searchParams
+    };
+};
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+    return {
+        onChangeHandler: function onChangeHandler(value, name) {
+            return dispatch(actions.onChangeHandler(value, name));
+        },
+        setModels: function setModels(data) {
+            return dispatch(actions.setModels(data));
+        },
+        resetModels: function resetModels() {
+            return dispatch(actions.resetModels());
+        }
+    };
+};
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(NewSearch);
 
 /***/ }),
 
@@ -71114,7 +71438,7 @@ var SearchResults = function (_Component) {
     _inherits(SearchResults, _Component);
 
     function SearchResults() {
-        var _ref, _this$state;
+        var _ref;
 
         var _temp, _this, _ret;
 
@@ -71124,16 +71448,187 @@ var SearchResults = function (_Component) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SearchResults.__proto__ || Object.getPrototypeOf(SearchResults)).call.apply(_ref, [this].concat(args))), _this), _this.state = (_this$state = {
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SearchResults.__proto__ || Object.getPrototypeOf(SearchResults)).call.apply(_ref, [this].concat(args))), _this), _this.state = _defineProperty({
             zipCodes: [],
             searchResults: [],
             filters: null
-        }, _defineProperty(_this$state, 'zipCodes', []), _defineProperty(_this$state, 'loading', true), _this$state), _this.changeHandler = function (event) {
-            var filters = void 0;
+        }, 'zipCodes', []), _this.init = function () {
+            _this.props.loadingActive();
 
-            _this.setState({
-                loading: true
-            });
+            if (_this.props.params.zip !== '') {
+                _axios2.default.get(_urlsAPI.proxy + 'https://www.zipcodeapi.com/rest/' + _urlsAPI.zipAPIKey + '/radius.json/' + _this.props.params.zip + '/' + _this.props.params.radius + '/mile').then(function (response) {
+                    var zipCodes = response.data.zip_codes.map(function (current) {
+                        return current.zip_code;
+                    });
+
+                    _this.setState({
+                        zipCodes: zipCodes
+                    }, function () {
+                        var fd = new FormData();
+
+                        for (var param in _this.props.params) {
+                            if (_this.props.params[param] !== 'select' && param !== 'radius' && param !== 'zip') {
+                                fd.append(param, _this.props.params[param]);
+                            }
+                        }
+                        _this.state.zipCodes.forEach(function (zip) {
+                            fd.append('zipCodes[]', zip);
+                        });
+                        _axios2.default.post('/get_items_by_zipCode', fd).then(function (response) {
+                            var makes = [];
+                            var models = [];
+
+                            if (_this.props.params['make'] !== 'select') {
+                                makes.push(_this.props.params['make']);
+                            }
+
+                            if (_this.props.params['model'] !== 'select') {
+                                models.push(_this.props.params['model']);
+                            }
+
+                            _this.setState({
+                                searchResults: response.data,
+                                filters: _extends({}, _this.props.params, {
+                                    minYear: 'select',
+                                    maxYear: 'select',
+                                    makes: makes,
+                                    models: models,
+                                    minPrice: 'select',
+                                    mileage: 'select'
+                                })
+                            }, function () {
+                                _this.props.resetParameters();
+                                _this.props.loadingNotActive();
+
+                                var filters = [];
+                                var params = {};
+
+                                for (var filter in _this.state.filters) {
+                                    if (filter !== 'make' && filter !== 'model') {
+                                        filters.push(filter);
+                                    }
+                                }
+
+                                filters.forEach(function (element) {
+                                    params[element] = _this.state.filters[element];
+                                });
+
+                                _this.setState({
+                                    filters: params
+                                }, function () {
+                                    var elements = document.querySelectorAll('.FilterComponent__conditionButtons__1bxUx input');
+
+                                    if (_this.state.filters.condition === 'select') {
+                                        elements[0].checked = true;
+                                    } else if (_this.state.filters.condition === 'New Car') {
+                                        elements[1].checked = true;
+                                    } else if (_this.state.filters.condition === 'Used Car') {
+                                        elements[2].checked = true;
+                                    }
+
+                                    var radius = document.querySelector('.FilterComponent__radius__1actv select option[value="' + _this.state.filters.radius + '"]');
+                                    radius.selected = true;
+
+                                    var zip = document.querySelector('.FilterComponent__selectLocation__13ILr input');
+                                    zip.value = _this.state.filters.zip;
+
+                                    var makes = document.querySelectorAll('.FilterComponent__makes__ffLru input');
+                                    makes.forEach(function (make) {
+                                        if (_this.state.filters.makes.includes(make.value)) {
+                                            make.checked = true;
+                                        }
+                                    });
+
+                                    var models = document.querySelectorAll('.FilterComponent__models__1egS_ input');
+                                    models.forEach(function (model) {
+                                        if (_this.state.filters.models.includes(model.value)) {
+                                            model.checked = true;
+                                        }
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            } else {
+                var fd = new FormData();
+
+                for (var param in _this.props.params) {
+                    if (_this.props.params[param] !== 'select') {
+                        fd.append(param, _this.props.params[param]);
+                    }
+                }
+                _axios2.default.post('/get_all_items', fd).then(function (response) {
+                    var makes = [];
+                    var models = [];
+
+                    if (_this.props.params['make'] !== 'select') {
+                        makes.push(_this.props.params['make']);
+                    }
+
+                    if (_this.props.params['model'] !== 'select') {
+                        models.push(_this.props.params['model']);
+                    }
+
+                    _this.setState({
+                        searchResults: response.data,
+                        filters: _extends({}, _this.props.params, {
+                            minYear: 'select',
+                            maxYear: 'select',
+                            makes: makes,
+                            models: models,
+                            minPrice: 'select',
+                            mileage: 'select'
+                        })
+                    }, function () {
+                        _this.props.resetParameters();
+                        _this.props.loadingNotActive();
+
+                        var filters = [];
+                        var params = {};
+
+                        for (var filter in _this.state.filters) {
+                            if (filter !== 'make' && filter !== 'model') {
+                                filters.push(filter);
+                            }
+                        }
+
+                        filters.forEach(function (element) {
+                            params[element] = _this.state.filters[element];
+                        });
+
+                        _this.setState({
+                            filters: params
+                        }, function () {
+                            var elements = document.querySelectorAll('.FilterComponent__conditionButtons__1bxUx input');
+
+                            if (_this.state.filters.condition === 'select') {
+                                elements[0].checked = true;
+                            } else if (_this.state.filters.condition === 'New Car') {
+                                elements[1].checked = true;
+                            } else if (_this.state.filters.condition === 'Used Car') {
+                                elements[2].checked = true;
+                            }
+
+                            var makes = document.querySelectorAll('.FilterComponent__makes__ffLru input');
+                            makes.forEach(function (make) {
+                                if (_this.state.filters.makes.includes(make.value)) {
+                                    make.checked = true;
+                                }
+                            });
+
+                            var models = document.querySelectorAll('.FilterComponent__models__1egS_ input');
+                            models.forEach(function (model) {
+                                if (_this.state.filters.models.includes(model.value)) {
+                                    model.checked = true;
+                                }
+                            });
+                        });
+                    });
+                });
+            }
+        }, _this.changeHandler = function (event) {
+            var filters = void 0;
 
             if (event.target.type === 'checkbox') {
                 filters = _extends({}, _this.state.filters);
@@ -71224,6 +71719,7 @@ var SearchResults = function (_Component) {
                     }
 
                     if (_this.state.filters.zip === '') {
+                        _this.props.loadingActive();
                         _axios2.default.post('/filter_items', fd).then(function (response) {
                             var data = response.data;
                             data.forEach(function (current) {
@@ -71233,11 +71729,13 @@ var SearchResults = function (_Component) {
                             });
 
                             _this.setState({
-                                searchResults: data,
-                                loading: false
+                                searchResults: data
+                            }, function () {
+                                _this.props.loadingNotActive();
                             });
                         });
                     } else if (_this.state.filters.zip !== '' && _this.props.zipValid) {
+                        _this.props.loadingActive();
                         _axios2.default.get(_urlsAPI.proxy + 'https://www.zipcodeapi.com/rest/' + _urlsAPI.zipAPIKey + '/radius.json/' + _this.state.filters.zip + '/' + _this.state.filters.radius + '/mile').then(function (response) {
                             var zipCodes = response.data.zip_codes.map(function (current) {
                                 return current.zip_code;
@@ -71255,8 +71753,9 @@ var SearchResults = function (_Component) {
                                 });
 
                                 _this.setState({
-                                    searchResults: data,
-                                    loading: false
+                                    searchResults: data
+                                }, function () {
+                                    _this.props.loadingNotActive();
                                 });
                             });
                         });
@@ -71267,190 +71766,21 @@ var SearchResults = function (_Component) {
             if (event.target.value.length === 6) {
                 event.target.value = event.target.value.slice(0, event.target.value.length - 1);
             }
+        }, _this.searchItems = function () {
+            _this.props.filterComponentActive();
+            _this.init();
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(SearchResults, [{
         key: 'componentWillMount',
         value: function componentWillMount() {
-            var _this2 = this;
-
-            if (this.props.params.zip !== '') {
-                _axios2.default.get(_urlsAPI.proxy + 'https://www.zipcodeapi.com/rest/' + _urlsAPI.zipAPIKey + '/radius.json/' + this.props.params.zip + '/' + this.props.params.radius + '/mile').then(function (response) {
-                    var zipCodes = response.data.zip_codes.map(function (current) {
-                        return current.zip_code;
-                    });
-
-                    _this2.setState({
-                        zipCodes: zipCodes
-                    }, function () {
-                        var fd = new FormData();
-
-                        for (var param in _this2.props.params) {
-                            if (_this2.props.params[param] !== 'select' && param !== 'radius' && param !== 'zip') {
-                                fd.append(param, _this2.props.params[param]);
-                            }
-                        }
-                        _this2.state.zipCodes.forEach(function (zip) {
-                            fd.append('zipCodes[]', zip);
-                        });
-                        _axios2.default.post('/get_items_by_zipCode', fd).then(function (response) {
-                            var makes = [];
-                            var models = [];
-
-                            if (_this2.props.params['make'] !== 'select') {
-                                makes.push(_this2.props.params['make']);
-                            }
-
-                            if (_this2.props.params['model'] !== 'select') {
-                                models.push(_this2.props.params['model']);
-                            }
-
-                            _this2.setState({
-                                searchResults: response.data,
-                                filters: _extends({}, _this2.props.params, {
-                                    minYear: 'select',
-                                    maxYear: 'select',
-                                    makes: makes,
-                                    models: models,
-                                    minPrice: 'select',
-                                    mileage: 'select'
-                                }),
-                                loading: false
-                            }, function () {
-                                _this2.props.resetParameters();
-
-                                var filters = [];
-                                var params = {};
-
-                                for (var filter in _this2.state.filters) {
-                                    if (filter !== 'make' && filter !== 'model') {
-                                        filters.push(filter);
-                                    }
-                                }
-
-                                filters.forEach(function (element) {
-                                    params[element] = _this2.state.filters[element];
-                                });
-
-                                _this2.setState({
-                                    filters: params
-                                }, function () {
-                                    var elements = document.querySelectorAll('.FilterComponent__conditionButtons__1bxUx input');
-
-                                    if (_this2.state.filters.condition === 'select') {
-                                        elements[0].checked = true;
-                                    } else if (_this2.state.filters.condition === 'New Car') {
-                                        elements[1].checked = true;
-                                    } else if (_this2.state.filters.condition === 'Used Car') {
-                                        elements[2].checked = true;
-                                    }
-
-                                    var radius = document.querySelector('.FilterComponent__radius__1actv select option[value="' + _this2.state.filters.radius + '"]');
-                                    radius.selected = true;
-
-                                    var zip = document.querySelector('.FilterComponent__selectLocation__13ILr input');
-                                    zip.value = _this2.state.filters.zip;
-
-                                    var makes = document.querySelectorAll('.FilterComponent__makes__ffLru input');
-                                    makes.forEach(function (make) {
-                                        if (_this2.state.filters.makes.includes(make.value)) {
-                                            make.checked = true;
-                                        }
-                                    });
-
-                                    var models = document.querySelectorAll('.FilterComponent__models__1egS_ input');
-                                    models.forEach(function (model) {
-                                        if (_this2.state.filters.models.includes(model.value)) {
-                                            model.checked = true;
-                                        }
-                                    });
-                                });
-                            });
-                        });
-                    });
-                });
-            } else {
-                var fd = new FormData();
-
-                for (var param in this.props.params) {
-                    if (this.props.params[param] !== 'select') {
-                        fd.append(param, this.props.params[param]);
-                    }
-                }
-                _axios2.default.post('/get_all_items', fd).then(function (response) {
-                    var makes = [];
-                    var models = [];
-
-                    if (_this2.props.params['make'] !== 'select') {
-                        makes.push(_this2.props.params['make']);
-                    }
-
-                    if (_this2.props.params['model'] !== 'select') {
-                        models.push(_this2.props.params['model']);
-                    }
-
-                    _this2.setState({
-                        searchResults: response.data,
-                        filters: _extends({}, _this2.props.params, {
-                            minYear: 'select',
-                            maxYear: 'select',
-                            makes: makes,
-                            models: models,
-                            minPrice: 'select',
-                            mileage: 'select'
-                        }),
-                        loading: false
-                    }, function () {
-                        _this2.props.resetParameters();
-                        var filters = [];
-                        var params = {};
-
-                        for (var filter in _this2.state.filters) {
-                            if (filter !== 'make' && filter !== 'model') {
-                                filters.push(filter);
-                            }
-                        }
-
-                        filters.forEach(function (element) {
-                            params[element] = _this2.state.filters[element];
-                        });
-
-                        _this2.setState({
-                            filters: params
-                        }, function () {
-                            var elements = document.querySelectorAll('.FilterComponent__conditionButtons__1bxUx input');
-
-                            if (_this2.state.filters.condition === 'select') {
-                                elements[0].checked = true;
-                            } else if (_this2.state.filters.condition === 'New Car') {
-                                elements[1].checked = true;
-                            } else if (_this2.state.filters.condition === 'Used Car') {
-                                elements[2].checked = true;
-                            }
-
-                            var makes = document.querySelectorAll('.FilterComponent__makes__ffLru input');
-                            makes.forEach(function (make) {
-                                if (_this2.state.filters.makes.includes(make.value)) {
-                                    make.checked = true;
-                                }
-                            });
-
-                            var models = document.querySelectorAll('.FilterComponent__models__1egS_ input');
-                            models.forEach(function (model) {
-                                if (_this2.state.filters.models.includes(model.value)) {
-                                    model.checked = true;
-                                }
-                            });
-                        });
-                    });
-                });
-            }
+            this.init();
         }
     }, {
         key: 'render',
         value: function render() {
-            var _this3 = this;
+            var _this2 = this;
 
             var items = this.state.searchResults.map(function (element) {
                 return _react2.default.createElement(_ListingItem2.default, { item: element,
@@ -71470,7 +71800,7 @@ var SearchResults = function (_Component) {
                     'p',
                     { style: { textAlign: 'center',
                             fontWeight: 'bold' } },
-                    'There are no results with this parameters'
+                    'There are no resultss with this parameters'
                 );
             }
             return _react2.default.createElement(
@@ -71492,34 +71822,37 @@ var SearchResults = function (_Component) {
                             null,
                             _react2.default.createElement(_SideBar2.default, { resultsNumber: this.state.searchResults.length + ' results',
                                 changeHandler: function changeHandler(event) {
-                                    return _this3.changeHandler(event);
+                                    return _this2.changeHandler(event);
                                 },
                                 makesItems: this.props.allMakes,
                                 modelsItems: this.props.selectedModels,
                                 onChangeInputNumber: function onChangeInputNumber(event) {
-                                    return _this3.onChangeInputNumber(event);
+                                    return _this2.onChangeInputNumber(event);
                                 },
-                                zipValid: this.props.zipValid })
+                                zipValid: this.props.zipValid,
+                                searchItems: function searchItems() {
+                                    return _this2.searchItems();
+                                } })
                         ),
-                        this.state.loading ? _react2.default.createElement(_Spinner2.default, null) : component
+                        this.props.loading ? _react2.default.createElement(_Spinner2.default, null) : component
                     )
                 )
             );
 
-            /*    return (
-                    <div className={classes.mainContainer}>
-                    <div className={classes.contentContainer}>
-                        <SideBar resultsNumber={`${this.state.searchResults.length} results`}
-                                 changeHandler={(event) => this.changeHandler(event)}
-                                 makesItems={this.props.allMakes}
-                                 modelsItems={this.props.selectedModels}
-                                 onChangeInputNumber={(event) => this.onChangeInputNumber(event)}
-                                 zipValid={this.props.zipValid} />
-                        <p style={{ textAlign: 'center',
-                                    fontWeight: 'bold' }}>There are no listingss in this area</p>
-                    </div>
-                    </div>
-                )*/
+            /*return (
+                <div className={classes.mainContainer}>
+                <div className={classes.contentContainer}>
+                    <SideBar resultsNumber={`${this.state.searchResults.length} results`}
+                             changeHandler={(event) => this.changeHandler(event)}
+                             makesItems={this.props.allMakes}
+                             modelsItems={this.props.selectedModels}
+                             onChangeInputNumber={(event) => this.onChangeInputNumber(event)}
+                             zipValid={this.props.zipValid} />
+                    <p style={{ textAlign: 'center',
+                                fontWeight: 'bold' }}>There are no listings in this area</p>
+                </div>
+                </div>
+            )*/
         }
     }]);
 
@@ -71531,7 +71864,8 @@ var mapStateToProps = function mapStateToProps(state) {
         params: state.searchReducer.searchParams,
         allMakes: state.searchReducer.allMakes,
         selectedModels: state.searchReducer.selectedModels,
-        zipValid: state.searchReducer.zipIsValid
+        zipValid: state.searchReducer.zipIsValid,
+        loading: state.searchReducer.loading
     };
 };
 
@@ -71551,6 +71885,15 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
         },
         zipIsNotValid: function zipIsNotValid() {
             return dispatch(actions.zipIsNotValid());
+        },
+        loadingActive: function loadingActive() {
+            return dispatch(actions.loadingActive());
+        },
+        loadingNotActive: function loadingNotActive() {
+            return dispatch(actions.loadingNotActive());
+        },
+        filterComponentActive: function filterComponentActive() {
+            return dispatch(actions.filterComponentActive());
         }
     };
 };
@@ -72995,6 +73338,10 @@ var allModels = exports.allModels = 'allModels';
 var emptyModels = exports.emptyModels = 'emptyModels';
 var addItemsToModels = exports.addItemsToModels = 'addItemsToModels';
 var removeItemsFromModels = exports.removeItemsFromModels = 'removeItemsFromModels';
+var loadingActive = exports.loadingActive = 'loadingActive';
+var loadingNotActive = exports.loadingNotActive = 'loadingNotActive';
+var filterComponentActive = exports.filterComponentActive = 'filterComponentActive';
+var filterComponentNotActive = exports.filterComponentNotActive = 'filterComponentNotActive';
 
 /***/ }),
 
@@ -73219,7 +73566,7 @@ exports.default = reducer;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.removeItemsFromModels = exports.addItemsToModels = exports.resetModels = exports.setModels = exports.setMakes = exports.resetParameters = exports.zipIsNotValid = exports.zipIsValid = exports.onChangeHandler = undefined;
+exports.filterComponentNotActive = exports.filterComponentActive = exports.loadingNotActive = exports.loadingActive = exports.removeItemsFromModels = exports.addItemsToModels = exports.resetModels = exports.setModels = exports.setMakes = exports.resetParameters = exports.zipIsNotValid = exports.zipIsValid = exports.onChangeHandler = undefined;
 
 var _actionTypes = __webpack_require__(/*! ../actionTypes */ "./src/reduxStore/actionTypes.js");
 
@@ -73287,6 +73634,30 @@ var removeItemsFromModels = exports.removeItemsFromModels = function removeItems
     };
 };
 
+var loadingActive = exports.loadingActive = function loadingActive() {
+    return {
+        type: actionTypes.loadingActive
+    };
+};
+
+var loadingNotActive = exports.loadingNotActive = function loadingNotActive() {
+    return {
+        type: actionTypes.loadingNotActive
+    };
+};
+
+var filterComponentActive = exports.filterComponentActive = function filterComponentActive() {
+    return {
+        type: actionTypes.filterComponentActive
+    };
+};
+
+var filterComponentNotActive = exports.filterComponentNotActive = function filterComponentNotActive() {
+    return {
+        type: actionTypes.filterComponentNotActive
+    };
+};
+
 /***/ }),
 
 /***/ "./src/reduxStore/searching/Reducer.js":
@@ -73324,7 +73695,9 @@ var initialState = {
     },
     zipIsValid: true,
     allMakes: [],
-    selectedModels: []
+    selectedModels: [],
+    loading: true,
+    filterComponent: true
 };
 
 var reducer = function reducer() {
@@ -73382,6 +73755,22 @@ var reducer = function reducer() {
             });
             return _extends({}, state, {
                 selectedModels: changedModels
+            });
+        case actionTypes.loadingActive:
+            return _extends({}, state, {
+                loading: true
+            });
+        case actionTypes.loadingNotActive:
+            return _extends({}, state, {
+                loading: false
+            });
+        case actionTypes.filterComponentActive:
+            return _extends({}, state, {
+                filterComponent: true
+            });
+        case actionTypes.filterComponentNotActive:
+            return _extends({}, state, {
+                filterComponent: false
             });
         default:
             return state;

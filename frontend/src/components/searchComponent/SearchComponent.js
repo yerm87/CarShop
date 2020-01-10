@@ -12,6 +12,8 @@ class SearchComponent extends Component {
 
     componentWillMount(){
         this.props.resetModels();
+        this.props.resetParameters();
+        this.props.zipIsValid();
         
         axios.post('/get_make', {
             type: 'make',
@@ -149,7 +151,9 @@ const mapDispatchToProps = dispatch => {
         zipIsNotValid: () => dispatch(actions.zipIsNotValid()),
         setMakes: (data) => dispatch(actions.setMakes(data)),
         setModels: (data) => dispatch(actions.setModels(data)),
-        resetModels: () => dispatch(actions.resetModels())
+        resetModels: () => dispatch(actions.resetModels()),
+        resetParameters: () => dispatch(actions.resetParameters()),
+        zipIsValid: () => dispatch(actions.zipIsValid())
     }
 }
 

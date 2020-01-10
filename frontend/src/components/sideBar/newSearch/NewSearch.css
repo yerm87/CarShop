@@ -1,0 +1,30 @@
+.container {
+    padding: 25px 20px;
+}
+
+.container select {
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    border-bottom: none;
+    font-family: 'Montserrat';
+    font-size: 1.1em
+}
+
+.container div {
+    text-align: center;
+}
+
+.container button {
+    background: transparent;
+    color: var(--mainBlue);
+    font-weight: bold;
+    border: none;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.container button:hover {
+    cursor: pointer;
+}

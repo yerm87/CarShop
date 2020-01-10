@@ -13,11 +13,16 @@ class SearchResults extends Component {
         zipCodes: [],
         searchResults: [],
         filters: null,
-        zipCodes: [],
-        loading: true
+        zipCodes: []
     }
 
     componentWillMount(){
+        this.init();
+    }
+
+    init = () => {
+        this.props.loadingActive();
+
         if(this.props.params.zip !== ''){
             axios.get(`${proxy}https://www.zipcodeapi.com/rest/${zipAPIKey}/radius.json/${this.props.params.zip}/${this.props.params.radius}/mile`)
             .then(response => {
@@ -60,10 +65,10 @@ class SearchResults extends Component {
                                 models: models,
                                 minPrice: 'select',
                                 mileage: 'select'
-                            },
-                            loading: false
+                            }
                         }, () => {
                             this.props.resetParameters();
+                            this.props.loadingNotActive();
                             
                             const filters = [];
                             const params = {};
@@ -147,10 +152,11 @@ class SearchResults extends Component {
                         models: models,
                         minPrice: 'select',
                         mileage: 'select'
-                    },
-                    loading: false
+                    }
                 }, () => {
                     this.props.resetParameters();
+                    this.props.loadingNotActive();
+
                     const filters = [];
                     const params = {};
 
@@ -198,10 +204,6 @@ class SearchResults extends Component {
 
     changeHandler = event => {
         let filters;
-
-        this.setState({
-            loading: true
-        });
     
         if(event.target.type === 'checkbox'){
             filters = {
@@ -298,6 +300,7 @@ class SearchResults extends Component {
                 }
 
                 if(this.state.filters.zip === ''){
+                    this.props.loadingActive();
                     axios.post('/filter_items', fd).then(response => {
                         const data = response.data
                         data.forEach(current => {
@@ -307,11 +310,13 @@ class SearchResults extends Component {
                         });
 
                         this.setState({
-                            searchResults: data,
-                            loading: false
+                            searchResults: data
+                        }, () => {
+                            this.props.loadingNotActive();
                         });
                     });
                 } else if(this.state.filters.zip !== '' && this.props.zipValid) {
+                    this.props.loadingActive();
                     axios.get(`${proxy}https://www.zipcodeapi.com/rest/${zipAPIKey}/radius.json/${this.state.filters.zip}/${this.state.filters.radius}/mile`)
                     .then(response => {
                         const zipCodes = response.data.zip_codes.map(current => {
@@ -330,8 +335,9 @@ class SearchResults extends Component {
                             });
                         
                             this.setState({
-                                searchResults: data,
-                                loading: false
+                                searchResults: data
+                            }, () => {
+                                this.props.loadingNotActive();
                             });
                         })
                     })
@@ -344,6 +350,11 @@ class SearchResults extends Component {
         if(event.target.value.length === 6){
             event.target.value = event.target.value.slice(0, event.target.value.length-1);
         }
+    }
+
+    searchItems = () => {
+        this.props.filterComponentActive();
+        this.init();
     }
 
     render(){
@@ -363,7 +374,7 @@ class SearchResults extends Component {
         } else {
             component = (
                 <p style={{textAlign: 'center',
-                   fontWeight: 'bold'}}>There are no results with this parameters</p>
+                   fontWeight: 'bold'}}>There are no resultss with this parameters</p>
             )
         }
         return (
@@ -377,15 +388,16 @@ class SearchResults extends Component {
                                      makesItems={this.props.allMakes}
                                      modelsItems={this.props.selectedModels}
                                      onChangeInputNumber={(event) => this.onChangeInputNumber(event)}
-                                     zipValid={this.props.zipValid} />
+                                     zipValid={this.props.zipValid}
+                                     searchItems={() => this.searchItems()} />
                         </div>
-                        {this.state.loading ? <Spinner /> : component}
+                        {this.props.loading ? <Spinner /> : component}
                     </div>
                 </div>
             </div>
         )
         
-    /*    return (
+        /*return (
             <div className={classes.mainContainer}>
             <div className={classes.contentContainer}>
                 <SideBar resultsNumber={`${this.state.searchResults.length} results`}
@@ -395,7 +407,7 @@ class SearchResults extends Component {
                          onChangeInputNumber={(event) => this.onChangeInputNumber(event)}
                          zipValid={this.props.zipValid} />
                 <p style={{ textAlign: 'center',
-                            fontWeight: 'bold' }}>There are no listingss in this area</p>
+                            fontWeight: 'bold' }}>There are no listings in this area</p>
             </div>
             </div>
         )*/
@@ -407,7 +419,8 @@ const mapStateToProps = state => {
         params: state.searchReducer.searchParams,
         allMakes: state.searchReducer.allMakes,
         selectedModels: state.searchReducer.selectedModels,
-        zipValid: state.searchReducer.zipIsValid
+        zipValid: state.searchReducer.zipIsValid,
+        loading: state.searchReducer.loading
     }
 }
 
@@ -417,7 +430,10 @@ const mapDispatchToProps = dispatch => {
         addItemsToModels: (data) => dispatch(actions.addItemsToModels(data)),
         removeItemsFromModels: (data) => dispatch(actions.removeItemsFromModels(data)) ,
         zipIsValid: () => dispatch(actions.zipIsValid()),
-        zipIsNotValid: () => dispatch(actions.zipIsNotValid())
+        zipIsNotValid: () => dispatch(actions.zipIsNotValid()),
+        loadingActive: () => dispatch(actions.loadingActive()),
+        loadingNotActive: () => dispatch(actions.loadingNotActive()),
+        filterComponentActive: () => dispatch(actions.filterComponentActive())
     }
 }
 

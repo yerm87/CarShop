@@ -11,7 +11,9 @@ const initialState = {
     },
     zipIsValid: true,
     allMakes: [],
-    selectedModels: []
+    selectedModels: [],
+    loading: true,
+    filterComponent: true
 }
 
 const reducer = (state=initialState, action) => {
@@ -78,6 +80,26 @@ const reducer = (state=initialState, action) => {
             return {
                 ...state,
                 selectedModels: changedModels
+            }
+        case(actionTypes.loadingActive):
+            return {
+                ...state,
+                loading: true
+            }
+        case(actionTypes.loadingNotActive):
+            return {
+                ...state,
+                loading: false
+            }
+        case(actionTypes.filterComponentActive):
+            return {
+                ...state,
+                filterComponent: true
+            }
+        case(actionTypes.filterComponentNotActive):
+            return {
+                ...state,
+                filterComponent: false
             }
         default:
             return state;

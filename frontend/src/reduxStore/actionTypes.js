@@ -19,3 +19,7 @@ export const allModels = 'allModels';
 export const emptyModels = 'emptyModels';
 export const addItemsToModels = 'addItemsToModels';
 export const removeItemsFromModels = 'removeItemsFromModels';
+export const loadingActive = 'loadingActive';
+export const loadingNotActive = 'loadingNotActive';
+export const filterComponentActive = 'filterComponentActive';
+export const filterComponentNotActive = 'filterComponentNotActive';

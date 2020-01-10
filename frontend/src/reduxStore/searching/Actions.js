@@ -59,3 +59,27 @@ export const removeItemsFromModels = data => {
         items: data
     }
 }
+
+export const loadingActive = () => {
+    return {
+        type: actionTypes.loadingActive
+    }
+}
+
+export const loadingNotActive = () => {
+    return {
+        type: actionTypes.loadingNotActive
+    }
+}
+
+export const filterComponentActive = () => {
+    return {
+        type: actionTypes.filterComponentActive
+    }
+}
+
+export const filterComponentNotActive = () => {
+    return {
+        type: actionTypes.filterComponentNotActive
+    }
+}
