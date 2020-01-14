@@ -348,3 +348,8 @@ Route::post('/get_all_items', 'ListingController@getAllItems');
 Route::post('/filter_items', 'ListingController@filterItems');
 
 Route::post('/filter_items_withZipCodes', 'ListingController@filterItemsWithZipCodes');
+
+
+//API to get listing info on click
+
+Route::post('/get_listing', 'ListingController@getListing');

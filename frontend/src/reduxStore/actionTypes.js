@@ -23,3 +23,5 @@ export const loadingActive = 'loadingActive';
 export const loadingNotActive = 'loadingNotActive';
 export const filterComponentActive = 'filterComponentActive';
 export const filterComponentNotActive = 'filterComponentNotActive';
+export const searchingActive = 'searchingActive';
+export const searchingNotActive = 'searchingNotActive';

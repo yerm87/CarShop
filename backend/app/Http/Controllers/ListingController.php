@@ -340,4 +340,20 @@ class ListingController extends Controller
 
         return $updatedListings;
     }
+
+    public function getListing(Request $request){
+        $id = $request->listingId;
+
+        $listing = Listing::find($id);
+
+        $images = array();
+
+        foreach($listing->images as $image){
+            array_push($images, base64_encode($image));
+        }
+
+        $listing->images = $images;
+
+        return $listing;
+    }
 }

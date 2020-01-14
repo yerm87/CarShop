@@ -1,0 +1,71 @@
+.mainContainer {
+    background: #f2f2f2;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 772.78px 320px;
+    padding-top: 30px;
+}
+
+.containerContent {
+    position: relative;
+    width: 730px;
+}
+
+.arrowLeftMainImage {
+    display: none;
+    position: absolute;
+    top: 165px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.arrowRightMainImage {
+    display: none;
+    position: absolute;
+    top: 165px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.containerContent:hover .arrowLeftMainImage, 
+.containerContent:hover .arrowRightMainImage{
+    display: block;
+}
+
+.scrollImages {
+    width: 730px;
+    padding: 10px 25.5px;
+    background: #e2e2e2;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.imagesContainer {
+    display: flex;
+    transition: all 0.3s;
+}
+
+.frame {
+    overflow: hidden;
+    width: 679px;
+}
+
+.arrowLeft {
+    position: absolute;
+    top: 22px;
+    left: 2px;
+}
+
+.arrowRight {
+    position: absolute;
+    top: 22px;
+    right: 2px;
+}
+
+.arrowLeft:hover, .arrowRight:hover {
+    cursor: pointer;
+}

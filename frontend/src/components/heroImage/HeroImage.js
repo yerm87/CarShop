@@ -40,4 +40,19 @@ export const BuyingAdviceItemNoImage = styled.div`
     min-width: 330px; 
 `
 
+export const ListingMainImage = styled.div`
+    background: url(${props => props.img}) no-repeat center center;
+    background-size: cover;
+    height: 350px;
+    width: 730px;
+`
+
+export const ListingInfoScrollImageItem = styled.div`
+    background: url(${props => props.img}) no-repeat center center;
+    background-size: cover;
+    height: 40px;
+    width: 93px;
+    border: ${props => props.active ? '2px solid var(--mainRed);' : '2px solid var(--mainWhite)'}
+`
+
 export default HeroImage;

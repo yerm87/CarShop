@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import * as actions from '../../reduxStore/searching/Actions';
 import { withRouter } from 'react-router-dom';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 class SearchComponent extends Component {
     state={
@@ -130,6 +131,9 @@ class SearchComponent extends Component {
                     </div>
                     <button onClick={() => this.searchButtonHandler()}>Search</button>           
                 </div>
+                <Link to="/search_results/111">
+                    <button>Test</button>
+                </Link>
             </div>
         )
     }

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import Toolbar from './containers/toolbar/Toolbar';
 import NavigationItems from './components/navigationItems/NavigationItems';
 import Logo from './components/UIElements/logo/Logo';
@@ -17,6 +17,7 @@ import UpdateListing from "./containers/update_listing/UpdateListing";
 import BuyingAdvicesPage from './containers/buyingAdvicesPage/BuyingAdvicesPage';
 import AdvicesItemPage from './containers/advicesItemPage/AdvicesItemPage';
 import SearchResults from './containers/searchResults/SearchResults';
+import ListingInfo from './containers/listingInfo/ListingInfo';
 
 class App extends Component {
     
@@ -46,6 +47,7 @@ class App extends Component {
                 <ModalUserInfo show={this.props.showModal}
                                email={this.props.email} />
                 <Switch>
+                    <Route path="/sell_car/:listing_id" component={ListingInfo} />
                     <Route path="/sell_car" component={SellCarPage} />
                     <Route path="/signup" component={SignUpPage} />
                     <Route path="/create_listing" component={CreateListing} />
@@ -54,6 +56,7 @@ class App extends Component {
                     <Route path="/update_listing/:listingId" component={UpdateListing} />
                     <Route path="/buying_advices/:advice_id" component={AdvicesItemPage} />
                     <Route path="/buying_advices" component={BuyingAdvicesPage} />
+                    <Route path="/search_results/:listing_id" component={ListingInfo} />
                     <Route path="/search_results" component={SearchResults} />
                     <Route path="/" component={MainPage} />
                 </Switch>

@@ -7,13 +7,20 @@ import { IconContext } from 'react-icons';
 import Image from '../../assets/no_photo.jpg';
 import { Link } from 'react-router-dom';
 import DeleteModal from '../../components/deleteModal/DeleteModal';
-import * as actions from '../../reduxStore/authentication/Actions';
-import axios from 'axios';
+import { withRouter } from 'react-router-dom';
 
 class ListingItem extends Component {
     state={
         elementCounter: 1,
         counterMargin: 0
+    }
+
+    getItem = (id) => {
+        if(this.props.admin){
+            this.props.history.push(`sell_car/${id}`);
+        } else {
+            this.props.history.push(`search_results/${id}`);
+        }
     }
 
     render(){
@@ -42,8 +49,6 @@ class ListingItem extends Component {
         } else {
             modifiedMileage = mileage;
         }
-
-        console.log(price.length);
 
         const listingImages = images.map(current => <ImageListing img={current} />);
         const wrapperClass = this.props.searchItem ? classes.imageWrapperForSearchItem : 
@@ -106,28 +111,31 @@ class ListingItem extends Component {
                 </IconContext.Provider>
                 ) : null}
                 <div className={content}>
-                    <p>{condition}</p>
-                    <div className={classes.priceAndMileage}>
-                        <p className={classes.price}>${modifiedPrice}</p>
-                        <p className={classes.mileage}>| <span>{modifiedMileage}mi</span></p>
-                    </div>
-                    <div className={classes.yearAndModel}>
-                        <p>{`${year} ${make} ${model}`}</p>
-                    </div>
-                    <div className={classes.params}>
-                        <p>{`Ext.Color: ${exteriorColor}`}</p>
-                        <p>{`Transmission: ${transmission}`}</p>
-                        <p>{`Int.Color: ${interiorColor}`}</p>
-                        <p>{`Fuel Type: ${fuelType}`}</p>
+                    <div className={classes.contentOnClick}
+                         onClick={() => this.getItem(_id)}>
+                        <p>{condition}</p>
+                        <div className={classes.priceAndMileage}>
+                            <p className={classes.price}>${modifiedPrice}</p>
+                            <p className={classes.mileage}>| <span>{modifiedMileage}mi</span></p>
+                        </div>
+                        <div className={classes.yearAndModel}>
+                            <p>{`${year} ${make} ${model}`}</p>
+                        </div>
+                        <div className={classes.params}>
+                            <p>{`Ext.Color: ${exteriorColor}`}</p>
+                            <p>{`Transmission: ${transmission}`}</p>
+                            <p>{`Int.Color: ${interiorColor}`}</p>
+                            <p>{`Fuel Type: ${fuelType}`}</p>
+                        </div>
                     </div>
                     {this.props.admin ? (
                         <Link to={`/update_listing/${_id}`}>
                             <Button updateListingButton>Update Listing</Button>
                         </Link>
                     ) : null}
-                    <div className={classes.deleteButton}
-                         onClick={this.props.deleteItem}>X</div>
                 </div>
+                <div className={classes.deleteButton}
+                         onClick={this.props.deleteItem}>X</div>
                 <DeleteModal deleteElement={this.props.deleteElement}
                              active={this.props.active}
                              closeModal={this.props.closeModal} />
@@ -211,4 +219,4 @@ class ListingItem extends Component {
     }
 }
 
-export default ListingItem;
+export default withRouter(ListingItem);

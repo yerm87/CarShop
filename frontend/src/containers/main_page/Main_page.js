@@ -5,7 +5,6 @@ import SearchComponent from '../../components/searchComponent/SearchComponent';
 import classes from './Main_page.css';
 
 class MainPage extends Component {
-
     render() {
         return (
             <div className={classes.wrapper}>

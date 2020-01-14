@@ -29,6 +29,10 @@
     font-weight: bold;
 }
 
+.content:hover {
+    cursor:pointer;
+}
+
 .content p {
     margin: 8px 0;
     padding-left: 10px;
@@ -45,6 +49,10 @@
     box-sizing: border-box;
     font-family: 'Montserrat';
     font-weight: bold;
+}
+
+.contentForSearchItem:hover {
+    cursor: pointer;
 }
 
 .contentForSearchItem p {
@@ -147,4 +155,8 @@
 
 .imageWrapper:hover .deleteButton {
     display: block;
+}
+
+.contentOnClick {
+    
 }
