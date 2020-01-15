@@ -129,6 +129,12 @@ Route::post('/get_fuelType', 'VehicleParameters@getData');
 
 Route::post('/get_condition', 'VehicleParameters@getData');
 
+Route::post('/get_cityMPG', 'VehicleParameters@getData');
+
+Route::post('/get_highwayMPG', 'VehicleParameters@getData');
+
+Route::post('/get_engine', 'VehicleParameters@getData');
+
 
 //create listing API
 Route::post('/create_listing', function(Request $request){

@@ -89,6 +89,30 @@ class CreateListing extends Component {
                 valid: false,
                 clicked: false,
                 data: ''
+            },
+            cityMPG: {
+                type: 'cityMPG',
+                value: [],
+                active: false,
+                valid: false,
+                clicked: false,
+                data: ''
+            },
+            highwayMPG: {
+                type: 'highwayMPG',
+                value: [],
+                active: false,
+                valid: false,
+                clicked: false,
+                data: ''
+            },
+            engine: {
+                type: 'engine',
+                value: [],
+                active: false,
+                valid: false,
+                clicked: false,
+                data: ''
             }
         },
         inputs: {
@@ -434,6 +458,11 @@ class CreateListing extends Component {
                     });
                 }
             });
+        }
+
+        if(element.type === 'city' && valid && !/^[a-zA-Z\s]+,\s[a-zA-Z\s]+$/.test(element.value)){
+            copyInputs[element.type].valid = false;
+            copyInputs[element.type].errorMessage = 'does not match valid format: "Denver, Colorado"';
         }
 
         this.setState({

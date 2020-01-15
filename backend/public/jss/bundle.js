@@ -13787,7 +13787,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".ListingInfo__mainContainer__1ohkq {\r\n    background: #f2f2f2;\r\n}\r\n\r\n.ListingInfo__container__24-IS {\r\n    width: 80%;\r\n    margin: 0 auto;\r\n    display: grid;\r\n    grid-template-columns: 772.78px 320px;\r\n    padding-top: 30px;\r\n}\r\n\r\n.ListingInfo__containerContent__2iyli {\r\n    position: relative;\r\n    width: 730px;\r\n}\r\n\r\n.ListingInfo__arrowLeftMainImage__FoaWI {\r\n    display: none;\r\n    position: absolute;\r\n    top: 165px;\r\n    left: 5px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingInfo__arrowRightMainImage__wx50y {\r\n    display: none;\r\n    position: absolute;\r\n    top: 165px;\r\n    right: 5px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingInfo__containerContent__2iyli:hover .ListingInfo__arrowLeftMainImage__FoaWI, \r\n.ListingInfo__containerContent__2iyli:hover .ListingInfo__arrowRightMainImage__wx50y{\r\n    display: block;\r\n}\r\n\r\n.ListingInfo__scrollImages__3KYSS {\r\n    width: 730px;\r\n    padding: 10px 25.5px;\r\n    background: #e2e2e2;\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n    position: relative;\r\n}\r\n\r\n.ListingInfo__imagesContainer__gL0Nf {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-transition: all 0.3s;\r\n    -o-transition: all 0.3s;\r\n    transition: all 0.3s;\r\n}\r\n\r\n.ListingInfo__frame__UnFQ9 {\r\n    overflow: hidden;\r\n    width: 679px;\r\n}\r\n\r\n.ListingInfo__arrowLeft__cKPnS {\r\n    position: absolute;\r\n    top: 22px;\r\n    left: 2px;\r\n}\r\n\r\n.ListingInfo__arrowRight__26KSj {\r\n    position: absolute;\r\n    top: 22px;\r\n    right: 2px;\r\n}\r\n\r\n.ListingInfo__arrowLeft__cKPnS:hover, .ListingInfo__arrowRight__26KSj:hover {\r\n    cursor: pointer;\r\n}", ""]);
+exports.push([module.i, ".ListingInfo__mainContainer__1ohkq {\r\n    background: #f2f2f2;\r\n    font-family: 'Montserrat';\r\n    color: #000;\r\n}\r\n\r\n.ListingInfo__container__24-IS {\r\n    width: 80%;\r\n    margin: 0 auto;\r\n    display: grid;\r\n    grid-template-columns: 772.78px 320px;\r\n    padding-top: 30px;\r\n}\r\n\r\n.ListingInfo__containerContent__2iyli {\r\n    position: relative;\r\n    width: 730px;\r\n}\r\n\r\n.ListingInfo__arrowLeftMainImage__FoaWI {\r\n    display: none;\r\n    position: absolute;\r\n    top: 165px;\r\n    left: 5px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingInfo__arrowRightMainImage__wx50y {\r\n    display: none;\r\n    position: absolute;\r\n    top: 165px;\r\n    right: 5px;\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingInfo__containerContent__2iyli:hover .ListingInfo__arrowLeftMainImage__FoaWI, \r\n.ListingInfo__containerContent__2iyli:hover .ListingInfo__arrowRightMainImage__wx50y{\r\n    display: block;\r\n}\r\n\r\n.ListingInfo__scrollImages__3KYSS {\r\n    width: 730px;\r\n    padding: 10px 25.5px;\r\n    background: #e2e2e2;\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n    position: relative;\r\n}\r\n\r\n.ListingInfo__imagesContainer__gL0Nf {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-transition: all 0.3s;\r\n    -o-transition: all 0.3s;\r\n    transition: all 0.3s;\r\n}\r\n\r\n.ListingInfo__frame__UnFQ9 {\r\n    overflow: hidden;\r\n    width: 679px;\r\n}\r\n\r\n.ListingInfo__arrowLeft__cKPnS {\r\n    position: absolute;\r\n    top: 22px;\r\n    left: 2px;\r\n}\r\n\r\n.ListingInfo__arrowRight__26KSj {\r\n    position: absolute;\r\n    top: 22px;\r\n    right: 2px;\r\n}\r\n\r\n.ListingInfo__arrowLeft__cKPnS:hover, .ListingInfo__arrowRight__26KSj:hover {\r\n    cursor: pointer;\r\n}\r\n\r\n.ListingInfo__title__3YPAo {\r\n    border-bottom: 1px solid var(--mainBlack);\r\n}\r\n\r\n.ListingInfo__title__3YPAo .ListingInfo__makeAndModel__3AOB0 {\r\n    font-size: 1.4em;\r\n    margin-bottom: 15px;\r\n    font-weight: bold;\r\n    color: var(--mainBlue);\r\n}\r\n\r\n.ListingInfo__title__3YPAo .ListingInfo__condition__1tmOd {\r\n    margin: 15px 0 15px 0;\r\n}\r\n\r\n.ListingInfo__itemInfo__ewaVf h2 {\r\n    margin: 10px 0 10px 0;\r\n}\r\n\r\n.ListingInfo__itemInfo__ewaVf p {\r\n    margin: 10px 0;\r\n}\r\n\r\n.ListingInfo__contacts__2yVAQ {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    font-weight: bold;\r\n}\r\n\r\n.ListingInfo__basics__2pNVa {\r\n    margin-top: 30px;\r\n}\r\n\r\n.ListingInfo__basics__2pNVa h2 {\r\n    margin: 10px 0;\r\n}\r\n\r\n.ListingInfo__basicsContainer__IcZqG {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n}\r\n\r\n.ListingInfo__basicsContainer__IcZqG span {\r\n    font-weight: bold;\r\n    margin-right: 7px;\r\n}\r\n\r\n.ListingInfo__basicsContainer__IcZqG p {\r\n    margin: 10px 0;\r\n}", ""]);
 // Exports
 exports.locals = {
 	"mainContainer": "ListingInfo__mainContainer__1ohkq",
@@ -13799,7 +13799,14 @@ exports.locals = {
 	"imagesContainer": "ListingInfo__imagesContainer__gL0Nf",
 	"frame": "ListingInfo__frame__UnFQ9",
 	"arrowLeft": "ListingInfo__arrowLeft__cKPnS",
-	"arrowRight": "ListingInfo__arrowRight__26KSj"
+	"arrowRight": "ListingInfo__arrowRight__26KSj",
+	"title": "ListingInfo__title__3YPAo",
+	"makeAndModel": "ListingInfo__makeAndModel__3AOB0",
+	"condition": "ListingInfo__condition__1tmOd",
+	"itemInfo": "ListingInfo__itemInfo__ewaVf",
+	"contacts": "ListingInfo__contacts__2yVAQ",
+	"basics": "ListingInfo__basics__2pNVa",
+	"basicsContainer": "ListingInfo__basicsContainer__IcZqG"
 };
 module.exports = exports;
 
@@ -65738,6 +65745,78 @@ var Input = function Input(props) {
                     props.children
                 )
             );
+        case 'cityMPG':
+            return _react2.default.createElement(
+                'div',
+                { className: _input2.default.selectWrapper },
+                _react2.default.createElement(
+                    'label',
+                    { htmlFor: 'cityMPG' },
+                    'City MPG'
+                ),
+                _react2.default.createElement(
+                    'select',
+                    { className: selectStyles.join(' '),
+                        disabled: props.invalid,
+                        name: 'cityMPG',
+                        value: props.value,
+                        onChange: props.onChangeHandler },
+                    _react2.default.createElement(
+                        'option',
+                        { value: 'select' },
+                        'Select'
+                    ),
+                    props.children
+                )
+            );
+        case 'highwayMPG':
+            return _react2.default.createElement(
+                'div',
+                { className: _input2.default.selectWrapper },
+                _react2.default.createElement(
+                    'label',
+                    { htmlFor: 'highwayMPG' },
+                    'Highway MPG'
+                ),
+                _react2.default.createElement(
+                    'select',
+                    { className: selectStyles.join(' '),
+                        disabled: props.invalid,
+                        name: 'highwayMPG',
+                        value: props.value,
+                        onChange: props.onChangeHandler },
+                    _react2.default.createElement(
+                        'option',
+                        { value: 'select' },
+                        'Select'
+                    ),
+                    props.children
+                )
+            );
+        case 'engine':
+            return _react2.default.createElement(
+                'div',
+                { className: _input2.default.selectWrapper },
+                _react2.default.createElement(
+                    'label',
+                    { htmlFor: 'engine' },
+                    'Engine'
+                ),
+                _react2.default.createElement(
+                    'select',
+                    { className: selectStyles.join(' '),
+                        disabled: props.invalid,
+                        name: 'engine',
+                        value: props.value,
+                        onChange: props.onChangeHandler },
+                    _react2.default.createElement(
+                        'option',
+                        { value: 'select' },
+                        'Select engine'
+                    ),
+                    props.children
+                )
+            );
         case 'price':
             return _react2.default.createElement(
                 _react2.default.Fragment,
@@ -65924,7 +66003,7 @@ var Input = function Input(props) {
                     _react2.default.createElement(
                         'label',
                         { htmlFor: 'city' },
-                        'City'
+                        'Location'
                     ),
                     _react2.default.createElement(
                         'p',
@@ -65935,6 +66014,7 @@ var Input = function Input(props) {
                 _react2.default.createElement('input', { type: 'text',
                     className: arrayOfStyles.join(' '),
                     name: 'city',
+                    placeholder: 'City, State',
                     value: props.value,
                     list: 'datalistCities',
                     onChange: props.onChangeHandler,
@@ -70588,6 +70668,30 @@ var CreateListing = function (_Component) {
                     valid: false,
                     clicked: false,
                     data: ''
+                },
+                cityMPG: {
+                    type: 'cityMPG',
+                    value: [],
+                    active: false,
+                    valid: false,
+                    clicked: false,
+                    data: ''
+                },
+                highwayMPG: {
+                    type: 'highwayMPG',
+                    value: [],
+                    active: false,
+                    valid: false,
+                    clicked: false,
+                    data: ''
+                },
+                engine: {
+                    type: 'engine',
+                    value: [],
+                    active: false,
+                    valid: false,
+                    clicked: false,
+                    data: ''
                 }
             },
             inputs: {
@@ -70901,6 +71005,11 @@ var CreateListing = function (_Component) {
                         });
                     }
                 });
+            }
+
+            if (element.type === 'city' && valid && !/^[a-zA-Z\s]+,\s[a-zA-Z\s]+$/.test(element.value)) {
+                copyInputs[element.type].valid = false;
+                copyInputs[element.type].errorMessage = 'does not match valid format: "Denver, Colorado"';
             }
 
             _this.setState({
@@ -71332,7 +71441,10 @@ var ListingInfo = function (_Component) {
             diff: '',
             marginLeft: 0,
             itemData: {
-                images: ['']
+                year: '', make: '', model: '', bodyStyle: '', transmission: '', exteriorColor: '',
+                interiorColor: '', numberOfDoors: '', fuelType: '', condition: '', cityMPG: '',
+                highwayMPG: '', engine: '', price: '', mileage: '', description: '', firstName: '',
+                lastName: '', email: '', phoneNumber: '', city: '', zip: '', images: ['']
             },
             images: [{
                 path: '',
@@ -71517,6 +71629,48 @@ var ListingInfo = function (_Component) {
                     } });
             });
 
+            var _state$itemData = this.state.itemData,
+                year = _state$itemData.year,
+                make = _state$itemData.make,
+                model = _state$itemData.model,
+                transmission = _state$itemData.transmission,
+                exteriorColor = _state$itemData.exteriorColor,
+                interiorColor = _state$itemData.interiorColor,
+                fuelType = _state$itemData.fuelType,
+                condition = _state$itemData.condition,
+                cityMPG = _state$itemData.cityMPG,
+                highwayMPG = _state$itemData.highwayMPG,
+                engine = _state$itemData.engine,
+                price = _state$itemData.price,
+                mileage = _state$itemData.mileage,
+                description = _state$itemData.description,
+                firstName = _state$itemData.firstName,
+                lastName = _state$itemData.lastName,
+                email = _state$itemData.email,
+                phoneNumber = _state$itemData.phoneNumber,
+                city = _state$itemData.city,
+                zip = _state$itemData.zip;
+
+
+            var modifiedPrice = void 0;
+            var modifiedMileage = void 0;
+
+            if (price.length > 3) {
+                var firstDigit = price.slice(0, price.length - 3);
+                var secondDigit = price.slice(price.length - 3);
+                modifiedPrice = firstDigit + ',' + secondDigit;
+            } else {
+                modifiedPrice = price;
+            }
+
+            if (mileage.length > 3) {
+                var _firstDigit = mileage.slice(0, mileage.length - 3);
+                var _secondDigit = mileage.slice(mileage.length - 3);
+                modifiedMileage = _firstDigit + ',' + _secondDigit;
+            } else {
+                modifiedMileage = mileage;
+            }
+
             return _react2.default.createElement(
                 'div',
                 { className: _ListingInfo2.default.mainContainer },
@@ -71587,7 +71741,167 @@ var ListingInfo = function (_Component) {
                                     } },
                                 _react2.default.createElement(_fa.FaArrowRight, null)
                             )
-                        ) : null
+                        ) : null,
+                        _react2.default.createElement(
+                            'div',
+                            { className: _ListingInfo2.default.title },
+                            _react2.default.createElement(
+                                'p',
+                                { className: _ListingInfo2.default.condition },
+                                condition
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { className: _ListingInfo2.default.makeAndModel },
+                                year + ' ' + make + ' ' + model
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { style: { marginBottom: '10px' } },
+                                modifiedMileage,
+                                ' miles'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: _ListingInfo2.default.itemInfo },
+                            _react2.default.createElement(
+                                'h2',
+                                null,
+                                '$',
+                                modifiedPrice
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: _ListingInfo2.default.contacts },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Sold by ',
+                                    firstName + ' ' + lastName
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Phone: ',
+                                    phoneNumber
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    { style: { color: 'var(--mainBlue)' } },
+                                    city + ' ' + zip
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'email: ',
+                                    email
+                                )
+                            ),
+                            description ? _react2.default.createElement(
+                                'h2',
+                                { style: { marginTop: '25px' } },
+                                'Description'
+                            ) : null,
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                description ? description : null
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: _ListingInfo2.default.basics },
+                            _react2.default.createElement(
+                                'h2',
+                                null,
+                                'Basics'
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: _ListingInfo2.default.basicsContainer },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'span',
+                                        null,
+                                        'Fuel Type:'
+                                    ),
+                                    fuelType
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'span',
+                                        null,
+                                        'Exterior Color:'
+                                    ),
+                                    exteriorColor
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'span',
+                                        null,
+                                        'City MPG:'
+                                    ),
+                                    cityMPG
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'span',
+                                        null,
+                                        'Interior Color:'
+                                    ),
+                                    interiorColor
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'span',
+                                        null,
+                                        'Highway MPG:'
+                                    ),
+                                    highwayMPG
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'span',
+                                        null,
+                                        'Transmission:'
+                                    ),
+                                    transmission
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'span',
+                                        null,
+                                        'Engine:'
+                                    ),
+                                    engine
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'span',
+                                        null,
+                                        'Mileage:'
+                                    ),
+                                    modifiedMileage
+                                )
+                            )
+                        )
                     ),
                     _react2.default.createElement(
                         'div',
@@ -71596,6 +71910,57 @@ var ListingInfo = function (_Component) {
                     )
                 )
             );
+            /*
+                    return (
+                        <div className={classes.mainContainer}>
+                            <div className={classes.container}>
+                                <div className={classes.containerContent} >
+                                    <ListingMainImage img="../../assets/1.jpg" />
+                                    <div className={classes.scrollImages}>
+                                        <div className={classes.frame}>
+                                            <div className={classes.imagesContainer}>
+                                                <ScrollImageItem img="../../assets/1.jpg" />
+                                                <ScrollImageItem img="../../assets/2.jpg" />
+                                                <ScrollImageItem img="../../assets/3.jpg" />
+                                                <ScrollImageItem img="../../assets/4.jpg" /> 
+                                                <ScrollImageItem img="../../assets/5.jpg" />
+                                                <ScrollImageItem img="../../assets/6.jpg" />   
+                                            </div>    
+                                        </div>
+                                    </div>
+                                    <div className={classes.title}>
+                                        <p className={classes.condition}>Used</p>
+                                        <p className={classes.makeAndModel}>2014 Ford Focus</p>
+                                        <p>81,215 miles</p>
+                                    </div>
+                                    <div className={classes.itemInfo}>
+                                        <h2>$6,891</h2>
+                                        <p style={{ fontWeight: 'bold' }}>Sold by Roman Ermeev</p>
+                                        <p style={{ color: 'var(--mainBlue)',
+                                                    fontWeight: 'bold' }}>Miami Beach, Florida 33139</p>
+                                        <h2 style={{ marginTop: '25px'}}>Description</h2>
+                                        <p>This 2014 Volkswagen CC 4dr Sport features a 2.0L 4 CYLINDER 4cyl Gasoline engine. It is equipped with a 4 Speed Automatic transmission. The vehicle is Island Gray Metallic with a Black interior. It is offered As-Is, extended warranty is available.</p>
+                                    </div>
+                                    <div className={classes.basics}>
+                                        <h2>Basics</h2>
+                                        <div className={classes.basicsContainer}>
+                                            <p><span>Fuel Type:</span>Gasoline</p>
+                                            <p><span>Exterior Color:</span>Island Gray Metallic</p>
+                                            <p><span>City MPG:</span>21</p>
+                                            <p><span>Interior Color:</span>Black</p>
+                                            <p><span>Highway MPG:</span>32</p>
+                                            <p><span>Transmission:</span>6-Speed Automatic with Auto-Shift</p>
+                                            <p><span>Engine:</span>2.0</p>
+                                            <p><span>Mileage:</span>81,215</p>
+                                        </div>
+                                    </div>        
+                                </div>
+                                <div>
+                                    Column2
+                                </div>
+                            </div>
+                        </div>
+                    )*/
         }
     }]);
 
@@ -73113,6 +73478,30 @@ var UpdateListing = function (_Component) {
                     valid: true,
                     clicked: false,
                     data: ''
+                },
+                cityMPG: {
+                    type: 'cityMPG',
+                    value: [],
+                    active: true,
+                    valid: true,
+                    clicked: false,
+                    data: ''
+                },
+                highwayMPG: {
+                    type: 'highwayMPG',
+                    value: [],
+                    active: true,
+                    valid: true,
+                    clicked: false,
+                    data: ''
+                },
+                engine: {
+                    type: 'engine',
+                    value: [],
+                    active: true,
+                    valid: true,
+                    clicked: false,
+                    data: ''
                 }
             },
             inputs: {
@@ -73344,6 +73733,11 @@ var UpdateListing = function (_Component) {
                         });
                     }
                 });
+            }
+
+            if (element.type === 'city' && valid && !/^[a-zA-Z\s]+,\s[a-zA-Z\s]+$/.test(element.value)) {
+                copyInputs[element.type].valid = false;
+                copyInputs[element.type].errorMessage = 'does not match valid format: "Denver, Colorado"';
             }
 
             _this.setState({

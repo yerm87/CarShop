@@ -14,7 +14,10 @@ class ListingInfo extends Component {
         diff: '',
         marginLeft: 0,
         itemData: {
-            images: ['']
+            year: '', make: '', model: '', bodyStyle: '', transmission: '', exteriorColor: '',
+            interiorColor: '', numberOfDoors: '', fuelType: '', condition: '', cityMPG: '',
+            highwayMPG: '', engine: '', price: '', mileage: '', description: '', firstName: '',
+            lastName: '', email: '', phoneNumber: '', city: '', zip: '', images: ['']
         },
         images: [
             {
@@ -195,6 +198,29 @@ class ListingInfo extends Component {
                                     switchImage={() => this.scrollImageItemOnClick(element)} />
         });
 
+        const {year, make, model, transmission, exteriorColor, interiorColor, fuelType, 
+            condition, cityMPG, highwayMPG, engine, price, mileage, description, firstName,
+            lastName, email, phoneNumber, city, zip} = this.state.itemData;
+
+        let modifiedPrice;
+        let modifiedMileage;
+
+        if(price.length > 3){
+            const firstDigit = price.slice(0, price.length-3);
+            const secondDigit = price.slice(price.length-3);
+            modifiedPrice = `${firstDigit},${secondDigit}`; 
+        } else {
+            modifiedPrice = price;
+        }
+
+        if(mileage.length > 3){
+            const firstDigit = mileage.slice(0, mileage.length-3);
+            const secondDigit = mileage.slice(mileage.length-3);
+            modifiedMileage = `${firstDigit},${secondDigit}`; 
+        } else {
+            modifiedMileage = mileage;
+        }
+
         return (
             <div className={classes.mainContainer}>
                 <div className={classes.container}>
@@ -220,9 +246,9 @@ class ListingInfo extends Component {
                                             <FaArrowRight />
                                         </div>
                                     </IconContext.Provider>
-                                    ) : null}
-                                </div>
+                                ) : null}
                             </div>
+                        </div>
                             {this.state.images.length !== 0 && 
                             this.state.images[0].active !== true ? (
                                 <IconContext.Provider value={{color: '#A59F9F', size: '40px'}}>
@@ -241,13 +267,93 @@ class ListingInfo extends Component {
                                     </div>
                                 </IconContext.Provider>
                             ) : null}
+                        <div className={classes.title}>
+                            <p className={classes.condition}>{condition}</p>
+                            <p className={classes.makeAndModel}>{`${year} ${make} ${model}`}</p>
+                            <p style={{marginBottom: '10px'}}>{modifiedMileage} miles</p>
                         </div>
+                        <div className={classes.itemInfo}>
+                            <h2>${modifiedPrice}</h2>
+                            <div className={classes.contacts}>
+                                <p>Sold by {`${firstName} ${lastName}`}</p>
+                                <p>Phone: {phoneNumber}</p>
+                                <p style={{ color: 'var(--mainBlue)' }}>{`${city} ${zip}`}</p>
+                                <p>email: {email}</p>
+                            </div>
+                            {description ? <h2 style={{ marginTop: '25px'}}>Description</h2> : null}
+                            <p>{description ? description : null}</p>
+                        </div>
+                        <div className={classes.basics}>
+                            <h2>Basics</h2>
+                            <div className={classes.basicsContainer}>
+                                <p><span>Fuel Type:</span>{fuelType}</p>
+                                <p><span>Exterior Color:</span>{exteriorColor}</p>
+                                <p><span>City MPG:</span>{cityMPG}</p>
+                                <p><span>Interior Color:</span>{interiorColor}</p>
+                                <p><span>Highway MPG:</span>{highwayMPG}</p>
+                                <p><span>Transmission:</span>{transmission}</p>
+                                <p><span>Engine:</span>{engine}</p>
+                                <p><span>Mileage:</span>{modifiedMileage}</p>
+                            </div>
+                        </div>
+                    </div>        
                     <div>
                         Column2
                     </div>
                 </div>
             </div>
         )
+/*
+        return (
+            <div className={classes.mainContainer}>
+                <div className={classes.container}>
+                    <div className={classes.containerContent} >
+                        <ListingMainImage img="../../assets/1.jpg" />
+                        <div className={classes.scrollImages}>
+                            <div className={classes.frame}>
+                                <div className={classes.imagesContainer}>
+                                    <ScrollImageItem img="../../assets/1.jpg" />
+                                    <ScrollImageItem img="../../assets/2.jpg" />
+                                    <ScrollImageItem img="../../assets/3.jpg" />
+                                    <ScrollImageItem img="../../assets/4.jpg" /> 
+                                    <ScrollImageItem img="../../assets/5.jpg" />
+                                    <ScrollImageItem img="../../assets/6.jpg" />   
+                                </div>    
+                            </div>
+                        </div>
+                        <div className={classes.title}>
+                            <p className={classes.condition}>Used</p>
+                            <p className={classes.makeAndModel}>2014 Ford Focus</p>
+                            <p>81,215 miles</p>
+                        </div>
+                        <div className={classes.itemInfo}>
+                            <h2>$6,891</h2>
+                            <p style={{ fontWeight: 'bold' }}>Sold by Roman Ermeev</p>
+                            <p style={{ color: 'var(--mainBlue)',
+                                        fontWeight: 'bold' }}>Miami Beach, Florida 33139</p>
+                            <h2 style={{ marginTop: '25px'}}>Description</h2>
+                            <p>This 2014 Volkswagen CC 4dr Sport features a 2.0L 4 CYLINDER 4cyl Gasoline engine. It is equipped with a 4 Speed Automatic transmission. The vehicle is Island Gray Metallic with a Black interior. It is offered As-Is, extended warranty is available.</p>
+                        </div>
+                        <div className={classes.basics}>
+                            <h2>Basics</h2>
+                            <div className={classes.basicsContainer}>
+                                <p><span>Fuel Type:</span>Gasoline</p>
+                                <p><span>Exterior Color:</span>Island Gray Metallic</p>
+                                <p><span>City MPG:</span>21</p>
+                                <p><span>Interior Color:</span>Black</p>
+                                <p><span>Highway MPG:</span>32</p>
+                                <p><span>Transmission:</span>6-Speed Automatic with Auto-Shift</p>
+                                <p><span>Engine:</span>2.0</p>
+                                <p><span>Mileage:</span>81,215</p>
+                            </div>
+                        </div>        
+                    </div>
+                    <div>
+                        Column2
+                    </div>
+                </div>
+            </div>
+        )*/
     }
 }
 

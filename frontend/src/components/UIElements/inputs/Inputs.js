@@ -213,6 +213,48 @@ const Input = props => {
                     </select>
                 </div>
             )
+        case('cityMPG'):
+            return (
+                <div className={classes.selectWrapper}>
+                    <label htmlFor="cityMPG">City MPG</label>
+                    <select className={selectStyles.join(' ')}
+                            disabled={props.invalid}
+                            name="cityMPG"
+                            value={props.value}
+                            onChange={props.onChangeHandler}>
+                            <option value="select">Select</option>
+                            {props.children}
+                    </select>
+                </div>
+            )
+        case('highwayMPG'):
+            return (
+                <div className={classes.selectWrapper}>
+                    <label htmlFor="highwayMPG">Highway MPG</label>
+                    <select className={selectStyles.join(' ')}
+                            disabled={props.invalid}
+                            name="highwayMPG"
+                            value={props.value}
+                            onChange={props.onChangeHandler}>
+                            <option value="select">Select</option>
+                            {props.children}
+                    </select>
+                </div>
+            )
+        case('engine'):
+            return (
+                <div className={classes.selectWrapper}>
+                    <label htmlFor="engine">Engine</label>
+                    <select className={selectStyles.join(' ')}
+                            disabled={props.invalid}
+                            name="engine"
+                            value={props.value}
+                            onChange={props.onChangeHandler}>
+                            <option value="select">Select engine</option>
+                            {props.children}
+                    </select>
+                </div>
+            )
         case('price'):
             return (
                 <React.Fragment>
@@ -329,12 +371,13 @@ const Input = props => {
             return (
                 <React.Fragment>
                     <div className={classes.wrapper}>
-                        <label htmlFor="city">City</label>
+                        <label htmlFor="city">Location</label>
                         <p>{props.error}</p>
                     </div>
                     <input type="text"
                            className={arrayOfStyles.join(' ')} 
-                           name="city" 
+                           name="city"
+                           placeholder="City, State" 
                            value={props.value}
                            list="datalistCities"
                            onChange={props.onChangeHandler}

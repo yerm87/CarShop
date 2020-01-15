@@ -1,5 +1,7 @@
 .mainContainer {
     background: #f2f2f2;
+    font-family: 'Montserrat';
+    color: #000;
 }
 
 .container {
@@ -68,4 +70,55 @@
 
 .arrowLeft:hover, .arrowRight:hover {
     cursor: pointer;
+}
+
+.title {
+    border-bottom: 1px solid var(--mainBlack);
+}
+
+.title .makeAndModel {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: var(--mainBlue);
+}
+
+.title .condition {
+    margin: 15px 0 15px 0;
+}
+
+.itemInfo h2 {
+    margin: 10px 0 10px 0;
+}
+
+.itemInfo p {
+    margin: 10px 0;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-weight: bold;
+}
+
+.basics {
+    margin-top: 30px;
+}
+
+.basics h2 {
+    margin: 10px 0;
+}
+
+.basicsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.basicsContainer span {
+    font-weight: bold;
+    margin-right: 7px;
+}
+
+.basicsContainer p {
+    margin: 10px 0;
 }
