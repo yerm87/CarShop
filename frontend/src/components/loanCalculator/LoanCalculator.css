@@ -1,0 +1,92 @@
+.container {
+    background: rgb(202, 196, 196);
+    font-family: 'Montserrat';
+    margin-bottom: 30px;
+}
+
+.title {
+    padding: 20px 0 0 14px;
+    font-weight: bold;
+    
+}
+
+.monthlyPayment {
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+    padding: 17px 0;
+    border-bottom: 1px solid #000;
+    margin-bottom: 0;
+}
+
+.monthlyPayment span {
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+.estimatedPayment {
+    text-align: center;
+    margin: 10px 0 40px 0;
+}
+
+.estimatedPayment span {
+    font-weight: bold;
+}
+
+.inputsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 15px; 
+}
+
+.inputsContainer label {
+    font-weight: bold;
+}
+
+.inputsContainer input {
+    display: block;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.2em;
+    padding-left: 8px;
+    margin-top: 5px;
+    background: var(--mainWhite);
+}
+
+.inputsContainer div {
+    margin-bottom: 20px;
+}
+
+.inputsContainer button {
+    padding: 10px 36px;
+    background: transparent;
+    border: 1px solid var(--mainBlue);
+    border-radius: 8px;
+    width: 249px;
+    color: vaR(--mainBlue);
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 45px;
+}
+
+.inputsContainer button:hover {
+    background: var(--mainBlue);
+    color: var(--mainWhite);
+}
+
+.terms p {
+    font-weight: bold;
+}
+
+.termsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-top: 5px;
+}
+
+.percentage {
+    width: 200px;
+}

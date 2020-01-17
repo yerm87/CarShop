@@ -1,0 +1,22 @@
+.term {
+    border: 1px solid var(--mainBlue);
+    font-weight: bold;
+    margin: 0;
+    border-radius: 8px;
+    width: 45px;
+    height: 45px;
+    padding: 12px 0 0 12px;
+    box-sizing: border-box;
+    color: var(--mainBlue);
+    cursor: pointer;
+}
+
+.term:hover {
+    background: var(--mainBlue);
+    color: var(--mainWhite);
+}
+
+.active {
+    background: var(--mainBlue);
+    color: var(--mainWhite);
+}

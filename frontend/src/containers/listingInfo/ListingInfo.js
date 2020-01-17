@@ -5,6 +5,7 @@ import { ListingMainImage } from '../../components/heroImage/HeroImage';
 import ScrollImageItem from '../../components/scrollImageItem/ScrollImageItem';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
+import LoanCalculator from '../../components/loanCalculator/LoanCalculator';
 
 class ListingInfo extends Component {
     state={
@@ -25,7 +26,18 @@ class ListingInfo extends Component {
                 active: false
             }
         ],
-        mainImage: ''
+        mainImage: '',
+        terms: [
+            { value: 36, active: true },
+            { value: 48, active: false },
+            { value: 60, active: false },
+            { value: 72, active: false }
+        ],
+        term: 36,
+        downpayment: 0,
+        interestRate: 4.5,
+        vehiclePrice: 0,
+        monthlyPayment: 0
     }
 
     componentDidMount(){
@@ -68,17 +80,43 @@ class ListingInfo extends Component {
                         mainImage = images[0].path;
                     }
 
+                    const vehiclePrice = parseInt(this.state.itemData.price);
+
                     this.setState({
                         itemImagesLength: itemImagesLength,
                         diff: diff,
                         images: images,
-                        mainImage: mainImage
+                        mainImage: mainImage,
+                        vehiclePrice: vehiclePrice
                     }, () => {
-                        console.log(this.state);
+                        const monthlyPayment = this.calculate();
+
+                        this.setState({
+                            monthlyPayment: monthlyPayment
+                        })
                     });
                 });
             });
         });
+    }
+
+    calculate = () => {
+
+        const interestRatePerMonth = this.state.interestRate/100/12;
+
+        const incrementedValue = interestRatePerMonth + 1;
+
+        const firstValue = interestRatePerMonth*Math.pow(incrementedValue, this.state.term);
+        const secondValue = Math.pow(incrementedValue, this.state.term) - 1;
+
+        const totalValue = firstValue/secondValue;
+
+        const vehiclePriceMinusDownpayment = this.state.vehiclePrice - this.state.downpayment;
+        let monthlyPayment = vehiclePriceMinusDownpayment*totalValue;
+
+        monthlyPayment = Math.round(monthlyPayment);
+
+        return monthlyPayment;
     }
 
     moveLeft = (event) => {
@@ -180,6 +218,47 @@ class ListingInfo extends Component {
                 mainImage: prevImage.path
             });
         }
+    }
+
+    termChangeHandler = element => {
+        const terms = this.state.terms;
+
+        terms.forEach(term => {
+            term.active = false;
+        });
+
+        const index = terms.findIndex(term => term === element);
+        terms[index].active = true;
+
+        const term = terms[index].value;
+
+        this.setState({
+            terms: terms,
+            term: term
+        });
+    }
+
+    changeValueHandler = event => {
+        let value = event.target.value;
+
+        if(event.target.name !== 'interestRate'){
+            event.target.value = `$${event.target.value}`;
+            value = event.target.value.slice(1);
+        }
+
+        this.setState({
+            [event.target.name]: value
+        }, () => {
+            console.log(this.state);
+        });
+    }
+
+    calculateValueHandler = () => {
+        const monthlyPayment = this.calculate();
+
+        this.setState({
+            monthlyPayment: monthlyPayment
+        })
     }
 
     render(){
@@ -296,6 +375,15 @@ class ListingInfo extends Component {
                                 <p><span>Mileage:</span>{modifiedMileage}</p>
                             </div>
                         </div>
+                        <LoanCalculator terms={this.state.terms}
+                                        monthlyPayment={this.state.monthlyPayment}
+                                        term={this.state.term}
+                                        downpayment={this.state.downpayment}
+                                        price={this.state.vehiclePrice}
+                                        interestRate={this.state.interestRate}
+                                        termChange={this.termChangeHandler}
+                                        changeValue={(event) => this.changeValueHandler(event)}
+                                        calculateValue={() => this.calculateValueHandler()} />
                     </div>        
                     <div>
                         Column2
@@ -303,8 +391,8 @@ class ListingInfo extends Component {
                 </div>
             </div>
         )
-/*
-        return (
+
+    /*    return (
             <div className={classes.mainContainer}>
                 <div className={classes.container}>
                     <div className={classes.containerContent} >
@@ -346,7 +434,8 @@ class ListingInfo extends Component {
                                 <p><span>Engine:</span>2.0</p>
                                 <p><span>Mileage:</span>81,215</p>
                             </div>
-                        </div>        
+                        </div>
+                        <LoanCalculator />        
                     </div>
                     <div>
                         Column2
