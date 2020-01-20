@@ -1,0 +1,44 @@
+.container {
+    font-family: 'Montserrat';
+    color: var(--mainBlack);
+    box-sizing: border-box;
+}
+
+.container h2 {
+    margin: 20px 0 0 14px;
+}
+
+.container p {
+    padding-left: 14px;
+    margin: 15px 0;
+    font-size: 1.4em;
+}
+
+.container button {
+    padding: 12px 36px;
+    border: 1px solid var(--mainBlue);
+    background: transparent;
+    border-radius: 8px;
+    color: var(--mainBlue);
+    margin-left: 14px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.container button:hover {
+    color: var(--mainWhite);
+    background: var(--mainBlue);
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 14px;
+    box-sizing: border-box;
+}
+
+.errorMessage {
+    margin: 10px;
+    font-size: 12px;
+    color: var(--mainRed);
+}

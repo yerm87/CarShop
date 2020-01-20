@@ -6,6 +6,7 @@ import ScrollImageItem from '../../components/scrollImageItem/ScrollImageItem';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import LoanCalculator from '../../components/loanCalculator/LoanCalculator';
+import ContactSellerForm from '../../components/contactSellerForm/ContactSellerForm';
 
 class ListingInfo extends Component {
     state={
@@ -355,9 +356,7 @@ class ListingInfo extends Component {
                             <h2>${modifiedPrice}</h2>
                             <div className={classes.contacts}>
                                 <p>Sold by {`${firstName} ${lastName}`}</p>
-                                <p>Phone: {phoneNumber}</p>
                                 <p style={{ color: 'var(--mainBlue)' }}>{`${city} ${zip}`}</p>
-                                <p>email: {email}</p>
                             </div>
                             {description ? <h2 style={{ marginTop: '25px'}}>Description</h2> : null}
                             <p>{description ? description : null}</p>
@@ -372,7 +371,7 @@ class ListingInfo extends Component {
                                 <p><span>Highway MPG:</span>{highwayMPG}</p>
                                 <p><span>Transmission:</span>{transmission}</p>
                                 <p><span>Engine:</span>{engine}</p>
-                                <p><span>Mileage:</span>{modifiedMileage}</p>
+                                <p><span>Mileagee:</span>{modifiedMileage}</p>
                             </div>
                         </div>
                         <LoanCalculator terms={this.state.terms}
@@ -385,14 +384,14 @@ class ListingInfo extends Component {
                                         changeValue={(event) => this.changeValueHandler(event)}
                                         calculateValue={() => this.calculateValueHandler()} />
                     </div>        
-                    <div>
-                        Column2
+                    <div className={classes.contactFormWrapper}>
+                        <ContactSellerForm itemId={this.state.listingId} />
                     </div>
                 </div>
             </div>
         )
-
-    /*    return (
+/*
+        return (
             <div className={classes.mainContainer}>
                 <div className={classes.container}>
                     <div className={classes.containerContent} >
@@ -434,11 +433,10 @@ class ListingInfo extends Component {
                                 <p><span>Engine:</span>2.0</p>
                                 <p><span>Mileage:</span>81,215</p>
                             </div>
-                        </div>
-                        <LoanCalculator />        
+                        </div>        
                     </div>
                     <div>
-                        Column2
+                        <ContactSellerForm />
                     </div>
                 </div>
             </div>

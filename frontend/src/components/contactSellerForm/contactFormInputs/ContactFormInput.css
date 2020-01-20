@@ -1,0 +1,34 @@
+.input {
+    padding-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.input input {
+    width: 80%;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
+.inputElement {
+    border: 1px solid var(--mainBlack);
+}
+
+.inputTextArea {
+    font-size: 1.1em;
+    padding: 10px 14px;
+    box-sizing: border-box;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.inputTextArea textarea {
+    width: 100%;
+    padding: 10px 0 0 10px;
+    border-radius: 8px;
+    resize: none;
+}
+
+.active {
+    border: 1px solid var(--mainRed);
+}

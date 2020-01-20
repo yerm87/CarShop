@@ -96,8 +96,6 @@
 }
 
 .contacts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     font-weight: bold;
 }
 
@@ -122,4 +120,10 @@
 
 .basicsContainer p {
     margin: 10px 0;
+}
+
+.contactFormWrapper {
+    border: 1px solid var(--mainBlack);
+    border-radius: 5px;
+    height: 600px;
 }
