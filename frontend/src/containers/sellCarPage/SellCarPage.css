@@ -18,9 +18,29 @@
 }
 
 .listings {
-    width: 75%;
-    margin-left: 50px;
+    display: flex;
+    /*width: 75%;
+    margin-left: 50px;*/
     font-family: 'Montserrat';
+}
+
+.switchButton {
+    display: block;
+    padding: 14px 50px;
+    color: var(--mainBlue);
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.switchButton:hover {
+    background: var(--mainBlue);
+    color: var(--mainWhite);
+}
+
+.active {
+    background: var(--mainBlue);
+    color: var(--mainWhite);
 }
 
 .ifNoListings p {
@@ -32,4 +52,12 @@
 
 .listings h1 {
     color: var(--mainBlack);
+}
+
+.dynamicContent {
+    padding: 25px 40px;
+}
+
+.buttons span {
+    margin-left: 20px;
 }

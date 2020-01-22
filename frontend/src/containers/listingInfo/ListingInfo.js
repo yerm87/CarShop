@@ -7,6 +7,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import LoanCalculator from '../../components/loanCalculator/LoanCalculator';
 import ContactSellerForm from '../../components/contactSellerForm/ContactSellerForm';
+import Spinner from '../../components/UIElements/spinner/Spinner';
 
 class ListingInfo extends Component {
     state={
@@ -38,7 +39,9 @@ class ListingInfo extends Component {
         downpayment: 0,
         interestRate: 4.5,
         vehiclePrice: 0,
-        monthlyPayment: 0
+        monthlyPayment: 0,
+        formWasSent: false,
+        loading: false
     }
 
     componentDidMount(){
@@ -262,6 +265,24 @@ class ListingInfo extends Component {
         })
     }
 
+    formWasSentHandler = () => {
+        this.setState({
+            formWasSent: true
+        });
+    }
+
+    loadingOn = () => {
+        this.setState({
+            loading: true
+        });
+    }
+
+    loadingOff = () => {
+        this.setState({
+            loading: false
+        });
+    }
+
     render(){
         let path;
 
@@ -299,6 +320,20 @@ class ListingInfo extends Component {
             modifiedMileage = `${firstDigit},${secondDigit}`; 
         } else {
             modifiedMileage = mileage;
+        }
+
+        let component = !this.state.formWasSent ? (
+            <div className={classes.contactFormWrapper}>
+                <ContactSellerForm itemId={this.state.listingId}
+                                   phoneNumber={phoneNumber}
+                                   formDelivered={this.formWasSentHandler}
+                                   loadingOn={this.loadingOn}
+                                   loadingOff={this.loadingOff} />
+            </div>
+        ) : <p className={classes.messageDelivered}>message was successfully delivered!</p>
+
+        if(this.state.loading){
+            component = <Spinner />
         }
 
         return (
@@ -371,7 +406,7 @@ class ListingInfo extends Component {
                                 <p><span>Highway MPG:</span>{highwayMPG}</p>
                                 <p><span>Transmission:</span>{transmission}</p>
                                 <p><span>Engine:</span>{engine}</p>
-                                <p><span>Mileagee:</span>{modifiedMileage}</p>
+                                <p><span>Mileage:</span>{modifiedMileage}</p>
                             </div>
                         </div>
                         <LoanCalculator terms={this.state.terms}
@@ -383,10 +418,8 @@ class ListingInfo extends Component {
                                         termChange={this.termChangeHandler}
                                         changeValue={(event) => this.changeValueHandler(event)}
                                         calculateValue={() => this.calculateValueHandler()} />
-                    </div>        
-                    <div className={classes.contactFormWrapper}>
-                        <ContactSellerForm itemId={this.state.listingId} />
                     </div>
+                    {component}        
                 </div>
             </div>
         )
@@ -435,9 +468,7 @@ class ListingInfo extends Component {
                             </div>
                         </div>        
                     </div>
-                    <div>
-                        <ContactSellerForm />
-                    </div>
+                    <p className={classes.messageDelivered}>message was successfully delivered!</p>
                 </div>
             </div>
         )*/

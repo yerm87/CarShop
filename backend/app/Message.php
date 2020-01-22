@@ -8,8 +8,8 @@ use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 class Message extends Eloquent
 {
     protected $fillable = [
-        'firstName', 'lastName', 'email', 'phoneNumber', 'content', 'itemId'    
+        'firstName', 'lastName', 'email', 'phoneNumber', 'content', 'itemId', 'visited'    
     ];
   
-    protected $collection = 'listings';
+    protected $collection = 'messages';
 }

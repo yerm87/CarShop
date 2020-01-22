@@ -28,6 +28,8 @@ use App\Http\Requests\BuyingAdviceRequest;
 use App\Http\Requests\ReviewRequest;
 use App\Review;
 use App\City;
+use App\Http\Controllers\MessageController;
+use App\Message;
 
 Route::get('/test', function(){
     return view('welcome');
@@ -357,5 +359,25 @@ Route::post('/filter_items_withZipCodes', 'ListingController@filterItemsWithZipC
 
 
 //API to get listing info on click
-
 Route::post('/get_listing', 'ListingController@getListing');
+
+
+
+    /************ MESSAGES ************/
+
+
+//API to create message object in database;
+Route::post('/create_message', 'MessageController@createMessage');
+
+
+//API to fetch messageItems by listingId
+Route::post('/get_messageItems', 'MessageController@getMessageItems');
+
+//API to mark message as visited
+Route::get('/message_visited', 'MessageController@messageVisited');
+
+//API to count how many unread messages
+Route::post('/new_messages_count', 'MessageController@newMessagesCount');
+
+//API to delete message
+Route::get('/delete_message', 'MessageController@deleteMessage');

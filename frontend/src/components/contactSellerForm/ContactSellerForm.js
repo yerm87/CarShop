@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import classes from './ContactSellerForm.css';
 import ContactFormInput from './contactFormInputs/ContactFormInput';
+import axios from 'axios';
 
 class ContactSellerForm extends Component {
     state={
@@ -123,6 +124,22 @@ class ContactSellerForm extends Component {
             this.setState({
                 errorMessage: 'All fields must be filled'
             })
+        } else {
+            const fd = new FormData();
+
+            for(let prop in this.state.inputData){
+                fd.append(prop, this.state.inputData[prop].value);
+            }
+
+            fd.append('itemId', this.props.itemId);
+
+            this.props.loadingOn();
+            axios.post('/create_message', fd).then(response => {
+                if(response.data.created === true){
+                    this.props.loadingOff();
+                    this.props.formDelivered();
+                }
+            })
         }
     }
 
@@ -142,7 +159,7 @@ class ContactSellerForm extends Component {
         return (
             <div className={classes.container}>
                 <h2>Contact Seller</h2>
-                <p>(111)-111-1111</p>
+                <p>{this.props.phoneNumber}</p>
                 <div className={classes.info}>
                     {inputs.slice(0, inputs.length-1)}
                 </div>

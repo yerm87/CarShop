@@ -10,12 +10,15 @@ import { Link } from 'react-router-dom';
 import ListingItem from '../../components/listingItem/ListingItem';
 import axios from 'axios';
 import AdvicesLatestItems from '../../components/advicesLatestItems/AdvicesLatestItems';
+import MessagesWindow from '../../components/messagesWindow/MessagesWindow';
 
 class SellCarPage extends Component {
     state={
         items: [],
         activeModalsPerItem: [],
-        buyingAdvices: []
+        buyingAdvices: [],
+        listingButtonActive: true,
+        unreadMessagesCount: 0
     }
 
     componentWillMount() {
@@ -40,6 +43,16 @@ class SellCarPage extends Component {
                 this.setState({
                     items: response.data,
                     activeModalsPerItem: activeModalsPerItem
+                }, () => {
+                    const listingsIds = this.state.items.map(element => element._id);
+
+                    axios.post(`/new_messages_count`, {
+                        listingsIds: listingsIds
+                    }).then(response => {
+                        this.setState({
+                            unreadMessagesCount: response.data
+                        })
+                    })
                 });
             });
         }
@@ -86,6 +99,26 @@ class SellCarPage extends Component {
             }
         })
     }
+
+    listings = () => {
+        this.setState({
+            listingButtonActive: true
+        });
+    }
+
+    messages = () => {
+        this.setState({
+            listingButtonActive: false
+        });
+    }
+
+    decrementUnreadMessages = () => {
+        let count = this.state.unreadMessagesCount;
+        count--;
+        this.setState({
+            unreadMessagesCount: count
+        })
+    }
     
     render() {
         const activeValues = this.state.activeModalsPerItem;
@@ -97,6 +130,30 @@ class SellCarPage extends Component {
                                 closeModal={() => this.closeModalHandler(current)}
                                 deleteElement={() => this.deleteItemHandler(current, current._id)} />
         })
+
+        const renderListings = this.state.items.length > 0 ? listings : (
+            <div className={classes.ifNoListings}>
+                <p>You don't have listings yet</p>
+            </div>
+        )
+
+        const listingButtonClasses = [classes.switchButton];
+        const messagesButtonClasses = [classes.switchButton];
+
+        if(this.state.listingButtonActive){
+            listingButtonClasses.push(classes.active);
+        } else {
+            messagesButtonClasses.push(classes.active);
+        }
+
+        const count = this.state.unreadMessagesCount > 0 ? this.state.unreadMessagesCount : '';
+
+        let content = this.state.listingButtonActive ? (
+            <React.Fragment>
+                <p>{renderListings}</p>
+            </React.Fragment>
+        ) : <MessagesWindow listingItems={this.state.items}
+                            decrement={() => this.decrementUnreadMessages()} />
 /*
         let component = (
             <div className={classes.wrapperSellPage}>
@@ -109,12 +166,22 @@ class SellCarPage extends Component {
                     </div>
                 </HeroImage>
                 <div className={classes.listings}>
-                    <h1>My Listings</h1>
-                    {listings}
+                    <div className={classes.buttons}>
+                        <a className={listingButtonClasses.join(' ')}
+                           onClick={() => this.listings()}>Listings</a>
+                        <a className={messagesButtonClasses.join(' ')}
+                           onClick={() => this.messages()}>Messages</a>
+                    </div>
+                    <div className={classes.dynamicContent}>
+                        {content}
+                    </div>
                 </div>
-                <AdvicesLatestItems />
+                
             </div>
-        )*/
+        )
+*/
+        //{listings}
+        //<AdvicesLatestItems />
 
         let component = (
             <React.Fragment>
@@ -133,12 +200,16 @@ class SellCarPage extends Component {
                             </div>
                         </HeroImage>
                         <div className={classes.listings}>
-                            <h1>My Listings</h1>
-                            {this.state.items.length > 0 ? listings : (
-                                <div className={classes.ifNoListings}>
-                                    <p>You don't have listings yet</p>
-                                </div>
-                            )}
+                            <div className={classes.buttons}>
+                                <a className={listingButtonClasses.join(' ')}
+                                   onClick={() => this.listings()}>Listings</a>
+                                <a className={messagesButtonClasses.join(' ')}
+                                   onClick={() => this.messages()}>Messages<span>
+                                       {count}</span></a>
+                            </div>
+                            <div className={classes.dynamicContent}>
+                                {content}
+                            </div>
                         </div>
                     </div>
                 ) : null}

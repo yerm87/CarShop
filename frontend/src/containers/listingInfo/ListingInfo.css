@@ -127,3 +127,11 @@
     border-radius: 5px;
     height: 600px;
 }
+
+.messageDelivered {
+    padding: 12px 14px;
+    background: #8aeba4;
+    color: #262b27;
+    font-weight: bold;
+    height: 28px;
+}
