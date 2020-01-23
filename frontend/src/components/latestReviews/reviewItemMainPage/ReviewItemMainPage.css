@@ -1,0 +1,35 @@
+.container {
+    
+}
+
+.content {
+    padding: 12px;
+    background: var(--mainWhite);
+    width: 280px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-weight: bold;
+    color: var(--mainBlue);
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+}
+
+.date {
+    font-size: 0.9em;
+    color: #3e464f;
+    margin: 0 0 14px 0;
+}
+
+.text {
+    color: #3e464f;
+    margin: 0 0 14px 0;
+}
+
+.readMore {
+    color: var(--mainBlue);
+    margin-bottom: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -3,6 +3,7 @@ import HeroImage from '../../components/heroImage/HeroImage';
 import Title from '../../components/title/Title';
 import SearchComponent from '../../components/searchComponent/SearchComponent';
 import classes from './Main_page.css';
+import LatestReviews from '../../components/latestReviews/LatestReviews';
 
 class MainPage extends Component {
     render() {
@@ -13,6 +14,7 @@ class MainPage extends Component {
                            subtitle="Search cars from thousands of individual sellers" />
                     <SearchComponent />
                 </HeroImage>
+                <LatestReviews />
             </div>
         )
     }

@@ -78,7 +78,13 @@
                 	    	    		@endif
                 	    	    	</td>
                 	    	    	<td>{{$review->title}}</td>
-                	    	    	<td>{{$review->content}}</td>
+                	    	    	<td>
+                                        @if(strlen($review->content) < 100)
+                                           {{$review->content}}
+                                           @else
+                                              {{substr($review->content, 0, 100)}}...
+                                        @endif
+                                    </td>
                 	    	    	<td>{{$review->author}}</td>
                 	    	    	<td>{{$review->created_at}}</td>
                 	    	    	<td>

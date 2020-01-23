@@ -161,13 +161,15 @@ class MessagesWindow extends Component {
         )
 
         if(this.state.messageItems.length === 0){
-            <div className={classes.container}>
-                <div className={classes.messageItems}>
+            component = (
+                <div className={classes.container}>
+                    <div className={classes.messageItems}>
+                    </div>
+                    <div className={classes.selectItem}>
+                        <p>No Messages</p>
+                    </div>
                 </div>
-                <div className={classes.selectItem}>
-                    <p>No Messages</p>
-                </div>
-            </div>
+            )
         }
 
         return component

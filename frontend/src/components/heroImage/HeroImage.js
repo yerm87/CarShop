@@ -55,4 +55,11 @@ export const ListingInfoScrollImageItem = styled.div`
     border: ${props => props.active ? '2px solid var(--mainRed);' : '2px solid var(--mainWhite)'}
 `
 
+export const ReviewItemImage = styled.div`
+    background: url(${props => props.img}) no-repeat center center;
+    background-size: cover;
+    height: 150px;
+    width: 280px;
+`
+
 export default HeroImage;

@@ -111,4 +111,26 @@ class AdminController extends Controller
     	
     	return $advice;
     }
+
+    public function fetchLatestReviews(Request $request){
+        $reviews = Review::all();
+        foreach($reviews as $review){
+            if($review->image !== 'no image'){
+                $image = base64_encode($review->image);
+                $review->image = $image;
+            }
+        }
+
+        $latestItems = array();
+
+        if(count($reviews) > 3){
+            for($i=count($reviews)-1; $i>=count($reviews)-3; $i--){
+                array_push($latestItems, $reviews[$i]);
+            }
+        } else {
+            $latestItems = $reviews;
+        }
+
+        return $latestItems;
+    }
 }

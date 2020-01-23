@@ -381,3 +381,7 @@ Route::post('/new_messages_count', 'MessageController@newMessagesCount');
 
 //API to delete message
 Route::get('/delete_message', 'MessageController@deleteMessage');
+
+
+//API to get last 3 reviews
+Route::get('/get_last_reviews', 'AdminController@fetchLatestReviews');
