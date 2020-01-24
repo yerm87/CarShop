@@ -3,7 +3,8 @@ import AdvicesItem from './advicesItem/AdvicesItem';
 
 const AdvicesAllItems = props => {
     const items = props.elements.map(element => {
-        return <AdvicesItem element={element} />
+        return <AdvicesItem element={element}
+                            reviews={props.reviews} />
     })
 
     return (

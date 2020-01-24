@@ -106,13 +106,16 @@ class AdminController extends Controller
 
     public function fetchBuyingAdvicesItem(Request $request){
     	$advice = BuyingAdvice::find($request->id);
-    	$image = base64_encode($advice->image);
-    	$advice->image = $image;
+
+        if($advice->image !== 'no image'){
+    	    $image = base64_encode($advice->image);
+    	    $advice->image = $image;
+        }
     	
     	return $advice;
     }
 
-    public function fetchLatestReviews(Request $request){
+    public function fetchLatestReviews(){
         $reviews = Review::all();
         foreach($reviews as $review){
             if($review->image !== 'no image'){
@@ -132,5 +135,35 @@ class AdminController extends Controller
         }
 
         return $latestItems;
+    }
+
+    public function getAllReviews(){
+        $reviews = Review::all();
+
+        foreach($reviews as $review){
+            if($review->image !== 'no image'){
+                $image = base64_encode($review->image);
+                $review->image = $image;
+            }
+        }
+
+        $reviewsReversed = array();
+
+        for($i=count($reviews)-1; $i>=0; $i--){
+            array_push($reviewsReversed, $reviews[$i]);
+        }
+
+        return $reviewsReversed;
+    }
+
+    public function fetchReviewItem(Request $request){
+        $review = Review::find($request->id);
+
+        if($review->image !== 'no image'){
+            $image = base64_encode($review->image);
+            $review->image = $image;
+        }
+        
+        return $review;
     }
 }

@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import classes from './LatestReviews.css';
 import ReviewItemMainPage from './reviewItemMainPage/ReviewItemMainPage';
 import axios from 'axios';
+import { withRouter } from 'react-router-dom';
 
-const LatestReviews = () => {
+const LatestReviews = props => {
     const [reviews, setReviews] = useState(
         [
             {
@@ -21,20 +22,17 @@ const LatestReviews = () => {
         axios.get('/get_last_reviews').then(response => {
             setReviews(response.data);
         });
-        return () => {
-            console.log(reviews);
-        }
     }, []);
 
-    const getReviewHandler = element => {
-        console.log(element);
+    const getAllReviews = () => {
+        props.history.push('/reviews');
     }
 
     const reviewItems = reviews.map(review => <ReviewItemMainPage title={review.title}
                                                                   image={review.image}
                                                                   content={review.content}
                                                                   date={review.created_at}
-                                                            getReview={() => getReviewHandler(review)} />)
+                                                                  id={review._id} />)
 
     return (
         <div className={classes.wrapper}>
@@ -42,9 +40,9 @@ const LatestReviews = () => {
             <div className={classes.content}>
                 {reviewItems}
             </div>
-            <button>Read All Reviews</button>
+            <button onClick={() => getAllReviews()}>Read All Reviews</button>
         </div>
     )
 }
 
-export default LatestReviews;
+export default withRouter(LatestReviews);

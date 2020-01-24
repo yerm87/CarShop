@@ -6,6 +6,7 @@
     padding: 12px;
     background: var(--mainWhite);
     width: 280px;
+    min-height: 248px;
     box-sizing: border-box;
 }
 

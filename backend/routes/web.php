@@ -383,5 +383,13 @@ Route::post('/new_messages_count', 'MessageController@newMessagesCount');
 Route::get('/delete_message', 'MessageController@deleteMessage');
 
 
+            /************** REVIEWS ***********/
+
 //API to get last 3 reviews
 Route::get('/get_last_reviews', 'AdminController@fetchLatestReviews');
+
+//API to get all reviews
+Route::get('/get_all_reviews', 'AdminController@getAllReviews');
+
+//API to get review item
+Route::get('/fetch_review_item', 'AdminController@fetchReviewItem');

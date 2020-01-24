@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ReviewItemImage } from '../../heroImage/HeroImage';
 import classes from './ReviewItemMainPage.css';
+import { withRouter } from 'react-router-dom';
 
 const ReviewItemMainPage = props => {
 
@@ -10,7 +11,17 @@ const ReviewItemMainPage = props => {
         content = content.slice(0, 150) + '...';
     }
 
-    const image=`data:jpeg;base64,${props.image}`;
+    let image;
+
+    if(props.image !== 'no image'){
+        image=`data:jpeg;base64,${props.image}`;
+    } else {
+        image = '../../../assets/no_photo.jpg';
+    }
+
+    const getReview = () => {
+        props.history.push(`/reviews/${props.id}`);
+    }
 
     return (
         <div className={classes.container}>
@@ -26,10 +37,10 @@ const ReviewItemMainPage = props => {
                     {content}
                 </p>
                 <p className={classes.readMore}
-                   onClick={props.getReview}>Read More</p>
+                   onClick={() => getReview()}>Read More</p>
             </div>
         </div>
     )
 }
 
-export default ReviewItemMainPage;
+export default withRouter(ReviewItemMainPage);

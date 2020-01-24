@@ -1,0 +1,33 @@
+.wrapper {
+    background: #f2f2f2;
+}
+
+.content {
+    font-family: 'Montserrat';
+    width: 80%;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+.content h2 {
+    margin-bottom: 45px;
+}
+
+.content h4 {
+    margin: 0;
+}
+
+.date {
+    margin-bottom: 35px;
+}
+
+.date p {
+    font-size: 0.8em;
+}
+
+.text p {
+    padding-top: 30px;
+    padding-bottom: 80px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}

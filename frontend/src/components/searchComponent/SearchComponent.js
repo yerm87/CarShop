@@ -131,9 +131,6 @@ class SearchComponent extends Component {
                     </div>
                     <button onClick={() => this.searchButtonHandler()}>Search</button>           
                 </div>
-                <Link to="/search_results/111">
-                    <button>Test</button>
-                </Link>
             </div>
         )
     }

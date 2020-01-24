@@ -35,9 +35,16 @@ export const BuyingAdviceItemImage = styled.div`
 export const BuyingAdviceItemNoImage = styled.div`
     background: url(${props => props.img}) no-repeat center center;
     background-size: cover;
-    height: 350px;
+    height: 250px;
     width: 330px;
     min-width: 330px; 
+`
+
+export const ItemNoImage = styled.div`
+    background: url(${props => props.img}) no-repeat center center;
+    background-size: cover;
+    height: 350px;
+    width: 100%; 
 `
 
 export const ListingMainImage = styled.div`

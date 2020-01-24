@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { BuyingAdviceItemImage } from '../../components/heroImage/HeroImage';
+import { BuyingAdviceItemImage, ItemNoImage } from '../../components/heroImage/HeroImage';
 import classes from './AdvicesItemPage.css';
 
 class AdvicesItemPage extends Component {
@@ -16,6 +16,10 @@ class AdvicesItemPage extends Component {
     }
 
     render(){
+        const image = this.state.item.image !== 'no image' ? 
+                      <BuyingAdviceItemImage img={this.state.item.image} /> :
+                      <ItemNoImage img="../../assets/no_photo.jpg" />
+
         return (
             <div className={classes.wrapper}>
                 <div className={classes.content}>
@@ -24,7 +28,7 @@ class AdvicesItemPage extends Component {
                     <div className={classes.date}>
                         {this.state.item.created_at ? this.state.item.created_at.substring(0, 10) : null}
                     </div>
-                    <BuyingAdviceItemImage img={this.state.item.image} />
+                    {image}
                     <div className={classes.text}>
                         <p>{this.state.item.content}</p>
                     </div>

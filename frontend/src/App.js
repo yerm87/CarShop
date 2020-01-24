@@ -18,6 +18,8 @@ import BuyingAdvicesPage from './containers/buyingAdvicesPage/BuyingAdvicesPage'
 import AdvicesItemPage from './containers/advicesItemPage/AdvicesItemPage';
 import SearchResults from './containers/searchResults/SearchResults';
 import ListingInfo from './containers/listingInfo/ListingInfo';
+import Reviews from './containers/reviews/Reviews';
+import ReviewItemPage from './containers/reviewItemPage/ReviewItemPage';
 
 class App extends Component {
     
@@ -58,6 +60,8 @@ class App extends Component {
                     <Route path="/buying_advices" component={BuyingAdvicesPage} />
                     <Route path="/search_results/:listing_id" component={ListingInfo} />
                     <Route path="/search_results" component={SearchResults} />
+                    <Route path="/reviews/:review_id" component={ReviewItemPage} />
+                    <Route path="/reviews" component={Reviews} />
                     <Route path="/" component={MainPage} />
                 </Switch>
             </div>

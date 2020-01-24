@@ -1,0 +1,10 @@
+.wrapper {
+    padding: 40px 80px;
+    background: #f2f2f2;
+    min-height: 700px;
+    font-family: 'Montserrat';
+}
+
+.wrapper h1, .wrapper h4 {
+    color: var(--mainBlue);
+}

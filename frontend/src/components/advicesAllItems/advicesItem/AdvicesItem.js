@@ -9,12 +9,17 @@ class AdvicesItem extends Component {
         this.props.history.push(`/buying_advices/${id}`);
     }
 
+    getReviewItem = (id) => {
+        this.props.history.push(`/reviews/${id}`);
+    }
+
     render(){
         const {_id, title, content, image, created_at, author} = this.props.element;
 
         return (
             <div className={classes.wrapper}
-                 onClick={() => this.elementClickHandler(_id)}>
+                 onClick={this.props.reviews ? () => this.getReviewItem(_id) : 
+                                               () => this.elementClickHandler(_id)}>
                 {image !== 'no image' ? <BuyingAdviceImage img={image} /> : 
                 <BuyingAdviceItemNoImage img="../../../assets/no_photo.jpg" />}
                 <div className={classes.content}>

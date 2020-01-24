@@ -75,7 +75,7 @@
 .viewAllAdvices {
     border: 1px solid var(--mainBlue);
     color: var(--mainBlue);
-    background: var(--mainWhite);
+    background: transparent;
     padding: 10px 24px;
     font-size: 1.2em;
 }

@@ -13,7 +13,8 @@ class NavigationItems extends Component {
                 <NavigationItem name='Cars for sale' />
                 <NavigationItem name='Sell Your Car'
                                 path='/sell_car' />
-                <NavigationItem name='Reviews' />
+                <NavigationItem name='Reviews'
+                                path='/reviews' />
                 <NavigationItem name='About Us' />
                 {this.props.isLoggedIn ? <UserIcon /> : (
                     <React.Fragment>
