@@ -56,6 +56,19 @@
                 	    	    </tr>
                 	    	@endforeach
                 	    </table>
+                        <div class="pages">
+                            @if(count($arrayOfPages) > 1)
+                                @foreach($arrayOfPages as $pageItem)
+                                    @if(intval($page) === $pageItem)
+                                        <a href="/admin_tools?params=buyingAdvices&page={{$pageItem}}"
+                                           class="page activePage">{{$pageItem}}</a>
+                                        @else
+                                        <a href="/admin_tools?params=buyingAdvices&page={{$pageItem}}"
+                                        class="page">{{$pageItem}}</a>
+                                    @endif
+                                @endforeach
+                            @endif
+                        </div>
                 	    @elseif($params === 'reviews')
                 	        <a class="addItem" href="/create_review">Add Review</a>
                 	        <table>
@@ -94,6 +107,19 @@
                 	    	    </tr>
                 	    	@endforeach
                 	    </table>
+                        <div class="pages">
+                            @if(count($pagesReviews) > 1)
+                                @foreach($pagesReviews as $pageItem)
+                                    @if(intval($page) === $pageItem)
+                                        <a href="/admin_tools?params=reviews&page={{$pageItem}}"
+                                           class="page activePage">{{$pageItem}}</a>
+                                        @else
+                                        <a href="/admin_tools?params=reviews&page={{$pageItem}}"
+                                        class="page">{{$pageItem}}</a>
+                                    @endif
+                                @endforeach
+                            @endif
+                        </div>
                 	@endif
                 </div>
             </div>

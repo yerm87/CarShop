@@ -11,13 +11,42 @@ import Spinner from '../../components/UIElements/spinner/Spinner';
 class SearchResults extends Component {
     state={
         zipCodes: [],
+        allElements: [],
         searchResults: [],
         filters: null,
-        zipCodes: []
+        zipCodes: [],
+        pages: 1,
+        page: 1,
+        resultsPerPage: 15,
+        pagesArray: [],
+        activePages: []
     }
 
     componentWillMount(){
         this.init();
+    }
+
+    pagination = () => {
+        const shortArray = this.state.allElements.slice(0, this.state.resultsPerPage);
+        const pagesArray = [];
+
+        for(let i=1; i<=this.state.pages; i++){
+            pagesArray.push(i);
+        }
+        
+        const activePages = [];
+
+        activePages[0] = true;
+
+        for(let i=1; i<pagesArray.length; i++){
+            activePages.push(false);
+        }
+
+        return {
+            shortArray: shortArray,
+            pagesArray: pagesArray,
+            activePages: activePages
+        }
     }
 
     init = () => {
@@ -56,7 +85,9 @@ class SearchResults extends Component {
                         }
                         
                         this.setState({
+                            allElements: response.data,
                             searchResults: response.data,
+                            pages: Math.ceil(response.data.length/this.state.resultsPerPage),
                             filters: {
                                 ...this.props.params,
                                 minYear: 'select',
@@ -70,6 +101,7 @@ class SearchResults extends Component {
                             this.props.resetParameters();
                             this.props.loadingNotActive();
                             
+                            //filters
                             const filters = [];
                             const params = {};
                     
@@ -83,8 +115,14 @@ class SearchResults extends Component {
                                 params[element] = this.state.filters[element];
                             });
 
+                            //pagination
+                            const data = this.pagination();
+
                             this.setState({
-                                filters: params
+                                filters: params,
+                                searchResults: data.shortArray,
+                                pagesArray: data.pagesArray,
+                                activePages: data.activePages
                             }, () => {
                                 const elements = document.querySelectorAll('.FilterComponent__conditionButtons__1bxUx input');
 
@@ -143,7 +181,9 @@ class SearchResults extends Component {
                 }
 
                 this.setState({
+                    allElements: response.data,
                     searchResults: response.data,
+                    pages: Math.ceil(response.data.length/this.state.resultsPerPage),
                     filters: {
                         ...this.props.params,
                         minYear: 'select',
@@ -157,6 +197,7 @@ class SearchResults extends Component {
                     this.props.resetParameters();
                     this.props.loadingNotActive();
 
+                    //filters
                     const filters = [];
                     const params = {};
 
@@ -168,9 +209,14 @@ class SearchResults extends Component {
 
                     filters.forEach(element => {
                         params[element] = this.state.filters[element];
-                    })
+                    });
 
+                    //pagination
+                    const data = this.pagination();
                     this.setState({
+                        searchResults: data.shortArray,
+                        pagesArray: data.pagesArray,
+                        activePages: data.activePages,
                         filters: params
                     }, () => {
                         const elements = document.querySelectorAll('.FilterComponent__conditionButtons__1bxUx input');
@@ -310,9 +356,19 @@ class SearchResults extends Component {
                         });
 
                         this.setState({
-                            searchResults: data
+                            allElements: data,
+                            searchResults: data,
+                            pages: Math.ceil(response.data.length/this.state.resultsPerPage)
                         }, () => {
                             this.props.loadingNotActive();
+
+                            const data = this.pagination();
+
+                            this.setState({
+                                searchResults: data.shortArray,
+                                pagesArray: data.pagesArray,
+                                activePages: data.activePages
+                            });
                         });
                     });
                 } else if(this.state.filters.zip !== '' && this.props.zipValid) {
@@ -335,9 +391,19 @@ class SearchResults extends Component {
                             });
                         
                             this.setState({
-                                searchResults: data
+                                allElements: data,
+                                searchResults: data,
+                                pages: Math.ceil(response.data.length/this.state.resultsPerPage)
                             }, () => {
                                 this.props.loadingNotActive();
+
+                                const data = this.pagination();
+
+                                this.setState({
+                                    searchResults: data.shortArray,
+                                    pagesArray: data.pagesArray,
+                                    activePages: data.activePages
+                                });
                             });
                         })
                     })
@@ -357,7 +423,40 @@ class SearchResults extends Component {
         this.init();
     }
 
+    switchPageHandler = (page) => {
+        const pages = this.state.pagesArray;
+        let activePages = this.state.activePages;
+
+        const index = pages.findIndex(element => element === page);
+        activePages.fill(false, 0, pages.length);
+        activePages[index] = true;
+
+        this.setState({
+            activePages: activePages,
+            page: page
+        }, () => {
+            const endPoint = this.state.page*this.state.resultsPerPage;
+            const startPoint = endPoint - this.state.resultsPerPage;
+            const searchResults = this.state.allElements.slice(startPoint, endPoint);
+            
+            this.setState({
+                searchResults: searchResults
+            });
+        });
+    }
+
     render(){
+        const activePages = this.state.activePages;
+        const pages = this.state.pagesArray.map((page, index) => {
+            const classList = [classes.page];
+            if(activePages[index]){
+                classList.push(classes.activeElement);
+            }
+            return (
+                <p className={classList.join(' ')}
+                   onClick={() => this.switchPageHandler(page)}>{page}</p>
+            )
+        });
         const items = this.state.searchResults.map(element => {
             return <ListingItem item={element}
                                 searchItem />
@@ -369,6 +468,9 @@ class SearchResults extends Component {
             component = (
                 <div className={classes.items}>
                     {items}
+                    <div className={classes.pages}>
+                        {this.state.pages > 1 ? pages : null}
+                    </div>
                 </div>
             )
         } else {
@@ -383,7 +485,7 @@ class SearchResults extends Component {
                     <h1>Search Results</h1>
                     <div className={classes.contentContainer}>
                         <div>
-                            <SideBar resultsNumber={`${this.state.searchResults.length} results`}
+                            <SideBar resultsNumber={`${this.state.allElements.length} results`}
                                      changeHandler={(event) => this.changeHandler(event)}
                                      makesItems={this.props.allMakes}
                                      modelsItems={this.props.selectedModels}
@@ -396,21 +498,6 @@ class SearchResults extends Component {
                 </div>
             </div>
         )
-        
-        /*return (
-            <div className={classes.mainContainer}>
-            <div className={classes.contentContainer}>
-                <SideBar resultsNumber={`${this.state.searchResults.length} results`}
-                         changeHandler={(event) => this.changeHandler(event)}
-                         makesItems={this.props.allMakes}
-                         modelsItems={this.props.selectedModels}
-                         onChangeInputNumber={(event) => this.onChangeInputNumber(event)}
-                         zipValid={this.props.zipValid} />
-                <p style={{ textAlign: 'center',
-                            fontWeight: 'bold' }}>There are no listings in this area</p>
-            </div>
-            </div>
-        )*/
     }
 }
 

@@ -26,6 +26,28 @@ class AdminController extends Controller
     	return $admin;
     }
 
+    private function pagination($page, $itemsArray, $resultsPerPage){
+        $pages = ceil(count($itemsArray)/$resultsPerPage);
+
+        $arrayOfPages = array();
+        for($i=1; $i<=$pages; $i++){
+            array_push($arrayOfPages, $i);
+        }
+
+        $endpoint = $page * $resultsPerPage;
+        $startpoint = $endpoint - $resultsPerPage;
+
+        $itemsArrayModified = array();
+        for($i=$startpoint; $i<$endpoint; $i++){
+            if(!empty($itemsArray[$i])){
+                array_push($itemsArrayModified, $itemsArray[$i]);
+            }
+        }
+
+        return ['pages' => $arrayOfPages,
+                'items' => $itemsArrayModified];
+    }
+
     public function adminTools(Request $request){
     	$id = $request->session()->get('admin');
 	    $admin = Admin::find($id);
@@ -33,11 +55,42 @@ class AdminController extends Controller
 	    $buyingAdvices = BuyingAdvice::all();
 	    $reviews = Review::all();
 
+        $buyingAdvicesReversed = array();
+
+        for($i=count($buyingAdvices)-1; $i>=0; $i--){
+            array_push($buyingAdvicesReversed, $buyingAdvices[$i]);
+        }
+
+        $buyingAdvices = $buyingAdvicesReversed;
+
+        $reviewsReversed = array();
+
+        for($i=count($reviews)-1; $i>=0; $i--){
+            array_push($reviewsReversed, $reviews[$i]);
+        }
+
+        $reviews = $reviewsReversed;
+        //pagination
+        $page = 1;
+        if($request->page){
+            $page = $request->page;
+        }
+
+        $resultsPerPage = 10;
+        
+        $resultsBuyingAdvices = $this->pagination($page, $buyingAdvices, $resultsPerPage);
+        $arrayOfPages = $resultsBuyingAdvices['pages'];
+        $buyingAdvices = $resultsBuyingAdvices['items'];
+
+        $resultsReviews = $this->pagination($page, $reviews, $resultsPerPage);
+        $pagesReviews = $resultsReviews['pages'];
+        $reviews = $resultsReviews['items'];
+
 	    if($admin){
 		    $firstName = $admin->firstName;
 	        $lastName = $admin->lastName;
 
-	        return view('admin.admin_tools', compact('id', 'firstName', 'lastName', 'params', 'buyingAdvices', 'reviews'));
+	        return view('admin.admin_tools', compact('id', 'firstName', 'lastName', 'params', 'buyingAdvices', 'reviews', 'arrayOfPages', 'page', 'pagesReviews'));
 	    }
     }
 

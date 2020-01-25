@@ -1,0 +1,226 @@
+/****Admin Login*****/
+.wrapper {
+	background: #F5F1F0;
+	padding: 100px 0 340px 0;
+	text-align: center;
+	font-family: 'Montserrat';
+}
+
+.wrapper input {
+	display: block;
+	margin: 10px auto;
+	width: 20%;
+	height: 30px;
+	border-radius: 8px;
+	border: solid 1px black;
+	font-size: 1.2em;
+	padding: 5px;
+}
+
+.wrapper input[type="submit"]{
+	background: #96CFF0;
+	height: 35px;
+	cursor: pointer;
+}
+
+
+
+
+/*****Content management page******/
+
+.adminToolsMenu {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.2em;
+}
+
+.adminToolsMenu div {
+	display: flex;
+}
+
+.adminToolsWrapper {
+	background: #C7CACC;
+	font-family: 'Montserrat';
+	color: var(--mainBlack);
+	min-height: 700px;
+}
+
+.adminToolsMenu p {
+	padding: 20px;
+	font-weight: bold;
+}
+
+.adminToolsMenu a {
+	display: block;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid var(--mainBlack);
+	color: var(--mainBlack);
+	text-decoration: none;
+}
+
+.adminToolsMenu a:hover {
+	background: var(--mainBlack);
+	color: var(--mainWhite);
+}
+
+.adminToolsWrapper ul {
+	padding: 0;
+	margin: 0;
+	width: 25%;
+}
+
+.adminToolsWrapper li a {
+	display: block;
+	padding: 20px 100px 20px 20px;
+	text-decoration: none;
+	color: var(--mainBlack);
+}
+
+.adminToolsWrapper a:hover {
+	cursor: pointer;
+}
+
+.activeItem {
+	background: #B4DAF0;
+}
+
+.adminToolsContent {
+	display: flex;
+}
+
+.content {
+	background: var(--mainWhite);
+	width: 75%;
+	min-height: 400px;
+}
+
+.content .addItem {
+	display: block;
+	padding: 10px 18px;
+	border: solid 1px #27B65D;
+	color: #27B65D;
+	width: 160px;
+	margin: 20px 0 60px 40px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.content .addItem:hover {
+	background: #27B65D;
+	color: var(--mainWhite);
+}
+
+.content th {
+	padding-right: 80px;
+}
+
+.content td {
+	font-size: 0.8em;
+}
+
+.content tr {
+	margin: 12px 0;
+}
+
+.deleteItem {
+	display: block;
+	padding: 10px 18px;
+	border: solid 1px var(--mainRed);
+	color: var(--mainRed);
+	width: 80px;
+	text-decoration: none;
+	text-align: center;
+	margin: 10px 0 0 10px;
+}
+
+.deleteItem:hover {
+	background-color: var(--mainRed);
+	color: var(--mainWhite);
+}
+
+.updateItem {
+	display: block;
+	padding: 10px 18px;
+	border: solid 1px var(--mainBlue);
+	color: var(--mainBlue);
+	width: 80px;
+	text-decoration: none;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.updateItem:hover {
+	background-color: var(--mainBlue);
+	color: var(--mainWhite);
+}
+
+
+
+/******Create Buying Advice page*******/
+.createBuyingAdvice {
+	font-family: 'Montserrat';
+}
+
+.createBuyingAdvice h1 {
+	text-align: center;
+	color: var(--mainBlue);
+}
+
+.createBuyingAdvice input[type="text"], .createBuyingAdvice textarea {
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	font-size: 1.1em;
+	box-sizing: border-box;
+	border-radius: 8px;
+	border: 1px solid var(--mainBlack);
+}
+
+.createBuyingAdvice input {
+	height: 35px;
+	padding: 5px;
+}
+
+.createBuyingAdvice textarea {
+	resize: none;
+}
+
+.createBuyingAdvice form {
+	width: 25%;
+	margin: 0 auto;
+}
+
+.createBuyingAdvice label {
+	font-weight: bold;
+}
+
+.createBuyingAdvice input[type="submit"]{
+	background: #96CFF0;
+	height: 35px;
+	cursor: pointer;
+	width: 80%;
+	height: 35px;
+	border-radius: 8px;
+	padding: 5px;
+	font-size: 1.2em;
+}
+
+.pages {
+	margin: 25px 0 25px 65px;
+}
+
+.page {
+	display: inline-block;
+	padding: 8px;
+	border: 1px solid var(--mainBlue);
+	text-decoration: none;
+	color: var(--mainBlue);
+}
+
+.activePage {
+	background: var(--mainBlue);
+	color: var(--mainWhite);
+}
+

@@ -29,7 +29,7 @@
        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-       <link href="{{asset('css/cms_styles.css')}}" rel="stylesheet" type="text/css">
+       <link href="{{asset('css/cms.css')}}" rel="stylesheet" type="text/css">
    </head>
    <body>
        <div class="root"></div>

@@ -22,3 +22,30 @@
 .items {
     padding-left: 50px;
 }
+
+.pages {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.page {
+    padding: 8px 0;
+    width: 25px;
+    text-align: center;
+    border: 1px solid var(--mainBlue);
+    color: var(--mainBlue);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.activeElement {
+    color: var(--mainWhite);
+    background: var(--mainBlue);
+}
+
+.page:hover {
+    color: var(--mainWhite);
+    background: var(--mainBlue);
+}
