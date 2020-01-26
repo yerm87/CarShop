@@ -7,13 +7,26 @@ const initialState = {
         model: 'select',
         maxPrice: 'select',
         radius: '10',
-        zip: ''
+        zip: '',
+        makes: [],
+        models: [],
+        minYear: 'select',
+        maxYear: 'select',
+        minPrice: 'select',
+        mileage: 'select'
     },
+    searchResults: [],
+    activeItems: [],
     zipIsValid: true,
     allMakes: [],
     selectedModels: [],
     loading: true,
-    filterComponent: true
+    filterComponent: true,
+    resultsPerPage: 15,
+    pages: 1,
+    page: 1,
+    pagesArray: [],
+    activePages: []
 }
 
 const reducer = (state=initialState, action) => {
@@ -45,7 +58,13 @@ const reducer = (state=initialState, action) => {
                     model: 'select',
                     maxPrice: 'select',
                     radius: '10',
-                    zip: ''
+                    zip: '',
+                    makes: [],
+                    models: [],
+                    minYear: 'select',
+                    maxYear: 'select',
+                    minPrice: 'select',
+                    mileage: 'select'
                 }
             }
         case(actionTypes.allMakes):
@@ -100,6 +119,103 @@ const reducer = (state=initialState, action) => {
             return {
                 ...state,
                 filterComponent: false
+            }
+        case(actionTypes.setSearchResults):
+            const pages = Math.ceil(action.searchResults.length/state.resultsPerPage)
+            return {
+                ...state,
+                searchResults: action.searchResults,
+                activeItems: action.activeItems,
+                pages: pages
+            }
+        case(actionTypes.resetSearchResults):
+            return {
+                ...state,
+                searchResults: [],
+                activeItems: [],
+                pages: 1,
+                page: 1,
+                pagesArray: [],
+                activePages: []
+            }
+        case(actionTypes.addMake):
+            const makes = state.searchParams.makes;
+            makes.push(action.make);
+
+            return {
+                ...state,
+                searchParams: {
+                    ...state.searchParams,
+                    makes: makes
+                }
+            }
+        case(actionTypes.addModel):
+            const models = state.searchParams.models;
+            models.push(action.model);
+
+            return {
+                ...state,
+                searchParams: {
+                    ...state.searchParams,
+                    models: models
+                }
+            }
+        case(actionTypes.setActiveItems):
+            return {
+                ...state,
+                activeItems: action.activeItems
+            }
+        case(actionTypes.setPagesArray):
+            return {
+                ...state,
+                pagesArray: action.pagesArray
+            }
+        case(actionTypes.setActivePages):
+            return {
+                ...state,
+                activePages: action.activePages
+            }
+        case(actionTypes.removeMake):
+            const makesItems = state.searchParams.makes;
+            const index = makesItems.findIndex(element => element === action.make);
+            makesItems.splice(index, 1);
+
+            return {
+                ...state,
+                searchParams: {
+                    ...state.searchParams,
+                    makes: makesItems
+                }
+            }
+        case(actionTypes.removeModel):
+            const modelsItems = state.searchParams.models;
+            const indexModel = modelsItems.findIndex(element => element === action.model);
+            modelsItems.splice(indexModel, 1);
+
+            return {
+                ...state,
+                searchParams: {
+                    ...state.searchParams,
+                    models: modelsItems
+                }
+            }
+        case(actionTypes.switchPage):
+            const pagesCopy = state.pagesArray;
+            const activePages = state.activePages;
+
+            const indexPages = pagesCopy.findIndex(element => element === action.page);
+            activePages.fill(false, 0, pagesCopy.length);
+            activePages[indexPages] = true;
+
+            const endPoint = action.page*state.resultsPerPage;
+            const startPoint = endPoint-state.resultsPerPage;
+            const activeItems = state.searchResults.slice(startPoint, endPoint);
+
+            return {
+                ...state,
+                page: action.page,
+                activePages: activePages,
+                activeItems: activeItems
             }
         default:
             return state;

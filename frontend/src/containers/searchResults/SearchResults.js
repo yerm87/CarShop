@@ -10,27 +10,18 @@ import Spinner from '../../components/UIElements/spinner/Spinner';
 
 class SearchResults extends Component {
     state={
-        zipCodes: [],
-        allElements: [],
-        searchResults: [],
-        filters: null,
-        zipCodes: [],
-        pages: 1,
-        page: 1,
-        resultsPerPage: 15,
-        pagesArray: [],
-        activePages: []
+        zipCodes: []
     }
 
-    componentWillMount(){
+    componentDidMount(){
         this.init();
     }
 
     pagination = () => {
-        const shortArray = this.state.allElements.slice(0, this.state.resultsPerPage);
+        const shortArray = this.props.searchResults.slice(0, this.props.resultsPerPage);
         const pagesArray = [];
 
-        for(let i=1; i<=this.state.pages; i++){
+        for(let i=1; i<=this.props.pages; i++){
             pagesArray.push(i);
         }
         
@@ -49,262 +40,183 @@ class SearchResults extends Component {
         }
     }
 
+    setValues = () => {
+        const elements = document.querySelectorAll('.FilterComponent__conditionButtons__1bxUx input');
+    
+        if(this.props.params.condition === 'select'){
+            elements[0].checked = true;
+        } else if(this.props.params.condition === 'New Car') {
+            elements[1].checked = true;
+        } else if(this.props.params.condition === 'Used Car'){
+            elements[2].checked = true;
+        }
+    
+        const makesRender = document.querySelectorAll('.FilterComponent__makes__ffLru input');
+        makesRender.forEach(make => {
+            if(this.props.params.makes.includes(make.value)){
+                make.checked = true;
+            }
+        });
+    
+        const modelsRender = document.querySelectorAll('.FilterComponent__models__1egS_ input');
+        modelsRender.forEach(model => {
+            if(this.props.params.models.includes(model.value)){
+                model.checked = true;
+            }
+        });
+    }
+
     init = () => {
         this.props.loadingActive();
 
-        if(this.props.params.zip !== ''){
-            axios.get(`${proxy}https://www.zipcodeapi.com/rest/${zipAPIKey}/radius.json/${this.props.params.zip}/${this.props.params.radius}/mile`)
-            .then(response => {
-                const zipCodes = response.data.zip_codes.map(current => {
-                    return current.zip_code
-                })
-
-                this.setState({
-                    zipCodes: zipCodes
-                }, () => {
-                    const fd = new FormData();
-
-                    for(let param in this.props.params){
-                        if(this.props.params[param] !== 'select' && param !== 'radius' && param !== 'zip'){
-                            fd.append(param, this.props.params[param])
-                        }
-                    }
-                    this.state.zipCodes.forEach(zip => {
-                        fd.append('zipCodes[]', zip);
+        if(this.props.searchResults.length === 0){
+            if(this.props.params.zip !== ''){
+                axios.get(`${proxy}https://www.zipcodeapi.com/rest/${zipAPIKey}/radius.json/${this.props.params.zip}/${this.props.params.radius}/mile`)
+                .then(response => {
+                    const zipCodes = response.data.zip_codes.map(current => {
+                        return current.zip_code
                     })
-                    axios.post('/get_items_by_zipCode', fd).then(response => {
-                        const makes = [];
-                        const models = [];
-
-                        if(this.props.params['make'] !== 'select'){
-                            makes.push(this.props.params['make']);
-                        }
-
-                        if(this.props.params['model'] !== 'select'){
-                            models.push(this.props.params['model']);
-                        }
-                        
-                        this.setState({
-                            allElements: response.data,
-                            searchResults: response.data,
-                            pages: Math.ceil(response.data.length/this.state.resultsPerPage),
-                            filters: {
-                                ...this.props.params,
-                                minYear: 'select',
-                                maxYear: 'select',
-                                makes: makes,
-                                models: models,
-                                minPrice: 'select',
-                                mileage: 'select'
+    
+                    this.setState({
+                        zipCodes: zipCodes
+                    }, () => {
+                        const fd = new FormData();
+    
+                        for(let param in this.props.params){
+                            if(this.props.params[param] !== 'select' && param !== 'radius' && param !== 'zip'){
+                                fd.append(param, this.props.params[param])
                             }
-                        }, () => {
-                            this.props.resetParameters();
+                        }
+                        this.state.zipCodes.forEach(zip => {
+                            fd.append('zipCodes[]', zip);
+                        })
+                        axios.post('/get_items_by_zipCode', fd).then(response => {
+    
+                            if(this.props.params['make'] !== 'select'){
+                                this.props.addMake(this.props.params['make']);
+                            }
+    
+                            if(this.props.params['model'] !== 'select'){
+                                this.props.addModel(this.props.params['model']);
+                            }
+
+                            this.props.setSearchResults(response.data);
+
                             this.props.loadingNotActive();
-                            
-                            //filters
-                            const filters = [];
-                            const params = {};
-                    
-                            for(let filter in this.state.filters){
-                                if(filter !== 'make' && filter !== 'model'){
-                                    filters.push(filter);
-                                }
-                            }
 
-                            filters.forEach(element => {
-                                params[element] = this.state.filters[element];
-                            });
-
-                            //pagination
                             const data = this.pagination();
 
-                            this.setState({
-                                filters: params,
-                                searchResults: data.shortArray,
-                                pagesArray: data.pagesArray,
-                                activePages: data.activePages
-                            }, () => {
-                                const elements = document.querySelectorAll('.FilterComponent__conditionButtons__1bxUx input');
+                            this.props.setActiveItems(data.shortArray);
+                            this.props.setPagesArray(data.pagesArray);
+                            this.props.setActivePages(data.activePages);
 
-                                if(this.state.filters.condition === 'select'){
-                                    elements[0].checked = true;
-                                } else if(this.state.filters.condition === 'New Car') {
-                                    elements[1].checked = true;
-                                } else if(this.state.filters.condition === 'Used Car'){
-                                    elements[2].checked = true;
-                                }
-
-                                const radius = document
-                                .querySelector(`.FilterComponent__radius__1actv select option[value="${this.state.filters.radius}"]`);
-                                radius.selected = true;
-                                
-                                const zip = document
-                                .querySelector('.FilterComponent__selectLocation__13ILr input');
-                                zip.value = this.state.filters.zip;
-
-                                const makes = document.querySelectorAll('.FilterComponent__makes__ffLru input');
-                                makes.forEach(make => {
-                                    if(this.state.filters.makes.includes(make.value)){
-                                        make.checked = true;
-                                    }
-                                });
-
-                                const models = document.querySelectorAll('.FilterComponent__models__1egS_ input');
-                                models.forEach(model => {
-                                    if(this.state.filters.models.includes(model.value)){
-                                        model.checked = true;
-                                    }
-                                });
-                            });
+                            this.setValues();
+                            
+                            const radius = document
+                            .querySelector(`.FilterComponent__radius__1actv select option[value="${this.props.params.radius}"]`);
+                            radius.selected = true;
+                                    
+                            const zip = document
+                            .querySelector('.FilterComponent__selectLocation__13ILr input');
+                            zip.value = this.props.params.zip;
                         });
-                    })
+                    });
                 });
-            });
-        } else {
-            const fd = new FormData();
-
-            for(let param in this.props.params){
-                if(this.props.params[param] !== 'select'){
-                    fd.append(param, this.props.params[param])
-                }
-            }
-            axios.post('/get_all_items', fd).then(response => {
-                const makes = [];
-                const models = [];
-
-                if(this.props.params['make'] !== 'select'){
-                    makes.push(this.props.params['make']);
-                }
-
-                if(this.props.params['model'] !== 'select'){
-                    models.push(this.props.params['model']);
-                }
-
-                this.setState({
-                    allElements: response.data,
-                    searchResults: response.data,
-                    pages: Math.ceil(response.data.length/this.state.resultsPerPage),
-                    filters: {
-                        ...this.props.params,
-                        minYear: 'select',
-                        maxYear: 'select',
-                        makes: makes,
-                        models: models,
-                        minPrice: 'select',
-                        mileage: 'select'
+            } else {
+                const fd = new FormData();
+    
+                for(let param in this.props.params){
+                    if(this.props.params[param] !== 'select' && this.props.params[param] !== []){
+                        fd.append(param, this.props.params[param])
                     }
-                }, () => {
-                    this.props.resetParameters();
+                }
+                axios.post('/get_all_items', fd).then(response => {
+    
+                    if(this.props.params['make'] !== 'select'){
+                        this.props.addMake(this.props.params['make'])
+                    }
+    
+                    if(this.props.params['model'] !== 'select'){
+                        this.props.addModel(this.props.params['model']);
+                    }
+
+                    this.props.setSearchResults(response.data);
+
                     this.props.loadingNotActive();
 
-                    //filters
-                    const filters = [];
-                    const params = {};
-
-                    for(let filter in this.state.filters){
-                        if(filter !== 'make' && filter !== 'model'){
-                            filters.push(filter);
-                        }
-                    }
-
-                    filters.forEach(element => {
-                        params[element] = this.state.filters[element];
-                    });
-
-                    //pagination
                     const data = this.pagination();
-                    this.setState({
-                        searchResults: data.shortArray,
-                        pagesArray: data.pagesArray,
-                        activePages: data.activePages,
-                        filters: params
-                    }, () => {
-                        const elements = document.querySelectorAll('.FilterComponent__conditionButtons__1bxUx input');
 
-                        if(this.state.filters.condition === 'select'){
-                            elements[0].checked = true;
-                        } else if(this.state.filters.condition === 'New Car') {
-                            elements[1].checked = true;
-                        } else if(this.state.filters.condition === 'Used Car'){
-                            elements[2].checked = true;
-                        }
+                    this.props.setActiveItems(data.shortArray);
+                    this.props.setPagesArray(data.pagesArray);
+                    this.props.setActivePages(data.activePages);
 
-                        const makes = document.querySelectorAll('.FilterComponent__makes__ffLru input');
-                        makes.forEach(make => {
-                            if(this.state.filters.makes.includes(make.value)){
-                                make.checked = true;
-                            }
-                        });
-
-                        const models = document.querySelectorAll('.FilterComponent__models__1egS_ input');
-                        models.forEach(model => {
-                            if(this.state.filters.models.includes(model.value)){
-                                model.checked = true;
-                            }
-                        });
-                    });
+                    this.setValues();
                 });
-            });
+            }
+        } else {
+            this.props.loadingNotActive();
+            this.setValues();
+
+            if(this.props.params.zip !== ''){
+                const radius = document
+                .querySelector(`.FilterComponent__radius__1actv select option[value="${this.props.params.radius}"]`);
+                radius.selected = true;
+                                    
+                const zip = document
+                .querySelector('.FilterComponent__selectLocation__13ILr input');
+                zip.value = this.props.params.zip;
+            }
         }
     }
 
     changeHandler = event => {
-        let filters;
     
         if(event.target.type === 'checkbox'){
-            filters = {
-                ...this.state.filters
-            }
-            const arrayOfMakes = filters.makes;
-
-            const arrayOfModels = filters.models;
-
             if(event.target.checked && event.target.name === 'makes'){
-                arrayOfMakes.push(event.target.value);
+
+                this.props.addMake(event.target.value);
 
                 axios.post('/get_model', {
                     type: 'model',
                     params: event.target.value
                 }).then(response => {
                     this.props.addItemsToModels(response.data);
-                })
+                });
 
             } else if(!event.target.checked && event.target.name === 'makes') {
-                const index = arrayOfMakes.findIndex(element => element === event.target.value);
-                arrayOfMakes.splice(index, 1);
+
+                this.props.removeMake(event.target.value);
 
                 axios.post('/get_model', {
                     type: 'model',
                     params: event.target.value
                 }).then(response => {
-                    response.data.forEach(element => {
-                        const elementsDOM = document
-                        .querySelectorAll('.FilterComponent__models__1egS_ input');
-                        elementsDOM.forEach(element => {
-                            element.checked = false;
-                        })
+                    const elementsDOM = document.querySelectorAll('.FilterComponent__models__1egS_ input');
+                    elementsDOM.forEach(param => {
+                        param.checked = false;
+                    });
 
-                        if(arrayOfModels.includes(element)){
-                            const index = arrayOfModels.findIndex(current => current === element)
-                            arrayOfModels.splice(index, 1);
+                    response.data.forEach(element => {
+                        if(this.props.params.models.includes(element)){
+                            this.props.removeModel(element);
                         }
-                    })
+                    });
+
                     this.props.removeItemsFromModels(response.data);
 
                     const models = document.querySelectorAll('.FilterComponent__models__1egS_ input');
                     models.forEach(model => {
-                        if(this.state.filters.models.includes(model.value)){
+                        if(this.props.params.models.includes(model.value)){
                             model.checked = true;
                         }
                     });
                 });
 
             } else if(event.target.checked && event.target.name === 'models'){
-                arrayOfModels.push(event.target.value);
+                this.props.addModel(event.target.value);
 
             } else if(!event.target.checked && event.target.name === 'models'){
-                const index = arrayOfModels.findIndex(element => element === event.target.value);
-                arrayOfModels.splice(index, 1);
+                this.props.removeModel(event.target.value)
             }
         } else if(event.target.type === 'number') {
             if(event.target.value.length !== 5 && event.target.value.length !== 0){
@@ -312,42 +224,63 @@ class SearchResults extends Component {
             } else if(event.target.value.length === 5 || event.target.value.length === 0) {
                 this.props.zipIsValid();
             }
-            filters = {
-                ...this.state.filters,
-                [event.target.name]: event.target.value
-            }
+
+            this.props.onChangeHandler(event.target.value, event.target.name);
         } else {
-            filters = {
-                ...this.state.filters,
-                [event.target.name]: event.target.value
-            }
+            this.props.onChangeHandler(event.target.value, event.target.name);
         }
 
-        this.setState({
-            filters: filters
-        }, () => {
-            setTimeout(() => {
-                const fd = new FormData;
+        setTimeout(() => {
+            const fd = new FormData;
 
-                for(let filter in this.state.filters){
-                    if(filter === 'makes'){
-                        this.state.filters.makes.forEach(current => {
-                            fd.append('makes[]', current)
-                        });
-                    } else if(filter === 'models'){
-                        this.state.filters.models.forEach(current => {
-                            fd.append('models[]', current)
-                        });
-                    } else {
-                        if(this.state.filters[filter] !== 'select'){
-                            fd.append(filter, this.state.filters[filter]);
-                        }
+            for(let filter in this.props.params){
+                if(filter === 'makes'){
+                    this.props.params.makes.forEach(current => {
+                        fd.append('makes[]', current)
+                    });
+                } else if(filter === 'models'){
+                    this.props.params.models.forEach(current => {
+                        fd.append('models[]', current)
+                    });
+                } else {
+                    if(this.props.params[filter] !== 'select'){
+                        fd.append(filter, this.props.params[filter]);
                     }
                 }
+            }
 
-                if(this.state.filters.zip === ''){
-                    this.props.loadingActive();
-                    axios.post('/filter_items', fd).then(response => {
+            if(this.props.params.zip === ''){
+                this.props.loadingActive();
+                axios.post('/filter_items', fd).then(response => {
+                    const data = response.data
+                    data.forEach(current => {
+                        current.year = current.year.toString();
+                        current.price = current.price.toString();
+                        current.mileage = current.mileage.toString();
+                    });
+
+                    this.props.setSearchResults(data);
+
+                    this.props.loadingNotActive();
+
+                    const dataPagination = this.pagination();
+
+                    this.props.setActiveItems(dataPagination.shortArray);
+                    this.props.setPagesArray(dataPagination.pagesArray);
+                    this.props.setActivePages(dataPagination.activePages);
+                });
+            } else if(this.props.params.zip !== '' && this.props.zipValid) {
+                this.props.loadingActive();
+                axios.get(`${proxy}https://www.zipcodeapi.com/rest/${zipAPIKey}/radius.json/${this.props.params.zip}/${this.props.params.radius}/mile`)
+                .then(response => {
+                    const zipCodes = response.data.zip_codes.map(current => {
+                        return current.zip_code;
+                    });
+                    
+                    zipCodes.forEach(element => {
+                        fd.append('zipCodes[]', element);
+                    })
+                    axios.post('/filter_items_withZipCodes', fd).then(response => {
                         const data = response.data
                         data.forEach(current => {
                             current.year = current.year.toString();
@@ -355,61 +288,19 @@ class SearchResults extends Component {
                             current.mileage = current.mileage.toString();
                         });
 
-                        this.setState({
-                            allElements: data,
-                            searchResults: data,
-                            pages: Math.ceil(response.data.length/this.state.resultsPerPage)
-                        }, () => {
-                            this.props.loadingNotActive();
+                        this.props.setSearchResults(data);
 
-                            const data = this.pagination();
+                        this.props.loadingNotActive();
 
-                            this.setState({
-                                searchResults: data.shortArray,
-                                pagesArray: data.pagesArray,
-                                activePages: data.activePages
-                            });
-                        });
+                        const dataPagination = this.pagination();
+
+                        this.props.setActiveItems(dataPagination.shortArray);
+                        this.props.setPagesArray(dataPagination.pagesArray);
+                        this.props.setActivePages(dataPagination.activePages);
                     });
-                } else if(this.state.filters.zip !== '' && this.props.zipValid) {
-                    this.props.loadingActive();
-                    axios.get(`${proxy}https://www.zipcodeapi.com/rest/${zipAPIKey}/radius.json/${this.state.filters.zip}/${this.state.filters.radius}/mile`)
-                    .then(response => {
-                        const zipCodes = response.data.zip_codes.map(current => {
-                            return current.zip_code;
-                        });
-                        
-                        zipCodes.forEach(element => {
-                            fd.append('zipCodes[]', element);
-                        })
-                        axios.post('/filter_items_withZipCodes', fd).then(response => {
-                            const data = response.data
-                            data.forEach(current => {
-                                current.year = current.year.toString();
-                                current.price = current.price.toString();
-                                current.mileage = current.mileage.toString();
-                            });
-                        
-                            this.setState({
-                                allElements: data,
-                                searchResults: data,
-                                pages: Math.ceil(response.data.length/this.state.resultsPerPage)
-                            }, () => {
-                                this.props.loadingNotActive();
-
-                                const data = this.pagination();
-
-                                this.setState({
-                                    searchResults: data.shortArray,
-                                    pagesArray: data.pagesArray,
-                                    activePages: data.activePages
-                                });
-                            });
-                        })
-                    })
-                }
-            }, 1000);
-        });
+                });
+            }
+        }, 1000);
     }
 
     onChangeInputNumber = (event) => {
@@ -424,30 +315,12 @@ class SearchResults extends Component {
     }
 
     switchPageHandler = (page) => {
-        const pages = this.state.pagesArray;
-        let activePages = this.state.activePages;
-
-        const index = pages.findIndex(element => element === page);
-        activePages.fill(false, 0, pages.length);
-        activePages[index] = true;
-
-        this.setState({
-            activePages: activePages,
-            page: page
-        }, () => {
-            const endPoint = this.state.page*this.state.resultsPerPage;
-            const startPoint = endPoint - this.state.resultsPerPage;
-            const searchResults = this.state.allElements.slice(startPoint, endPoint);
-            
-            this.setState({
-                searchResults: searchResults
-            });
-        });
+        this.props.switchPage(page);
     }
 
     render(){
-        const activePages = this.state.activePages;
-        const pages = this.state.pagesArray.map((page, index) => {
+        const activePages = this.props.activePages;
+        const pages = this.props.pagesArray.map((page, index) => {
             const classList = [classes.page];
             if(activePages[index]){
                 classList.push(classes.activeElement);
@@ -457,26 +330,26 @@ class SearchResults extends Component {
                    onClick={() => this.switchPageHandler(page)}>{page}</p>
             )
         });
-        const items = this.state.searchResults.map(element => {
+        const items = this.props.activeItems.map(element => {
             return <ListingItem item={element}
                                 searchItem />
         });
 
         let component;
 
-        if(this.state.searchResults.length > 0){
+        if(this.props.activeItems.length > 0){
             component = (
                 <div className={classes.items}>
                     {items}
                     <div className={classes.pages}>
-                        {this.state.pages > 1 ? pages : null}
+                        {this.props.pages > 1 ? pages : null}
                     </div>
                 </div>
             )
         } else {
             component = (
                 <p style={{textAlign: 'center',
-                   fontWeight: 'bold'}}>There are no resultss with this parameters</p>
+                   fontWeight: 'bold'}}>There are no results with this parameters</p>
             )
         }
         return (
@@ -485,7 +358,7 @@ class SearchResults extends Component {
                     <h1>Search Results</h1>
                     <div className={classes.contentContainer}>
                         <div>
-                            <SideBar resultsNumber={`${this.state.allElements.length} results`}
+                            <SideBar resultsNumber={`${this.props.searchResults.length} results`}
                                      changeHandler={(event) => this.changeHandler(event)}
                                      makesItems={this.props.allMakes}
                                      modelsItems={this.props.selectedModels}
@@ -507,20 +380,35 @@ const mapStateToProps = state => {
         allMakes: state.searchReducer.allMakes,
         selectedModels: state.searchReducer.selectedModels,
         zipValid: state.searchReducer.zipIsValid,
-        loading: state.searchReducer.loading
+        loading: state.searchReducer.loading,
+        searchResults: state.searchReducer.searchResults,
+        resultsPerPage: state.searchReducer.resultsPerPage,
+        pages: state.searchReducer.pages,
+        activePages: state.searchReducer.activePages,
+        pagesArray: state.searchReducer.pagesArray,
+        activeItems: state.searchReducer.activeItems
     }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
-        resetParameters: () => dispatch(actions.resetParameters()),
         addItemsToModels: (data) => dispatch(actions.addItemsToModels(data)),
         removeItemsFromModels: (data) => dispatch(actions.removeItemsFromModels(data)) ,
         zipIsValid: () => dispatch(actions.zipIsValid()),
         zipIsNotValid: () => dispatch(actions.zipIsNotValid()),
         loadingActive: () => dispatch(actions.loadingActive()),
         loadingNotActive: () => dispatch(actions.loadingNotActive()),
-        filterComponentActive: () => dispatch(actions.filterComponentActive())
+        filterComponentActive: () => dispatch(actions.filterComponentActive()),
+        setSearchResults: (results) => dispatch(actions.setSearchResults(results)),
+        addMake: (make) => dispatch(actions.addMake(make)),
+        addModel: (model) => dispatch(actions.addModel(model)),
+        setActiveItems: (activeItems) => dispatch(actions.setActiveItems(activeItems)),
+        setPagesArray: (pagesArray) => dispatch(actions.setPagesArray(pagesArray)),
+        setActivePages: (activePages) => dispatch(actions.setActivePages(activePages)),
+        removeMake: (make) => dispatch(actions.removeMake(make)),
+        removeModel: (model) => dispatch(actions.removeModel(model)),
+        onChangeHandler: (value, name) => dispatch(actions.onChangeHandler(value, name)),
+        switchPage: (page) => dispatch(actions.switchPage(page))
     }
 }
 

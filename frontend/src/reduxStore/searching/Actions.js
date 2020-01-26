@@ -83,3 +83,73 @@ export const filterComponentNotActive = () => {
         type: actionTypes.filterComponentNotActive
     }
 }
+
+export const setSearchResults = results => {
+    return {
+        type: actionTypes.setSearchResults,
+        searchResults: results,
+        activeItems: results
+    }
+}
+
+export const addMake = make => {
+    return {
+        type: actionTypes.addMake,
+        make: make
+    }
+}
+
+export const addModel = model => {
+    return {
+        type: actionTypes.addModel,
+        model: model
+    }
+}
+
+export const resetSearchResults = () => {
+    return {
+        type: actionTypes.resetSearchResults
+    }
+}
+
+export const setActiveItems = activeItems => {
+    return {
+        type: actionTypes.setActiveItems,
+        activeItems: activeItems
+    }
+}
+
+export const setPagesArray = pagesArray => {
+    return {
+        type: actionTypes.setPagesArray,
+        pagesArray: pagesArray
+    }
+}
+
+export const setActivePages = activePages => {
+    return {
+        type: actionTypes.setActivePages,
+        activePages: activePages
+    }
+}
+
+export const removeMake = make => {
+    return {
+        type: actionTypes.removeMake,
+        make: make
+    }
+}
+
+export const removeModel = model => {
+    return {
+        type: actionTypes.removeModel,
+        model: model
+    }
+}
+
+export const switchPage = page => {
+    return {
+        type: actionTypes.switchPage,
+        page: page
+    }
+}

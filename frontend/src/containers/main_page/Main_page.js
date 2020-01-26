@@ -6,6 +6,7 @@ import classes from './Main_page.css';
 import LatestReviews from '../../components/latestReviews/LatestReviews';
 
 class MainPage extends Component {
+
     render() {
         return (
             <div className={classes.wrapper}>
