@@ -26,7 +26,8 @@ const initialState = {
     pages: 1,
     page: 1,
     pagesArray: [],
-    activePages: []
+    activePages: [],
+    recommendedItems: []
 }
 
 const reducer = (state=initialState, action) => {
@@ -216,6 +217,11 @@ const reducer = (state=initialState, action) => {
                 page: action.page,
                 activePages: activePages,
                 activeItems: activeItems
+            }
+        case(actionTypes.setRecommendedItems):
+            return {
+                ...state,
+                recommendedItems: action.items
             }
         default:
             return state;

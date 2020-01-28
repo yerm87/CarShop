@@ -69,4 +69,12 @@ export const ReviewItemImage = styled.div`
     width: 280px;
 `
 
+export const ImageRecommendedItem = styled.div`
+    background: url(${props => props.img}) no-repeat center center;
+    background-size: cover;
+    height: 150px;
+    width: 270px;
+    margin: 0; 
+`
+
 export default HeroImage;

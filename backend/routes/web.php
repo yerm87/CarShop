@@ -83,7 +83,7 @@ Route::post('/test5', function(Request $request){
 Route::get('/', 'AuthController@index');
 
 //route to check whether user is authenticated or not
-Route::get('/checkAuth', ['middleware'=>'isAuth', function(){
+Route::get('/checkAuth', ['middleware'=>'isAuth', function(Request $request){
 	return response()->json([
         'auth' => true
     ]);
@@ -347,6 +347,8 @@ Route::post('/get_certain_cities', function(Request $request){
 	return $cities;
 });
 
+
+//API's to handle search requests
 Route::post('/get_items_by_zipCode', 'ListingController@getItemsByZipCode');
 
 Route::post('/get_all_items', 'ListingController@getAllItems');
@@ -399,3 +401,19 @@ Route::get('/fetch_review_item', 'AdminController@fetchReviewItem');
 
 //get all items
 Route::get('/all_listings', 'ListingController@allItems');
+
+
+          /**************  GET RECOMMENDED ITEMS BY COOKIE ********/
+Route::get('/check_cookies', function(Request $request){
+	$cookieIsSet = false;
+	
+	if($request->cookie('recommendedItems')){
+		$cookieIsSet = true;
+	}
+
+	return response()->json([
+		'cookieIsSet' => $cookieIsSet
+	]);
+});
+
+Route::get('/recommended_items', 'ListingController@recommendedItems');

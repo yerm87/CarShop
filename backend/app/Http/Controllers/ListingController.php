@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Listing;
 use App\User;
 use App\Parameters;
+use Illuminate\Support\Facades\Cookie;
 
 class ListingController extends Controller
 {
@@ -122,6 +123,10 @@ class ListingController extends Controller
             array_push($modifiedListings, $listing);
         }
 
+        if($request->make){
+        	Cookie::queue('recommendedItems', $request->make, 60*24*30);
+        }
+
         return $modifiedListings;
     }
 
@@ -179,6 +184,10 @@ class ListingController extends Controller
             $listing->images = $images;
 
             array_push($modifiedListings, $listing);
+        }
+
+        if($request->make){
+        	Cookie::queue('recommendedItems', $request->make, 60*24*20);
         }
 
         return $modifiedListings;
@@ -359,5 +368,37 @@ class ListingController extends Controller
 
     public function allItems(){
     	return Listing::all();
+    }
+
+    public function recommendedItems(Request $request){
+    	$param = $request->cookie('recommendedItems');
+    	$listings = Listing::where([
+    		'make' => $param
+    	])->get();
+
+    	$modifiedListings = array();
+
+    	foreach($listings as $listing){
+    		$images = array();
+
+    		foreach($listing->images as $image){
+    		    array_push($images, base64_encode($image));
+    	    }
+
+    	    $listing->images = $images;
+
+    	    array_push($modifiedListings, $listing);
+    	}
+
+    	$lastThreeItems = array();
+
+    	if(count($modifiedListings) < 3){
+    		return $modifiedListings;
+    	} else {
+    		for($i=count($modifiedListings)-1; $i>=count($modifiedListings)-3; $i--){
+    			array_push($lastThreeItems, $modifiedListings[$i]);
+    		}
+    		return $lastThreeItems;
+    	}
     }
 }

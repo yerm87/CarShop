@@ -19,7 +19,7 @@ export const checkAuth = () => {
         dispatch(init());
         axios.get('/checkAuth').then(result => {
             dispatch(userIsAuth(result.data.auth));
-        })
+        });
     }
 }
 

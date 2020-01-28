@@ -20,12 +20,14 @@ import SearchResults from './containers/searchResults/SearchResults';
 import ListingInfo from './containers/listingInfo/ListingInfo';
 import Reviews from './containers/reviews/Reviews';
 import ReviewItemPage from './containers/reviewItemPage/ReviewItemPage';
+import { checkCookies } from './reduxStore/searching/Actions';
 
 class App extends Component {
     
     componentWillMount(){
         this.props.setAuthParamToState();
         this.props.getEmail();
+        this.props.checkCookies();
     }
 
     showModalHandler = (event) => {
@@ -80,7 +82,8 @@ const mapDispatchToProps = dispatch => {
     return {
         setAuthParamToState: () => dispatch(actions.checkAuth()),
         getEmail: () => dispatch(actions.getEmail()),
-        closeModal: () => dispatch(actions.closeModal())
+        closeModal: () => dispatch(actions.closeModal()),
+        checkCookies: () => dispatch(checkCookies())
     }
 }
 

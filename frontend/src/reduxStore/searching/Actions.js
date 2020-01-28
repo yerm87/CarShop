@@ -1,4 +1,5 @@
 import * as actionTypes from '../actionTypes';
+import axios from 'axios';
 
 export const onChangeHandler = (value, name) => {
     return {
@@ -151,5 +152,30 @@ export const switchPage = page => {
     return {
         type: actionTypes.switchPage,
         page: page
+    }
+}
+
+export const setRecommendedItems = items => {
+    return {
+        type: actionTypes.setRecommendedItems,
+        items: items
+    }
+}
+
+export const getRecommendedItems = () => {
+    return dispatch => {
+        axios.get('/recommended_items').then(response => {
+            dispatch(setRecommendedItems(response.data));
+        })
+    }
+}
+
+export const checkCookies = () => {
+    return dispatch => {
+        axios.get('/check_cookies').then(response => {
+            if(response.data.cookieIsSet){
+                dispatch(getRecommendedItems());
+            }
+        });
     }
 }

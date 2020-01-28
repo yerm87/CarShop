@@ -1,0 +1,11 @@
+.wrapper {
+    cursor: pointer;
+}
+
+.wrapper p {
+    text-align: center;
+    font-weight: bold;
+    color: var(--mainBlue);
+    font-size: 1.1em;
+    padding: 12px 0;
+}

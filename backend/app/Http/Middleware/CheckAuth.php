@@ -17,7 +17,9 @@ class CheckAuth
     {
         if($request->session()->get('key')){
             return $next($request);
+            
         } else {
+
             return response()->json([
                 'auth' => false
             ])->header('Access-Control-Allow-Origin', '*');
