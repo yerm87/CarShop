@@ -35,3 +35,4 @@ export const setActivePages = 'setActivePages';
 export const removeMake = 'removeMake';
 export const removeModel = 'removeModel';
 export const switchPage = 'switchPage';
+export const selectMake = 'selectMake';

@@ -4,6 +4,7 @@ import Title from '../../components/title/Title';
 import SearchComponent from '../../components/searchComponent/SearchComponent';
 import classes from './Main_page.css';
 import LatestReviews from '../../components/latestReviews/LatestReviews';
+import ChooseBrand from '../../components/chooseBrand/ChooseBrand';
 
 class MainPage extends Component {
 
@@ -15,6 +16,7 @@ class MainPage extends Component {
                            subtitle="Search cars from thousands of individual sellers" />
                     <SearchComponent />
                 </HeroImage>
+                <ChooseBrand />
                 <LatestReviews />
             </div>
         )

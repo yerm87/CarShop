@@ -1,0 +1,31 @@
+.container {
+    background: #f2f2f2;
+    font-family: 'Montserrat';
+}
+
+.container h1 {
+    color: var(--mainBlue);
+    text-align: center;
+    margin: 25px 0 35px 0;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.content p {
+    font-weight: bold;
+    color: var(--mainBlue);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.content p span {
+    font-weight: normal;
+    color: var(--mainBlack);
+    font-size: 14px;
+}

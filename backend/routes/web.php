@@ -393,3 +393,9 @@ Route::get('/get_all_reviews', 'AdminController@getAllReviews');
 
 //API to get review item
 Route::get('/fetch_review_item', 'AdminController@fetchReviewItem');
+
+
+           /************* GET LISTINGS BY BRAND **************/
+
+//get all items
+Route::get('/all_listings', 'ListingController@allItems');

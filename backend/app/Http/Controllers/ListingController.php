@@ -356,4 +356,8 @@ class ListingController extends Controller
 
         return $listing;
     }
+
+    public function allItems(){
+    	return Listing::all();
+    }
 }
