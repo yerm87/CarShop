@@ -356,8 +356,10 @@ class UpdateListing extends Component {
 
         let valid = false;
 
-        if(element.value.trim() !== '' && element.rules.required){
-            valid = true;
+        if(element.type !== 'description'){
+            if(element.value.trim() !== '' && element.rules.required){
+                valid = true;
+            }
         }
 
         if(valid){
@@ -749,7 +751,8 @@ class UpdateListing extends Component {
 
         if(this.state.loading){
             component = (
-                <div style={{paddingTop: '80px'}}>
+                <div style={{paddingTop: '80px',
+                             minHeight: '450px'}}>
                     <Spinner />
                 </div>
             )

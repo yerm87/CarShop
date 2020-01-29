@@ -21,6 +21,7 @@ import ListingInfo from './containers/listingInfo/ListingInfo';
 import Reviews from './containers/reviews/Reviews';
 import ReviewItemPage from './containers/reviewItemPage/ReviewItemPage';
 import { checkCookies } from './reduxStore/searching/Actions';
+import Footer from './containers/footer/Footer';
 
 class App extends Component {
     
@@ -66,6 +67,7 @@ class App extends Component {
                     <Route path="/reviews" component={Reviews} />
                     <Route path="/" component={MainPage} />
                 </Switch>
+                <Footer />
             </div>
         )
     }

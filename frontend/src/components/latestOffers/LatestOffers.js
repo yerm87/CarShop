@@ -13,7 +13,8 @@ class LatestOffers extends Component {
                 model: '',
                 price: ''
             }
-        ]
+        ],
+        interval: null
     }
 
     componentDidMount(){
@@ -26,36 +27,47 @@ class LatestOffers extends Component {
         });
     }
 
+    componentWillUnmount(){
+        const interval = this.state.interval;
+        clearInterval(interval);
+
+        this.setState({
+            interval: null
+        });
+    }
+
     moveLeft = () => {
         
         let elements = document.querySelectorAll('.LatestOffers__item__3q-ZL');
         elements[0].style.marginLeft = '0px';
-        elements[0].style.width = '270px';
 
         const callback = () => {
 
-                if(elements[0].style.marginLeft === '-330px'){
-                    const firstChild = document.querySelector('.LatestOffers__content__2wnHX').firstChild;
+            if(elements[0].style.marginLeft === '-330px'){
+                const firstChild = document.querySelector('.LatestOffers__content__2wnHX').firstChild;
 
-                    firstChild.parentNode.removeChild(firstChild);
-                    const parentNode = document.querySelector('.LatestOffers__content__2wnHX');
+                firstChild.parentNode.removeChild(firstChild);
+                const parentNode = document.querySelector('.LatestOffers__content__2wnHX');
                     
-                    firstChild.style.marginLeft = null;
-                    parentNode.append(firstChild);
+                firstChild.style.marginLeft = null;
+                parentNode.append(firstChild);
 
-                    elements = document.querySelectorAll('.LatestOffers__item__3q-ZL');
-                    elements[0].style.marginLeft = '0px';
+                elements = document.querySelectorAll('.LatestOffers__item__3q-ZL');
+                elements[0].style.marginLeft = '0px';
                     
-                } else {
-                    let marginValue = elements[0].style.marginLeft;
+            } else {
+                let marginValue = elements[0].style.marginLeft;
     
-                    marginValue = parseInt(marginValue.replace('px', ''));
-                    elements[0].style.marginLeft = marginValue - 30 + 'px';
-                }
+                marginValue = parseInt(marginValue.replace('px', ''));
+                elements[0].style.marginLeft = marginValue - 30 + 'px';
+            }
         }
 
-        let interval = setInterval(callback, 300);
+        const interval = setInterval(callback, 300);
 
+        this.setState({
+            interval: interval
+        });
     }
 
     render(){

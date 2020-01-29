@@ -717,7 +717,8 @@ class CreateListing extends Component {
 
         if(this.state.loading){
             component = (
-                <div style={{paddingTop: '80px'}}>
+                <div style={{paddingTop: '80px',
+                             minHeight: '450px'}}>
                     <Spinner />
                 </div>
             )

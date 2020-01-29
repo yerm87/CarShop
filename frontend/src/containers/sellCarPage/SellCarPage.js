@@ -154,34 +154,6 @@ class SellCarPage extends Component {
             </React.Fragment>
         ) : <MessagesWindow listingItems={this.state.items}
                             decrement={() => this.decrementUnreadMessages()} />
-/*
-        let component = (
-            <div className={classes.wrapperSellPage}>
-                <HeroImage img="../../assets/sell_your_car.jpg" loggedIn>
-                    <div className={classes.wrapper}>
-                        <h1>Sell Your Car</h1>
-                        <Link to="/create_listing">
-                            <Button createListingButton>Create Listing</Button>
-                        </Link>
-                    </div>
-                </HeroImage>
-                <div className={classes.listings}>
-                    <div className={classes.buttons}>
-                        <a className={listingButtonClasses.join(' ')}
-                           onClick={() => this.listings()}>Listings</a>
-                        <a className={messagesButtonClasses.join(' ')}
-                           onClick={() => this.messages()}>Messages</a>
-                    </div>
-                    <div className={classes.dynamicContent}>
-                        {content}
-                    </div>
-                </div>
-                
-            </div>
-        )
-*/
-        //{listings}
-        //<AdvicesLatestItems />
 
         let component = (
             <React.Fragment>
