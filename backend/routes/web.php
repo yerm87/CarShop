@@ -417,3 +417,7 @@ Route::get('/check_cookies', function(Request $request){
 });
 
 Route::get('/recommended_items', 'ListingController@recommendedItems');
+
+
+//API to get latest listings
+Route::get('/latest_offers', 'ListingController@latestOffers');

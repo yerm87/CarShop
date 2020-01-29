@@ -7,6 +7,7 @@ import LatestReviews from '../../components/latestReviews/LatestReviews';
 import ChooseBrand from '../../components/chooseBrand/ChooseBrand';
 import RecommendedItems from '../../components/recommendedItems/RecommendedItems';
 import { connect } from 'react-redux';
+import LatestOffers from '../../components/latestOffers/LatestOffers';
 
 class MainPage extends Component {
 
@@ -19,6 +20,7 @@ class MainPage extends Component {
                     <SearchComponent />
                 </HeroImage>
                 {this.props.recommendedItems.length > 0 ? <RecommendedItems /> : null}
+                <LatestOffers />
                 <ChooseBrand />
                 <LatestReviews />
             </div>

@@ -1,0 +1,28 @@
+.container {
+    width: 70%;
+    font-family: 'Montserrat';
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.container h1 {
+    text-align: center;
+    color: var(--mainBlue);
+    margin: 30px 0 22px 0;
+}
+
+.content {
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.content p {
+    width: 270px;
+}
+
+.item {
+    display: inline-block;
+    transition: all 0.3s;
+    width: 270px;
+    padding: 0 30px;
+}

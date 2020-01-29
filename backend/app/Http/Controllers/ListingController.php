@@ -401,4 +401,43 @@ class ListingController extends Controller
     		return $lastThreeItems;
     	}
     }
+
+    public function latestOffers(){
+    	$listings = Listing::all();
+
+    	$modifiedListings = array();
+    	
+    	if(count($listings) < 15){
+    		foreach($listings as $listing){
+    		    $images = array();
+
+    		    foreach($listing->images as $image){
+    		        array_push($images, base64_encode($image));
+    	        }
+
+    	        $listing->images = $images;
+
+    	        array_push($modifiedListings, $listing);
+    	    }
+    	} else {
+    		$latestListings = array();
+
+    		for($i=count($listings)-1; $i>=count($listings)-15; $i--){
+    			array_push($latestListings, $listings[$i]);
+    		}
+
+    		foreach($latestListings as $latestListing){
+    			$images = array();
+
+    		    foreach($latestListing->images as $image){
+    		        array_push($images, base64_encode($image));
+    	        }
+
+    	        $latestListing->images = $images;
+
+    	        array_push($modifiedListings, $listing);
+    		}
+    	}
+    	return $modifiedListings;
+    }
 }
