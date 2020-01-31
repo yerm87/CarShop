@@ -32,7 +32,8 @@
        <link href="{{asset('css/cms.css')}}" rel="stylesheet" type="text/css">
    </head>
    <body>
-       <div class="root"></div>
+       <div class="root">
+       </div>
        @yield('content')
    </body>
 </html>

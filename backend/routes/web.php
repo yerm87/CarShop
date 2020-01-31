@@ -30,6 +30,7 @@ use App\Review;
 use App\City;
 use App\Http\Controllers\MessageController;
 use App\Message;
+use App\Http\Controllers\AppNavigationController;
 
 Route::get('/test', function(){
     return view('welcome');
@@ -79,20 +80,44 @@ Route::post('/test5', function(Request $request){
 	return $array;
 });
 
-//route for main page
-Route::get('/', 'AuthController@index');
+                      /************ Application Navigation routes  ***********/
+Route::get('/', 'AppNavigationController@index');
 
-//route to check whether user is authenticated or not
+Route::get('/sell_car', 'AppNavigationController@sellCarPage');
+
+Route::get('/sell_car/{id}', 'AppNavigationController@listingInfo');
+
+Route::get('/signup', 'AppNavigationController@signup');
+
+Route::get('/login', 'AppNavigationController@login');
+
+Route::get('/create_listing', 'AppNavigationController@createListing');
+
+Route::get('/update_listing/{id}', 'AppNavigationController@updateListing');
+
+Route::get('/buying_advices', 'AppNavigationController@buyingAdvices');
+
+Route::get('/buying_advices/{id}', 'AppNavigationController@buyingAdvicesItem');
+
+Route::get('/search_results', 'AppNavigationController@searchResults');
+
+Route::get('/search_results/{id}', 'AppNavigationController@searchResultsListing');
+
+Route::get('/reviews', 'AppNavigationController@reviews');
+
+Route::get('/reviews/{id}', 'AppNavigationController@reviewsItem');
+
+Route::get('/about_us', 'AppNavigationController@aboutUs');
+
+
+
+//route to check if user is authenticated or not
 Route::get('/checkAuth', ['middleware'=>'isAuth', function(Request $request){
 	return response()->json([
         'auth' => true
     ]);
 }]);
 
-//route for sell_car page
-Route::get('/sell_car', function(){
-   return view('sell_page.sell_car');
-});
 
 //route for sign-up page
 Route::post('/create_user', 'AuthController@store');

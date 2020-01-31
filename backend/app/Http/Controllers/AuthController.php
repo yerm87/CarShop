@@ -15,7 +15,7 @@ class AuthController extends Controller
      */
     public function index()
     {
-        return view('main_page.main_page');
+        
     }
 
     /**
