@@ -10,12 +10,14 @@ class NavigationItems extends Component {
     render(){
         return (
             <div className={classes.items}>
-                <NavigationItem name='Cars for sale' />
+                <NavigationItem name='Cars for sale'
+                                path='/' />
                 <NavigationItem name='Sell Your Car'
                                 path='/sell_car' />
                 <NavigationItem name='Reviews'
                                 path='/reviews' />
-                <NavigationItem name='About Us' />
+                <NavigationItem name='About Us'
+                                path='/about_us' />
                 {this.props.isLoggedIn ? <UserIcon /> : (
                     <React.Fragment>
                         <Link to='/signup'>

@@ -110,7 +110,7 @@ class SignupComponent extends Component {
         if(!isValidRequired){
             copyElements[element.type].errorMessage = 'field cannot be empty';
         } else if(!isValidMinLength){
-            copyElements[element.type].errorMessage = 'minimum 9 characters required';
+            copyElements[element.type].errorMessage = 'minimum 10 characters required';
         } else if(element.rules.passwordMatch && !isValidMatch){
             copyElements[element.type].errorMessage = "password dont't match";
         } else if(element.rules.passwordMatch && isValidMatch){

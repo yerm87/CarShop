@@ -15,6 +15,12 @@ import MessagesWindow from '../../components/messagesWindow/MessagesWindow';
 class SellCarPage extends Component {
     state={
         items: [],
+        activeItems: [],
+        pages: 1,
+        page: 1,
+        resultsPerPage: 5,
+        pagesArray: [],
+        activePages: [],
         activeModalsPerItem: [],
         buyingAdvices: [],
         listingButtonActive: true,
@@ -31,35 +37,60 @@ class SellCarPage extends Component {
     }
 
     componentDidMount() {
-        if(this.props.auth){
-            axios.get('/items_by_userId').then(response => {
-                const items = response.data;
-                const activeModalsPerItem = [];
-
-                items.forEach(item => {
-                    activeModalsPerItem.push(false);
+        setTimeout(() => {
+            if(this.props.auth){
+                axios.get('/items_by_userId').then(response => {
+    
+                    this.setState({
+                        items: response.data
+                    }, () => {
+                        const listingsIds = this.state.items.map(element => element._id);
+    
+                        //pagination
+                        const pages = Math.ceil(this.state.items.length/this.state.resultsPerPage);
+    
+                        const activeItems = this.state.items.slice(0, this.state.resultsPerPage);
+                        const pagesArray = [];
+                    
+                        for(let i=1; i<=pages; i++){
+                            pagesArray.push(i);
+                        }
+    
+                        const activePages = [];
+    
+                        activePages[0] = true;
+                        for(let i=1; i<pagesArray.length; i++){
+                            activePages.push(false);
+                        }
+    
+                        //activeModals
+                        const activeModalsPerItem = [];
+    
+                        activeItems.forEach(() => {
+                            activeModalsPerItem.push(false);
+                        });
+    
+                        /////////
+                        axios.post(`/new_messages_count`, {
+                            listingsIds: listingsIds
+                        }).then(response => {
+                            this.setState({
+                                unreadMessagesCount: response.data,
+                                activeItems: activeItems,
+                                pages: pages,
+                                pagesArray: pagesArray,
+                                activePages: activePages,
+                                activeModalsPerItem: activeModalsPerItem
+                            });
+                        });
+                    });
                 });
-
-                this.setState({
-                    items: response.data,
-                    activeModalsPerItem: activeModalsPerItem
-                }, () => {
-                    const listingsIds = this.state.items.map(element => element._id);
-
-                    axios.post(`/new_messages_count`, {
-                        listingsIds: listingsIds
-                    }).then(response => {
-                        this.setState({
-                            unreadMessagesCount: response.data
-                        })
-                    })
-                });
-            });
-        }
+            }
+        }, 1000)
     }
 
     openModal = (element) => {
-        const copyItems = this.state.items;
+        const copyItems = this.state.activeItems;
         const index = copyItems.findIndex(item => item === element);
         const activeModals = this.state.activeModalsPerItem;
         activeModals[index] = true;
@@ -71,7 +102,7 @@ class SellCarPage extends Component {
     }
 
     closeModalHandler = (element) => {
-        const copyItems = this.state.items;
+        const copyItems = this.state.activeItems;
         const index = copyItems.findIndex(item => item === element);
         const copyActiveModals = this.state.activeModalsPerItem;
         copyActiveModals[index] = false;
@@ -86,14 +117,73 @@ class SellCarPage extends Component {
             _id: id
         }).then(response => {
             if(response.data === 'deleted'){
-                const index = this.state.items.findIndex(item => item === element);
-                const copyActiveModals = this.state.activeModalsPerItem
-                copyActiveModals[index] = false;
 
                 axios.get('/items_by_userId').then(response => {
+                    
                     this.setState({
-                        items: response.data,
-                        activeModalsPerItem: copyActiveModals
+                        items: response.data
+                    }, () => {
+                        setTimeout(() => {
+                            const listingsIds = this.state.items.map(element => element._id);
+
+                            //pagination
+                            const pages = Math.ceil(this.state.items.length/this.state.resultsPerPage);
+
+                            let endPoint = this.state.page*this.state.resultsPerPage;
+                            let startPoint = endPoint-this.state.resultsPerPage;
+                            let activeItems = this.state.items.slice(startPoint, endPoint);
+
+                            const pagesArray = [];
+                
+                            for(let i=1; i<=pages; i++){
+                                pagesArray.push(i);
+                            }
+
+                            let page = this.state.page;
+                            let activePages = [];
+
+                            if(pages < page){
+                                page--;
+
+                                for(let i=0; i<pages; i++){
+                                    activePages.push(false);
+                                    activePages[pagesArray.length-1] = true;
+                                }
+
+                                endPoint = page*this.state.resultsPerPage;
+                                startPoint = endPoint-this.state.resultsPerPage;
+                                activeItems = this.state.items.slice(startPoint, endPoint);
+                            } else {
+                                for(let i=0; i<pages; i++){
+                                    activePages.push(false);
+                                }
+    
+                                activePages[page-1] = true;
+                            }
+
+                            const activeModalsPerItem = [];
+
+                            activeItems.forEach(() => {
+                                activeModalsPerItem.push(false);
+                            });
+
+
+                            setTimeout(() => {
+                                axios.post(`/new_messages_count`, {
+                                    listingsIds: listingsIds
+                                }).then(response => {
+                                    this.setState({
+                                        unreadMessagesCount: response.data,
+                                        activeItems: activeItems,
+                                        pages: pages,
+                                        pagesArray: pagesArray,
+                                        activePages: activePages,
+                                        activeModalsPerItem: activeModalsPerItem,
+                                        page: page
+                                    });
+                                });
+                            }, 300);
+                        }, 300);
                     });
                 });
             }
@@ -119,10 +209,53 @@ class SellCarPage extends Component {
             unreadMessagesCount: count
         })
     }
+
+    switchPageHandler = (page) => {
+        const pages = this.state.pagesArray;
+        let activePages = this.state.activePages;
+
+        const index = pages.findIndex(element => element === page);
+        activePages.fill(false, 0, pages.length);
+        activePages[index] = true;
+
+        this.setState({
+            activePages: activePages,
+            page: page
+        }, () => {
+            setTimeout(() => {
+                const endPoint = this.state.page*this.state.resultsPerPage;
+                const startPoint = endPoint-this.state.resultsPerPage;
+                const activeItems = this.state.items.slice(startPoint, endPoint);
+
+                const activeModalsArray = [];
+
+                activeItems.forEach(() => {
+                    activeModalsArray.push(false);
+                })
+            
+                this.setState({
+                    activeItems: activeItems,
+                    activeModalsPerItem: activeModalsArray
+                });
+            }, 300);
+        });
+    }
     
     render() {
+        const activePages = this.state.activePages;
+        const pages = this.state.pagesArray.map((page, index) => {
+            const classList = [classes.page];
+            if(activePages[index]){
+                classList.push(classes.activeElement);
+            }
+            return (
+                <p className={classList.join(' ')}
+                   onClick={() => this.switchPageHandler(page)}>{page}</p>
+            )
+        });
+
         const activeValues = this.state.activeModalsPerItem;
-        const listings = this.state.items.map((current, index) => {
+        const listings = this.state.activeItems.map((current, index) => {
             return <ListingItem item={current}
                                 admin
                                 deleteItem={() => this.openModal(current)}
@@ -150,7 +283,10 @@ class SellCarPage extends Component {
 
         let content = this.state.listingButtonActive ? (
             <React.Fragment>
-                <p>{renderListings}</p>
+                {renderListings}
+                <div className={classes.pages}>
+                    {this.state.pages > 1 ? pages : null}
+                </div>
             </React.Fragment>
         ) : <MessagesWindow listingItems={this.state.items}
                             decrement={() => this.decrementUnreadMessages()} />

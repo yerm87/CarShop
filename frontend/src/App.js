@@ -1,27 +1,35 @@
-import React, { Component } from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import React, { Component, lazy, Suspense } from "react";
+import { Switch, Route} from "react-router-dom";
 import Toolbar from './containers/toolbar/Toolbar';
 import NavigationItems from './components/navigationItems/NavigationItems';
 import Logo from './components/UIElements/logo/Logo';
-import MainPage from './containers/main_page/Main_page';
-import SellCarPage from './containers/sellCarPage/SellCarPage';
-import SignUpPage from './containers/signUpPage/Signup_page';
-import CreateListing from './containers/create_listing/CreateListing';
-import LoginPage from './containers/login_page/LoginPage';
 import { connect } from 'react-redux';
 import * as actions from './reduxStore/authentication/Actions';
 import ModalUserInfo from './components/modalUserInfo/ModalUserInfo';
 import classes from './App.css';
-import Logout from './containers/logout_page/Logout';
-import UpdateListing from "./containers/update_listing/UpdateListing";
-import BuyingAdvicesPage from './containers/buyingAdvicesPage/BuyingAdvicesPage';
-import AdvicesItemPage from './containers/advicesItemPage/AdvicesItemPage';
-import SearchResults from './containers/searchResults/SearchResults';
-import ListingInfo from './containers/listingInfo/ListingInfo';
-import Reviews from './containers/reviews/Reviews';
-import ReviewItemPage from './containers/reviewItemPage/ReviewItemPage';
 import { checkCookies } from './reduxStore/searching/Actions';
 import Footer from './containers/footer/Footer';
+
+const SellCarPage = lazy(() => import('./containers/sellCarPage/SellCarPage'));
+const SignUpPage = lazy(() => import('./containers/signUpPage/Signup_page'));
+const CreateListing = lazy(() => import('./containers/create_listing/CreateListing'));
+const UpdateListing = lazy(() => import('./containers/update_listing/UpdateListing'));
+const LoginPage = lazy(() => import('./containers/login_page/LoginPage'));
+const Logout = lazy(() => import('./containers/logout_page/Logout'));
+const BuyingAdvicesPage = lazy(() => import('./containers/buyingAdvicesPage/BuyingAdvicesPage'));
+const AdvicesItemPage = lazy(() => import('./containers/advicesItemPage/AdvicesItemPage'));
+const SearchResults = lazy(() => import('./containers/searchResults/SearchResults'));
+const ListingInfo = lazy(() => import('./containers/listingInfo/ListingInfo'));
+const Reviews = lazy(() => import('./containers/reviews/Reviews'));
+const ReviewItemPage = lazy(() => import('./containers/reviewItemPage/ReviewItemPage'));
+const AboutUsPage = lazy(() => import('./containers/aboutUsPage/AboutUsPage'));
+const MainPage = lazy(() => import('./containers/main_page/Main_page'))
+
+const loadComponent = Component => (
+    <Suspense fallback={<div style={{ minHeight: '530px' }}></div>}>
+        <Component />
+    </Suspense>
+)
 
 class App extends Component {
     
@@ -52,20 +60,21 @@ class App extends Component {
                 <ModalUserInfo show={this.props.showModal}
                                email={this.props.email} />
                 <Switch>
-                    <Route path="/sell_car/:listing_id" component={ListingInfo} />
-                    <Route path="/sell_car" component={SellCarPage} />
-                    <Route path="/signup" component={SignUpPage} />
-                    <Route path="/create_listing" component={CreateListing} />
-                    <Route path="/login" component={LoginPage} />
-                    <Route path="/logout" component={Logout} />
-                    <Route path="/update_listing/:listingId" component={UpdateListing} />
-                    <Route path="/buying_advices/:advice_id" component={AdvicesItemPage} />
-                    <Route path="/buying_advices" component={BuyingAdvicesPage} />
-                    <Route path="/search_results/:listing_id" component={ListingInfo} />
-                    <Route path="/search_results" component={SearchResults} />
-                    <Route path="/reviews/:review_id" component={ReviewItemPage} />
-                    <Route path="/reviews" component={Reviews} />
-                    <Route path="/" component={MainPage} />
+                    <Route path="/sell_car/:listing_id" component={() => loadComponent(ListingInfo)} />
+                    <Route path="/sell_car" component={() => loadComponent(SellCarPage)} />
+                    <Route path="/signup" component={() => loadComponent(SignUpPage)} />
+                    <Route path="/create_listing" component={() => loadComponent(CreateListing)} />
+                    <Route path="/login" component={() => loadComponent(LoginPage)} />
+                    <Route path="/logout" component={() => loadComponent(Logout)} />
+                    <Route path="/update_listing/:listingId" component={() => loadComponent(UpdateListing)} />
+                    <Route path="/buying_advices/:advice_id" component={() => loadComponent(AdvicesItemPage)} />
+                    <Route path="/buying_advices" component={() => loadComponent(BuyingAdvicesPage)} />
+                    <Route path="/search_results/:listing_id" component={() => loadComponent(ListingInfo)} />
+                    <Route path="/search_results" component={() => loadComponent(SearchResults)} />
+                    <Route path="/reviews/:review_id" component={() => loadComponent(ReviewItemPage)} />
+                    <Route path="/reviews" component={() => loadComponent(Reviews)} />
+                    <Route path="/about_us" component={() => loadComponent(AboutUsPage)} />
+                    <Route path="/" component={() => loadComponent(MainPage)} />
                 </Switch>
                 <Footer />
             </div>

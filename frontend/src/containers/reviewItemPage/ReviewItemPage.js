@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import classes from './ReviewItemPage.css';
 import axios from 'axios';
 import { BuyingAdviceItemImage, ItemNoImage } from '../../components/heroImage/HeroImage';
+import { withRouter } from 'react-router-dom';
 
 class ReviewItemPage extends Component {
     state={
@@ -45,4 +46,4 @@ class ReviewItemPage extends Component {
     }
 }
 
-export default ReviewItemPage;
+export default withRouter(ReviewItemPage);

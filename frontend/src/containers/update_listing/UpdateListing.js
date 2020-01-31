@@ -6,6 +6,7 @@ import Dropzone from 'react-dropzone';
 import Spinner from '../../components/UIElements/spinner/Spinner';
 import { Redirect } from 'react-router-dom';
 import { proxy, zipAPIKey } from '../../urlsAPI/urlsAPI';
+import { withRouter } from 'react-router-dom';
 
 class UpdateListing extends Component {
     state={
@@ -762,4 +763,4 @@ class UpdateListing extends Component {
     }
 }
 
-export default UpdateListing;
+export default withRouter(UpdateListing);

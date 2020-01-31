@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { BuyingAdviceItemImage, ItemNoImage } from '../../components/heroImage/HeroImage';
 import classes from './AdvicesItemPage.css';
+import { withRouter } from 'react-router-dom';
 
 class AdvicesItemPage extends Component {
     state={
@@ -38,4 +39,4 @@ class AdvicesItemPage extends Component {
     }
 }
 
-export default AdvicesItemPage;
+export default withRouter(AdvicesItemPage);
