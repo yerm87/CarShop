@@ -1,0 +1,52 @@
+.wrapper {
+    padding: 40px 80px;
+    background: #f2f2f2;
+    min-height: 700px;
+    font-family: 'Montserrat';
+}
+
+.wrapper h1 {
+	text-align: left;
+}
+
+.wrapper h1, .wrapper h4 {
+    color: var(--mainBlue);
+}
+
+.reviewItem {
+    display: flex;
+    margin-top: 20px;
+}
+
+.reviewItem a {
+    text-decoration: none;
+    color: var(--mainBlack);
+}
+
+.reviewItem:hover{
+    cursor:pointer;
+}
+
+.reviewItemImage {
+	height: 250px;
+    width: 330px;
+    min-width: 330px;
+    margin: 0;
+}
+
+.reviewItemContent {
+    padding-left: 25px;
+}
+
+.reviewItemContent h4 {
+    margin: 0;
+}
+
+.reviewItemContent h4, .reviewItemContent p {
+	text-align: left;
+}
+
+.nameAndDate p {
+    color: #292525;
+    padding: 10px 0 22px 0;
+}

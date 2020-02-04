@@ -120,7 +120,7 @@ class SearchComponent extends Component {
                                 name="radius"
                                 onChange={(event) => this.changeValue(event)}>
                             <option value="10">10 miles from</option>
-                            <option value="50">50</option>
+                            <option value="20">50 miles from</option>
                         </select>
                         <input id="zip"
                                className={zipCodeClasses.join(' ')}

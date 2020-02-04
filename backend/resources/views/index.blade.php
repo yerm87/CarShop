@@ -30,9 +30,11 @@
        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
        <link href="{{asset('css/cms.css')}}" rel="stylesheet" type="text/css">
+       @yield('page_styles')
    </head>
    <body>
        <div class="root">
+           @yield('initialRendering')
        </div>
        @yield('content')
    </body>

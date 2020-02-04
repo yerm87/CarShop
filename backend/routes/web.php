@@ -109,6 +109,8 @@ Route::get('/reviews/{id}', 'AppNavigationController@reviewsItem');
 
 Route::get('/about_us', 'AppNavigationController@aboutUs');
 
+Route::get('/item', 'AppNavigationController@getItemData');
+
 
 
 //route to check if user is authenticated or not

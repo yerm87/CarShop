@@ -1,0 +1,114 @@
+.mainWrapper {
+	
+}
+
+.toolbar {
+    background: linear-gradient(var(--lightBlue), var(--mainBlue));
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+}
+
+.logoText {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Lobster';
+    color: #C1E3CD;
+}
+
+.logoWrapper {
+    background: rgb(63, 3, 75);
+    margin: 10px 0 10px 10px;
+    border-radius: 25px;
+}
+
+.logoWrapper:hover {
+    cursor: pointer;
+}
+
+.navigationItems {
+    display: flex;
+    font-family: 'Rubik';
+    color: var(--mainWhite);
+    align-items: center;
+}
+
+.navigationItem {
+    display: inline;
+    margin: 10px 20px 0 0;
+}
+
+.wrapperNavigationItem {
+    padding: 26px 9px 24px 20px;
+}
+
+.wrapperNavigationItem:hover {
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--mainWhite);
+}
+
+.button {
+    font-family: 'Rubik';
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menuButton {
+    font-size: 16px;
+    padding: 7px;
+    background: transparent;
+    color: var(--mainWhite);
+    border: 1px solid var(--mainWhite);
+    margin: 15px 25px;
+}
+
+.menuButton:hover {
+    background: var(--mainWhite);
+    color: var(--mainBlue);
+}
+
+footer {
+    background: linear-gradient(var(--lightBlue), var(--mainBlue));
+    font-family: 'Montserrat';
+    color: var(--mainWhite);
+    padding: 20px 30px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapper {
+    background: #f2f2f2;
+    color: var(--mainBlack);
+    font-family: 'Montserrat';
+    min-height: 530px;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 16px 0;
+}
+
+.container p {
+    margin: 0;
+    text-align: left;
+}
+
+.paragraph {
+    padding: 16px 0;
+    text-align: left;
+}
+
+.image {
+    background: url('/assets/aboutUsPage_image.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 16px;
+}

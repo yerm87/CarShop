@@ -1,5 +1,31 @@
 @extends('index')
 
+@section('page_styles')
+    <link href="{{asset('css/reviews_page_styles.css')}}" rel="stylesheet" type="text/css">
+@endsection
+
+@section('initialRendering')
+    <div class="wrapper">
+        <h1>Reviews</h1>
+        <div>
+            @foreach($reviews as $review)
+                <div class="reviewItem">
+                    <div class="reviewItemImage"
+                         style="background: url('{{$review->image !== 'no image' ? $review->image : '/assets/no_photo.jpg'}}') no-repeat center center;
+                              background-size: cover"></div>
+                    <a href="/reviews/{{$review->_id}}"><div class="reviewItemContent">
+                        <h4>{{$review->title}}</h4>
+                        <div class="nameAndDate">
+                            <p>By {{$review->author}} on {{substr($review->created_at, 0, 10)}}</p>
+                        </div>
+                        <p>{{strlen($review->content) > 350 ? substr($review->content, 0, 350) . '...' : $review->content}}</p>
+                    </div></a>
+                </div>
+            @endforeach
+        </div>
+    </div>
+@endsection
+
 @section('content')
     <script src="{{asset('js/bundle.js')}}"></script>
     <script src="{{asset('js/0.js')}}"></script>

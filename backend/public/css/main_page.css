@@ -1,0 +1,363 @@
+.mainWrapper {
+	
+}
+
+.toolbar {
+    background: linear-gradient(var(--lightBlue), var(--mainBlue));
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+}
+
+.logoText {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Lobster';
+    color: #C1E3CD;
+}
+
+.logoWrapper {
+    background: rgb(63, 3, 75);
+    margin: 10px 0 10px 10px;
+    border-radius: 25px;
+}
+
+.logoWrapper:hover {
+    cursor: pointer;
+}
+
+.navigationItems {
+    display: flex;
+    font-family: 'Rubik';
+    color: var(--mainWhite);
+    align-items: center;
+}
+
+.navigationItem {
+    display: inline;
+    margin: 10px 20px 0 0;
+}
+
+.wrapperNavigationItem {
+    padding: 26px 9px 24px 20px;
+}
+
+.wrapperNavigationItem:hover {
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--mainWhite);
+}
+
+.button {
+    font-family: 'Rubik';
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menuButton {
+    font-size: 16px;
+    padding: 7px;
+    background: transparent;
+    color: var(--mainWhite);
+    border: 1px solid var(--mainWhite);
+    margin: 15px 25px;
+}
+
+.menuButton:hover {
+    background: var(--mainWhite);
+    color: var(--mainBlue);
+}
+
+footer {
+    background: linear-gradient(var(--lightBlue), var(--mainBlue));
+    font-family: 'Montserrat';
+    color: var(--mainWhite);
+    padding: 20px 30px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contentWrapper {
+	background: #f2f2f2;
+}
+
+.heroImage {
+	background: url('/assets/wallpaper_image.jpg') no-repeat center center;
+    background-size: cover;
+    height: 700px;
+    margin: 0;
+}
+
+.title h1 {
+    font-family: 'Montserrat';
+    padding-top: 180px;
+    padding-left: 70px;
+    color: var(--mainWhite);
+    margin: 0;
+    font-size: 2.2em;
+}
+
+.title p {
+    font-family: 'Montserrat';
+    color: var(--mainWhite);
+    padding-left: 70px;
+}
+
+.searchComponent {
+    margin-top: 240px;
+}
+
+.searchComponent p {
+    color: red;
+    font-size: 1.2em;
+    margin-left: 310px;
+}
+
+.formSearch {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: linear-gradient(var(--lightBlue), var(--mainBlue));
+    width: 70%;
+    margin: 0 auto;
+    padding: 27px;
+}
+
+.formSearch select {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid gray;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    padding: 10px;
+    width: 30%;
+}
+
+.zip {
+    display: flex;
+}
+
+.searchContainer input[type="submit"] {
+    background-color: rgb(26, 100, 26);
+    font-family: 'Montserrat';
+    width: 100%;
+    height: 100%;
+    color: var(--mainWhite);
+    border: none;
+    cursor: pointer;
+    border-bottom-right-radius: 10px;
+    font-size: 1.1em;
+}
+
+.searchContainer a {
+    display: block;
+}
+
+.recommendedItemsContainer {
+    background: #f2f2f2;
+    font-family: 'Montserrat';
+}
+
+.recommendedItemsContainer h1 {
+    text-align: center;
+    color: var(--mainBlue);
+    margin: 30px 0 22px 0;
+}
+
+.recommendedItemsContent {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.recommendedItemsContent a {
+    text-decoration: none;
+}
+
+.recommendedItemWrapper {
+    cursor: pointer;
+}
+
+.recommendedItemWrapper p {
+    text-align: center;
+    font-weight: bold;
+    color: var(--mainBlue);
+    font-size: 1.1em;
+    padding: 12px 0;
+    margin-bottom: 5px;
+}
+
+.recommendedItemImage {
+    height: 150px;
+    width: 270px;
+    margin: 0;
+}
+
+.latestOffersContainer {
+    width: 70%;
+    font-family: 'Montserrat';
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.latestOffersContainer h1 {
+    text-align: center;
+    color: var(--mainBlue);
+    margin: 30px 0 22px 0;
+}
+
+.latestOffersContent {
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.latestOffersContent p {
+    width: 270px;
+}
+
+.latestOffersItem {
+    display: inline-block;
+    transition: all 0.3s;
+    width: 270px;
+    padding: 0 30px;
+}
+
+.latestOffersItem a {
+    text-decoration: none;
+}
+
+.chooseBrandContainer {
+    background: #f2f2f2;
+    font-family: 'Montserrat';
+}
+
+.chooseBrandContainer h1 {
+    color: var(--mainBlue);
+    text-align: center;
+    margin: 25px 0 35px 0;
+}
+
+.chooseBrandContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.chooseBrandContent a {
+	text-decoration: none;
+}
+
+.chooseBrandContent p {
+    font-weight: bold;
+    color: var(--mainBlue);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.chooseBrandContent p span {
+    font-weight: normal;
+    color: var(--mainBlack);
+    font-size: 14px;
+}
+
+.latestReviewsWrapper {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    padding-bottom: 30px;
+}
+
+.latestReviewsWrapper h1 {
+    margin: 0;
+    padding: 19px 0;
+    text-align: center;
+    color: var(--mainBlue);
+}
+
+.latestReviewsWrapper input {
+    display: block;
+    color: var(--mainBlue);
+    background: transparent;
+    border: 1px solid var(--mainBlue);
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 18px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.latestReviewsWrapper input:hover {
+    background: var(--mainBlue);
+    color: var(--mainWhite);
+}
+
+.latestReviewsContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+.reviewItemImage {
+	height: 150px;
+    width: 280px;
+    margin: 0;
+}
+
+.reviewItemContent {
+    padding: 12px;
+    background: var(--mainWhite);
+    width: 280px;
+    min-height: 248px;
+    box-sizing: border-box;
+}
+
+.reviewItemTitle {
+    font-weight: bold;
+    color: var(--mainBlue);
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+}
+
+.reviewItemDate {
+    font-size: 0.9em;
+    color: #3e464f;
+    margin: 0 0 14px 0;
+}
+
+.reviewItemText {
+    color: #3e464f;
+    margin: 0 0 14px 0;
+}
+
+.reviewItemContent a {
+    text-decoration: none;
+}
+
+.readMore {
+    color: var(--mainBlue);
+    margin-bottom: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,131 @@
+.mainWrapper {
+	
+}
+
+.toolbar {
+    background: linear-gradient(var(--lightBlue), var(--mainBlue));
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+}
+
+.logoText {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Lobster';
+    color: #C1E3CD;
+}
+
+.logoWrapper {
+    background: rgb(63, 3, 75);
+    margin: 10px 0 10px 10px;
+    border-radius: 25px;
+}
+
+.logoWrapper:hover {
+    cursor: pointer;
+}
+
+.navigationItems {
+    display: flex;
+    font-family: 'Rubik';
+    color: var(--mainWhite);
+    align-items: center;
+}
+
+.navigationItem {
+    display: inline;
+    margin: 10px 20px 0 0;
+}
+
+.wrapperNavigationItem {
+    padding: 26px 9px 24px 20px;
+}
+
+.wrapperNavigationItem:hover {
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--mainWhite);
+}
+
+.button {
+    font-family: 'Rubik';
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menuButton {
+    font-size: 16px;
+    padding: 7px;
+    background: transparent;
+    color: var(--mainWhite);
+    border: 1px solid var(--mainWhite);
+    margin: 15px 25px;
+}
+
+.menuButton:hover {
+    background: var(--mainWhite);
+    color: var(--mainBlue);
+}
+
+footer {
+    background: linear-gradient(var(--lightBlue), var(--mainBlue));
+    font-family: 'Montserrat';
+    color: var(--mainWhite);
+    padding: 20px 30px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapper {
+    font-family: 'Montserrat';
+    padding: 40px 80px;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: var(--mainBlack);
+}
+
+.wrapper h1 {
+    color: var(--mainBlack);
+    text-align: left;
+}
+
+.wrapper h4, .wrapper p {
+    text-align: left;
+}
+
+.itemContainer {
+    display: flex;
+    margin-top: 20px;
+}
+
+.nameAndDate p {
+    color: #292525;
+    padding: 10px 0 22px 0;
+}
+
+.itemContent {
+    padding-left: 25px;
+}
+
+.itemContent h4 {
+    margin: 0;
+}
+
+.itemContainer:hover{
+    cursor:pointer;
+}
+
+.itemImage {
+    height: 250px;
+    width: 330px;
+    min-width: 330px;
+    margin: 0;
+}

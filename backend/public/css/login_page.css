@@ -1,0 +1,157 @@
+.mainWrapper {
+	
+}
+
+.toolbar {
+    background: linear-gradient(var(--lightBlue), var(--mainBlue));
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+}
+
+.logoText {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Lobster';
+    color: #C1E3CD;
+}
+
+.logoWrapper {
+    background: rgb(63, 3, 75);
+    margin: 10px 0 10px 10px;
+    border-radius: 25px;
+}
+
+.logoWrapper:hover {
+    cursor: pointer;
+}
+
+.navigationItems {
+    display: flex;
+    font-family: 'Rubik';
+    color: var(--mainWhite);
+    align-items: center;
+}
+
+.navigationItem {
+    display: inline;
+    margin: 10px 20px 0 0;
+}
+
+.wrapperNavigationItem {
+    padding: 26px 9px 24px 20px;
+}
+
+.wrapperNavigationItem:hover {
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--mainWhite);
+}
+
+.button {
+    font-family: 'Rubik';
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menuButton {
+    font-size: 16px;
+    padding: 7px;
+    background: transparent;
+    color: var(--mainWhite);
+    border: 1px solid var(--mainWhite);
+    margin: 15px 25px;
+}
+
+.menuButton:hover {
+    background: var(--mainWhite);
+    color: var(--mainBlue);
+}
+
+footer {
+    background: linear-gradient(var(--lightBlue), var(--mainBlue));
+    font-family: 'Montserrat';
+    color: var(--mainWhite);
+    padding: 20px 30px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapper {
+    padding-top: 100px;
+    min-height: 430px;
+}
+
+.wrapper p {
+    text-align: center;
+    font-family: 'Montserrat';
+    padding-top: 10px;
+}
+
+.wrapper span {
+    color: var(--mainBlue);
+    cursor: pointer;
+}
+
+.form {
+    width: 25%;
+    margin: 0 auto;
+    font-family: 'Rubik';
+    padding-top: 20px;
+}
+
+.form label, .form input {
+    display: block;
+}
+
+.form label {
+    padding: 15px 0 5px 0;
+    font-weight: 600;
+}
+
+.form input {
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1.1em;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.form p {
+    color: var(--mainRed);
+}
+
+.input {
+    border: 1px solid rgb(163, 156, 156);
+    height: 32px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item p {
+    color: var(--mainRed);
+    font-size: 0.8em;
+    padding: 8px 0 5px 0;
+}
+
+.submit {
+    font-family: 'Rubik';
+    font-size: 16px;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    background: var(--mainBlue);
+    color: var(--mainWhite);
+    margin-top: 20px;
+    cursor: pointer;
+    height: 40px;
+}

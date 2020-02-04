@@ -1,0 +1,417 @@
+.mainWrapper {
+	
+}
+
+.toolbar {
+    background: linear-gradient(var(--lightBlue), var(--mainBlue));
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+}
+
+.logoText {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Lobster';
+    color: #C1E3CD;
+}
+
+.logoWrapper {
+    background: rgb(63, 3, 75);
+    margin: 10px 0 10px 10px;
+    border-radius: 25px;
+}
+
+.logoWrapper:hover {
+    cursor: pointer;
+}
+
+.navigationItems {
+    display: flex;
+    font-family: 'Rubik';
+    color: var(--mainWhite);
+    align-items: center;
+}
+
+.navigationItem {
+    display: inline;
+    margin: 10px 20px 0 0;
+}
+
+.wrapperNavigationItem {
+    padding: 26px 9px 24px 20px;
+}
+
+.wrapperNavigationItem:hover {
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--mainWhite);
+}
+
+.button {
+    font-family: 'Rubik';
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menuButton {
+    font-size: 16px;
+    padding: 7px;
+    background: transparent;
+    color: var(--mainWhite);
+    border: 1px solid var(--mainWhite);
+    margin: 15px 25px;
+}
+
+.menuButton:hover {
+    background: var(--mainWhite);
+    color: var(--mainBlue);
+}
+
+footer {
+    background: linear-gradient(var(--lightBlue), var(--mainBlue));
+    font-family: 'Montserrat';
+    color: var(--mainWhite);
+    padding: 20px 30px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mainContainer {
+    background: #f2f2f2;
+    font-family: 'Montserrat';
+    color: #000;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 772.78px 320px;
+    padding-top: 30px;
+}
+
+.containerContent {
+    position: relative;
+    width: 730px;
+}
+
+.arrowLeftMainImage {
+    display: none;
+    position: absolute;
+    top: 165px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.arrowRightMainImage {
+    display: none;
+    position: absolute;
+    top: 165px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.containerContent:hover .arrowLeftMainImage, 
+.containerContent:hover .arrowRightMainImage{
+    display: block;
+}
+
+.scrollImages {
+    width: 730px;
+    padding: 10px 25.5px;
+    background: #e2e2e2;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.imagesContainer {
+    display: flex;
+    transition: all 0.3s;
+}
+
+.frame {
+    overflow: hidden;
+    width: 679px;
+}
+
+.arrowLeft {
+    position: absolute;
+    top: 22px;
+    left: 2px;
+}
+
+.arrowRight {
+    position: absolute;
+    top: 22px;
+    right: 2px;
+}
+
+.arrowLeft:hover, .arrowRight:hover {
+    cursor: pointer;
+}
+
+.title {
+    border-bottom: 1px solid var(--mainBlack);
+}
+
+.title .makeAndModel {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: var(--mainBlue);
+}
+
+.title .condition {
+    margin: 15px 0 15px 0;
+}
+
+.itemInfo h2 {
+    margin: 10px 0 10px 0;
+}
+
+.itemInfo p {
+    margin: 10px 0;
+}
+
+.contacts {
+    font-weight: bold;
+}
+
+.basics {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.basics h2 {
+    margin: 10px 0;
+}
+
+.basicsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.basicsContainer span {
+    font-weight: bold;
+    margin-right: 7px;
+}
+
+.basicsContainer p {
+    margin: 10px 0;
+}
+
+.contactFormWrapper {
+    border: 1px solid var(--mainBlack);
+    border-radius: 5px;
+    height: 600px;
+}
+
+.messageDelivered {
+    padding: 12px 14px;
+    background: #8aeba4;
+    color: #262b27;
+    font-weight: bold;
+    height: 28px;
+}
+
+.listingMainImage {
+    height: 350px;
+    width: 730px;
+}
+
+.scrollImageContainer {
+    cursor: pointer;
+}
+
+.scrollImage {
+    height: 40px;
+    width: 93px;
+    border: 2px solid var(--mainWhite);
+}
+
+.calculatorContainer {
+    background: rgb(202, 196, 196);
+    font-family: 'Montserrat';
+    margin-bottom: 30px;
+}
+
+.calculatorTitle {
+    padding: 20px 0 0 14px;
+    font-weight: bold;
+    
+}
+
+.monthlyPayment {
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+    padding: 17px 0;
+    border-bottom: 1px solid #000;
+    margin-bottom: 0;
+}
+
+.monthlyPayment span {
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+.estimatedPayment {
+    text-align: center;
+    margin: 10px 0 40px 0;
+}
+
+.estimatedPayment span {
+    font-weight: bold;
+}
+
+.inputsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 15px; 
+}
+
+.inputsContainer label {
+    font-weight: bold;
+}
+
+.inputsContainer input {
+    display: block;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.2em;
+    padding-left: 8px;
+    margin-top: 5px;
+    background: var(--mainWhite);
+}
+
+.inputsContainer div {
+    margin-bottom: 20px;
+}
+
+.inputsContainer button {
+    padding: 10px 36px;
+    background: transparent;
+    border: 1px solid var(--mainBlue);
+    border-radius: 8px;
+    width: 249px;
+    color: vaR(--mainBlue);
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 45px;
+}
+
+.inputsContainer button:hover {
+    background: var(--mainBlue);
+    color: var(--mainWhite);
+}
+
+.terms p {
+    font-weight: bold;
+}
+
+.termsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-top: 5px;
+}
+
+.percentage {
+    width: 200px;
+}
+
+.term {
+    border: 1px solid var(--mainBlue);
+    font-weight: bold;
+    margin: 0;
+    border-radius: 8px;
+    width: 45px;
+    height: 45px;
+    padding: 12px 0 0 12px;
+    box-sizing: border-box;
+    color: var(--mainBlue);
+    cursor: pointer;
+}
+
+.term:hover {
+    background: var(--mainBlue);
+    color: var(--mainWhite);
+}
+
+.formContainer {
+    font-family: 'Montserrat';
+    color: var(--mainBlack);
+    box-sizing: border-box;
+}
+
+.formContainer h2 {
+    margin: 20px 0 0 14px;
+}
+
+.formContainer p {
+    padding-left: 14px;
+    margin: 15px 0;
+    font-size: 1.4em;
+}
+
+.formContainer button {
+    padding: 12px 36px;
+    border: 1px solid var(--mainBlue);
+    background: transparent;
+    border-radius: 8px;
+    color: var(--mainBlue);
+    margin-left: 14px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.formContainer button:hover {
+    color: var(--mainWhite);
+    background: var(--mainBlue);
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 14px;
+    box-sizing: border-box;
+}
+
+.input {
+    padding-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.input input {
+    width: 80%;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
+.inputElement {
+    border: 1px solid var(--mainBlack);
+}
+
+.inputTextArea {
+    font-size: 1.1em;
+    padding: 10px 14px;
+    box-sizing: border-box;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.inputTextArea textarea {
+    width: 100%;
+    padding: 10px 0 0 10px;
+    border-radius: 8px;
+    resize: none;
+}

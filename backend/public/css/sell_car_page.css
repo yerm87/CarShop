@@ -1,0 +1,188 @@
+.mainWrapper {
+	
+}
+
+.toolbar {
+    background: linear-gradient(var(--lightBlue), var(--mainBlue));
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+}
+
+.logoText {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Lobster';
+    color: #C1E3CD;
+}
+
+.logoWrapper {
+    background: rgb(63, 3, 75);
+    margin: 10px 0 10px 10px;
+    border-radius: 25px;
+}
+
+.logoWrapper:hover {
+    cursor: pointer;
+}
+
+.navigationItems {
+    display: flex;
+    font-family: 'Rubik';
+    color: var(--mainWhite);
+    align-items: center;
+}
+
+.navigationItem {
+    display: inline;
+    margin: 10px 20px 0 0;
+}
+
+.wrapperNavigationItem {
+    padding: 26px 9px 24px 20px;
+}
+
+.wrapperNavigationItem:hover {
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--mainWhite);
+}
+
+.button {
+    font-family: 'Rubik';
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menuButton {
+    font-size: 16px;
+    padding: 7px;
+    background: transparent;
+    color: var(--mainWhite);
+    border: 1px solid var(--mainWhite);
+    margin: 15px 25px;
+}
+
+.menuButton:hover {
+    background: var(--mainWhite);
+    color: var(--mainBlue);
+}
+
+footer {
+    background: linear-gradient(var(--lightBlue), var(--mainBlue));
+    font-family: 'Montserrat';
+    color: var(--mainWhite);
+    padding: 20px 30px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.heroImage {
+    height: 480px;
+    margin: 0;
+    background: url('/assets/sell_your_car.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.listings {
+    text-align: center;
+    padding-top: 160px;
+    font-family: 'Rubik';
+}
+
+.listings h1, .listings p {
+    color: var(--mainWhite);
+}
+
+.button {
+    font-family: 'Rubik';
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.loginInListings {
+    font-size: 16px;
+    padding: 7px 18px 7px 18px;
+    color: var(--mainWhite);
+    border: 1px solid var(--mainWhite);
+    background-color: transparent;
+    margin: 15px 25px;
+}
+
+.loginInListings:hover {
+    background-color: var(--mainWhite);
+    color: var(--mainBlue);
+}
+
+.advicesContainer {
+    font-family: 'Montserrat';
+    background: #f2f2f2;
+    width: 1189px;
+}
+
+.advicesContainer .content {
+    padding: 20px 80px;
+    width: 100%;
+    background: #f2f2f2;
+}
+
+.advicesContainer .content h2 {
+    color: var(--mainBlack);
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.items a {
+    text-decoration: none;
+    color: var(--mainBlack);
+}
+
+.viewAllButton {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.button {
+    font-family: 'Rubik';
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.viewAllAdvices {
+    border: 1px solid var(--mainBlue);
+    color: var(--mainBlue);
+    background: transparent;
+    padding: 10px 24px;
+    font-size: 1.2em;
+}
+
+.viewAllAdvices:hover {
+    color: var(--mainWhite);
+    background: var(--mainBlue);
+}
+
+.itemElement p {
+    padding-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.itemElement:hover {
+    cursor:pointer;
+}
+
+.adviceImage {
+    height: 250px;
+    width: 330px;
+    min-width: 330px;
+    margin: 0;
+}
