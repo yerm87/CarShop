@@ -110,17 +110,36 @@ class SearchComponent extends Component {
                             name="maxPrice"
                             onChange={(event) => this.changeValue(event)}>
                         <option value="select">No Max Price</option>
+                        <option value="2000">$2,000</option>
+                        <option value="4000">$4,000</option>
                         <option value="6000">$6,000</option>
                         <option value="8000">$8,000</option>
                         <option value="10000">$10,000</option>
                         <option value="15000">$15,000</option>
+                        <option value="20000">$20,000</option>
+                        <option value="25000">$25,000</option>
+                        <option value="30000">$30,000</option>
+                        <option value="35000">$35,000</option>
+                        <option value="40000">$40,000</option>
+                        <option value="45000">$45,000</option>
+                        <option value="50000">$50,000</option>
+                        <option value="60000">$60,000</option>
+                        <option value="70000">$70,000</option>
+                        <option value="80000">$80,000</option>
+                        <option value="90000">$90,000</option>
+                        <option value="100000">$100,000</option>
                     </select>
                     <div className={classes.zip}>
                         <select style={{width: '70%'}} 
                                 name="radius"
                                 onChange={(event) => this.changeValue(event)}>
                             <option value="10">10 miles from</option>
-                            <option value="20">50 miles from</option>
+                            <option value="20">20 miles from</option>
+                            <option value="30">30 miles from</option>
+                            <option value="40">40 miles from</option>
+                            <option value="50">50 miles from</option>
+                            <option value="75">75 miles from</option>
+                            <option value="100">100 miles from</option>
                         </select>
                         <input id="zip"
                                className={zipCodeClasses.join(' ')}

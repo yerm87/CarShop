@@ -8,7 +8,7 @@ use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 class City extends Eloquent
 {
     protected $fillable = [
-        'city', 'state'
+      'city', 'state'
     ];
 
     protected $collection = 'cities';

@@ -1369,6 +1369,16 @@ var SearchComponent = function (_Component) {
                         ),
                         _react2.default.createElement(
                             'option',
+                            { value: '2000' },
+                            '$2,000'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: '4000' },
+                            '$4,000'
+                        ),
+                        _react2.default.createElement(
+                            'option',
                             { value: '6000' },
                             '$6,000'
                         ),
@@ -1386,6 +1396,66 @@ var SearchComponent = function (_Component) {
                             'option',
                             { value: '15000' },
                             '$15,000'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: '20000' },
+                            '$20,000'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: '25000' },
+                            '$25,000'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: '30000' },
+                            '$30,000'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: '35000' },
+                            '$35,000'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: '40000' },
+                            '$40,000'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: '45000' },
+                            '$45,000'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: '50000' },
+                            '$50,000'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: '60000' },
+                            '$60,000'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: '70000' },
+                            '$70,000'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: '80000' },
+                            '$80,000'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: '90000' },
+                            '$90,000'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: '100000' },
+                            '$100,000'
                         )
                     ),
                     _react2.default.createElement(
@@ -1405,8 +1475,33 @@ var SearchComponent = function (_Component) {
                             ),
                             _react2.default.createElement(
                                 'option',
+                                { value: '20' },
+                                '20 miles from'
+                            ),
+                            _react2.default.createElement(
+                                'option',
+                                { value: '30' },
+                                '30 miles from'
+                            ),
+                            _react2.default.createElement(
+                                'option',
+                                { value: '40' },
+                                '40 miles from'
+                            ),
+                            _react2.default.createElement(
+                                'option',
                                 { value: '50' },
-                                '50'
+                                '50 miles from'
+                            ),
+                            _react2.default.createElement(
+                                'option',
+                                { value: '75' },
+                                '75 miles from'
+                            ),
+                            _react2.default.createElement(
+                                'option',
+                                { value: '100' },
+                                '100 miles from'
                             )
                         ),
                         _react2.default.createElement('input', { id: 'zip',

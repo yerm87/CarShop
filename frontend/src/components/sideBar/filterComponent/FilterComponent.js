@@ -54,6 +54,8 @@ class FilterComponent extends Component {
                                 <option value="30">30 miles</option>
                                 <option value="40">40 miles</option>
                                 <option value="50">50 miles</option>
+                                <option value="75">75 miles</option>
+                                <option value="100">100 miles</option>
                             </select>
                         </div>
                         <div>
@@ -100,12 +102,27 @@ class FilterComponent extends Component {
                             <select name="minYear"
                                     onChange={this.props.changeHandler}>
                                 <option value="select">select</option>
-                                <option value="2015">2015</option>
-                                <option value="2016">2016</option>
-                                <option value="2017">2017</option>
-                                <option value="2018">2018</option>
-                                <option value="2019">2019</option>
                                 <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
                             </select>
                         </div>
                         <div style={{ fontWeight: 'bold',
@@ -121,6 +138,21 @@ class FilterComponent extends Component {
                                 <option value="2017">2017</option>
                                 <option value="2016">2016</option>
                                 <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
                             </select>
                         </div>
                     </div>
@@ -147,10 +179,24 @@ class FilterComponent extends Component {
                             <select name="minPrice"
                                     onChange={this.props.changeHandler}>
                                 <option value="select">Min Price</option>
+                                <option value="2000">$2,000</option>
+                                <option value="4000">$4,000</option>
+                                <option value="6000">$6,000</option>
                                 <option value="8000">$8,000</option>
                                 <option value="10000">$10,000</option>
                                 <option value="15000">$15,000</option>
                                 <option value="20000">$20,000</option>
+                                <option value="25000">$25,000</option>
+                                <option value="30000">$30,000</option>
+                                <option value="35000">$35,000</option>
+                                <option value="40000">$40,000</option>
+                                <option value="45000">$45,000</option>
+                                <option value="50000">$50,000</option>
+                                <option value="60000">$60,000</option>
+                                <option value="70000">$70,000</option>
+                                <option value="80000">$80,000</option>
+                                <option value="90000">$90,000</option>
+                                <option value="100000">$100,000</option>
                             </select>
                         </div>
                         <div style={{ fontWeight: 'bold',
@@ -160,10 +206,24 @@ class FilterComponent extends Component {
                             <select name="maxPrice"
                                     onChange={this.props.changeHandler}>
                                 <option value="select">Max Price</option>
+                                <option value="2000">$2,000</option>
+                                <option value="4000">$4,000</option>
+                                <option value="6000">$6,000</option>
                                 <option value="8000">$8,000</option>
                                 <option value="10000">$10,000</option>
                                 <option value="15000">$15,000</option>
                                 <option value="20000">$20,000</option>
+                                <option value="25000">$25,000</option>
+                                <option value="30000">$30,000</option>
+                                <option value="35000">$35,000</option>
+                                <option value="40000">$40,000</option>
+                                <option value="45000">$45,000</option>
+                                <option value="50000">$50,000</option>
+                                <option value="60000">$60,000</option>
+                                <option value="70000">$70,000</option>
+                                <option value="80000">$80,000</option>
+                                <option value="90000">$90,000</option>
+                                <option value="100000">$100,000</option>
                             </select>
                         </div>
                     </div>
@@ -181,16 +241,100 @@ class FilterComponent extends Component {
                         <div className={classes.mileageItem}>
                             <input type="radio" 
                                    name="mileage" 
-                                   value="15000"
+                                   value="20000"
                                    onChange={this.props.changeHandler} />
-                            <label htmlFor="mileageItem">15,000 or less</label>
+                            <label htmlFor="mileageItem">20,000 or less</label>
                         </div>
                         <div className={classes.mileageItem}>
                             <input type="radio" 
                                    name="mileage" 
-                                   value="20000"
+                                   value="30000"
                                    onChange={this.props.changeHandler} />
-                            <label htmlFor="mileageItem">20,000 or less</label>
+                            <label htmlFor="mileageItem">30,000 or less</label>
+                        </div>
+                        <div className={classes.mileageItem}>
+                            <input type="radio" 
+                                   name="mileage" 
+                                   value="40000"
+                                   onChange={this.props.changeHandler} />
+                            <label htmlFor="mileageItem">40,000 or less</label>
+                        </div>
+                        <div className={classes.mileageItem}>
+                            <input type="radio" 
+                                   name="mileage" 
+                                   value="50000"
+                                   onChange={this.props.changeHandler} />
+                            <label htmlFor="mileageItem">50,000 or less</label>
+                        </div>
+                        <div className={classes.mileageItem}>
+                            <input type="radio" 
+                                   name="mileage" 
+                                   value="60000"
+                                   onChange={this.props.changeHandler} />
+                            <label htmlFor="mileageItem">60,000 or less</label>
+                        </div>
+                        <div className={classes.mileageItem}>
+                            <input type="radio" 
+                                   name="mileage" 
+                                   value="70000"
+                                   onChange={this.props.changeHandler} />
+                            <label htmlFor="mileageItem">70,000 or less</label>
+                        </div>
+                        <div className={classes.mileageItem}>
+                            <input type="radio" 
+                                   name="mileage" 
+                                   value="80000"
+                                   onChange={this.props.changeHandler} />
+                            <label htmlFor="mileageItem">80,000 or less</label>
+                        </div>
+                        <div className={classes.mileageItem}>
+                            <input type="radio" 
+                                   name="mileage" 
+                                   value="90000"
+                                   onChange={this.props.changeHandler} />
+                            <label htmlFor="mileageItem">90,000 or less</label>
+                        </div>
+                        <div className={classes.mileageItem}>
+                            <input type="radio" 
+                                   name="mileage" 
+                                   value="100000"
+                                   onChange={this.props.changeHandler} />
+                            <label htmlFor="mileageItem">100,000 or less</label>
+                        </div>
+                        <div className={classes.mileageItem}>
+                            <input type="radio" 
+                                   name="mileage" 
+                                   value="110000"
+                                   onChange={this.props.changeHandler} />
+                            <label htmlFor="mileageItem">110,000 or less</label>
+                        </div>
+                        <div className={classes.mileageItem}>
+                            <input type="radio" 
+                                   name="mileage" 
+                                   value="120000"
+                                   onChange={this.props.changeHandler} />
+                            <label htmlFor="mileageItem">120,000 or less</label>
+                        </div>
+                        <div className={classes.mileageItem}>
+                            <input type="radio" 
+                                   name="mileage" 
+                                   value="130000"
+                                   onChange={this.props.changeHandler} />
+                            <label htmlFor="mileageItem">130,000 or less</label>
+                        </div>
+                        <div className={classes.mileageItem}>
+                            <input type="radio" 
+                                   name="mileage" 
+                                   value="140000"
+                                   onChange={this.props.changeHandler} />
+                            <label htmlFor="mileageItem">140,000 or less</label>
+                        </div>
+                        <div className={classes.mileageItem}>
+                            <input type="radio" 
+                                   name="mileage" 
+                                   value="150000"
+                                   onChange={this.props.changeHandler} />
+                            <label htmlFor="mileageItem">150,000 or less</label>
                         </div>
                     </div>
                 </div>

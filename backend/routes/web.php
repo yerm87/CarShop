@@ -43,21 +43,10 @@ Route::post('/test3', function(Request $request){
 	]);
 });
 
-Route::get('/test4', function(){
-	/*
-	$user = User::find('5de5b1e2d4500000e80050eb');
-	$id = $user->_id;
-	$picture = base64_encode($user->email->getData());
-	return view('welcome', compact('picture'));*/
+Route::post('/test4', function(Request $request){
+	$array = array();
 
-	$listing = Listing::find('5ded1e6a95170000d6007b25');
-	$arrayImages = array();
-
-	foreach($listing->images as $image){
-		$image = base64_encode($image);
-		array_push($arrayImages, $image);
-	}
-	return view('welcome', compact('arrayImages'));
+	return $array;
 });
 
 Route::post('/test5', function(Request $request){
