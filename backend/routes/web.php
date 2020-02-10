@@ -69,7 +69,7 @@ Route::post('/test5', function(Request $request){
 	return $array;
 });
 
-                      /************ Application Navigation routes  ***********/
+                      /************ Application Navigation routes  **********/
 Route::get('/', 'AppNavigationController@index');
 
 Route::get('/sell_car', 'AppNavigationController@sellCarPage');
