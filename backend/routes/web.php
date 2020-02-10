@@ -38,7 +38,6 @@ Route::get('/test', function(){
 
 Route::post('/test3', function(Request $request){
 	$file = $request->file('file_id');
-	$newfile;
 	User::create([
 		'email' => new MongoDB\BSON\Binary(file_get_contents($file), MongoDB\BSON\Binary::TYPE_GENERIC)
 	]);
